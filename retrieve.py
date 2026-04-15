@@ -530,6 +530,10 @@ class JuristischerRetriever:
         if collections is None:
             collections = self._available_collections()
 
+        # Nutzer-gesetzte Filter merken (werden bei Fallback beibehalten)
+        user_paragraph = paragraph
+        user_gesetz = gesetz
+
         # --- Step 1: Query Expansion ---
         expansion: Optional[ExpandedQuery] = None
         search_query = query
@@ -551,38 +555,32 @@ class JuristischerRetriever:
         ).tolist()
         sp_idx, sp_val = _compute_sparse_vector(search_query)
 
-        # Build filter
-        qfilter = build_filter(
+        # How many candidates to fetch (more if reranking, since reranker will filter)
+        fetch_k = RERANK_CANDIDATES if (rerank and self.reranker) else top_k
+
+        # --- Step 3: Hybrid Search (ggf. mit Filter-Fallback) ---
+        all_results = self._run_hybrid_across_collections(
+            collections, dense_vec, sp_idx, sp_val, fetch_k,
+            weight_profile,
             paragraph=paragraph, gesetz=gesetz, fall=fall,
             aktenzeichen=aktenzeichen, dokument_typ=dokument_typ,
         )
 
-        # How many candidates to fetch (more if reranking, since reranker will filter)
-        fetch_k = RERANK_CANDIDATES if (rerank and self.reranker) else top_k
-
-        # --- Step 3: Hybrid Search ---
-        all_results: list[SearchResult] = []
-
-        for coll in collections:
-            if not self.client.collection_exists(coll):
-                log.warning(f"Collection '{coll}' nicht gefunden, ueberspringe.")
-                continue
-
-            if weight_profile:
-                profile = WEIGHT_PROFILES.get(weight_profile, WEIGHT_PROFILES["mixed"])
-            else:
-                profile = WEIGHT_PROFILES.get(coll, WEIGHT_PROFILES["mixed"])
-
-            results = self._hybrid_search(
-                collection=coll,
-                dense_vec=dense_vec,
-                sparse_indices=sp_idx,
-                sparse_values=sp_val,
-                weights=profile,
-                top_k=fetch_k,
-                qfilter=qfilter,
+        # Fallback: Wenn Expansion-Filter zu 0 Ergebnissen gefuehrt haben,
+        # ohne die automatisch gesetzten Filter erneut suchen.
+        expansion_set_filter = (
+            expansion is not None
+            and ((paragraph and paragraph != user_paragraph)
+                 or (gesetz and gesetz != user_gesetz))
+        )
+        if not all_results and expansion_set_filter:
+            log.info("Keine Treffer mit Expansion-Filter → Fallback ohne auto-Filter")
+            all_results = self._run_hybrid_across_collections(
+                collections, dense_vec, sp_idx, sp_val, fetch_k,
+                weight_profile,
+                paragraph=user_paragraph, gesetz=user_gesetz, fall=fall,
+                aktenzeichen=aktenzeichen, dokument_typ=dokument_typ,
             )
-            all_results.extend(results)
 
         all_results.sort(key=lambda r: r.score, reverse=True)
         candidates = all_results[:fetch_k]
@@ -597,6 +595,35 @@ class JuristischerRetriever:
             candidates = candidates[:top_k]
 
         return candidates, expansion
+
+    def _run_hybrid_across_collections(
+        self, collections: list[str],
+        dense_vec: list[float], sp_idx: list[int], sp_val: list[float],
+        fetch_k: int, weight_profile: Optional[str],
+        **filter_kwargs,
+    ) -> list[SearchResult]:
+        """Hybrid-Suche ueber mehrere Collections mit gegebenem Filter-Set."""
+        qfilter = build_filter(**filter_kwargs)
+        all_results: list[SearchResult] = []
+        for coll in collections:
+            if not self.client.collection_exists(coll):
+                log.warning(f"Collection '{coll}' nicht gefunden, ueberspringe.")
+                continue
+            if weight_profile:
+                profile = WEIGHT_PROFILES.get(weight_profile, WEIGHT_PROFILES["mixed"])
+            else:
+                profile = WEIGHT_PROFILES.get(coll, WEIGHT_PROFILES["mixed"])
+            results = self._hybrid_search(
+                collection=coll,
+                dense_vec=dense_vec,
+                sparse_indices=sp_idx,
+                sparse_values=sp_val,
+                weights=profile,
+                top_k=fetch_k,
+                qfilter=qfilter,
+            )
+            all_results.extend(results)
+        return all_results
 
     def search_fachliteratur(self, query: str, top_k: int = DEFAULT_TOP_K,
                              **kwargs) -> tuple[list[SearchResult], Optional[ExpandedQuery]]:

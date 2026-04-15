@@ -1,0 +1,106 @@
+# Benchmark-Queries fuer RAG-Vergleich (Fachliteratur)
+# Fuenf Kategorien à 3-4 Queries, insgesamt 18 Queries.
+#
+# Jede Query hat:
+#   id:       eindeutige Kennung
+#   category: eine der fuenf Kategorien
+#   query:    die Suchanfrage (wie ein Nutzer sie stellt)
+#   context:  worum es geht (wird an den Judge gegeben, damit er die Relevanz
+#             fair bewerten kann)
+
+queries:
+
+  # ===== 1. Exakte §-Fragen =====
+  - id: q01
+    category: exakte-paragraphen
+    query: "Welche Voraussetzungen hat der gewerbsmaessige Bandenbetrug nach § 263 Abs. 5 StGB?"
+    context: "Qualifikationstatbestand des Bandenbetrugs im Fischer-Kommentar"
+
+  - id: q02
+    category: exakte-paragraphen
+    query: "Was regelt § 112 StPO zur Untersuchungshaft?"
+    context: "Anordnungsvoraussetzungen der U-Haft (dringender Tatverdacht, Haftgrund) im Schmitt/Koehler"
+
+  - id: q03
+    category: exakte-paragraphen
+    query: "Welche Haftgruende nennt § 112 Abs. 2 StPO?"
+    context: "Fluchtgefahr, Verdunkelungsgefahr, Flucht — im StPO-Kommentar"
+
+  - id: q04
+    category: exakte-paragraphen
+    query: "Was regelt § 102 StPO zur Durchsuchung beim Beschuldigten?"
+    context: "Durchsuchungsvoraussetzungen beim Verdaechtigen"
+
+  # ===== 2. Konzept-Fragen =====
+  - id: q05
+    category: konzept
+    query: "Wann liegt eine konkludente Taeuschung im Sinne des § 263 StGB vor?"
+    context: "Taeuschungshandlung durch schluessiges Verhalten"
+
+  - id: q06
+    category: konzept
+    query: "Was ist eine Vermoegensverfuegung und welche Anforderungen stellt die Rechtsprechung?"
+    context: "Tatbestandsmerkmal der Vermoegensverfuegung beim Betrug"
+
+  - id: q07
+    category: konzept
+    query: "Was versteht man unter einem Gefaehrdungsschaden beim Betrug?"
+    context: "Schadensbegriff, schadensgleiche Vermoegensgefaehrdung"
+
+  - id: q08
+    category: konzept
+    query: "Wie wird der Vorsatz beim Betrug bestimmt, insbesondere die Bereicherungsabsicht?"
+    context: "Subjektiver Tatbestand § 263 StGB"
+
+  # ===== 3. Alltagssprache =====
+  - id: q09
+    category: alltagssprache
+    query: "Hat der Angeklagte die Kunden über das Internet betrogen?"
+    context: "Abstrakte Frage zu Internetbetrug, sucht Taeuschungshandlung + Schaden"
+
+  - id: q10
+    category: alltagssprache
+    query: "Wann darf die Polizei bei jemandem zu Hause suchen?"
+    context: "Durchsuchungsvoraussetzungen, §§ 102 ff. StPO"
+
+  - id: q11
+    category: alltagssprache
+    query: "Was passiert wenn jemand luegt damit er Geld bekommt?"
+    context: "Laienhafte Umschreibung des Betrugstatbestandes"
+
+  - id: q12
+    category: alltagssprache
+    query: "Wann muss jemand ins Gefaengnis waehrend die Tat noch nicht bewiesen ist?"
+    context: "Untersuchungshaft, §§ 112 ff. StPO"
+
+  # ===== 4. StPO-Prozessrecht =====
+  - id: q13
+    category: stpo-prozess
+    query: "Welche Voraussetzungen hat die Untersuchungshaft wegen Fluchtgefahr?"
+    context: "§ 112 Abs. 2 Nr. 2 StPO Fluchtgefahr"
+
+  - id: q14
+    category: stpo-prozess
+    query: "Wie lange darf die Untersuchungshaft maximal dauern?"
+    context: "§ 121 StPO Sechs-Monats-Grenze, Haftpruefung OLG"
+
+  - id: q15
+    category: stpo-prozess
+    query: "Was regelt § 136 StPO zur Beschuldigtenvernehmung?"
+    context: "Belehrungspflichten, Recht auf Verteidiger"
+
+  # ===== 5. Cross-Reference =====
+  - id: q16
+    category: cross-reference
+    query: "Worin unterscheidet sich Betrug von Unterschlagung?"
+    context: "Abgrenzung § 263 vs § 246 StGB"
+
+  - id: q17
+    category: cross-reference
+    query: "Was sind die Unterschiede zwischen Diebstahl und Raub?"
+    context: "§ 242 vs § 249 StGB — Abgrenzung durch Gewalt/Drohung"
+
+  - id: q18
+    category: cross-reference
+    query: "Wann wird Betrug zu Computerbetrug und umgekehrt?"
+    context: "§ 263 vs § 263a StGB — Abgrenzung bei elektronischer Datenverarbeitung"

@@ -41,6 +41,62 @@ Nutzerfrage
   `ermittlungsakten` (fallbezogen), einzeln oder kombiniert durchsuchbar
 - **Metadata-Filter** — `--paragraph`, `--gesetz`, `--fall`, `--aktenzeichen`, `--dokument-typ`
 - **Interaktiver Modus** — REPL mit Live-Filtern, Toggle fuer Expansion/Reranking
+- **Benchmark-Suite** — vergleicht Retrieval-Qualitaet mit anderen RAG-Systemen per
+  LLM-as-Judge (Claude), inkl. automatischer Chart-Generierung
+
+---
+
+## Benchmark: Unser RAG vs. RAGIE
+
+Der Benchmark vergleicht die Retrieval-Qualitaet mit [RAGIE](https://ragie.ai) auf **18 juristischen Test-Queries** aus 5 Kategorien (exakte §-Fragen, Konzepte, Alltagssprache, StPO-Prozessrecht, Cross-Reference). Beide Systeme werden mit **identischen Fachliteratur-Daten** (Fischer StGB + Schmitt/Koehler StPO) befuellt, die Relevanz jedes Top-10 Chunks bewertet **Claude** auf einer Skala 0-3.
+
+### Gesamtergebnis
+
+![Benchmark Overview](benchmark_results/overview_latest.png)
+
+Unser RAG ist bei der **Praezision der Top-3-Treffer** deutlich vorne (**89 %** vs. 83 %), RAGIE bei **nDCG@10** minimal besser (0,944 vs. 0,937) und **2,4-mal schneller** (2,5 s vs. 6,1 s Latenz). Kopf-an-Kopf-Rennen bei der Gesamtqualitaet.
+
+### Nach Kategorie
+
+![Benchmark per Category](benchmark_results/per_category_latest.png)
+
+| Kategorie | Unser RAG | RAGIE | Gewinner |
+|---|---|---|---|
+| Exakte §-Fragen (z.B. "§ 112 StPO Haftgruende") | **0.99** | 0.90 | Wir (+0.09) |
+| Alltagssprache ("Wann darf die Polizei suchen?") | **0.97** | 0.94 | Wir (+0.03) |
+| StPO-Prozess | 0.95 | **0.98** | RAGIE (+0.03) |
+| Konzept ("Vermoegensverfuegung") | 0.93 | **0.98** | RAGIE (+0.05) |
+| Cross-Reference ("Betrug vs. Computerbetrug") | 0.83 | **0.92** | RAGIE (+0.09) |
+
+**Staerken unseres RAG:** §-spezifische Fragen, Alltagssprache (Query Expansion zahlt sich aus).
+**Schwaechen:** Cross-Reference-Queries — die Expansion setzt einen §-Filter auf *einen* Paragraphen, findet die andere Haelfte nur eingeschraenkt.
+
+### Pro Einzel-Query
+
+![Benchmark per Query](benchmark_results/per_query_latest.png)
+
+Der einzige nennenswerte Ausreisser ist **q18** (§ 263 vs § 263a Computerbetrug), wo unsere Expansion nur § 263 als Filter setzt und die § 263a-Chunks systematisch aussortiert.
+
+### Latenz-Verteilung
+
+![Benchmark Latency](benchmark_results/latency_latest.png)
+
+RAGIE-Latenzen sind konsistent bei 2-3 s, unsere Pipeline zwischen 4,5 und 8 s. Der Hauptkostenfaktor ist die **Query Expansion** (~3 s Claude-Call) — ohne Expansion waere die Pipeline ca. 2,5-3 s schnell.
+
+### Benchmark selber laufen lassen
+
+```bash
+python benchmark.py                           # volle Pipeline (Claude + Cohere + RAGIE)
+python benchmark.py --skip-judge              # nur Retrieval + Latenz (kein Claude-Scoring)
+python benchmark_charts.py                    # Charts aus letztem Run erzeugen
+
+# Reports landen in benchmark_results/:
+#   benchmark_report_TIMESTAMP.md      — ausfuehrlicher Markdown-Report
+#   benchmark_results_TIMESTAMP.json   — Rohdaten (alle Chunks + Judge-Begruendungen)
+#   overview_TIMESTAMP.png usw.        — Charts
+```
+
+Queries in `eval_queries.yaml` anpassen. Kosten-Schaetzung: ~0,30 € an Claude-API pro Benchmark-Lauf (360 Judge-Calls).
 
 ---
 
@@ -135,10 +191,14 @@ ANTHROPIC_API_KEY=sk-ant-...
 
 # Fuer Reranking (Production Key empfohlen)
 COHERE_API_KEY=...
+
+# Nur fuer Benchmark (optional)
+RAGIE_API_KEY=...
 ```
 
 > Ohne `ANTHROPIC_API_KEY` laeuft das System ohne Query Expansion.
 > Ohne `COHERE_API_KEY` wird automatisch ein lokaler Cross-Encoder verwendet.
+> Ohne `RAGIE_API_KEY` kann der Benchmark nur das eigene System vermessen.
 
 ---
 
@@ -335,10 +395,14 @@ for res in results:
 
 ```
 RAG_LW/
-  .env.local              API-Keys (Qdrant, Anthropic, Cohere)
+  .env.local              API-Keys (Qdrant, Anthropic, Cohere, Ragie)
   requirements.txt        Python-Abhaengigkeiten
   import_tool.py          Import-Pipeline (Chunking → Embedding → Qdrant)
   retrieve.py             Retrieval-Pipeline (Expansion → Search → Reranking)
+  benchmark.py            Benchmark-Runner (unser RAG vs. RAGIE)
+  benchmark_charts.py     Chart-Generator (matplotlib)
+  ragie_client.py         RAGIE-Adapter (gleiche API wie retrieve.py)
+  eval_queries.yaml       Benchmark-Test-Queries (18 Queries, 5 Kategorien)
   data/
     fachliteratur/        Kommentar-Markdown-Dateien
       Strafrecht/
@@ -347,6 +411,7 @@ RAG_LW/
     ermittlungsakten/     Akten-Markdown-Dateien
       Probenheld-MD/
         ...
+  benchmark_results/      Benchmark-Reports, JSON-Dumps, PNG-Charts
 ```
 
 ---
@@ -361,6 +426,9 @@ RAG_LW/
 | `cohere` | Cross-Encoder Reranking via API |
 | `python-dotenv` | Env-Variablen |
 | `tqdm` | Fortschrittsanzeige |
+| `ragie` | RAGIE Python SDK (nur fuer Benchmark) |
+| `pyyaml` | YAML-Parser fuer Test-Queries |
+| `matplotlib` | Chart-Generator fuer Benchmark-Reports |
 
 ---
 
