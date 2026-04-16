@@ -34,8 +34,9 @@ import yaml
 # ---------------------------------------------------------------------------
 
 COLORS = {
-    "ours": "#4c72b0",     # kraeftiges Blau
-    "ragie": "#dd8452",    # warmes Orange
+    "ours":   "#4c72b0",   # kraeftiges Blau
+    "ragie":  "#dd8452",   # warmes Orange
+    "openai": "#55a868",   # gedaempftes Gruen
 }
 
 plt.rcParams.update({
@@ -154,7 +155,7 @@ def chart_overview(bench: dict, out_path: Path):
     ax_bars.set_xticks(x)
     ax_bars.set_xticklabels(labels)
     ax_bars.set_ylabel("Wert (Top-1/Mean normiert auf 0-1)")
-    ax_bars.set_title("Gesamt-Qualitaet: Unser RAG vs. RAGIE")
+    ax_bars.set_title("Gesamt-Qualitaet")
     ax_bars.set_ylim(0, 1.15)
     ax_bars.legend(loc="upper right", frameon=True, facecolor="white")
     ax_bars.spines["top"].set_visible(False)

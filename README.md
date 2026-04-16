@@ -46,57 +46,99 @@ Nutzerfrage
 
 ---
 
-## Benchmark: Unser RAG vs. RAGIE
+## Benchmark: Unser RAG vs. RAGIE vs. OpenAI
 
-Der Benchmark vergleicht die Retrieval-Qualitaet mit [RAGIE](https://ragie.ai) auf **18 juristischen Test-Queries** aus 5 Kategorien (exakte §-Fragen, Konzepte, Alltagssprache, StPO-Prozessrecht, Cross-Reference). Beide Systeme werden mit **identischen Fachliteratur-Daten** (Fischer StGB + Schmitt/Koehler StPO) befuellt, die Relevanz jedes Top-10 Chunks bewertet **Claude** auf einer Skala 0-3.
+Der Benchmark vergleicht die Retrieval-Qualitaet unseres Systems gegen zwei externe RAG-Dienste
+auf **18 juristischen Test-Queries** aus 5 Kategorien (exakte §-Fragen, Konzepte, Alltagssprache,
+StPO-Prozessrecht, Cross-Reference). Alle drei Systeme werden mit **identischen Fachliteratur-Daten**
+(Fischer StGB + Schmitt/Koehler StPO) befuellt, die Relevanz jedes Top-10 Chunks bewertet
+**Claude** auf einer Skala 0-3.
+
+| System | Technologie |
+|---|---|
+| **ours** | Qdrant + E5-Large + BM25 + Claude-Expansion + Cohere-Reranking |
+| **ragie** | Managed RAG Service (hybrid + integriertes Reranking) |
+| **openai** | OpenAI Vector Stores API (Dense-only) |
 
 ### Gesamtergebnis
 
 ![Benchmark Overview](benchmark_results/overview_latest.png)
 
-Unser RAG ist bei der **Praezision der Top-3-Treffer** deutlich vorne (**89 %** vs. 83 %), RAGIE bei **nDCG@10** minimal besser (0,944 vs. 0,937) und **2,4-mal schneller** (2,5 s vs. 6,1 s Latenz). Kopf-an-Kopf-Rennen bei der Gesamtqualitaet.
+**Unser RAG liegt bei Qualitaet klar vorne** — nDCG@10 von **0,975** (RAGIE 0,945, OpenAI 0,718),
+und bei **Relevance@3** sind **96 %** der Top-3-Treffer tatsaechlich relevant (RAGIE 87 %, OpenAI 48 %).
+OpenAI ist mit **1,7 s** zwar am schnellsten, zeigt aber deutlich schlechtere Qualitaet —
+bei deutschsprachigen Fachtexten reicht reines Dense-Retrieval ohne BM25 und ohne Query-Expansion
+nicht aus.
 
 ### Nach Kategorie
 
 ![Benchmark per Category](benchmark_results/per_category_latest.png)
 
-| Kategorie | Unser RAG | RAGIE | Gewinner |
-|---|---|---|---|
-| Exakte §-Fragen (z.B. "§ 112 StPO Haftgruende") | **0.99** | 0.90 | Wir (+0.09) |
-| Alltagssprache ("Wann darf die Polizei suchen?") | **0.97** | 0.94 | Wir (+0.03) |
-| StPO-Prozess | 0.95 | **0.98** | RAGIE (+0.03) |
-| Konzept ("Vermoegensverfuegung") | 0.93 | **0.98** | RAGIE (+0.05) |
-| Cross-Reference ("Betrug vs. Computerbetrug") | 0.83 | **0.92** | RAGIE (+0.09) |
+| Kategorie | ours | ragie | openai | Gewinner |
+|---|---|---|---|---|
+| Exakte §-Fragen (z.B. "§ 112 StPO Haftgruende") | **0.99** | 0.92 | 0.89 | ours |
+| Konzept ("Vermoegensverfuegung") | **0.99** | 0.98 | 0.44 | ours |
+| Alltagssprache ("Wann darf die Polizei suchen?") | **0.98** | 0.95 | 0.54 | ours |
+| Cross-Reference ("Betrug vs. Computerbetrug") | **0.96** | 0.92 | 0.85 | ours |
+| StPO-Prozess | 0.94 | 0.95 | **0.97** | openai (knapp) |
 
-**Staerken unseres RAG:** §-spezifische Fragen, Alltagssprache (Query Expansion zahlt sich aus).
-**Schwaechen:** Cross-Reference-Queries — die Expansion setzt einen §-Filter auf *einen* Paragraphen, findet die andere Haelfte nur eingeschraenkt.
+**Staerken:**
+- **ours** durch Query Expansion + Hybrid Search bei allen Frage-Typen robust
+- **ragie** gleichmaessig gut, kein echter Schwachpunkt
+- **openai** bei klaren juristischen Fragen (StPO-Prozess) okay
+
+**Schwaechen:**
+- **openai** bricht bei **Alltagssprache und Konzept-Fragen** dramatisch ein
+  (z.B. q06 "Vermoegensverfuegung" → OpenAI liefert Chunks ueber Schuldunfaehigkeit
+  und Sexualstraftaten). Ursache: **OpenAI Vector Stores sind Dense-only**,
+  ohne BM25 versagt die Suche bei praeziser juristischer Terminologie.
+- **ours** ist am langsamsten (~6 s) wegen Query-Expansion + Reranking-Overhead.
 
 ### Pro Einzel-Query
 
 ![Benchmark per Query](benchmark_results/per_query_latest.png)
 
-Der einzige nennenswerte Ausreisser ist **q18** (§ 263 vs § 263a Computerbetrug), wo unsere Expansion nur § 263 als Filter setzt und die § 263a-Chunks systematisch aussortiert.
+Bei 4 Queries (q06, q07, q10, q12) hat OpenAI **nDCG = 0** — keine einzige der 10 zurueckgegebenen
+Chunks wurde vom Judge als relevant bewertet. Unsere Pipeline hat bei allen 18 Queries mindestens
+einen relevanten Treffer geliefert.
 
 ### Latenz-Verteilung
 
 ![Benchmark Latency](benchmark_results/latency_latest.png)
 
-RAGIE-Latenzen sind konsistent bei 2-3 s, unsere Pipeline zwischen 4,5 und 8 s. Der Hauptkostenfaktor ist die **Query Expansion** (~3 s Claude-Call) — ohne Expansion waere die Pipeline ca. 2,5-3 s schnell.
+| System | Median | Range |
+|---|---|---|
+| ours | ~6 s | 4,8 – 11,6 s |
+| ragie | ~2 s | 1,7 – 3,7 s |
+| openai | ~1,7 s | 1,4 – 2,4 s |
+
+Hauptkostenfaktor unserer Pipeline: **Query Expansion** (~3 s Claude-Call). Ohne Expansion
+waere die Pipeline bei ~3 s und damit vergleichbar mit RAGIE.
+
+### Kosten-Einschaetzung
+
+| System | Kosten pro Query (ca.) | Kommentar |
+|---|---|---|
+| **ours** | ~0,005 $ | Claude-Expansion (~0,003) + Cohere-Rerank (~0,002); Qdrant Cloud extra |
+| **ragie** | ~0,01 $ | Je nach Plan, Retrieval + Rerank im Paket |
+| **openai** | ~0,003 $ | Vector Store Search günstig, aber schlechtere Qualitaet |
 
 ### Benchmark selber laufen lassen
 
 ```bash
-python benchmark.py                           # volle Pipeline (Claude + Cohere + RAGIE)
-python benchmark.py --skip-judge              # nur Retrieval + Latenz (kein Claude-Scoring)
-python benchmark_charts.py                    # Charts aus letztem Run erzeugen
-
-# Reports landen in benchmark_results/:
-#   benchmark_report_TIMESTAMP.md      — ausfuehrlicher Markdown-Report
-#   benchmark_results_TIMESTAMP.json   — Rohdaten (alle Chunks + Judge-Begruendungen)
-#   overview_TIMESTAMP.png usw.        — Charts
+python benchmark.py                                     # alle drei Systeme
+python benchmark.py --systems ours,ragie                # nur 2 Systeme
+python benchmark.py --systems ours --skip-judge         # nur Latenz messen
+python benchmark_charts.py                              # Charts aus letztem Run erzeugen
 ```
 
-Queries in `eval_queries.yaml` anpassen. Kosten-Schaetzung: ~0,30 € an Claude-API pro Benchmark-Lauf (360 Judge-Calls).
+Reports landen in `benchmark_results/`:
+- `benchmark_report_TIMESTAMP.md` — ausfuehrlicher Markdown-Report
+- `benchmark_results_TIMESTAMP.json` — Rohdaten (alle Chunks + Judge-Begruendungen)
+- `overview_TIMESTAMP.png`, `per_category_*.png`, `per_query_*.png`, `latency_*.png` — Charts
+
+Queries in `eval_queries.yaml` anpassen. Kosten-Schaetzung:
+~**0,30 – 0,50 €** an Claude-API pro vollem Benchmark-Lauf (540 Judge-Calls bei 3 Systemen × 18 Queries × 10 Chunks).
 
 ---
 
@@ -194,11 +236,13 @@ COHERE_API_KEY=...
 
 # Nur fuer Benchmark (optional)
 RAGIE_API_KEY=...
+OPENAI_API_KEY=sk-...
+OPENAI_VECTOR_STORE_ID=vs_...
 ```
 
 > Ohne `ANTHROPIC_API_KEY` laeuft das System ohne Query Expansion.
 > Ohne `COHERE_API_KEY` wird automatisch ein lokaler Cross-Encoder verwendet.
-> Ohne `RAGIE_API_KEY` kann der Benchmark nur das eigene System vermessen.
+> Ohne `RAGIE_API_KEY` / `OPENAI_API_KEY` werden diese Systeme im Benchmark uebersprungen.
 
 ---
 
@@ -399,9 +443,10 @@ RAG_LW/
   requirements.txt        Python-Abhaengigkeiten
   import_tool.py          Import-Pipeline (Chunking → Embedding → Qdrant)
   retrieve.py             Retrieval-Pipeline (Expansion → Search → Reranking)
-  benchmark.py            Benchmark-Runner (unser RAG vs. RAGIE)
+  benchmark.py            Benchmark-Runner (unser RAG vs. RAGIE vs. OpenAI)
   benchmark_charts.py     Chart-Generator (matplotlib)
   ragie_client.py         RAGIE-Adapter (gleiche API wie retrieve.py)
+  openai_client.py        OpenAI Vector Store Adapter
   eval_queries.yaml       Benchmark-Test-Queries (18 Queries, 5 Kategorien)
   data/
     fachliteratur/        Kommentar-Markdown-Dateien
@@ -427,6 +472,7 @@ RAG_LW/
 | `python-dotenv` | Env-Variablen |
 | `tqdm` | Fortschrittsanzeige |
 | `ragie` | RAGIE Python SDK (nur fuer Benchmark) |
+| `openai` | OpenAI Vector Stores API (nur fuer Benchmark) |
 | `pyyaml` | YAML-Parser fuer Test-Queries |
 | `matplotlib` | Chart-Generator fuer Benchmark-Reports |
 

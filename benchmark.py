@@ -37,6 +37,7 @@ from tqdm import tqdm
 
 from retrieve import JuristischerRetriever, SearchResult, FACHLITERATUR_COLLECTION
 from ragie_client import RagieRetriever
+from openai_client import OpenAIRetriever
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -194,6 +195,13 @@ def run_our_rag(retriever: JuristischerRetriever, query: str,
 
 def run_ragie(retriever: RagieRetriever, query: str,
               top_k: int) -> tuple[list[SearchResult], float]:
+    start = time.time()
+    results = retriever.search(query, top_k=top_k)
+    return results, time.time() - start
+
+
+def run_openai(retriever: OpenAIRetriever, query: str,
+               top_k: int) -> tuple[list[SearchResult], float]:
     start = time.time()
     results = retriever.search(query, top_k=top_k)
     return results, time.time() - start
@@ -416,6 +424,9 @@ def run_benchmark(query_file: str, top_k: int, systems: list[str],
     if "ragie" in systems:
         print("▶ Lade RAGIE-Client ...")
         retrievers["ragie"] = RagieRetriever(partition="strafrecht", rerank=True)
+    if "openai" in systems:
+        print("▶ Lade OpenAI Vector Store Client ...")
+        retrievers["openai"] = OpenAIRetriever(rewrite_query=False)
 
     judge = None
     if not skip_judge:
@@ -439,6 +450,9 @@ def run_benchmark(query_file: str, top_k: int, systems: list[str],
             if "ragie" in systems:
                 futures["ragie"] = ex.submit(run_ragie, retrievers["ragie"],
                                               case.query, top_k)
+            if "openai" in systems:
+                futures["openai"] = ex.submit(run_openai, retrievers["openai"],
+                                               case.query, top_k)
 
             for sys_name, fut in futures.items():
                 try:
@@ -510,8 +524,8 @@ def main():
                         help="YAML mit Test-Queries (default: eval_queries.yaml)")
     parser.add_argument("--top-k", type=int, default=DEFAULT_TOP_K,
                         help=f"Chunks pro System (default: {DEFAULT_TOP_K})")
-    parser.add_argument("--systems", default="ours,ragie",
-                        help="Komma-Liste: ours,ragie (default: beide)")
+    parser.add_argument("--systems", default="ours,ragie,openai",
+                        help="Komma-Liste: ours,ragie,openai (default: alle drei)")
     parser.add_argument("--output", default="./benchmark_results",
                         help="Output-Verzeichnis fuer Reports")
     parser.add_argument("--skip-judge", action="store_true",
