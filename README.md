@@ -163,11 +163,6 @@ data/
       StGB_Kommentar/      Fischer/Anstoetz/Lutz, 73. Aufl. 2026
       StPO_Kommentar/      Schmitt/Koehler, 68. Aufl. 2025
   ermittlungsakten/      Akten pro Fall (Markdown)
-    Probenheld-MD/
-      Probenheld (107 Js 1148_21)/
-      Nuvigra/
-      BEVIGRA/
-      ...
 
 import_tool.py           Chunking + Embedding + Upload nach Qdrant
 retrieve.py              Query Expansion + Hybrid Search + Reranking
