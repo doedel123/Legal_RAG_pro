@@ -40,6 +40,8 @@ from ragie_client import RagieRetriever
 from openai_client import OpenAIRetriever
 from gemini_client import GeminiRetriever
 from vectara_client import VectaraRetriever
+from ours_cohere_client import OursCohereRetriever
+from ours_mxbai_client import OursMxbaiRetriever
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -218,6 +220,20 @@ def run_gemini(retriever: GeminiRetriever, query: str,
 
 def run_vectara(retriever: VectaraRetriever, query: str,
                 top_k: int) -> tuple[list[SearchResult], float]:
+    start = time.time()
+    results = retriever.search(query, top_k=top_k)
+    return results, time.time() - start
+
+
+def run_ours_cohere(retriever: OursCohereRetriever, query: str,
+                    top_k: int) -> tuple[list[SearchResult], float]:
+    start = time.time()
+    results = retriever.search(query, top_k=top_k)
+    return results, time.time() - start
+
+
+def run_ours_mxbai(retriever: OursMxbaiRetriever, query: str,
+                   top_k: int) -> tuple[list[SearchResult], float]:
     start = time.time()
     results = retriever.search(query, top_k=top_k)
     return results, time.time() - start
@@ -449,6 +465,12 @@ def run_benchmark(query_file: str, top_k: int, systems: list[str],
     if "vectara" in systems:
         print("▶ Lade Vectara Client ...")
         retrievers["vectara"] = VectaraRetriever()
+    if "ours-cohere" in systems:
+        print("▶ Lade Ours-Cohere Client ...")
+        retrievers["ours-cohere"] = OursCohereRetriever()
+    if "ours-mxbai" in systems:
+        print("▶ Lade Ours-Mxbai-DE Client ...")
+        retrievers["ours-mxbai"] = OursMxbaiRetriever()
 
     judge = None
     if not skip_judge:
@@ -478,6 +500,12 @@ def run_benchmark(query_file: str, top_k: int, systems: list[str],
             if "vectara" in systems:
                 futures["vectara"] = ex.submit(run_vectara, retrievers["vectara"],
                                                 case.query, top_k)
+            if "ours-cohere" in systems:
+                futures["ours-cohere"] = ex.submit(
+                    run_ours_cohere, retrievers["ours-cohere"], case.query, top_k)
+            if "ours-mxbai" in systems:
+                futures["ours-mxbai"] = ex.submit(
+                    run_ours_mxbai, retrievers["ours-mxbai"], case.query, top_k)
             if "gemini" in systems:
                 futures["gemini"] = ex.submit(run_gemini, retrievers["gemini"],
                                                case.query, top_k)
@@ -552,8 +580,8 @@ def main():
                         help="YAML mit Test-Queries (default: eval_queries.yaml)")
     parser.add_argument("--top-k", type=int, default=DEFAULT_TOP_K,
                         help=f"Chunks pro System (default: {DEFAULT_TOP_K})")
-    parser.add_argument("--systems", default="ours,ragie,openai,gemini,vectara",
-                        help="Komma-Liste: ours,ragie,openai,gemini,vectara (default: alle fünf)")
+    parser.add_argument("--systems", default="ours,ragie,openai,gemini,vectara,ours-cohere,ours-mxbai",
+                        help="Komma-Liste: ours,ragie,openai,gemini,vectara,ours-cohere,ours-mxbai")
     parser.add_argument("--output", default="./benchmark_results",
                         help="Output-Verzeichnis fuer Reports")
     parser.add_argument("--skip-judge", action="store_true",

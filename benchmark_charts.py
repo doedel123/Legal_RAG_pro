@@ -34,11 +34,13 @@ import yaml
 # ---------------------------------------------------------------------------
 
 COLORS = {
-    "ours":    "#4c72b0",  # kraeftiges Blau
-    "ragie":   "#dd8452",  # warmes Orange
-    "openai":  "#55a868",  # gedaempftes Gruen
-    "gemini":  "#c44e52",  # Gemini-Rot
-    "vectara": "#8172b2",  # Vectara-Violett
+    "ours":        "#4c72b0",  # kraeftiges Blau
+    "ours-cohere": "#2d4f7a",  # dunkleres Blau (Variant von ours)
+    "ours-mxbai":  "#6a8fcf",  # helleres Blau (Variant von ours)
+    "ragie":       "#dd8452",  # warmes Orange
+    "openai":      "#55a868",  # gedaempftes Gruen
+    "gemini":      "#c44e52",  # Gemini-Rot
+    "vectara":     "#8172b2",  # Vectara-Violett
 }
 
 plt.rcParams.update({

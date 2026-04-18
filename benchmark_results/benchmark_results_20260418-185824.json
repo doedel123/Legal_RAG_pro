@@ -1,0 +1,2558 @@
+{
+  "q01": {
+    "ours": {
+      "latency_sec": 7.400518894195557,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.7933146,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant, behandelt Qualifikationstatbestände § 263 Abs. 5",
+          "text_preview": "213 Sind beide Varianten erfüllt, ist eine Qualifikation nach Abs. 5 gegeben. Die Abgrenzung des Abs. 3 Nr. 1 zum Verbrechen nach Abs. 5 ist in Fällen bandenmäßiger Begehung schwierig, denn eine auf fortgesetzte Begehung von Taten insbes. nach § 263 gerichtete Bandenabrede ohne den Vorsatz der Gewer",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 213,
+            "breadcrumb": "§ 263 StGB – BT. Zweijundzwanzigster Abschnitt – Rn. 213"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.77731717,
+          "judge_score": 3,
+          "judge_reason": "Beantwortet direkt die Frage zu § 263 Abs. 5",
+          "text_preview": "IV. Qualifikation (Abs. 5). Abs. 5 enthält einen Qualifikationstatbestand, der die Tat in Fällen kumulativ gewerbs- und bandenmäßiger Begehung zum Verbrechen macht. Die Qualifikation ist in die Urteilsformel aufzunehmen (BGH NStZ-RR 2007, 269; BeckRS 2019, 29543). Für die Bandenabrede gilt das → Rn.",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 225,
+            "breadcrumb": "§ 263 StGB – BT. Zweriindzwanzigster Abschnitt – Rn. 225"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.7272211,
+          "judge_score": 3,
+          "judge_reason": "Enthält § 263 Abs. 5 mit allen Tatbestandsmerkmalen",
+          "text_preview": "263 (1) Wer in der Absicht, sich oder einem Dritten einen rechtswidrigen Vermögensvorteil zu verschaffen, das Vermögen eines anderen dadurch beschädigt, daß er durch Vorspiegelung falscher oder durch Entstellung oder Unterdrückung wahrer Tatsachen einen Irrtum erregt oder unterhält, wird mit Freihei",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – I. Vermögensbegriff  – Rn. 263"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.657297,
+          "judge_score": 2,
+          "judge_reason": "Inhaltsverzeichnis zu Abs. 5 Qualifikation, aber ohne Detailinhalte",
+          "text_preview": "3. Einzelne Fallgruppen ... 92\n4. Rechtlich missbilligte, sittenwidrige und gesetzeswidrige wirtschaftliche Werte ... 101\nVI. Schaden ... 110\n1. Grundsätze der Schadensermittlung ... 111\n2. Vermögensminderung ... 113\n3. Bewusste Selbstschädigung; Zweckverfehlung ... 137\n4. Subventionsbetrug ... 140\n",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – I. Sonstige Vorschriften 239 – Rn. 263 (Teil 1)"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6063825,
+          "judge_score": 3,
+          "judge_reason": "Definiert direkt bandenmäßige Begehung bei § 263",
+          "text_preview": "211 b) Bandenmäßigkeit. Bandenmäßige Begehung ist gegeben, wenn sich eine Bande (zum Begriff vgl. → § 244 Rn. 34 ff.) zur Begehung einer Mehrzahl von selbstständigen Taten der Urkundenfälschung oder des Betrugs verbunden hat. Die von der Rspr. zum bandenmäßigen Handeltreiben mit BtM entwickelten Gru",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 211,
+            "breadcrumb": "§ 263 StGB – BT. Zweijundzwanzigster Abschnitt – Rn. 211"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 6.174762010574341,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.81595254,
+          "judge_score": 3,
+          "judge_reason": "Enthält direkt § 263 Abs. 5 StGB Tatbestandsmerkmale",
+          "text_preview": "263 (1) Wer in der Absicht, sich oder einem Dritten einen rechtswidrigen Vermögensvorteil zu verschaffen, das Vermögen eines anderen dadurch beschädigt, daß er durch Vorspiegelung falscher oder durch Entstellung oder Unterdrückung wahrer Tatsachen einen Irrtum erregt oder unterhält, wird mit Freihei",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – I. Vermögensbegriff  – Rn. 263"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.8098936,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt exakt § 263 Abs. 5 StGB Voraussetzungen",
+          "text_preview": "IV. Qualifikation (Abs. 5). Abs. 5 enthält einen Qualifikationstatbestand, der die Tat in Fällen kumulativ gewerbs- und bandenmäßiger Begehung zum Verbrechen macht. Die Qualifikation ist in die Urteilsformel aufzunehmen (BGH NStZ-RR 2007, 269; BeckRS 2019, 29543). Für die Bandenabrede gilt das → Rn.",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 225,
+            "breadcrumb": "§ 263 StGB – BT. Zweriindzwanzigster Abschnitt – Rn. 225"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.7343678,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt Abs. 5 Qualifikationstatbestand",
+          "text_preview": "213 Sind beide Varianten erfüllt, ist eine Qualifikation nach Abs. 5 gegeben. Die Abgrenzung des Abs. 3 Nr. 1 zum Verbrechen nach Abs. 5 ist in Fällen bandenmäßiger Begehung schwierig, denn eine auf fortgesetzte Begehung von Taten insbes. nach § 263 gerichtete Bandenabrede ohne den Vorsatz der Gewer",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 213,
+            "breadcrumb": "§ 263 StGB – BT. Zweijundzwanzigster Abschnitt – Rn. 213"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.73299384,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt Bandenbetrug § 263 Abs. 5",
+          "text_preview": "212 Der Begriff der Urkundenfälschung ist weit zu fassen; er umfasst neben Taten nach § 267 auch solche nach §§ 268–281 (LK-StGB/Kubiciel/Tiedemann Rn. 297; NK-StGB/Kindhäuser/Hoven Rn. 392). Entsprechendes gilt für den Betrug; umfasst sind jedenfalls Taten nach §§ 263, 264, 264a, 265b, auch § 266b ",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 212,
+            "breadcrumb": "§ 263 StGB – BT. Zweijundzwanzigster Abschnitt – Rn. 212"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.7309246,
+          "judge_score": 1,
+          "judge_reason": "Behandelt nur Gewerbsmäßigkeit, nicht Bandenbetrug nach Abs. 5",
+          "text_preview": "Ein Gefährdungsschaden kann für die Strafzumessung nicht mit dem tatsächlich eingetretenen Schaden gleichgesetzt werden (wistra 1999, 185 (187); BGHSt 53, 71 (79) = NJW 2009, 528; 1. StS; aA aber BGHSt 53, 199 = NJW 2009, 2390; 1. StS; vgl. dazu → Rn. 158 und Fischer NStZ-Sonderheft 2009, 8 (11 ff.)",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 201,
+            "breadcrumb": "§ 263 StGB – BT. Zweijundzwanzigster Abschnitt – Rn. 201"
+          }
+        }
+      ]
+    }
+  },
+  "q02": {
+    "ours": {
+      "latency_sec": 4.69602632522583,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.88178825,
+          "judge_score": 3,
+          "judge_reason": "Direkte Antwort: § 112 StPO Anordnungsvoraussetzungen U-Haft",
+          "text_preview": "112 (1) ¹ Die Untersuchungshaft darf gegen den Beschuldigten angeordnet werden, wenn er der Tat dringend verdächtig ist und ein Haftgrund besteht. ² Sie darf nicht angeordnet werden, wenn sie zu der Bedeutung der Sache und der zu erwartenden Strafe oder Maßregel der Besserung und Sicherung außer Ver",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 112,
+            "breadcrumb": "§ 112 StPO – Rn. 112"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.78963995,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt § 112 StPO Haftbefehlsvoraussetzungen",
+          "text_preview": "Haftunfähigkeit des Beschuldigten schließt den Erlass des Haftbefehls nicht aus, sondern hindert nur seinen Vollzug (OLG Düsseldorf JZ 1984, 248; OLG Frankfurt a.M. NJW 1968, 2302; OLG Nürnberg OLGSt § 116 Nr. 1); insoweit gilt § 455 entsprechend (KG NStZ 1990, 142; eing. dazu Neuhaus FS 25 Jahre AG",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 112,
+            "breadcrumb": "§ 112 StPO – Rn. 112"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.74229145,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Haftgruende nach § 112 StPO",
+          "text_preview": "Bei einer besonders hohen Straferwartung braucht daher nur geprüft zu werden, ob Umstände vorhanden sind, die die hieraus herzuleitende Fluchtgefahr ausräumen können (KG StV 1996, 383; OLG München StraFo 2013, 114; OLG Braunschweig JZ 1965, 619; OLG Düsseldorf StV 1982, 585; OLG Frankfurt a. M. NJW ",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 23,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 23"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6649108,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Haftbefehl und U-Haft, aber nicht Anordnungsvoraussetzungen",
+          "text_preview": "15 G. Bestand des Haftbefehls. Wird der Haftbefehl nicht aufgeh., bleibt er grds. in Kraft; er wird nicht durch Zeitablauf wirkungslos (OLG Hamm NStZ 2016, 304).\n\nVoraussetzungen der Untersuchungshaft; Haftgründe RiStBV 46, 47",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 15,
+            "breadcrumb": "§ 112 StPO – Rn. 15"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6307082,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant zu § 112 StPO Verdunkelungsgefahr",
+          "text_preview": "Wenn die Verdunkelungshandlungen nicht geeignet sind, die Ermittlung der Wahrheit zu erschweren, darf UHaft nicht angeordnet werden. Der Haftgrund liegt daher nicht vor, wenn der Sachverhalt schon in vollem Umf. aufgeklärt u. die Beweise so gesichert sind, dass der Beschuldigte die Wahrheitsermittlu",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 32,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 32 (Teil 2)"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 4.694987058639526,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.9041187,
+          "judge_score": 3,
+          "judge_reason": "Direkter Gesetzestext mit allen Anordnungsvoraussetzungen",
+          "text_preview": "112 (1) ¹ Die Untersuchungshaft darf gegen den Beschuldigten angeordnet werden, wenn er der Tat dringend verdächtig ist und ein Haftgrund besteht. ² Sie darf nicht angeordnet werden, wenn sie zu der Bedeutung der Sache und der zu erwartenden Strafe oder Maßregel der Besserung und Sicherung außer Ver",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 112,
+            "breadcrumb": "§ 112 StPO – Rn. 112"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.7707586,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant zu § 112 StPO Haftvoraussetzungen",
+          "text_preview": "Haftunfähigkeit des Beschuldigten schließt den Erlass des Haftbefehls nicht aus, sondern hindert nur seinen Vollzug (OLG Düsseldorf JZ 1984, 248; OLG Frankfurt a.M. NJW 1968, 2302; OLG Nürnberg OLGSt § 116 Nr. 1); insoweit gilt § 455 entsprechend (KG NStZ 1990, 142; eing. dazu Neuhaus FS 25 Jahre AG",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 112,
+            "breadcrumb": "§ 112 StPO – Rn. 112"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.7482976,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: § 112 StPO Haftgründe Flucht-/Verdunkelungsgefahr",
+          "text_preview": "Bei einer besonders hohen Straferwartung braucht daher nur geprüft zu werden, ob Umstände vorhanden sind, die die hieraus herzuleitende Fluchtgefahr ausräumen können (KG StV 1996, 383; OLG München StraFo 2013, 114; OLG Braunschweig JZ 1965, 619; OLG Düsseldorf StV 1982, 585; OLG Frankfurt a. M. NJW ",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 23,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 23"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.73778254,
+          "judge_score": 3,
+          "judge_reason": "Direkt zu § 112 StPO Verdunkelungsgefahr als Haftgrund",
+          "text_preview": "Wenn die Verdunkelungshandlungen nicht geeignet sind, die Ermittlung der Wahrheit zu erschweren, darf UHaft nicht angeordnet werden. Der Haftgrund liegt daher nicht vor, wenn der Sachverhalt schon in vollem Umf. aufgeklärt u. die Beweise so gesichert sind, dass der Beschuldigte die Wahrheitsermittlu",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 32,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 32 (Teil 2)"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6546525,
+          "judge_score": 2,
+          "judge_reason": "Detailliert zur Verdunkelungsgefahr als Haftgrund nach § 112 StPO",
+          "text_preview": "30 Es genügt, dass andere Beweisanzeichen für die Verdunkelungsgefahr vorhanden sind, zB die frühere Verurteilung des Beschuldigten wegen Meineids o. Vortäuschung einer Straftat (Dahs NJW 1965, 892) o. wegen anderer Delikte, die ihrer Natur nach auf Irreführung angelegt sind (KG StraFo 2019, 416; Ph",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 30,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 30"
+          }
+        }
+      ]
+    }
+  },
+  "q03": {
+    "ours": {
+      "latency_sec": 5.576301097869873,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.85157084,
+          "judge_score": 3,
+          "judge_reason": "Beantwortet direkt die Frage zu Haftgruenden",
+          "text_preview": "112 (1) ¹ Die Untersuchungshaft darf gegen den Beschuldigten angeordnet werden, wenn er der Tat dringend verdächtig ist und ein Haftgrund besteht. ² Sie darf nicht angeordnet werden, wenn sie zu der Bedeutung der Sache und der zu erwartenden Strafe oder Maßregel der Besserung und Sicherung außer Ver",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 112,
+            "breadcrumb": "§ 112 StPO – Rn. 112"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.70580584,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt Haftgruende des § 112 Abs. 2 StPO",
+          "text_preview": "Bei einer besonders hohen Straferwartung braucht daher nur geprüft zu werden, ob Umstände vorhanden sind, die die hieraus herzuleitende Fluchtgefahr ausräumen können (KG StV 1996, 383; OLG München StraFo 2013, 114; OLG Braunschweig JZ 1965, 619; OLG Düsseldorf StV 1982, 585; OLG Frankfurt a. M. NJW ",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 23,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 23"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6959795,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Verdunkelungsgefahr detailliert, aber keine vollständige Aufzählung",
+          "text_preview": "Wenn die Verdunkelungshandlungen nicht geeignet sind, die Ermittlung der Wahrheit zu erschweren, darf UHaft nicht angeordnet werden. Der Haftgrund liegt daher nicht vor, wenn der Sachverhalt schon in vollem Umf. aufgeklärt u. die Beweise so gesichert sind, dass der Beschuldigte die Wahrheitsermittlu",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 32,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 32 (Teil 2)"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.67527276,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt die Haftgruende aus § 112 Abs. 2 StPO",
+          "text_preview": "16 Bei Ergreifung des Beschuldigten aufgrund des nach Abs. 2 Nr. 1 erlassenen Haftbefehls entfällt der Haftgrund der Flucht. In der Regel wird die vorherige Flucht aber die Aufrechterhaltung des Haftbefehls wegen Fluchtgefahr nach Abs. 2 Nr. 2 rechtfertigen u. erforderlich machen.",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 16,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 16"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.657033,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Verdunkelungsgefahr aus § 112 Abs. 2",
+          "text_preview": "31 2. Die Erschwerung der Wahrheitsermittlung durch eine der in Abs. 2 Nr. 3 Buchst. a–c abschl. aufgeführten Handlungen muss wahrscheinlich sein. Welche dieser Verdunkelungshandlungen zu erwarten ist, braucht aber nicht eindeutig festgestellt zu werden (KK-StPO/Graf Rn. 34; Kleinknecht MDR 1965, 78",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 31,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 31"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 4.893887996673584,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.8446273,
+          "judge_score": 3,
+          "judge_reason": "Beantwortet die Frage direkt und vollständig",
+          "text_preview": "112 (1) ¹ Die Untersuchungshaft darf gegen den Beschuldigten angeordnet werden, wenn er der Tat dringend verdächtig ist und ein Haftgrund besteht. ² Sie darf nicht angeordnet werden, wenn sie zu der Bedeutung der Sache und der zu erwartenden Strafe oder Maßregel der Besserung und Sicherung außer Ver",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 112,
+            "breadcrumb": "§ 112 StPO – Rn. 112"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.7451949,
+          "judge_score": 3,
+          "judge_reason": "Direkte Antwort auf Haftgruende nach § 112 Abs. 2",
+          "text_preview": "Bei einer besonders hohen Straferwartung braucht daher nur geprüft zu werden, ob Umstände vorhanden sind, die die hieraus herzuleitende Fluchtgefahr ausräumen können (KG StV 1996, 383; OLG München StraFo 2013, 114; OLG Braunschweig JZ 1965, 619; OLG Düsseldorf StV 1982, 585; OLG Frankfurt a. M. NJW ",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 23,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 23"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6522641,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt Verdunkelungsgefahr aus § 112 Abs. 2 StPO",
+          "text_preview": "Wenn die Verdunkelungshandlungen nicht geeignet sind, die Ermittlung der Wahrheit zu erschweren, darf UHaft nicht angeordnet werden. Der Haftgrund liegt daher nicht vor, wenn der Sachverhalt schon in vollem Umf. aufgeklärt u. die Beweise so gesichert sind, dass der Beschuldigte die Wahrheitsermittlu",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 32,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 32 (Teil 2)"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6407488,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt Haftgruende nach § 112 Abs. 2 StPO",
+          "text_preview": "16 Bei Ergreifung des Beschuldigten aufgrund des nach Abs. 2 Nr. 1 erlassenen Haftbefehls entfällt der Haftgrund der Flucht. In der Regel wird die vorherige Flucht aber die Aufrechterhaltung des Haftbefehls wegen Fluchtgefahr nach Abs. 2 Nr. 2 rechtfertigen u. erforderlich machen.",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 16,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 16"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.61779,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Verdunkelungsgefahr als einen der Haftgruende",
+          "text_preview": "31 2. Die Erschwerung der Wahrheitsermittlung durch eine der in Abs. 2 Nr. 3 Buchst. a–c abschl. aufgeführten Handlungen muss wahrscheinlich sein. Welche dieser Verdunkelungshandlungen zu erwarten ist, braucht aber nicht eindeutig festgestellt zu werden (KK-StPO/Graf Rn. 34; Kleinknecht MDR 1965, 78",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 31,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 31"
+          }
+        }
+      ]
+    }
+  },
+  "q04": {
+    "ours": {
+      "latency_sec": 4.5301759243011475,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.77589405,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: erklärt § 102 StPO Durchsuchungsvoraussetzungen",
+          "text_preview": "102 Bei dem, welcher als Täter oder Teilnehmer einer Straftat oder der Datenhehlerei, Begünstigung, Strafvereitelung oder Hehlerei\n\nKöhler\n\n\n\nErmittlungsmaßnahmen\n\nverdächtig ist, kann eine Durchsuchung der Wohnung und anderer Räume sowie seiner Person und der ihm gehörenden Sachen sowohl zum Zweck ",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 102,
+            "breadcrumb": "§ 102 StPO – Rn. 102"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.7602419,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Durchsuchungsvoraussetzungen, aber nicht spezifisch § 102",
+          "text_preview": "II. Auffinden von Beweismitteln. Zu den Beweismitteln (→ § 94 Rn. 4 ff.) gehören auch die nur in § 103 erwähnten Spuren (SK-StPO/Jäger/Wohlers Rn. 21) u. Personen, die zu Beweiszwecken in Augenschein genommen werden sollen (OLG Schleswig SchlHA 1985, 116, Park Rn. 55), nicht aber Personen, die nur a",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 10,
+            "breadcrumb": "§ 102 StPO – Rn. 10"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.73596483,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant zu § 102 StPO Durchsuchungsvoraussetzungen",
+          "text_preview": "10 III. Sachen. Sachen sind Kleidungsstücke, die der Verdächtige bei sich führt, ohne sie zu tragen, u. seine sonstige bewegliche Habe, gleichgültig, ob sie sich in seinem Umkreis, zB in Gepäckstücken, im Kofferraum, in der Hand eines Begleiters o. anderswo befindet. Nur für Sachen, die bei Nichtver",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 10,
+            "breadcrumb": "§ 102 StPO – Rn. 10"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6932451,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Durchsuchungsvoraussetzungen, aber nicht § 102 StPO",
+          "text_preview": "Kohler\n\n\n\n\nErstes Buch. Achter Abschnitt\n\nAufklärung bislang ungeklärter Fälle“ einer Tatserie beitragen könne, scheint dies den besonderen Umständen des Einzelfalls geschuldet zu sein. Denn zum einen kann die Einbettung einer Tat in eine Tatserie oder eine umsichtig geplante Tatausführung den Schul",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 10,
+            "breadcrumb": "§ 102 StPO – Rn. 10"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.65412235,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: § 102 StPO Verdächtige und Durchsuchungsvoraussetzungen",
+          "text_preview": "3 C. Verdächtige. Der Verdächtige muss die Durchsuchung dulden. Er braucht noch nicht Beschuldigter (→ Einl. Rn. 76 ff.) zu sein; der Tatverdacht gegen ihn muss bei der Anordnung der Maßnahme nicht einmal soweit konkretisiert sein, dass die Beschuldigteneigenschaft schon begründet werden kann; es ge",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 3,
+            "breadcrumb": "§ 102 StPO – Rn. 3"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 4.528220891952515,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.73596483,
+          "judge_score": 3,
+          "judge_reason": "Direkt zu § 102 StPO Durchsuchungsvoraussetzungen",
+          "text_preview": "102 Bei dem, welcher als Täter oder Teilnehmer einer Straftat oder der Datenhehlerei, Begünstigung, Strafvereitelung oder Hehlerei\n\nKöhler\n\n\n\nErmittlungsmaßnahmen\n\nverdächtig ist, kann eine Durchsuchung der Wohnung und anderer Räume sowie seiner Person und der ihm gehörenden Sachen sowohl zum Zweck ",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 102,
+            "breadcrumb": "§ 102 StPO – Rn. 102"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.71137124,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt Durchsuchung beim Verdächtigen nach § 102",
+          "text_preview": "10 III. Sachen. Sachen sind Kleidungsstücke, die der Verdächtige bei sich führt, ohne sie zu tragen, u. seine sonstige bewegliche Habe, gleichgültig, ob sie sich in seinem Umkreis, zB in Gepäckstücken, im Kofferraum, in der Hand eines Begleiters o. anderswo befindet. Nur für Sachen, die bei Nichtver",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 10,
+            "breadcrumb": "§ 102 StPO – Rn. 10"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6778372,
+          "judge_score": 3,
+          "judge_reason": "Regelt direkt § 102 StPO Durchsuchungsvoraussetzungen",
+          "text_preview": "3 C. Verdächtige. Der Verdächtige muss die Durchsuchung dulden. Er braucht noch nicht Beschuldigter (→ Einl. Rn. 76 ff.) zu sein; der Tatverdacht gegen ihn muss bei der Anordnung der Maßnahme nicht einmal soweit konkretisiert sein, dass die Beschuldigteneigenschaft schon begründet werden kann; es ge",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 3,
+            "breadcrumb": "§ 102 StPO – Rn. 3"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6383174,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Durchsuchungsrecht, aber nicht spezifisch § 102",
+          "text_preview": "II. Auffinden von Beweismitteln. Zu den Beweismitteln (→ § 94 Rn. 4 ff.) gehören auch die nur in § 103 erwähnten Spuren (SK-StPO/Jäger/Wohlers Rn. 21) u. Personen, die zu Beweiszwecken in Augenschein genommen werden sollen (OLG Schleswig SchlHA 1985, 116, Park Rn. 55), nicht aber Personen, die nur a",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 10,
+            "breadcrumb": "§ 102 StPO – Rn. 10"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.63152665,
+          "judge_score": 1,
+          "judge_reason": "Behandelt Durchsuchung allgemein, nicht spezifisch § 102",
+          "text_preview": "Kohler\n\n\n\n\nErstes Buch. Achter Abschnitt\n\nAufklärung bislang ungeklärter Fälle“ einer Tatserie beitragen könne, scheint dies den besonderen Umständen des Einzelfalls geschuldet zu sein. Denn zum einen kann die Einbettung einer Tat in eine Tatserie oder eine umsichtig geplante Tatausführung den Schul",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 10,
+            "breadcrumb": "§ 102 StPO – Rn. 10"
+          }
+        }
+      ]
+    }
+  },
+  "q05": {
+    "ours": {
+      "latency_sec": 5.932193994522095,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.7216064,
+          "judge_score": 1,
+          "judge_reason": "Gesetzestext ohne Erläuterung zu konkludenter Täuschung",
+          "text_preview": "263 (1) Wer in der Absicht, sich oder einem Dritten einen rechtswidrigen Vermögensvorteil zu verschaffen, das Vermögen eines anderen dadurch beschädigt, daß er durch Vorspiegelung falscher oder durch Entstellung oder Unterdrückung wahrer Tatsachen einen Irrtum erregt oder unterhält, wird mit Freihei",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – I. Vermögensbegriff  – Rn. 263"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.66569364,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Definition konkludente Täuschung durch Verhalten",
+          "text_preview": "Rspr. und hM bejahen darüber hinaus aber die Möglichkeit einer Täuschung durch Unterlassen auch ohne Erklärung gegenüber dem Irrenden (→ Rn. 38; vgl. BGHSt 39, 392 (398); BayObLG NJW 1987, 1654 (mAnm Hillenkamp JR 1988, 301); Maaß, Betrug verübt durch Schweigen, 1982; abl. Naucke NJW 1994, 2809). Bl",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 14,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 14"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6612456,
+          "judge_score": 3,
+          "judge_reason": "Erwähnt explizit konkludente Täuschung bei § 263 StGB",
+          "text_preview": "Heghmanns, Strafbarkeit des „Phishing“ von Bankkontendaten und ihrer Verwertung, wistra 2007, 167; Hilgendorf, Tatsachenaussagen u. Werturteile im Strafrecht, 1998; Hillenkamp, Zum Schutz „deliktischen“ Besitzes durch die Strafgerichte, FS Achenbach, 2011, 189; Höher, Der Betrug bei Ersatzansprüchen",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 263 (Teil 2)"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.64880073,
+          "judge_score": 3,
+          "judge_reason": "Direkte Definition und Beispiele konkludenter Taeuschung",
+          "text_preview": "In Fällen sog. „Kostenfallen“ im Internet (vgl. dazu Eisele NStZ 2010, 193), bei denen unerfahrene Verbraucher durch (wahre) Versprechen besonders günstiger Angebote zum Abschluss von Verträgen gebracht werden, deren tatsächliche Belastungen sich erst aus zusätzlichen Hinweisen ergeben, liegen Täusc",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 28,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 28"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.643173,
+          "judge_score": 3,
+          "judge_reason": "Definiert exakt konkludente Taeuschung bei § 263 StGB",
+          "text_preview": "21 2. Konkludente Erklärungen. Auch durch eine schlüssige Handlung (konkludente Erklärung) kann vorspiegelt werden. Eine solche konkludente Erklärung durch aktives Tun ist von einer Erklärung durch Unterlassen abzugrenzen, die eine Garantenstellung voraussetzt (dazu Gauger, Die Dogmatik der konklude",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 21,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 21"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 5.754916667938232,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.7304634,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Taeuschung durch Unterlassen, nicht konkludente Taeuschung",
+          "text_preview": "38 4. Täuschung durch Unterlassen. Eine Täuschung kann nach hM (aA Grünwald FS H. Mayer, 1966, 281; Kargl ZStW 119 (2007), 250 (287) mwN) auch durch Unterlassen begangen werden, wenn eine Garantenpflicht zur Aufklärung besteht, das Unterlassen der Verwirklichung des § 263 durch ein Tun entspricht (B",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 38,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 38"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.7161595,
+          "judge_score": 1,
+          "judge_reason": "Gesetzestext ohne konkludente Taeuschung Details",
+          "text_preview": "263 (1) Wer in der Absicht, sich oder einem Dritten einen rechtswidrigen Vermögensvorteil zu verschaffen, das Vermögen eines anderen dadurch beschädigt, daß er durch Vorspiegelung falscher oder durch Entstellung oder Unterdrückung wahrer Tatsachen einen Irrtum erregt oder unterhält, wird mit Freihei",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – I. Vermögensbegriff  – Rn. 263"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.68798697,
+          "judge_score": 1,
+          "judge_reason": "Subjektiver Tatbestand, nicht konkludente Taeuschung",
+          "text_preview": "D. Subjektiver Tatbestand. § 263 setzt Vorsatz voraus; darüber hinaus ist die Absicht rechtswidriger Bereicherung erforderlich.\n\n\nI. Vorsatz. 1. Täuschungsvorsatz. Der Vorsatz (bedingter Vorsatz genügt; BGHSt 16, 1; 18, 235 (237); 48, 331 (346); stRspr; and. Dencker FS Grünwald, 1999, 79; krit. Arzt",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 176,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 176"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.68748367,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt konkludente Täuschung bei § 263",
+          "text_preview": "14 II. Tathandlung. Der Begriff „Täuschen“ ist im Wortlaut des Abs. 1 nicht verwendet; er ergibt sich aus dem Zusammenhang zwischen der Beschreibung der Tathandlung (→ Rn. 18) und dem Irrtum als ihrem (Zwischen-)Erfolg; insoweit sind die Begriffe „Täuschung“ und „Irrtumserregung“ aufeinander bezogen",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 14,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 14"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6762998,
+          "judge_score": 2,
+          "judge_reason": "Literaturverzeichnis zu Betrug, enthält relevante Quellen",
+          "text_preview": "Heghmanns, Strafbarkeit des „Phishing“ von Bankkontendaten und ihrer Verwertung, wistra 2007, 167; Hilgendorf, Tatsachenaussagen u. Werturteile im Strafrecht, 1998; Hillenkamp, Zum Schutz „deliktischen“ Besitzes durch die Strafgerichte, FS Achenbach, 2011, 189; Höher, Der Betrug bei Ersatzansprüchen",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 263 (Teil 2)"
+          }
+        }
+      ]
+    }
+  },
+  "q06": {
+    "ours": {
+      "latency_sec": 5.572860956192017,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.8719229,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: definiert Vermoegensverfuegung, zeigt Rechtsprechungsanforderungen",
+          "text_preview": "69 Anders ist es, wenn der Verfügende seinerseits nur (gutgläubige) Hilfsperson eines bösgläubigen Dritten ist. Hier ist auf den Irrtum des Entscheidungsbefugten abzustellen: Erkennt dieser die Unrichtigkeit vorgelegter Abrechnungen, so entfällt die Vollendung des § 263 auch dann, wenn die Bezahlung",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 69,
+            "breadcrumb": "§ 263 StGB – BT. Zweitundzwanzigster Abschnitt – Rn. 69"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.8235701,
+          "judge_score": 1,
+          "judge_reason": "Kausalität der Verfügung, nicht Definition der Verfügung",
+          "text_preview": "87 5. Kausalität. Für die Vermögensverfügung muss der täuschungsbedingte Irrtum kausal sein (vgl. BGHSt 24, 257 (260); 24, 386 (389); NStZ 2003, 313 (314 f.); OLG Düsseldorf NJW 1987, 3145); Mitverursachung reicht aus (BGHSt\n\nFischer/Lutz\n\n\n\nBetrug und Untreue\n\n13, 13). Daran fehlt es, wenn der Getä",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 87,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 87"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.8036831,
+          "judge_score": 1,
+          "judge_reason": "Subjektiver Tatbestand, nicht Vermoegensverfuegung selbst",
+          "text_preview": "D. Subjektiver Tatbestand. § 263 setzt Vorsatz voraus; darüber hinaus ist die Absicht rechtswidriger Bereicherung erforderlich.\n\n\nI. Vorsatz. 1. Täuschungsvorsatz. Der Vorsatz (bedingter Vorsatz genügt; BGHSt 16, 1; 18, 235 (237); 48, 331 (346); stRspr; and. Dencker FS Grünwald, 1999, 79; krit. Arzt",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 176,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 176"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.79732054,
+          "judge_score": 3,
+          "judge_reason": "Definiert Vermögensverfügung und zentrale Rechtsprechungsanforderungen beim Betrug",
+          "text_preview": "4. Dreiecksbetrug. Da die Getäuschte und die verfügende, nicht aber die verfügende und die geschädigte Person identisch sein müssen, ist der Tatbestand des § 263 nur erfüllt, wenn die Vermögensverfügung durch diejenige Person vorgenommen wird, die auf Grund der Täuschung irrt, und wenn die Verfügung",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 76,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 76"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.78473216,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Irrtum-Verfügung Kausalität, nicht Verfügungsdefinition",
+          "text_preview": "Die Kausalität der Täuschung für den Irrtum und dessen Kausalität für die Vermögensverfügung müssen im Einzelfall festgestellt sein. Mitverursachung reicht aus. Dabei darf das Gericht auch bei Serien- und Massentaten gegen eine große Zahl von Betroffenen nicht auf die Feststellung (nur) eines Versuc",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 62,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 62"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 6.2866129875183105,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.90692574,
+          "judge_score": 3,
+          "judge_reason": "Definiert Vermoegensverfuegung und erlaeutert Rechtsprechungsanforderungen",
+          "text_preview": "69 Anders ist es, wenn der Verfügende seinerseits nur (gutgläubige) Hilfsperson eines bösgläubigen Dritten ist. Hier ist auf den Irrtum des Entscheidungsbefugten abzustellen: Erkennt dieser die Unrichtigkeit vorgelegter Abrechnungen, so entfällt die Vollendung des § 263 auch dann, wenn die Bezahlung",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 69,
+            "breadcrumb": "§ 263 StGB – BT. Zweitundzwanzigster Abschnitt – Rn. 69"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.84027237,
+          "judge_score": 3,
+          "judge_reason": "Definiert unmittelbare Verfuegung beim Betrug, zentrale Tatbestandsmerkmale",
+          "text_preview": "76 3. Unmittelbarkeit der Verfügung. Neben der Freiwilligkeit ist das Merkmal der Unmittelbarkeit nach stRspr und hM das wichtigste Kriterium zur Beschränkung der § 263 unterfallenden Selbstschädigung; systematisch könnte die Unmittelbarkeit freilich ebenso als (einschränkendes) Merkmal des Schadens",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 76,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 76"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.81875163,
+          "judge_score": 3,
+          "judge_reason": "Definiert Vermoegensverfuegung und Rechtsprechungsanforderungen direkt",
+          "text_preview": "74 2. Verfügungsbewusstsein. Vermögensverfügungen sind nach hM grundsätzlich sowohl als bewusst als auch als unbewusst vermögensmindernde Handlungen möglich; eine aktuelle Vorstellung des Verfügenden von der Wirkung seines Handelns ist jedenfalls beim Forderungsbetrug, insbes. bei Verfügung durch Ni",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 74,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 74"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.8025714,
+          "judge_score": 1,
+          "judge_reason": "Behandelt Kausalität, nicht Definition der Vermögensverfügung",
+          "text_preview": "87 5. Kausalität. Für die Vermögensverfügung muss der täuschungsbedingte Irrtum kausal sein (vgl. BGHSt 24, 257 (260); 24, 386 (389); NStZ 2003, 313 (314 f.); OLG Düsseldorf NJW 1987, 3145); Mitverursachung reicht aus (BGHSt\n\nFischer/Lutz\n\n\n\nBetrug und Untreue\n\n13, 13). Daran fehlt es, wenn der Getä",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 87,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 87"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.80014634,
+          "judge_score": 1,
+          "judge_reason": "Betrugsgrundtatbestand, aber keine Vermoegensverfuegung definiert",
+          "text_preview": "263 (1) Wer in der Absicht, sich oder einem Dritten einen rechtswidrigen Vermögensvorteil zu verschaffen, das Vermögen eines anderen dadurch beschädigt, daß er durch Vorspiegelung falscher oder durch Entstellung oder Unterdrückung wahrer Tatsachen einen Irrtum erregt oder unterhält, wird mit Freihei",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – I. Vermögensbegriff  – Rn. 263"
+          }
+        }
+      ]
+    }
+  },
+  "q07": {
+    "ours": {
+      "latency_sec": 5.209503173828125,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.8655088,
+          "judge_score": 3,
+          "judge_reason": "Direkte Definition des Gefaehrdungsschadens beim Betrug",
+          "text_preview": "159 b) Voraussetzungen. aa) Ein Gefährdungsschaden ist gegeben, wenn die Wahrscheinlichkeit des endgültigen Verlusts eines Vermögensbestandteils zum Zeitpunkt der täuschungsbedingten Verfügung so groß ist, dass dies schon jetzt eine objektive Minderung des Gesamtvermögenswerts zur Folge hat (BGHSt 4",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 159,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 159"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.8315952,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt Gefaehrdungsschaden und Schadensbegriff beim Betrug",
+          "text_preview": "VI. Schaden. Vermögensschaden ist ein negativer Saldo zwischen dem Wert des Vermögens vor und nach der irrtumsbedingten Vermögensverfügung des Getäuschten (Prinzip der Gesamtsaldierung; stRspr; vgl. BVerfG NStZ 1998, 506; BGHSt 3, 99 (102); 16, 220 (221); 16, 321; 30, 388; 34, 199 (201); 53, 199 (20",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 109,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 109"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.826278,
+          "judge_score": 3,
+          "judge_reason": "Direkter Bezug zu Gefaehrdungsschaden beim Betrug",
+          "text_preview": "**Rechtsprechungsübersicht:** Scholz, Die Entwicklung des Berufs- und Vertragsarztrechts, medstra 2019, 331; 2021, 349; 2022, 355; 2023, 355; 2024, 351.\n\nWeinrich/Wostry, Der Abrechnungsbetrug in der jüngeren Rechtsprechung, medstra 2019, 74; Wostry, Der Abrechnungsbetrug in der jüngeren Rspr., meds",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – BT. Zwei undzwanzigster Abschnitt – Rn. 263"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.8173562,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt explizit Gefaehrdungsschaden beim Betrug",
+          "text_preview": "Fischer/Lutz\n\n\n\nBetrug und Untreue\n\n\nrechts für das Strafrecht, FS Weber, 2004, 271; Eisele/Bechtel, Der Schadensbegriff bei den Vermögensdelikten, JuS 2018, 97; Ellbogen/Wichmann, Zu Problemen des ärztlichen Abrechnungsbetruges, insbesondere der Schadensberechnung, MedR 2007, 10; Fpe, Der Gefährdun",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – BT. Zwei undzwanzigster Abschnitt – Rn. 263 (Teil 1)"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.77913743,
+          "judge_score": 3,
+          "judge_reason": "Erklaert direkt Gefaehrdungsschaden beim Betrug mit Beispielen",
+          "text_preview": "Die täuschungsbedingte Herausgabe von EC-Karten, Kreditkarten und weiteren Zugangsdaten zu Bank-Guthaben (PINs, TANs; Passwörter), sei es infolge persönlicher Täuschung oder von „Phishing“-Manipulationen (vgl. dazu auch → § 263a Rn. 11a), führt zu einem Gefährdungsschaden, wenn der Täter eine unmitt",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 171,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 171"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 4.446749210357666,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.82895297,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt explizit Gefaehrdungsschaden beim Betrug",
+          "text_preview": "Fischer/Lutz\n\n\n\nBetrug und Untreue\n\n\nrechts für das Strafrecht, FS Weber, 2004, 271; Eisele/Bechtel, Der Schadensbegriff bei den Vermögensdelikten, JuS 2018, 97; Ellbogen/Wichmann, Zu Problemen des ärztlichen Abrechnungsbetruges, insbesondere der Schadensberechnung, MedR 2007, 10; Fpe, Der Gefährdun",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – BT. Zwei undzwanzigster Abschnitt – Rn. 263 (Teil 1)"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.8286204,
+          "judge_score": 3,
+          "judge_reason": "Definiert exakt Gefährdungsschaden beim Betrug",
+          "text_preview": "159 b) Voraussetzungen. aa) Ein Gefährdungsschaden ist gegeben, wenn die Wahrscheinlichkeit des endgültigen Verlusts eines Vermögensbestandteils zum Zeitpunkt der täuschungsbedingten Verfügung so groß ist, dass dies schon jetzt eine objektive Minderung des Gesamtvermögenswerts zur Folge hat (BGHSt 4",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 159,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 159"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.8245895,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt explizit Gefaehrdungsschaden beim Betrug",
+          "text_preview": "**Rechtsprechungsübersicht:** Scholz, Die Entwicklung des Berufs- und Vertragsarztrechts, medstra 2019, 331; 2021, 349; 2022, 355; 2023, 355; 2024, 351.\n\nWeinrich/Wostry, Der Abrechnungsbetrug in der jüngeren Rechtsprechung, medstra 2019, 74; Wostry, Der Abrechnungsbetrug in der jüngeren Rspr., meds",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – BT. Zwei undzwanzigster Abschnitt – Rn. 263"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.7634314,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt Gefaehrdungsschaden beim Betrug",
+          "text_preview": "VI. Schaden. Vermögensschaden ist ein negativer Saldo zwischen dem Wert des Vermögens vor und nach der irrtumsbedingten Vermögensverfügung des Getäuschten (Prinzip der Gesamtsaldierung; stRspr; vgl. BVerfG NStZ 1998, 506; BGHSt 3, 99 (102); 16, 220 (221); 16, 321; 30, 388; 34, 199 (201); 53, 199 (20",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 109,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 109"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.7634314,
+          "judge_score": 0,
+          "judge_reason": "Behandelt Verfügung und Irrtum, nicht Gefährdungsschaden",
+          "text_preview": "69 Anders ist es, wenn der Verfügende seinerseits nur (gutgläubige) Hilfsperson eines bösgläubigen Dritten ist. Hier ist auf den Irrtum des Entscheidungsbefugten abzustellen: Erkennt dieser die Unrichtigkeit vorgelegter Abrechnungen, so entfällt die Vollendung des § 263 auch dann, wenn die Bezahlung",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 69,
+            "breadcrumb": "§ 263 StGB – BT. Zweitundzwanzigster Abschnitt – Rn. 69"
+          }
+        }
+      ]
+    }
+  },
+  "q08": {
+    "ours": {
+      "latency_sec": 5.422904014587402,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.83742094,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt Vorsatz und Bereicherungsabsicht bei Betrug",
+          "text_preview": "D. Subjektiver Tatbestand. § 263 setzt Vorsatz voraus; darüber hinaus ist die Absicht rechtswidriger Bereicherung erforderlich.\n\n\nI. Vorsatz. 1. Täuschungsvorsatz. Der Vorsatz (bedingter Vorsatz genügt; BGHSt 16, 1; 18, 235 (237); 48, 331 (346); stRspr; and. Dencker FS Grünwald, 1999, 79; krit. Arzt",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 176,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 176"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.8338803,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt Bereicherungsabsicht und subjektiven Tatbestand",
+          "text_preview": "3. Einzelne Fallgruppen ... 92\n4. Rechtlich missbilligte, sittenwidrige und gesetzeswidrige wirtschaftliche Werte ... 101\nVI. Schaden ... 110\n1. Grundsätze der Schadensermittlung ... 111\n2. Vermögensminderung ... 113\n3. Bewusste Selbstschädigung; Zweckverfehlung ... 137\n4. Subventionsbetrug ... 140\n",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – I. Sonstige Vorschriften 239 – Rn. 263 (Teil 1)"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.8194462,
+          "judge_score": 1,
+          "judge_reason": "Stoffgleichheit nicht Vorsatz/Bereicherungsabsicht",
+          "text_preview": "187 1. Stoffgleichheit. Der Vorteil muss die Kehrseite des Schadens und ihm „stoffgleich“ sein; er muss unmittelbare Folge der täuschungsbedingten Verfügung sein, welche den Schaden des Opfers herbeiführt (BGHSt 6, 115 (116); 21, 384; 34, 379 (391); 60, 1 (13); NJW 1989, 918; NStZ 1998, 85; 2003, 26",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 187,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 187 (Teil 1)"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.70823324,
+          "judge_score": 3,
+          "judge_reason": "Erklärt direkt Bereicherungsabsicht bei § 263 StGB",
+          "text_preview": "186 II. Bereicherungsabsicht. Die Tat muss subjektiv auf die Erlangung eines rechtswidrigen Vermögensvorteils für den Täuschenden oder einen Dritten gerichtet sein. Vermögensvorteil ist die Erhöhung des wirtschaftlichen Gesamtwerts des Vermögens; dieser Wert ist nach denselben Grundsätzen zu bestimm",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 186,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 186"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.66308063,
+          "judge_score": 1,
+          "judge_reason": "Gesetzestext ohne Erläuterung zu Vorsatz/Bereicherungsabsicht",
+          "text_preview": "263 (1) Wer in der Absicht, sich oder einem Dritten einen rechtswidrigen Vermögensvorteil zu verschaffen, das Vermögen eines anderen dadurch beschädigt, daß er durch Vorspiegelung falscher oder durch Entstellung oder Unterdrückung wahrer Tatsachen einen Irrtum erregt oder unterhält, wird mit Freihei",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – I. Vermögensbegriff  – Rn. 263"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 5.940139055252075,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.84767824,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt Vorsatz und Bereicherungsabsicht § 263",
+          "text_preview": "D. Subjektiver Tatbestand. § 263 setzt Vorsatz voraus; darüber hinaus ist die Absicht rechtswidriger Bereicherung erforderlich.\n\n\nI. Vorsatz. 1. Täuschungsvorsatz. Der Vorsatz (bedingter Vorsatz genügt; BGHSt 16, 1; 18, 235 (237); 48, 331 (346); stRspr; and. Dencker FS Grünwald, 1999, 79; krit. Arzt",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 176,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 176"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.82220376,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt Bereicherungsabsicht bei § 263",
+          "text_preview": "3. Einzelne Fallgruppen ... 92\n4. Rechtlich missbilligte, sittenwidrige und gesetzeswidrige wirtschaftliche Werte ... 101\nVI. Schaden ... 110\n1. Grundsätze der Schadensermittlung ... 111\n2. Vermögensminderung ... 113\n3. Bewusste Selbstschädigung; Zweckverfehlung ... 137\n4. Subventionsbetrug ... 140\n",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – I. Sonstige Vorschriften 239 – Rn. 263 (Teil 1)"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.78493005,
+          "judge_score": 1,
+          "judge_reason": "Behandelt Verfügung, nicht subjektiven Tatbestand/Vorsatz",
+          "text_preview": "69 Anders ist es, wenn der Verfügende seinerseits nur (gutgläubige) Hilfsperson eines bösgläubigen Dritten ist. Hier ist auf den Irrtum des Entscheidungsbefugten abzustellen: Erkennt dieser die Unrichtigkeit vorgelegter Abrechnungen, so entfällt die Vollendung des § 263 auch dann, wenn die Bezahlung",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 69,
+            "breadcrumb": "§ 263 StGB – BT. Zweitundzwanzigster Abschnitt – Rn. 69"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.76951396,
+          "judge_score": 3,
+          "judge_reason": "Direkt zur Bereicherungsabsicht beim Betrug",
+          "text_preview": "186 II. Bereicherungsabsicht. Die Tat muss subjektiv auf die Erlangung eines rechtswidrigen Vermögensvorteils für den Täuschenden oder einen Dritten gerichtet sein. Vermögensvorteil ist die Erhöhung des wirtschaftlichen Gesamtwerts des Vermögens; dieser Wert ist nach denselben Grundsätzen zu bestimm",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 186,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 186"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.73891455,
+          "judge_score": 0,
+          "judge_reason": "Behandelt Kausalität und Vermögensschaden, nicht Vorsatz/Bereicherungsabsicht",
+          "text_preview": "87 5. Kausalität. Für die Vermögensverfügung muss der täuschungsbedingte Irrtum kausal sein (vgl. BGHSt 24, 257 (260); 24, 386 (389); NStZ 2003, 313 (314 f.); OLG Düsseldorf NJW 1987, 3145); Mitverursachung reicht aus (BGHSt\n\nFischer/Lutz\n\n\n\nBetrug und Untreue\n\n13, 13). Daran fehlt es, wenn der Getä",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 87,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 87"
+          }
+        }
+      ]
+    }
+  },
+  "q09": {
+    "ours": {
+      "latency_sec": 5.2831690311431885,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.41449648,
+          "judge_score": 2,
+          "judge_reason": "Literaturverweise zu Betrug, auch Phishing erwähnt",
+          "text_preview": "Heghmanns, Strafbarkeit des „Phishing“ von Bankkontendaten und ihrer Verwertung, wistra 2007, 167; Hilgendorf, Tatsachenaussagen u. Werturteile im Strafrecht, 1998; Hillenkamp, Zum Schutz „deliktischen“ Besitzes durch die Strafgerichte, FS Achenbach, 2011, 189; Höher, Der Betrug bei Ersatzansprüchen",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 263 (Teil 2)"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.334503,
+          "judge_score": 3,
+          "judge_reason": "Behandelt Schadensmerkmal bei Betrug - zentral für Internetbetrug",
+          "text_preview": "VI. Schaden. Vermögensschaden ist ein negativer Saldo zwischen dem Wert des Vermögens vor und nach der irrtumsbedingten Vermögensverfügung des Getäuschten (Prinzip der Gesamtsaldierung; stRspr; vgl. BVerfG NStZ 1998, 506; BGHSt 3, 99 (102); 16, 220 (221); 16, 321; 30, 388; 34, 199 (201); 53, 199 (20",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 109,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 109"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.3333952,
+          "judge_score": 3,
+          "judge_reason": "Beschreibt konkret Internetbetrug durch taeuschende Scheinrechnungen",
+          "text_preview": "28 Solche Scheinrechnungen sind so formuliert, dass sie bei eiligen oder geschäftsunerfahrenen Empfängern den Eindruck der Zahlungspflicht zu erzeugen geeignet sind (vgl. auch Erb ZIS 2011, 354: „Suggestive Irrtumserregung“). Sie kommen zB als (scheinbare) Rechnungen über die Aufnahme in „Handelsreg",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 28,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 28"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.31548333,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Betrug und Vorsatz, aber nicht Internetspezifika",
+          "text_preview": "182 In Fällen des Gefährdungsschadens hat der BGH vielfach entschieden, die Kenntnis von Umständen, welche die Gefahr des Vermögensverlusts begründen, reiche oft, aber nicht in jedem Fall aus, um das voluntative Element des bedingten Vorsatzes zu begründen (vgl. BGHSt 46, 30 (35); 47, 148 (156 f.) =",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 182,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 182"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.26414996,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Internetbetrug-Rechtsprechung, thematisch relevant für Betrugsdelikte",
+          "text_preview": "Fischer/Lutz\n\n\n\n\n\nBT. Zweiundzwanzigster Abschnitt. Fehlvorstellung beim Betrug, GA 2012, 354; Cornelius, Betrug durch verschleierte Kick-Back-Zahlungen bei Immobilienfinanzierungen?, NZWiSt 2012, 259; Cramer, Zur Strafbarkeit von Preisabsprachen in der Bauwirtschaft – Der Submissionsbetrag, 1995; D",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 263 (Teil 1)"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 6.196969032287598,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.7859175,
+          "judge_score": 3,
+          "judge_reason": "Definiert zentrale Tatbestandsmerkmale des Betrugs",
+          "text_preview": "5 C. Grundtatbestand, Abs. 1. Tathandlung ist das Täuschen einer natürlichen Person (vgl. NStZ 2005, 213) über Tatsachen. Erfolg dieser Handlung muss ein Irrtum des Täuschungsadressaten sein; dieser muss auf Grund einer Verfügung über Vermögensbestandteile zu einem Vermögensschaden bei dem Getäuscht",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 5,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 5"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.76554126,
+          "judge_score": 2,
+          "judge_reason": "Subjektiver Tatbestand § 263, thematisch relevant zu Betrug",
+          "text_preview": "D. Subjektiver Tatbestand. § 263 setzt Vorsatz voraus; darüber hinaus ist die Absicht rechtswidriger Bereicherung erforderlich.\n\n\nI. Vorsatz. 1. Täuschungsvorsatz. Der Vorsatz (bedingter Vorsatz genügt; BGHSt 16, 1; 18, 235 (237); 48, 331 (346); stRspr; and. Dencker FS Grünwald, 1999, 79; krit. Arzt",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 176,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 176"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.657561,
+          "judge_score": 3,
+          "judge_reason": "Zentrale Betrugsmerkmale Täuschung, Irrtum, Kausalität bei Massentaten",
+          "text_preview": "Die Kausalität der Täuschung für den Irrtum und dessen Kausalität für die Vermögensverfügung müssen im Einzelfall festgestellt sein. Mitverursachung reicht aus. Dabei darf das Gericht auch bei Serien- und Massentaten gegen eine große Zahl von Betroffenen nicht auf die Feststellung (nur) eines Versuc",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 62,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 62"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.65279555,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Betrug Tatbestandsmerkmale und Verfügung",
+          "text_preview": "69 Anders ist es, wenn der Verfügende seinerseits nur (gutgläubige) Hilfsperson eines bösgläubigen Dritten ist. Hier ist auf den Irrtum des Entscheidungsbefugten abzustellen: Erkennt dieser die Unrichtigkeit vorgelegter Abrechnungen, so entfällt die Vollendung des § 263 auch dann, wenn die Bezahlung",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 69,
+            "breadcrumb": "§ 263 StGB – BT. Zweitundzwanzigster Abschnitt – Rn. 69"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.650934,
+          "judge_score": 2,
+          "judge_reason": "Literaturnachweise zu Betrug, erwähnt Internetbetrug tangential",
+          "text_preview": "Fischer/Lutz\n\n\n\n\n\nBT. Zweiundzwanzigster Abschnitt. Fehlvorstellung beim Betrug, GA 2012, 354; Cornelius, Betrug durch verschleierte Kick-Back-Zahlungen bei Immobilienfinanzierungen?, NZWiSt 2012, 259; Cramer, Zur Strafbarkeit von Preisabsprachen in der Bauwirtschaft – Der Submissionsbetrag, 1995; D",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 263 (Teil 1)"
+          }
+        }
+      ]
+    }
+  },
+  "q10": {
+    "ours": {
+      "latency_sec": 5.654553174972534,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.6227582,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt Durchsuchungsvoraussetzungen bei Verdächtigen",
+          "text_preview": "102 Bei dem, welcher als Täter oder Teilnehmer einer Straftat oder der Datenhehlerei, Begünstigung, Strafvereitelung oder Hehlerei\n\nKöhler\n\n\n\nErmittlungsmaßnahmen\n\nverdächtig ist, kann eine Durchsuchung der Wohnung und anderer Räume sowie seiner Person und der ihm gehörenden Sachen sowohl zum Zweck ",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 102,
+            "breadcrumb": "§ 102 StPO – Rn. 102"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.47008035,
+          "judge_score": 3,
+          "judge_reason": "Direkt zu Durchsuchungsvoraussetzungen und Verhältnismäßigkeitsprinzip",
+          "text_preview": "II. Auffinden von Beweismitteln. Zu den Beweismitteln (→ § 94 Rn. 4 ff.) gehören auch die nur in § 103 erwähnten Spuren (SK-StPO/Jäger/Wohlers Rn. 21) u. Personen, die zu Beweiszwecken in Augenschein genommen werden sollen (OLG Schleswig SchlHA 1985, 116, Park Rn. 55), nicht aber Personen, die nur a",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 10,
+            "breadcrumb": "§ 102 StPO – Rn. 10"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.44898248,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant für Durchsuchungsvoraussetzungen und -gegenstände",
+          "text_preview": "**Teilnehmer** nach §§ 25 ff. StGB, nicht die sog. notwendigen Teilnehmer (zum Begriff: Fischer/Fischer StGB Vor § 25 Rn. 7), stehen den Tatverdächtigen gleich. Bei jedem v. ihnen sowie bei den der Begünstigung, Strafverriehlung o. Hehlerei Verdächtigen ist die Durchsuchung zu dem Zweck zulässig, di",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 3,
+            "breadcrumb": "§ 102 StPO – Rn. 3"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.36418998,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt Durchsuchungsvoraussetzungen und Tatverdacht",
+          "text_preview": "Köhler\n\n\n\n\nErstes Buch. Achter Abschnitt\n\nGesetz gebundenen Behörden u. Gremien ist nicht angezeigt (BGH JR 2019, 404 mAnm Löffelmann). Bei anonymen Hinweisen ist wegen der erhöhten Gefahr u. des nur schwer bewertbaren Risikos einer falschen Verdächtigung eine bes. sorgfältige Prüfung erforderlich (",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 102,
+            "breadcrumb": "§ 102 StPO – Rn. 102"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.27296153,
+          "judge_score": 2,
+          "judge_reason": "Abgrenzung zur Durchsuchung, thematisch relevant",
+          "text_preview": "8 Von der strafprozessualen Raumdurchsuchung ist die bloße Nachschau zu unterscheiden, bei der es um das Betreten einer Wohnung zu anderen Zwecken als die Ergreifung eines Tatverdächtigen oder die Auffindung von Beweismitteln für ein Strafverfahren geht (vgl. hierzu BVerwGE 47, 31; VGH Bad.-Württ. A",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 8,
+            "breadcrumb": "§ 102 StPO – Rn. 8"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 5.405585050582886,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.6396691,
+          "judge_score": 3,
+          "judge_reason": "Zentrale Voraussetzungen der polizeilichen Wohnungsdurchsuchung nach § 102 StPO",
+          "text_preview": "102 Bei dem, welcher als Täter oder Teilnehmer einer Straftat oder der Datenhehlerei, Begünstigung, Strafvereitelung oder Hehlerei\n\nKöhler\n\n\n\nErmittlungsmaßnahmen\n\nverdächtig ist, kann eine Durchsuchung der Wohnung und anderer Räume sowie seiner Person und der ihm gehörenden Sachen sowohl zum Zweck ",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 102,
+            "breadcrumb": "§ 102 StPO – Rn. 102"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5749443,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt Durchsuchungsvoraussetzungen nach StPO",
+          "text_preview": "**Teilnehmer** nach §§ 25 ff. StGB, nicht die sog. notwendigen Teilnehmer (zum Begriff: Fischer/Fischer StGB Vor § 25 Rn. 7), stehen den Tatverdächtigen gleich. Bei jedem v. ihnen sowie bei den der Begünstigung, Strafverriehlung o. Hehlerei Verdächtigen ist die Durchsuchung zu dem Zweck zulässig, di",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 3,
+            "breadcrumb": "§ 102 StPO – Rn. 3"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.5380859,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt Durchsuchungsvoraussetzungen und Verhältnismäßigkeitsgrundsatz",
+          "text_preview": "II. Auffinden von Beweismitteln. Zu den Beweismitteln (→ § 94 Rn. 4 ff.) gehören auch die nur in § 103 erwähnten Spuren (SK-StPO/Jäger/Wohlers Rn. 21) u. Personen, die zu Beweiszwecken in Augenschein genommen werden sollen (OLG Schleswig SchlHA 1985, 116, Park Rn. 55), nicht aber Personen, die nur a",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 10,
+            "breadcrumb": "§ 102 StPO – Rn. 10"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.3706587,
+          "judge_score": 2,
+          "judge_reason": "Abgrenzung zur Durchsuchung, thematisch relevant",
+          "text_preview": "8 Von der strafprozessualen Raumdurchsuchung ist die bloße Nachschau zu unterscheiden, bei der es um das Betreten einer Wohnung zu anderen Zwecken als die Ergreifung eines Tatverdächtigen oder die Auffindung von Beweismitteln für ein Strafverfahren geht (vgl. hierzu BVerwGE 47, 31; VGH Bad.-Württ. A",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 8,
+            "breadcrumb": "§ 102 StPO – Rn. 8"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.30031496,
+          "judge_score": 1,
+          "judge_reason": "Durchsuchung von Sachen, nicht Wohnraumdurchsuchung",
+          "text_preview": "10 III. Sachen. Sachen sind Kleidungsstücke, die der Verdächtige bei sich führt, ohne sie zu tragen, u. seine sonstige bewegliche Habe, gleichgültig, ob sie sich in seinem Umkreis, zB in Gepäckstücken, im Kofferraum, in der Hand eines Begleiters o. anderswo befindet. Nur für Sachen, die bei Nichtver",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 102",
+            "randnummer": 10,
+            "breadcrumb": "§ 102 StPO – Rn. 10"
+          }
+        }
+      ]
+    }
+  },
+  "q11": {
+    "ours": {
+      "latency_sec": 5.246559143066406,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.83742094,
+          "judge_score": 3,
+          "judge_reason": "Direkte Beschreibung des Betrugstatbestandes nach § 263 StGB",
+          "text_preview": "5 C. Grundtatbestand, Abs. 1. Tathandlung ist das Täuschen einer natürlichen Person (vgl. NStZ 2005, 213) über Tatsachen. Erfolg dieser Handlung muss ein Irrtum des Täuschungsadressaten sein; dieser muss auf Grund einer Verfügung über Vermögensbestandteile zu einem Vermögensschaden bei dem Getäuscht",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 5,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 5"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.79901963,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt subjektiven Tatbestand bei Betrug",
+          "text_preview": "D. Subjektiver Tatbestand. § 263 setzt Vorsatz voraus; darüber hinaus ist die Absicht rechtswidriger Bereicherung erforderlich.\n\n\nI. Vorsatz. 1. Täuschungsvorsatz. Der Vorsatz (bedingter Vorsatz genügt; BGHSt 16, 1; 18, 235 (237); 48, 331 (346); stRspr; and. Dencker FS Grünwald, 1999, 79; krit. Arzt",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 176,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 176"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.79732054,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Betrug § 263 durch Täuschung",
+          "text_preview": "69 Anders ist es, wenn der Verfügende seinerseits nur (gutgläubige) Hilfsperson eines bösgläubigen Dritten ist. Hier ist auf den Irrtum des Entscheidungsbefugten abzustellen: Erkennt dieser die Unrichtigkeit vorgelegter Abrechnungen, so entfällt die Vollendung des § 263 auch dann, wenn die Bezahlung",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 69,
+            "breadcrumb": "§ 263 StGB – BT. Zweitundzwanzigster Abschnitt – Rn. 69"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.78393924,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: exakte Definition des Betrugstatbestandes",
+          "text_preview": "263 (1) Wer in der Absicht, sich oder einem Dritten einen rechtswidrigen Vermögensvorteil zu verschaffen, das Vermögen eines anderen dadurch beschädigt, daß er durch Vorspiegelung falscher oder durch Entstellung oder Unterdrückung wahrer Tatsachen einen Irrtum erregt oder unterhält, wird mit Freihei",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – I. Vermögensbegriff  – Rn. 263"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.77199864,
+          "judge_score": 3,
+          "judge_reason": "Erklärt zentrale Betrugsmerkmale wie Kausalität und Vermögensschaden",
+          "text_preview": "87 5. Kausalität. Für die Vermögensverfügung muss der täuschungsbedingte Irrtum kausal sein (vgl. BGHSt 24, 257 (260); 24, 386 (389); NStZ 2003, 313 (314 f.); OLG Düsseldorf NJW 1987, 3145); Mitverursachung reicht aus (BGHSt\n\nFischer/Lutz\n\n\n\nBetrug und Untreue\n\n13, 13). Daran fehlt es, wenn der Getä",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 87,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 87"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 5.220109939575195,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.81097376,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Definition des Betrugstatbestandes § 263",
+          "text_preview": "263 (1) Wer in der Absicht, sich oder einem Dritten einen rechtswidrigen Vermögensvorteil zu verschaffen, das Vermögen eines anderen dadurch beschädigt, daß er durch Vorspiegelung falscher oder durch Entstellung oder Unterdrückung wahrer Tatsachen einen Irrtum erregt oder unterhält, wird mit Freihei",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – I. Vermögensbegriff  – Rn. 263"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.8095324,
+          "judge_score": 3,
+          "judge_reason": "Definiert direkt Betrugstatbestand mit Täuschung und Vermögensschaden",
+          "text_preview": "5 C. Grundtatbestand, Abs. 1. Tathandlung ist das Täuschen einer natürlichen Person (vgl. NStZ 2005, 213) über Tatsachen. Erfolg dieser Handlung muss ein Irrtum des Täuschungsadressaten sein; dieser muss auf Grund einer Verfügung über Vermögensbestandteile zu einem Vermögensschaden bei dem Getäuscht",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 5,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 5"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.79022324,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt den subjektiven Tatbestand des Betrugs",
+          "text_preview": "D. Subjektiver Tatbestand. § 263 setzt Vorsatz voraus; darüber hinaus ist die Absicht rechtswidriger Bereicherung erforderlich.\n\n\nI. Vorsatz. 1. Täuschungsvorsatz. Der Vorsatz (bedingter Vorsatz genügt; BGHSt 16, 1; 18, 235 (237); 48, 331 (346); stRspr; and. Dencker FS Grünwald, 1999, 79; krit. Arzt",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 176,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 176"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.7785319,
+          "judge_score": 3,
+          "judge_reason": "Erklärt Bereicherungsabsicht als zentrales Betrugsmerkmal",
+          "text_preview": "186 II. Bereicherungsabsicht. Die Tat muss subjektiv auf die Erlangung eines rechtswidrigen Vermögensvorteils für den Täuschenden oder einen Dritten gerichtet sein. Vermögensvorteil ist die Erhöhung des wirtschaftlichen Gesamtwerts des Vermögens; dieser Wert ist nach denselben Grundsätzen zu bestimm",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 186,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 186"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.7686816,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Betrug-Kausalitaet Taeuschung-Irrtum-Vermoegen",
+          "text_preview": "Die Kausalität der Täuschung für den Irrtum und dessen Kausalität für die Vermögensverfügung müssen im Einzelfall festgestellt sein. Mitverursachung reicht aus. Dabei darf das Gericht auch bei Serien- und Massentaten gegen eine große Zahl von Betroffenen nicht auf die Feststellung (nur) eines Versuc",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 62,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 62"
+          }
+        }
+      ]
+    }
+  },
+  "q12": {
+    "ours": {
+      "latency_sec": 5.589898109436035,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.82288796,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: regelt Untersuchungshaft bei dringendem Verdacht",
+          "text_preview": "112 (1) ¹ Die Untersuchungshaft darf gegen den Beschuldigten angeordnet werden, wenn er der Tat dringend verdächtig ist und ein Haftgrund besteht. ² Sie darf nicht angeordnet werden, wenn sie zu der Bedeutung der Sache und der zu erwartenden Strafe oder Maßregel der Besserung und Sicherung außer Ver",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 112,
+            "breadcrumb": "§ 112 StPO – Rn. 112"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.7463059,
+          "judge_score": 3,
+          "judge_reason": "Erklaert direkt Haftgruende vor Verurteilung",
+          "text_preview": "Bei einer besonders hohen Straferwartung braucht daher nur geprüft zu werden, ob Umstände vorhanden sind, die die hieraus herzuleitende Fluchtgefahr ausräumen können (KG StV 1996, 383; OLG München StraFo 2013, 114; OLG Braunschweig JZ 1965, 619; OLG Düsseldorf StV 1982, 585; OLG Frankfurt a. M. NJW ",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 23,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 23"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.643173,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant zu Untersuchungshaft und Verdunkelungsgefahr",
+          "text_preview": "Wenn die Verdunkelungshandlungen nicht geeignet sind, die Ermittlung der Wahrheit zu erschweren, darf UHaft nicht angeordnet werden. Der Haftgrund liegt daher nicht vor, wenn der Sachverhalt schon in vollem Umf. aufgeklärt u. die Beweise so gesichert sind, dass der Beschuldigte die Wahrheitsermittlu",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 32,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 32 (Teil 2)"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.55565286,
+          "judge_score": 3,
+          "judge_reason": "Zentrale Voraussetzungen der Untersuchungshaft werden erklärt",
+          "text_preview": "Haftunfähigkeit des Beschuldigten schließt den Erlass des Haftbefehls nicht aus, sondern hindert nur seinen Vollzug (OLG Düsseldorf JZ 1984, 248; OLG Frankfurt a.M. NJW 1968, 2302; OLG Nürnberg OLGSt § 116 Nr. 1); insoweit gilt § 455 entsprechend (KG NStZ 1990, 142; eing. dazu Neuhaus FS 25 Jahre AG",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 112,
+            "breadcrumb": "§ 112 StPO – Rn. 112"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.55565286,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Untersuchungshaft, aber nicht Voraussetzungen",
+          "text_preview": "15 G. Bestand des Haftbefehls. Wird der Haftbefehl nicht aufgeh., bleibt er grds. in Kraft; er wird nicht durch Zeitablauf wirkungslos (OLG Hamm NStZ 2016, 304).\n\nVoraussetzungen der Untersuchungshaft; Haftgründe RiStBV 46, 47",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 15,
+            "breadcrumb": "§ 112 StPO – Rn. 15"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 5.48322606086731,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.8548001,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Untersuchungshaft vor Verurteilung geregelt",
+          "text_preview": "112 (1) ¹ Die Untersuchungshaft darf gegen den Beschuldigten angeordnet werden, wenn er der Tat dringend verdächtig ist und ein Haftgrund besteht. ² Sie darf nicht angeordnet werden, wenn sie zu der Bedeutung der Sache und der zu erwartenden Strafe oder Maßregel der Besserung und Sicherung außer Ver",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 112,
+            "breadcrumb": "§ 112 StPO – Rn. 112"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.78154784,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Voraussetzungen fuer Untersuchungshaft, dringender Tatverdacht",
+          "text_preview": "Haftunfähigkeit des Beschuldigten schließt den Erlass des Haftbefehls nicht aus, sondern hindert nur seinen Vollzug (OLG Düsseldorf JZ 1984, 248; OLG Frankfurt a.M. NJW 1968, 2302; OLG Nürnberg OLGSt § 116 Nr. 1); insoweit gilt § 455 entsprechend (KG NStZ 1990, 142; eing. dazu Neuhaus FS 25 Jahre AG",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 112,
+            "breadcrumb": "§ 112 StPO – Rn. 112"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.755078,
+          "judge_score": 3,
+          "judge_reason": "Direkt zu Untersuchungshaft, behandelt Flucht- und Verdunkelungsgefahr",
+          "text_preview": "Bei einer besonders hohen Straferwartung braucht daher nur geprüft zu werden, ob Umstände vorhanden sind, die die hieraus herzuleitende Fluchtgefahr ausräumen können (KG StV 1996, 383; OLG München StraFo 2013, 114; OLG Braunschweig JZ 1965, 619; OLG Düsseldorf StV 1982, 585; OLG Frankfurt a. M. NJW ",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 23,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 23"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6356076,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt Voraussetzungen für Untersuchungshaft, Verdunkelungsgefahr",
+          "text_preview": "Wenn die Verdunkelungshandlungen nicht geeignet sind, die Ermittlung der Wahrheit zu erschweren, darf UHaft nicht angeordnet werden. Der Haftgrund liegt daher nicht vor, wenn der Sachverhalt schon in vollem Umf. aufgeklärt u. die Beweise so gesichert sind, dass der Beschuldigte die Wahrheitsermittlu",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 32,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 32 (Teil 2)"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.599087,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Untersuchungshaft, aber nur Bestand des Haftbefehls",
+          "text_preview": "15 G. Bestand des Haftbefehls. Wird der Haftbefehl nicht aufgeh., bleibt er grds. in Kraft; er wird nicht durch Zeitablauf wirkungslos (OLG Hamm NStZ 2016, 304).\n\nVoraussetzungen der Untersuchungshaft; Haftgründe RiStBV 46, 47",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 15,
+            "breadcrumb": "§ 112 StPO – Rn. 15"
+          }
+        }
+      ]
+    }
+  },
+  "q13": {
+    "ours": {
+      "latency_sec": 7.233805179595947,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.8296166,
+          "judge_score": 3,
+          "judge_reason": "Enthält § 112 Abs. 2 Nr. 2 StPO Fluchtgefahr direkt",
+          "text_preview": "112 (1) ¹ Die Untersuchungshaft darf gegen den Beschuldigten angeordnet werden, wenn er der Tat dringend verdächtig ist und ein Haftgrund besteht. ² Sie darf nicht angeordnet werden, wenn sie zu der Bedeutung der Sache und der zu erwartenden Strafe oder Maßregel der Besserung und Sicherung außer Ver",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 112,
+            "breadcrumb": "§ 112 StPO – Rn. 112"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.6947383,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: definiert Fluchtgefahr-Voraussetzungen nach § 112",
+          "text_preview": "17 IV. Fluchtgefahr (Abs. 2 Nr. 2). Fluchtgefahr (Abs. 2 Nr. 2) besteht, wenn die Würdigung der Umstände des Falles es wahrscheinlicher macht, dass sich der Beschuldigte dem Strafverfahren entziehen, als dass er sich ihm zur Vfg. halten werde (BGH NJW 2014, 2372; OLG Köln StV 1997, 642); diese Gefah",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 17,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 17 (Teil 1)"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6829338,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant zu Fluchtgefahr nach § 112 Abs. 2 Nr. 2",
+          "text_preview": "16 Bei Ergreifung des Beschuldigten aufgrund des nach Abs. 2 Nr. 1 erlassenen Haftbefehls entfällt der Haftgrund der Flucht. In der Regel wird die vorherige Flucht aber die Aufrechterhaltung des Haftbefehls wegen Fluchtgefahr nach Abs. 2 Nr. 2 rechtfertigen u. erforderlich machen.",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 16,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 16"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.62879556,
+          "judge_score": 1,
+          "judge_reason": "Behandelt Flucht statt Fluchtgefahr",
+          "text_preview": "III. Flucht (Abs. 2 Nr. 1). Der Haftgrund der Flucht (Abs. 2 Nr. 1) besteht, wenn der Beschuldigte flüchtig ist o. sich verborgen hält. Beides kann zusammentreffen.\n\nFlüchtig ist, wer vor Tatbeginn (OLG Frankfurt a. M. NJW 1974, 1835; OLG Koblenz NStZ 1985, 88; aM OLG Karlsruhe NJW 1972, 2098; Löwe/",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 11,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 11"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.58465123,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: definiert Voraussetzungen der Fluchtgefahr",
+          "text_preview": "Die Beurteilung der Fluchtgefahr erfordert die Berücksichtigung aller Umstände des Falles, insbes. der Art der dem Beschuldigten vorgeworfenen Tat, der Persönlichkeit des Beschuldigten, seiner Lebensverhältnisse, seines Vorlebens u. seines Verhaltens vor u. nach der Tat (OLG Köln StV 1995, 475). Ber",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 17,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 17"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 8.52255368232727,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.85797083,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: § 112 Abs. 2 Nr. 2 StPO Fluchtgefahr",
+          "text_preview": "112 (1) ¹ Die Untersuchungshaft darf gegen den Beschuldigten angeordnet werden, wenn er der Tat dringend verdächtig ist und ein Haftgrund besteht. ² Sie darf nicht angeordnet werden, wenn sie zu der Bedeutung der Sache und der zu erwartenden Strafe oder Maßregel der Besserung und Sicherung außer Ver",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 112,
+            "breadcrumb": "§ 112 StPO – Rn. 112"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.74807674,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Definition und Voraussetzungen der Fluchtgefahr",
+          "text_preview": "17 IV. Fluchtgefahr (Abs. 2 Nr. 2). Fluchtgefahr (Abs. 2 Nr. 2) besteht, wenn die Würdigung der Umstände des Falles es wahrscheinlicher macht, dass sich der Beschuldigte dem Strafverfahren entziehen, als dass er sich ihm zur Vfg. halten werde (BGH NJW 2014, 2372; OLG Köln StV 1997, 642); diese Gefah",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 17,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 17 (Teil 1)"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6693348,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt Fluchtgefahr nach § 112 Abs. 2 Nr. 2",
+          "text_preview": "16 Bei Ergreifung des Beschuldigten aufgrund des nach Abs. 2 Nr. 1 erlassenen Haftbefehls entfällt der Haftgrund der Flucht. In der Regel wird die vorherige Flucht aber die Aufrechterhaltung des Haftbefehls wegen Fluchtgefahr nach Abs. 2 Nr. 2 rechtfertigen u. erforderlich machen.",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 16,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 16"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6549173,
+          "judge_score": 1,
+          "judge_reason": "Behandelt Flucht (Nr. 1), nicht Fluchtgefahr (Nr. 2)",
+          "text_preview": "III. Flucht (Abs. 2 Nr. 1). Der Haftgrund der Flucht (Abs. 2 Nr. 1) besteht, wenn der Beschuldigte flüchtig ist o. sich verborgen hält. Beides kann zusammentreffen.\n\nFlüchtig ist, wer vor Tatbeginn (OLG Frankfurt a. M. NJW 1974, 1835; OLG Koblenz NStZ 1985, 88; aM OLG Karlsruhe NJW 1972, 2098; Löwe/",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 11,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 11"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.65146625,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: detaillierte Voraussetzungen der Fluchtgefahr",
+          "text_preview": "Die Beurteilung der Fluchtgefahr erfordert die Berücksichtigung aller Umstände des Falles, insbes. der Art der dem Beschuldigten vorgeworfenen Tat, der Persönlichkeit des Beschuldigten, seiner Lebensverhältnisse, seines Vorlebens u. seines Verhaltens vor u. nach der Tat (OLG Köln StV 1995, 475). Ber",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 112",
+            "randnummer": 17,
+            "breadcrumb": "§ 112 StPO – III. Flucht (Abs – Rn. 17"
+          }
+        }
+      ]
+    }
+  },
+  "q14": {
+    "ours": {
+      "latency_sec": 5.232434988021851,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.7382357,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt maximale Dauer der Untersuchungshaft",
+          "text_preview": "Eine absolute Höchstgrenze für die Dauer v. UHaft sieht weder die StPO noch die EMRK vor (EGMR EuGRZ 1993, 384). Es kommt auf eine Abwägung aller Umstände des Einzelfalls an. Eine ein Jahr übersteigende UHaft ist allerdings nur in bes. Ausnahmefällen zu rechtfertigen (vgl. BVerfG StV 2008, 198; OLG ",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 121",
+            "randnummer": 1,
+            "breadcrumb": "§ 121 StPO – Rn. 1"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.61168414,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Untersuchungshaft zeitliche Beschränkungen, aber nicht direkt maximale Dauer",
+          "text_preview": "8 II. Zeitliche Geltung der Beschränkungen der UHaft. Bis zu einem auf Freiheitsentziehung lautenden Urteil (Freiheitsstrafe mit o. ohne Bewährung o. freiheitsentziehende Sicherungsmaßregeln) gelten die Beschränkungen der UHaft (OLG Düsseldorf MDR 1992, 1173). Eine versehentlich unterbliebene Haftpr",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 121",
+            "randnummer": 8,
+            "breadcrumb": "§ 121 StPO – Rn. 8 (Teil 1)"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.5611433,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant, behandelt exakt Sechs-Monats-Grenze der Untersuchungshaft",
+          "text_preview": "121 (1) Solange kein Urteil ergangen ist, das auf Freiheitsstrafe oder eine freiheitsentziehende Maßregel der Besserung und Sicherung erkennt, darf der Vollzug der Untersuchungshaft wegen derselben Tat über sechs Monate hinaus nur aufrechterhalten werden, wenn die besondere Schwierigkeit oder der be",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 121",
+            "randnummer": 121,
+            "breadcrumb": "§ 121 StPO – Rn. 121"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.5274388,
+          "judge_score": 3,
+          "judge_reason": "Erklärt § 121 StPO Sechs-Monats-Grenze der Untersuchungshaft",
+          "text_preview": "1 ist allein der vollzogene Haftbefehl (BGH BeckRS 2024, 29978). Nur wegen derselben Tat ist die Dauer der UHaft bis zum Urt. auf 6 Monate begrenzt. Der Begriff „derselben Tat“ muss weit ausgelegt werden; er stimmt mit dem prozessualen Tatbegriff nicht überein (BGH NStZ-RR 2021, 155; NStZ 2019, 626;",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 121",
+            "randnummer": 8,
+            "breadcrumb": "§ 121 StPO – Rn. 8 (Teil 2)"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.5236402,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt 6-Monats-Grenze der Untersuchungshaft",
+          "text_preview": "13 Das bedeutet: Wird UHaft vollzogen, so darf sie nicht aufgrund eines weiteren Haftbefehls, der bereits bei Erlass des 1. Haftbefehls bekannt gewesene Tatvorwürfe zum Gegenstand hat, über 6 Monate hinaus fortdauern (BGH BeckRS 2017, 108135; OLG Celle NJW 1966, 1574). Das gilt auch dann, wenn Teile",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 121",
+            "randnummer": 13,
+            "breadcrumb": "§ 121 StPO – Rn. 13"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 5.020126104354858,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.71425,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt maximale Untersuchungshaftdauer, Höchstgrenzen",
+          "text_preview": "Eine absolute Höchstgrenze für die Dauer v. UHaft sieht weder die StPO noch die EMRK vor (EGMR EuGRZ 1993, 384). Es kommt auf eine Abwägung aller Umstände des Einzelfalls an. Eine ein Jahr übersteigende UHaft ist allerdings nur in bes. Ausnahmefällen zu rechtfertigen (vgl. BVerfG StV 2008, 198; OLG ",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 121",
+            "randnummer": 1,
+            "breadcrumb": "§ 121 StPO – Rn. 1"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5973971,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Haftbeschränkungen, nicht maximale Dauer",
+          "text_preview": "8 II. Zeitliche Geltung der Beschränkungen der UHaft. Bis zu einem auf Freiheitsentziehung lautenden Urteil (Freiheitsstrafe mit o. ohne Bewährung o. freiheitsentziehende Sicherungsmaßregeln) gelten die Beschränkungen der UHaft (OLG Düsseldorf MDR 1992, 1173). Eine versehentlich unterbliebene Haftpr",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 121",
+            "randnummer": 8,
+            "breadcrumb": "§ 121 StPO – Rn. 8 (Teil 1)"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.57666177,
+          "judge_score": 3,
+          "judge_reason": "Beantwortet direkt die Frage zur Haftdauer",
+          "text_preview": "121 (1) Solange kein Urteil ergangen ist, das auf Freiheitsstrafe oder eine freiheitsentziehende Maßregel der Besserung und Sicherung erkennt, darf der Vollzug der Untersuchungshaft wegen derselben Tat über sechs Monate hinaus nur aufrechterhalten werden, wenn die besondere Schwierigkeit oder der be",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 121",
+            "randnummer": 121,
+            "breadcrumb": "§ 121 StPO – Rn. 121"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.528607,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt § 121 StPO Sechs-Monats-Grenze",
+          "text_preview": "16 IV. Unmöglichkeit des Urteilserlasses innerhalb der 6-Monats-Frist. 1. Die besondere Schwierigkeit oder der besondere Umfang der Ermittlungen führen nur dann zur Aufrechterhaltung der UHaft, wenn dadurch ihre\n\n\nSchmitt\n\n\n\nVerhaftung und vorläufige Festnahme\n\n\nFortdauer gerechtfertigt, dh im Hinbl",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 121",
+            "randnummer": 16,
+            "breadcrumb": "§ 121 StPO – Rn. 16"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.49992734,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: § 121 StPO Sechs-Monats-Grenze behandelt",
+          "text_preview": "1 ist allein der vollzogene Haftbefehl (BGH BeckRS 2024, 29978). Nur wegen derselben Tat ist die Dauer der UHaft bis zum Urt. auf 6 Monate begrenzt. Der Begriff „derselben Tat“ muss weit ausgelegt werden; er stimmt mit dem prozessualen Tatbegriff nicht überein (BGH NStZ-RR 2021, 155; NStZ 2019, 626;",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 121",
+            "randnummer": 8,
+            "breadcrumb": "§ 121 StPO – Rn. 8 (Teil 2)"
+          }
+        }
+      ]
+    }
+  },
+  "q15": {
+    "ours": {
+      "latency_sec": 6.565713167190552,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.78512776,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Beschuldigtenvernehmung, aber nicht § 136 StPO direkt",
+          "text_preview": "(4) Zeugen können zur Aufenthaltsermittlung ausgeschrieben werden.\n\n(5) Für die internationale Fahndung nach Personen, einschließlich der Fahndung nach Personen im SIS und aufgrund eines Europäischen Haftbefehls, gelten die hierfür erlassenen Richtlinien (vgl. Anlage F).\n\n\n\n\nAnhang\n\nRiStBV Anh. 3\n\n#",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 500",
+            "randnummer": 15,
+            "breadcrumb": "§ 500 StPO – ILL. für das Strafverfahren und das Bußgeldverfahren – Rn. 15"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.7756902,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt § 136 StPO Belehrungspflichten und Verteidiger",
+          "text_preview": "5 II. Abs. 2 S. 1 Nr. 2–4. Hier wird die auch nach § 136 Abs. 1 S. 2, 3 und § 163a Abs. 3 S. 2, 4 vor Beginn der ersten richterlichen bzw. staatsanwaltschaftlichen o. polizeilichen Vernehmung bestehende Belehrungspflicht für die Fälle der Verhaftung (→ § 114a Rn. 6) vorgeschrieben; die anderen Beleh",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 114b",
+            "randnummer": 5,
+            "breadcrumb": "§ 114b StPO – I. Abs – Rn. 5"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.7447496,
+          "judge_score": 3,
+          "judge_reason": "Erklärt nemo-tenetur-Prinzip, direkt zu § 136 StPO",
+          "text_preview": "Das nemo-tenetur-Prinzip (nemo tenetur se ipsum accusare und nemo tenetur se ipsum prodere) o. der Grundsatz der Selbstbelastungsfreiheit bedeutet, dass niemand verpflichtet ist, sich selbst anzuklagen o. gegen sich selbst Zeugnis abzulegen; ein Beschuldigter ist grds. nicht verpflichtet, aktiv zur ",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "",
+            "randnummer": 25,
+            "breadcrumb": "StPO – III. Steuerstrafverfahren – Rn. 25"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.71948266,
+          "judge_score": 1,
+          "judge_reason": "Behandelt Belehrungspflichten, aber konsularische Vertretung, nicht § 136",
+          "text_preview": "GVG) u. RiVASt 135 vorgeschrieben. Der Ausländer ist danach zu belehren, dass er die (unverzügliche) Benachrichtigung seiner konsularischen Vertretung v. der Festnahme verlangen darf. Dies gilt auch für Ausländer, die ihren Lebensmittelpunkt in der BRD haben (BGHSt 52, 48), nicht jedoch bei solchen,",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 114c",
+            "randnummer": null,
+            "breadcrumb": "§ 114c StPO"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.68874115,
+          "judge_score": 1,
+          "judge_reason": "Behandelt Beschuldigteneigenschaft, aber nicht Belehrungspflichten",
+          "text_preview": "77 1. Tatverdacht allein begründet allerdings weder die Beschuldigteneigenschaft noch zwingt er ohne weiteres zur Einleitung v. Ermittlungen (BGHSt 64, 89 = NJW 2019, 2627 (2630)), auch nicht allein die Erstattung einer Strafanzeige (Löwe/Rosenberg/Erb StPO § 163a Rn. 17). Erst wenn Ermittlungen auf",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "",
+            "randnummer": 77,
+            "breadcrumb": "StPO – III. Steuerstrafverfahren – Rn. 77"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 6.590022087097168,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.74563974,
+          "judge_score": 2,
+          "judge_reason": "Belehrungspflicht nach § 136 Abs. 1 erwähnt",
+          "text_preview": "(4) Zeugen können zur Aufenthaltsermittlung ausgeschrieben werden.\n\n(5) Für die internationale Fahndung nach Personen, einschließlich der Fahndung nach Personen im SIS und aufgrund eines Europäischen Haftbefehls, gelten die hierfür erlassenen Richtlinien (vgl. Anlage F).\n\n\n\n\nAnhang\n\nRiStBV Anh. 3\n\n#",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 500",
+            "randnummer": 15,
+            "breadcrumb": "§ 500 StPO – ILL. für das Strafverfahren und das Bußgeldverfahren – Rn. 15"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.7413937,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt Belehrungspflichten nach § 136 StPO",
+          "text_preview": "5 II. Abs. 2 S. 1 Nr. 2–4. Hier wird die auch nach § 136 Abs. 1 S. 2, 3 und § 163a Abs. 3 S. 2, 4 vor Beginn der ersten richterlichen bzw. staatsanwaltschaftlichen o. polizeilichen Vernehmung bestehende Belehrungspflicht für die Fälle der Verhaftung (→ § 114a Rn. 6) vorgeschrieben; die anderen Beleh",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 114b",
+            "randnummer": 5,
+            "breadcrumb": "§ 114b StPO – I. Abs – Rn. 5"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.72395444,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Belehrungspflichten bei informatorischer Befragung vs. Beschuldigtenvernehmung",
+          "text_preview": "79 3. Die informatorische Befragung der Tatverdächtigen, die nach diesen Grundsätzen noch keine Beschuldigten sind, ist Zeugenvernehmung. Die Bestrebungen des Schrifttums, neben Beschuldigte u. Zeugen den „Verdächtigen“ als schweigeberechtigte Auskunftsperson zu stellen (Bruns FS Schmidt-Leichner, 1",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "",
+            "randnummer": 79,
+            "breadcrumb": "StPO – III. Steuerstrafverfahren – Rn. 79"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.7099254,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant zu § 136 StPO Beschuldigtenvernehmung",
+          "text_preview": "Das nemo-tenetur-Prinzip (nemo tenetur se ipsum accusare und nemo tenetur se ipsum prodere) o. der Grundsatz der Selbstbelastungsfreiheit bedeutet, dass niemand verpflichtet ist, sich selbst anzuklagen o. gegen sich selbst Zeugnis abzulegen; ein Beschuldigter ist grds. nicht verpflichtet, aktiv zur ",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "",
+            "randnummer": 25,
+            "breadcrumb": "StPO – III. Steuerstrafverfahren – Rn. 25"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6964752,
+          "judge_score": 1,
+          "judge_reason": "Behandelt Belehrungspflichten, aber spezifisch konsularische Rechte",
+          "text_preview": "GVG) u. RiVASt 135 vorgeschrieben. Der Ausländer ist danach zu belehren, dass er die (unverzügliche) Benachrichtigung seiner konsularischen Vertretung v. der Festnahme verlangen darf. Dies gilt auch für Ausländer, die ihren Lebensmittelpunkt in der BRD haben (BGHSt 52, 48), nicht jedoch bei solchen,",
+          "metadata": {
+            "gesetz": "StPO",
+            "paragraph": "§ 114c",
+            "randnummer": null,
+            "breadcrumb": "§ 114c StPO"
+          }
+        }
+      ]
+    }
+  },
+  "q16": {
+    "ours": {
+      "latency_sec": 5.828099250793457,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.7596005,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Bereicherungsabsicht bei § 263, wichtiger Abgrenzungsaspekt",
+          "text_preview": "186 II. Bereicherungsabsicht. Die Tat muss subjektiv auf die Erlangung eines rechtswidrigen Vermögensvorteils für den Täuschenden oder einen Dritten gerichtet sein. Vermögensvorteil ist die Erhöhung des wirtschaftlichen Gesamtwerts des Vermögens; dieser Wert ist nach denselben Grundsätzen zu bestimm",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 186,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 186"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.72884524,
+          "judge_score": 1,
+          "judge_reason": "Behandelt Betrug, aber nicht Unterschlagung oder Abgrenzung",
+          "text_preview": "114 a) Quantifizierbarkeit der Vermögensminderung. Die Vermögensminderung muss quantifizierbar sein (RGSt 16, 4; 44, 249; BGHSt 16, 321). Grds. nicht ausreichend ist eine nicht quantifizierbare Einbuße an wirtschaftlicher Freiheit, insbes. der sog. Dispositionsfreiheit (BGHSt 47, 295 (301); StV 2011",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 114,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 114"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.72418857,
+          "judge_score": 3,
+          "judge_reason": "Vollständige Definition Betrug für Abgrenzung zu Unterschlagung",
+          "text_preview": "263 (1) Wer in der Absicht, sich oder einem Dritten einen rechtswidrigen Vermögensvorteil zu verschaffen, das Vermögen eines anderen dadurch beschädigt, daß er durch Vorspiegelung falscher oder durch Entstellung oder Unterdrückung wahrer Tatsachen einen Irrtum erregt oder unterhält, wird mit Freihei",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – I. Vermögensbegriff  – Rn. 263"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.7060491,
+          "judge_score": 1,
+          "judge_reason": "Tangential - behandelt Betrug, nicht Abgrenzung zur Unterschlagung",
+          "text_preview": "69 Anders ist es, wenn der Verfügende seinerseits nur (gutgläubige) Hilfsperson eines bösgläubigen Dritten ist. Hier ist auf den Irrtum des Entscheidungsbefugten abzustellen: Erkennt dieser die Unrichtigkeit vorgelegter Abrechnungen, so entfällt die Vollendung des § 263 auch dann, wenn die Bezahlung",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 69,
+            "breadcrumb": "§ 263 StGB – BT. Zweitundzwanzigster Abschnitt – Rn. 69"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.7023877,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Betrug, aber nicht Unterschlagungsabgrenzung",
+          "text_preview": "4. Dreiecksbetrug. Da die Getäuschte und die verfügende, nicht aber die verfügende und die geschädigte Person identisch sein müssen, ist der Tatbestand des § 263 nur erfüllt, wenn die Vermögensverfügung durch diejenige Person vorgenommen wird, die auf Grund der Täuschung irrt, und wenn die Verfügung",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 76,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 76"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 6.3919878005981445,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.83678174,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Konkurrenzen, erwähnt Abgrenzung § 246/263",
+          "text_preview": "24 L. Konkurrenzen im Übrigen. Bei Manifestation des Zueignungswillens hinsichtlich mehrerer Sachen durch eine Ausführungshandlung liegt nur eine Tat vor (wistra 2006, 227 (227 f.)). Zur Abgrenzung von § 259 vgl. → § 259 Rn. 2, 8 und NStZ-RR 2012, 71. § 259 wird von § 246 verdrängt, wenn der Hehler ",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 247",
+            "randnummer": 24,
+            "breadcrumb": "§ 247 StGB – BT. Neunzehnter Abschnitt – Rn. 24"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.7880784,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Abgrenzung Betrug vs Diebstahl/Unterschlagung",
+          "text_preview": "4. Dreiecksbetrug. Da die Getäuschte und die verfügende, nicht aber die verfügende und die geschädigte Person identisch sein müssen, ist der Tatbestand des § 263 nur erfüllt, wenn die Vermögensverfügung durch diejenige Person vorgenommen wird, die auf Grund der Täuschung irrt, und wenn die Verfügung",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 76,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 76"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.77994305,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Betrug detailliert, aber keine Unterschlagungsabgrenzung",
+          "text_preview": "69 Anders ist es, wenn der Verfügende seinerseits nur (gutgläubige) Hilfsperson eines bösgläubigen Dritten ist. Hier ist auf den Irrtum des Entscheidungsbefugten abzustellen: Erkennt dieser die Unrichtigkeit vorgelegter Abrechnungen, so entfällt die Vollendung des § 263 auch dann, wenn die Bezahlung",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 69,
+            "breadcrumb": "§ 263 StGB – BT. Zweitundzwanzigster Abschnitt – Rn. 69"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.7507177,
+          "judge_score": 1,
+          "judge_reason": "Behandelt Diebstahl, nicht direkte Abgrenzung Betrug/Unterschlagung",
+          "text_preview": "2 B. Rechtsgut. Geschütztes Rechtsgut ist das Eigentum (vgl. BGHSt 10, 400). Die früher hM sah als zusätzl. geschütztes Rechtsgut den Gewahrsam an (vgl. BGHSt 10, 401; 29, 319; 323); nach zutr. aA gewährt § 242 aber keinen isolierten\n\nFischer\n\n\n\nDiebstahl und Unterschlagung\n\nGewahrsamsschutz (vgl. M",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 242",
+            "randnummer": 2,
+            "breadcrumb": "§ 242 StGB – BT. Neunzehnter Abschnitt – Rn. 2"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.75027883,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Tateinheit zwischen Betrug und Unterschlagung",
+          "text_preview": "Tateinheit ist möglich mit Diebstahl (Dallinger MDR 1954, 399), und zwar auch dann, wenn auch eine nicht in einem Treueverhältnis stehende Person den Diebstahl hätte begehen können (BGHSt 17, 360); mit Unterschlagung einer Sache oder ihres Erlöses (BGHSt 13, 315; 18, 312), wenn der Zueignungsvorsatz",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 266",
+            "randnummer": 191,
+            "breadcrumb": "§ 266 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 191"
+          }
+        }
+      ]
+    }
+  },
+  "q17": {
+    "ours": {
+      "latency_sec": 7.565773248672485,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.90432173,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Raub-Tatbestand mit Nötigungsmitteln und Wegnahme",
+          "text_preview": "NStZ 2023, 351). Danach ist § 249 gegenüber § 255 ein spezielles Delikt; in jedem Raub liegt eine räuberische Erpressung (aA die hM in der Literatur). Die Unterscheidung richtet sich nach dem äußeren Erscheinungsbild des vermögensschädigenden Verhaltens des Tatopfers (BGH NStZ 2023, 351).\n\nNach der ",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 249",
+            "randnummer": null,
+            "breadcrumb": "§ 249 StGB"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.84277284,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Abgrenzung Diebstahl/Raub durch Vorsatzelemente",
+          "text_preview": "G. Subjektiver Tatbestand. Der Vorsatz muss entsprechend der Doppelnatur des Raubs sowohl Wegnahme (vgl. dazu → § 242 Rn. 29 ff.) als auch Nötigung (→ § 240 Rn. 53 f.) sowie deren Verknüpfung umfassen. Für die Konkretisierung des Wegnahmevorsatzes kommt es auf die Vorstellung des Täters zum Zeitpunk",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 249",
+            "randnummer": 15,
+            "breadcrumb": "§ 249 StGB – BT. Zwanzigster Abschnitt – Rn. 15"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.82728493,
+          "judge_score": 3,
+          "judge_reason": "Definiert Diebstahl-Tatbestand, direkt relevant für Abgrenzung",
+          "text_preview": "242 (1) Wer eine fremde bewegliche Sache einem anderen in der Absicht wegnimmt, die Sache sich oder einem Dritten rechtswidrig zuzueignen, wird mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe bestraft.\n\n(2) Der Versuch ist strafbar.\n\n### Übersicht\n\n|  A. Allgemeines | 1  |\n| --- | --- |\n|",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 241a",
+            "randnummer": 242,
+            "breadcrumb": "§ 241a StGB – BT. Achtzchniter Abschnitt – Rn. 242"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.82391036,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: definiert Raub mit Abgrenzungsmerkmal Gewalt",
+          "text_preview": "249 (1) Wer mit Gewalt gegen eine Person oder unter Anwendung von Drohungen mit gegenwärtiger Gefahr für Leib oder Leben eine fremde bewegliche Sache einem anderen in der Absicht wegnimmt, die Sache sich oder einem Dritten rechtswidrig zuzueignen, wird mit Freiheitsstrafe nicht unter einem Jahr best",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 248c",
+            "randnummer": 249,
+            "breadcrumb": "§ 248c StGB – G. Konkurrenzen – Rn. 249"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.8190992,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Abgrenzung Raub durch Drohung/Gewalt",
+          "text_preview": "15 Drohen setzt eine Handlung des Täters im Sinne einer ausdrücklichen oder konkludenten Gedankenäußerung voraus. Eine solche ist nicht schon dann gegeben, wenn der Täter die Furcht des Opfers vor (weiterer) Gewalt erkennt und (zur Wegnahme) ausnutzt (zutr. BGH NStZ-RR 2014, 110; 2017, 92 (92 f.); 2",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 249",
+            "randnummer": 15,
+            "breadcrumb": "§ 249 StGB – BT. Zwanzigster Abschnitt – Rn. 15"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 7.39489483833313,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.9075175,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Abgrenzung Raub/räuberische Erpressung, Wegnahme, Nötigungsmittel",
+          "text_preview": "NStZ 2023, 351). Danach ist § 249 gegenüber § 255 ein spezielles Delikt; in jedem Raub liegt eine räuberische Erpressung (aA die hM in der Literatur). Die Unterscheidung richtet sich nach dem äußeren Erscheinungsbild des vermögensschädigenden Verhaltens des Tatopfers (BGH NStZ 2023, 351).\n\nNach der ",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 249",
+            "randnummer": null,
+            "breadcrumb": "§ 249 StGB"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.8858788,
+          "judge_score": 3,
+          "judge_reason": "Erklärt subjektive Tatbestandsmerkmale bei Raub vs Diebstahl",
+          "text_preview": "G. Subjektiver Tatbestand. Der Vorsatz muss entsprechend der Doppelnatur des Raubs sowohl Wegnahme (vgl. dazu → § 242 Rn. 29 ff.) als auch Nötigung (→ § 240 Rn. 53 f.) sowie deren Verknüpfung umfassen. Für die Konkretisierung des Wegnahmevorsatzes kommt es auf die Vorstellung des Täters zum Zeitpunk",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 249",
+            "randnummer": 15,
+            "breadcrumb": "§ 249 StGB – BT. Zwanzigster Abschnitt – Rn. 15"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.8627572,
+          "judge_score": 3,
+          "judge_reason": "Zeigt direkten Tatbestand § 242 StGB Diebstahl",
+          "text_preview": "242 (1) Wer eine fremde bewegliche Sache einem anderen in der Absicht wegnimmt, die Sache sich oder einem Dritten rechtswidrig zuzueignen, wird mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe bestraft.\n\n(2) Der Versuch ist strafbar.\n\n### Übersicht\n\n|  A. Allgemeines | 1  |\n| --- | --- |\n|",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 241a",
+            "randnummer": 242,
+            "breadcrumb": "§ 241a StGB – BT. Achtzchniter Abschnitt – Rn. 242"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.8409005,
+          "judge_score": 3,
+          "judge_reason": "Erklärt zentrale Tatbestandsmerkmale des Diebstahls detailliert",
+          "text_preview": "31 Bedingter Vorsatz reicht grds. aus. Das betrifft namentlich die Merkmale des Sachbegriffs, der Fremdheit und der Wegnahme. Hinsichtlich des normativen Merkmals der Fremdheit kommt es hierbei auf eine zutreffende Parallelwertung in der Laiensphäre an (BGHSt 3, 255). Vorsatz fehlt, wenn der Täter i",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 242",
+            "randnummer": 31,
+            "breadcrumb": "§ 242 StGB – BT. Neunzehnter Abschnitt – Rn. 31"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.8252664,
+          "judge_score": 1,
+          "judge_reason": "Behandelt Diebstahl-Vorbereitung, aber nicht Raub-Abgrenzung",
+          "text_preview": "**Vorbereitung** ist gegeben bei Handlungen, die erst bei Eintritt weiterer Bedingungen oder Hinzutritt weiterer Handlungen zur Wegnahme führen sollen; etwa bei Anfertigen von Nachschlüsseln (vgl. BGHSt 28, 162; StV 1992, 62); Beseitigung eines Wachhundes (RGSt 53, 218); Hingehen zum Tatort (StV 198",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 242",
+            "randnummer": 55,
+            "breadcrumb": "§ 242 StGB – BT. Neunzehnter Abschnitt – Rn. 55"
+          }
+        }
+      ]
+    }
+  },
+  "q18": {
+    "ours": {
+      "latency_sec": 7.04787802696228,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.72278196,
+          "judge_score": 3,
+          "judge_reason": "Direkte Abgrenzung § 263/263a bei automatisierten Verfahren",
+          "text_preview": "58 Im Geschäftsverkehr wird sich, wer die Berechtigung eines Leistungsverlangens oder -auftrags nicht zu prüfen hat, hierüber idR auch keine (richtigen oder falschen) Gedanken machen (NStZ 1997, 281; StV 1994, 82; NStZ 2006, 687; vgl. OLG Frankfurt a. M. NStZ-RR 1998, 333). Wenn es dem Täter selbst ",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 58,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 58"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.6453216,
+          "judge_score": 0,
+          "judge_reason": "Behandelt nur § 263, nicht Abgrenzung zu § 263a",
+          "text_preview": "Die Kausalität der Täuschung für den Irrtum und dessen Kausalität für die Vermögensverfügung müssen im Einzelfall festgestellt sein. Mitverursachung reicht aus. Dabei darf das Gericht auch bei Serien- und Massentaten gegen eine große Zahl von Betroffenen nicht auf die Feststellung (nur) eines Versuc",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 62,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 62"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.60694176,
+          "judge_score": 0,
+          "judge_reason": "Behandelt nur Vermögensschäden, nicht Abgrenzung Betrug/Computerbetrug",
+          "text_preview": "114 a) Quantifizierbarkeit der Vermögensminderung. Die Vermögensminderung muss quantifizierbar sein (RGSt 16, 4; 44, 249; BGHSt 16, 321). Grds. nicht ausreichend ist eine nicht quantifizierbare Einbuße an wirtschaftlicher Freiheit, insbes. der sog. Dispositionsfreiheit (BGHSt 47, 295 (301); StV 2011",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 114,
+            "breadcrumb": "§ 263 StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 114"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.56575525,
+          "judge_score": 1,
+          "judge_reason": "Erwähnt § 263a kurz, aber behandelt Bandenkriminalität",
+          "text_preview": "212 Der Begriff der Urkundenfälschung ist weit zu fassen; er umfasst neben Taten nach § 267 auch solche nach §§ 268–281 (LK-StGB/Kubiciel/Tiedemann Rn. 297; NK-StGB/Kindhäuser/Hoven Rn. 392). Entsprechendes gilt für den Betrug; umfasst sind jedenfalls Taten nach §§ 263, 264, 264a, 265b, auch § 266b ",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 212,
+            "breadcrumb": "§ 263 StGB – BT. Zweijundzwanzigster Abschnitt – Rn. 212"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.5366292,
+          "judge_score": 2,
+          "judge_reason": "Grundtatbestand § 263, relevant für Abgrenzung zu § 263a",
+          "text_preview": "263 (1) Wer in der Absicht, sich oder einem Dritten einen rechtswidrigen Vermögensvorteil zu verschaffen, das Vermögen eines anderen dadurch beschädigt, daß er durch Vorspiegelung falscher oder durch Entstellung oder Unterdrückung wahrer Tatsachen einen Irrtum erregt oder unterhält, wird mit Freihei",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263",
+            "randnummer": 263,
+            "breadcrumb": "§ 263 StGB – I. Vermögensbegriff  – Rn. 263"
+          }
+        }
+      ]
+    },
+    "ours-mxbai": {
+      "latency_sec": 6.7604241371154785,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.8399576,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Computerbetrug Tatbestandsmerkmale und Abgrenzung",
+          "text_preview": "239 I. Sonstige Vorschriften. FAufsicht §§ 263 Abs. 5, 68 Abs. 1. Zuständigkeit in Wirtschaftsstrafaschen § 74c Abs. 1 Nr. 6, § 74e Nr. 2 GVG iVm § 103 Abs. 2 JGG. TKÜ § 100a Abs. 2 Nr. 1 Buchst. n StPO; UHaft § 112a Abs. 1 Nr. 2 StPO (vgl. NStZ-RR 2015, 115). RiStBV Nr. 236–238 enthalten Hinweise f",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263a",
+            "randnummer": 239,
+            "breadcrumb": "§ 263a StGB – M. Sonstige Vorschriften 40 – Rn. 239"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.8332299,
+          "judge_score": 3,
+          "judge_reason": "Direkte Abgrenzung § 263 vs § 263a bei Vorsatzproblemen",
+          "text_preview": "23 G. Subjektiver Tatbestand. Die Tat setzt (bedingten) Vorsatz voraus. Er muss sich auf alle Tatbestandsmerkmale, zu denen auch die Unbefugtheit (→ Rn. 10) gehört, dh auch auf die Voraussetzungen erstrecken, die das „Betrugsspezifische“ des Merkmals „unbefugt“ ausmachen. Hält der Täter sich zur Ver",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263a",
+            "randnummer": 23,
+            "breadcrumb": "§ 263a StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 23"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.8145405,
+          "judge_score": 3,
+          "judge_reason": "Behandelt direkt Abgrenzung § 263/263a und Konkurrenzverhältnisse",
+          "text_preview": "II. Verhältnis zu sonstigen Tatbeständen. § 263a und § 263 schließen sich aus, wenn derselbe Schaden sowohl durch die Manipulationsweisen des § 263a als auch durch Täuschung bewirkt wird. Mit § 263 ist Wahlfeststellung möglich (NJW 2008, 1394 (1395)). Ist § 263 möglicherweise, § 263a sicher verwirkl",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263a",
+            "randnummer": 33,
+            "breadcrumb": "§ 263a StGB – L. Konkurrenzen – Rn. 33"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.7380092,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: unbefugte Verwendung, Phishing, Abgrenzung §263/263a",
+          "text_preview": "Eine unbefugte Verwendung liegt insbes. vor bei Eingabe von Zugangscodes (PIN, TAN, usw.) gegen den (erkennbaren) Willen des Berechtigten; etwa nachdem mit Methoden des Phishing geheime Zugangsdaten eines Kontoinhabers beim Online-Banking erlangt wurden (dazu Goeckenjan wistra 2008, 128 (131 f.); He",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263a",
+            "randnummer": 10,
+            "breadcrumb": "§ 263a StGB – BT. Zweiundzwanzigster Abschnitt – Rn. 10"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.71758664,
+          "judge_score": 3,
+          "judge_reason": "Direkte Abgrenzung § 263/263a bei Datenmanipulation",
+          "text_preview": "7 II. Var. 2: Verwenden unrichtiger oder unvollständiger Daten. Die Tatvariante erfasst Fälle, in denen eingegebene Daten in einen anderen Zusammenhang gebracht oder unterdrückt werden (RegE 20; Input-Manipulationen). Anders als bei § 202a (→ § 202a Rn. 4) ist der Anwendungsbereich nicht auf unmitte",
+          "metadata": {
+            "gesetz": "StGB",
+            "paragraph": "§ 263a",
+            "randnummer": 7,
+            "breadcrumb": "§ 263a StGB – BT. Zweijundzwanzigster Abschnitt – Rn. 7"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -154,6 +154,108 @@ Queries in `eval_queries.yaml` anpassen. Kosten-Schaetzung:
 
 ---
 
+## Feinschliff: Welches Embedding-Modell passt zu DE-Rechtsliteratur?
+
+Der obige Vergleich zeigt, dass unser Qdrant-basiertes RAG den Managed-Services deutlich
+voraus ist. Aber welches **Embedding-Modell** innerhalb unserer Pipeline liefert die besten
+Ergebnisse? Wir haben drei Varianten direkt gegeneinander getestet — **identische** Qdrant-Collection,
+**identische** BM25-Hybrid-Fusion, **identische** Claude-Expansion und Cohere-Rerank, nur
+das Dense-Embedding-Modell wechselt.
+
+| Variante | Modell | Typ | Dim |
+|---|---|---|---|
+| **ours** | `intfloat/multilingual-e5-large` | Open, lokal (MPS) | 1024 |
+| **ours-cohere** | `embed-multilingual-v3.0` | Managed API | 1024 |
+| **ours-mxbai** | `mixedbread-ai/deepset-mxbai-embed-de-large-v1` | Open, lokal (MPS), **DE-feingetuned** | 1024 |
+
+### Gesamtergebnis
+
+![Embedding Benchmark Overview](benchmark_results/embedding_overview.png)
+
+| Metrik | ours (E5) | ours-cohere | ours-mxbai |
+|---|---|---|---|
+| nDCG@10 | 0.954 | 0.958 | **0.984** |
+| Relevance@10 | **90.0 %** | 82.2 % | 82.2 % |
+| Relevance@3 | **90.7 %** | 88.9 % | 88.9 % |
+| Top-1-Score | 2.61 | 2.56 | **2.94** |
+| Mean-Score | **2.57** | 2.43 | 2.42 |
+| Latenz | 5.61 s | 5.92 s | **5.59 s** |
+
+**mxbai-de gewinnt nDCG@10 und Top-1-Score deutlich** (2,94 von max. 3,0 — fast jede
+Top-Antwort wird vom Judge als „hoechstrelevant" bewertet). E5 ist bei Rel@10 und
+Mean-Score minimal vorne — mxbai konzentriert die Qualitaet staerker auf die
+Top-Positionen, was fuer einen RAG genau richtig ist (es werden meist nur Top-3 / Top-5
+konsumiert).
+
+### Nach Kategorie
+
+![Embedding per Category](benchmark_results/embedding_per_category.png)
+
+| Kategorie | ours (E5) | ours-cohere | ours-mxbai | Gewinner |
+|---|---|---|---|---|
+| Exakte §-Fragen | 0.991 | **0.997** | 0.988 | cohere (knapp) |
+| Konzept | 0.937 | 0.958 | **0.970** | mxbai |
+| Alltagssprache | **0.997** | 0.949 | 0.992 | E5 (knapp) |
+| Cross-Reference | 0.886 | 0.908 | **0.990** | mxbai (deutlich) |
+| StPO-Prozess | 0.940 | 0.970 | **0.982** | mxbai |
+
+**Kernbefunde:**
+
+- **mxbai-de ist bei Cross-Reference klar ueberlegen** (+10 pp gegenueber E5). Fuer
+  juristische Abgrenzungsfragen („Betrug vs. Unterschlagung") versteht das
+  DE-feingetunte Modell die begrifflichen Unterschiede offenbar besser.
+- **Cohere glaenzt bei exakten §-Fragen**, aber nur marginal (~0.6 pp) — innerhalb des
+  Judge-Rauschens.
+- **E5 ist bei Alltagssprache ein Haar voraus**. Vermutung: das
+  breit multilingual-trainierte Modell ist umgangssprachlicher, wenn es nicht um
+  Fachbegriffe geht.
+
+### Pro Einzel-Query
+
+![Embedding per Query](benchmark_results/embedding_per_query.png)
+
+Grosse Unterschiede zeigen sich bei Konzept- und Cross-Reference-Fragen —
+bei exakten §-Fragen liegen alle drei nahe beim Maximum.
+
+### Latenz
+
+![Embedding Latency](benchmark_results/embedding_latency.png)
+
+Alle drei Varianten liegen bei ~5,6–5,9 s. Die Embedding-Wahl beeinflusst die
+Latenz praktisch nicht — dominiert wird alles vom ~3 s Query-Expansion-Call
+(Claude). mxbai-de ist trotz lokaler Ausfuehrung minimal schneller als die
+Cohere-API-Variante, weil der Roundtrip entfaellt.
+
+### Empfehlung
+
+**Fuer Produktion: `ours-mxbai` (lokales, DE-feingetuntes Modell).**
+
+1. **Beste Qualitaet** (nDCG@10 0.984, Top-1-Score 2.94)
+2. **Lokal & kostenlos** — kein Vendor-Lock-in, keine API-Kosten, kein Rate-Limit
+3. **Gleiche Latenz** wie die bestehende E5-Pipeline
+4. **Klarer Vorsprung bei Cross-Reference & Konzept-Fragen** — genau wo juristische
+   Recherche den Unterschied macht
+
+Cohere als Alternative, wenn ein Managed-Service aus betrieblichen Gruenden bevorzugt
+wird — aber qualitativ kein Vorteil gegenueber dem open-source mxbai-de.
+
+### Reindex & Benutzung
+
+Parallele Qdrant-Collections fuer die Embedding-Varianten:
+
+```bash
+# Cohere-Embeddings in neue Collection `fachliteratur_cohere`
+python reindex_cohere.py --recreate
+
+# mxbai-de-Embeddings in neue Collection `fachliteratur_mxbai`
+python reindex_mxbai.py --recreate
+
+# Drei-Wege-Benchmark
+python benchmark.py --systems ours,ours-cohere,ours-mxbai --top-k 5
+```
+
+---
+
 ## Architektur
 
 ```
@@ -457,6 +559,10 @@ RAG_LW/
   ragie_client.py         RAGIE-Adapter (gleiche API wie retrieve.py)
   openai_client.py        OpenAI Vector Store Adapter
   vectara_client.py       Vectara Managed-RAG Adapter
+  ours_cohere_client.py   Unsere Pipeline mit Cohere-Embeddings (fachliteratur_cohere)
+  ours_mxbai_client.py    Unsere Pipeline mit mxbai-de-Embeddings (fachliteratur_mxbai)
+  reindex_cohere.py       Re-Embedding der fachliteratur-Chunks mit Cohere
+  reindex_mxbai.py        Re-Embedding der fachliteratur-Chunks mit mxbai-de
   eval_queries.yaml       Benchmark-Test-Queries (18 Queries, 5 Kategorien)
   data/
     fachliteratur/        Kommentar-Markdown-Dateien
