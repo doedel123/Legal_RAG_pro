@@ -154,90 +154,101 @@ Queries in `eval_queries.yaml` anpassen. Kosten-Schaetzung:
 
 ---
 
-## Feinschliff: Welches Embedding-Modell passt zu DE-Rechtsliteratur?
+## Feinschliff: Embedding- und Reranker-Wahl fuer DE-Rechtsliteratur
 
 Der obige Vergleich zeigt, dass unser Qdrant-basiertes RAG den Managed-Services deutlich
-voraus ist. Aber welches **Embedding-Modell** innerhalb unserer Pipeline liefert die besten
-Ergebnisse? Wir haben drei Varianten direkt gegeneinander getestet — **identische** Qdrant-Collection,
-**identische** BM25-Hybrid-Fusion, **identische** Claude-Expansion und Cohere-Rerank, nur
-das Dense-Embedding-Modell wechselt.
+voraus ist. Mit welchen **Embedding- und Reranker-Modellen** innerhalb unserer Pipeline
+kommt man noch hoeher? Vier Varianten im direkten Vergleich — **identische** Qdrant-Collection,
+**identische** BM25-Hybrid-Fusion, **identische** Claude-Query-Expansion, nur Embedding
+und/oder Reranker werden getauscht.
 
-| Variante | Modell | Typ | Dim |
+| Variante | Embedding | Reranker | Hosting |
 |---|---|---|---|
-| **ours** | `intfloat/multilingual-e5-large` | Open, lokal (MPS) | 1024 |
-| **ours-cohere** | `embed-multilingual-v3.0` | Managed API | 1024 |
-| **ours-mxbai** | `mixedbread-ai/deepset-mxbai-embed-de-large-v1` | Open, lokal (MPS), **DE-feingetuned** | 1024 |
+| **ours** | `intfloat/multilingual-e5-large` | Cohere `rerank-v3.5` | Embedding lokal (MPS) |
+| **ours-cohere** | Cohere `embed-multilingual-v3.0` | Cohere `rerank-v3.5` | Beides Managed API |
+| **ours-mxbai** | `deepset-mxbai-embed-de-large-v1` (**DE-feingetuned**) | Cohere `rerank-v3.5` | Embedding lokal (MPS) |
+| **ours-mxbai-voyage** | `deepset-mxbai-embed-de-large-v1` | Voyage `rerank-2.5` | Embedding lokal, Rerank Managed |
 
 ### Gesamtergebnis
 
 ![Embedding Benchmark Overview](benchmark_results/embedding_overview.png)
 
-| Metrik | ours (E5) | ours-cohere | ours-mxbai |
-|---|---|---|---|
-| nDCG@10 | 0.954 | 0.958 | **0.984** |
-| Relevance@10 | **90.0 %** | 82.2 % | 82.2 % |
-| Relevance@3 | **90.7 %** | 88.9 % | 88.9 % |
-| Top-1-Score | 2.61 | 2.56 | **2.94** |
-| Mean-Score | **2.57** | 2.43 | 2.42 |
-| Latenz | 5.61 s | 5.92 s | **5.59 s** |
+| Metrik | ours (E5) | ours-cohere | ours-mxbai | ours-mxbai-voyage |
+|---|---|---|---|---|
+| nDCG@10 | 0.980 | 0.962 | 0.969 | **0.984** |
+| Relevance@10 | **93.3 %** | 88.9 % | 88.9 % | **93.3 %** |
+| Relevance@3 | **98.1 %** | 90.7 % | 88.9 % | **98.1 %** |
+| Top-1-Score | 2.83 | 2.78 | 2.83 | **2.89** |
+| Mean-Score | 2.68 | 2.54 | 2.57 | **2.69** |
+| Latenz | **5.58 s** | 5.71 s | 5.60 s | 5.65 s |
 
-**mxbai-de gewinnt nDCG@10 und Top-1-Score deutlich** (2,94 von max. 3,0 — fast jede
-Top-Antwort wird vom Judge als „hoechstrelevant" bewertet). E5 ist bei Rel@10 und
-Mean-Score minimal vorne — mxbai konzentriert die Qualitaet staerker auf die
-Top-Positionen, was fuer einen RAG genau richtig ist (es werden meist nur Top-3 / Top-5
-konsumiert).
+**`ours-mxbai-voyage` ist knapp vorn** auf nDCG, Top-1 und Mean-Score; bei Rel@10 und
+Rel@3 liegt es gleichauf mit dem E5-Baseline. Die absoluten Abstaende sind klein
+(~0.01–0.02 nDCG) und liegen teilweise im Bereich der **Judge-Varianz** (in wiederholten
+Laeufen bewegt sich selbst dieselbe Pipeline um bis zu 0.03 nDCG), aber der konsistente
+Trend ueber mehrere Metriken spricht fuer den mxbai-de + Voyage-Stack.
+
+**Cohere-Embedding fuegt der Pipeline hier keinen Mehrwert hinzu** — `ours-cohere` liegt
+auf allen Qualitaetsmetriken minimal hinter der kostenlosen E5-Baseline.
 
 ### Nach Kategorie
 
 ![Embedding per Category](benchmark_results/embedding_per_category.png)
 
-| Kategorie | ours (E5) | ours-cohere | ours-mxbai | Gewinner |
-|---|---|---|---|---|
-| Exakte §-Fragen | 0.991 | **0.997** | 0.988 | cohere (knapp) |
-| Konzept | 0.937 | 0.958 | **0.970** | mxbai |
-| Alltagssprache | **0.997** | 0.949 | 0.992 | E5 (knapp) |
-| Cross-Reference | 0.886 | 0.908 | **0.990** | mxbai (deutlich) |
-| StPO-Prozess | 0.940 | 0.970 | **0.982** | mxbai |
+| Kategorie | ours (E5) | ours-cohere | ours-mxbai | ours-mxbai-voyage | Gewinner |
+|---|---|---|---|---|---|
+| Exakte §-Fragen | 0.987 | **0.997** | 0.988 | 0.995 | cohere (knapp) |
+| Konzept | 0.985 | 0.923 | 0.930 | **0.988** | voyage |
+| Alltagssprache | 0.981 | 0.976 | 0.993 | **0.999** | voyage |
+| Cross-Reference | 0.978 | 0.950 | 0.957 | **0.992** | voyage |
+| StPO-Prozess | 0.964 | 0.961 | **0.977** | 0.933 | mxbai |
 
 **Kernbefunde:**
 
-- **mxbai-de ist bei Cross-Reference klar ueberlegen** (+10 pp gegenueber E5). Fuer
-  juristische Abgrenzungsfragen („Betrug vs. Unterschlagung") versteht das
-  DE-feingetunte Modell die begrifflichen Unterschiede offenbar besser.
-- **Cohere glaenzt bei exakten §-Fragen**, aber nur marginal (~0.6 pp) — innerhalb des
-  Judge-Rauschens.
-- **E5 ist bei Alltagssprache ein Haar voraus**. Vermutung: das
-  breit multilingual-trainierte Modell ist umgangssprachlicher, wenn es nicht um
-  Fachbegriffe geht.
+- **`ours-mxbai-voyage` gewinnt drei von fuenf Kategorien** (Konzept, Alltagssprache,
+  Cross-Reference). Insbesondere Cross-Reference-Queries („Betrug vs. Unterschlagung")
+  profitieren vom staerkeren Reranker.
+- **`ours-mxbai` gewinnt bei StPO-Prozess**, Voyage faellt hier ab (0.933) — der
+  Reranker-Swap bringt nicht bei allen Frage-Typen etwas.
+- **Die bestehende E5-Baseline ist sehr nah am Feld** — fuer die meisten Kategorien
+  kein meßbarer Unterschied zu den anderen Varianten.
 
 ### Pro Einzel-Query
 
 ![Embedding per Query](benchmark_results/embedding_per_query.png)
 
-Grosse Unterschiede zeigen sich bei Konzept- und Cross-Reference-Fragen —
-bei exakten §-Fragen liegen alle drei nahe beim Maximum.
+Auf den allermeisten Queries liegen alle vier Varianten nah beieinander
+(nDCG ≥ 0.95). Unterschiede zeigen sich vor allem bei q15 (§ 136 StPO) und einzelnen
+Cross-Reference-Fragen.
 
 ### Latenz
 
 ![Embedding Latency](benchmark_results/embedding_latency.png)
 
-Alle drei Varianten liegen bei ~5,6–5,9 s. Die Embedding-Wahl beeinflusst die
-Latenz praktisch nicht — dominiert wird alles vom ~3 s Query-Expansion-Call
-(Claude). mxbai-de ist trotz lokaler Ausfuehrung minimal schneller als die
-Cohere-API-Variante, weil der Roundtrip entfaellt.
+Alle Varianten liegen bei ~5.5–5.7 s; die Wahl von Embedding oder Reranker
+beeinflusst die Gesamtlatenz praktisch nicht. Dominiert wird alles vom ~3 s
+Claude-Query-Expansion-Call. Der Voyage-Reranker-API-Call ist durch den parallelen
+Qdrant-Search-Call abgedeckt.
 
 ### Empfehlung
 
-**Fuer Produktion: `ours-mxbai` (lokales, DE-feingetuntes Modell).**
+**Fuer Produktion: `ours-mxbai-voyage` (mxbai-de Embedding + Voyage rerank-2.5).**
 
-1. **Beste Qualitaet** (nDCG@10 0.984, Top-1-Score 2.94)
-2. **Lokal & kostenlos** — kein Vendor-Lock-in, keine API-Kosten, kein Rate-Limit
-3. **Gleiche Latenz** wie die bestehende E5-Pipeline
-4. **Klarer Vorsprung bei Cross-Reference & Konzept-Fragen** — genau wo juristische
-   Recherche den Unterschied macht
+1. **Beste Qualitaet** (nDCG 0.984, Top-1 2.89, Mean 2.69)
+2. **Gewinnt in drei von fuenf Query-Kategorien** — besonders bei komplexeren
+   Konzept-, Alltagssprache- und Cross-Reference-Queries
+3. **Gleiche Latenz** wie die einfachere E5-Pipeline
+4. **Embedding lokal & kostenlos**, nur der Reranker ist ein API-Call
 
-Cohere als Alternative, wenn ein Managed-Service aus betrieblichen Gruenden bevorzugt
-wird — aber qualitativ kein Vorteil gegenueber dem open-source mxbai-de.
+**Wichtig zur Voyage-API:** Der **Free Tier (3 RPM)** ist fuer reale Nutzung nicht brauchbar;
+ein Paid-Plan (~$0.05 pro 1k Rerank-Searches) ist noetig. Kosten bleiben minimal.
+
+**Alternative: `ours` (E5 + Cohere)** — die existierende Baseline ist in Rel@10 und
+Rel@3 gleichauf mit der Voyage-Variante. Wenn Vendor-Diversity (kein zweiter Managed-Service
+fuer Reranking) wichtiger ist als die letzten ~1 % nDCG, ist ein Wechsel nicht zwingend.
+
+**Nicht empfohlen: `ours-cohere`** — das Cohere-Embedding bietet gegenueber E5 keinen
+messbaren Qualitaetsvorteil und ist gleichzeitig teurer (API-Kosten + Vendor-Lock).
 
 ### Reindex & Benutzung
 
@@ -250,8 +261,8 @@ python reindex_cohere.py --recreate
 # mxbai-de-Embeddings in neue Collection `fachliteratur_mxbai`
 python reindex_mxbai.py --recreate
 
-# Drei-Wege-Benchmark
-python benchmark.py --systems ours,ours-cohere,ours-mxbai --top-k 5
+# Vier-Wege-Benchmark (alle Embedding-/Rerank-Varianten)
+python benchmark.py --systems ours,ours-cohere,ours-mxbai,ours-mxbai-voyage --top-k 5
 ```
 
 ---
@@ -349,6 +360,7 @@ OPENAI_API_KEY=sk-...
 OPENAI_VECTOR_STORE_ID=vs_...
 VECTARA_API_KEY=...
 VECTARA_CORPUS_KEY=strafrecht
+VOYAGE_API_KEY=...
 ```
 
 > Ohne `ANTHROPIC_API_KEY` laeuft das System ohne Query Expansion.
@@ -561,6 +573,7 @@ RAG_LW/
   vectara_client.py       Vectara Managed-RAG Adapter
   ours_cohere_client.py   Unsere Pipeline mit Cohere-Embeddings (fachliteratur_cohere)
   ours_mxbai_client.py    Unsere Pipeline mit mxbai-de-Embeddings (fachliteratur_mxbai)
+  ours_mxbai_voyage_client.py  Unsere Pipeline mit mxbai-de + Voyage rerank-2.5
   reindex_cohere.py       Re-Embedding der fachliteratur-Chunks mit Cohere
   reindex_mxbai.py        Re-Embedding der fachliteratur-Chunks mit mxbai-de
   eval_queries.yaml       Benchmark-Test-Queries (18 Queries, 5 Kategorien)
