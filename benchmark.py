@@ -38,6 +38,8 @@ from tqdm import tqdm
 from retrieve import JuristischerRetriever, SearchResult, FACHLITERATUR_COLLECTION
 from ragie_client import RagieRetriever
 from openai_client import OpenAIRetriever
+from gemini_client import GeminiRetriever
+from vectara_client import VectaraRetriever
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -202,6 +204,20 @@ def run_ragie(retriever: RagieRetriever, query: str,
 
 def run_openai(retriever: OpenAIRetriever, query: str,
                top_k: int) -> tuple[list[SearchResult], float]:
+    start = time.time()
+    results = retriever.search(query, top_k=top_k)
+    return results, time.time() - start
+
+
+def run_gemini(retriever: GeminiRetriever, query: str,
+               top_k: int) -> tuple[list[SearchResult], float]:
+    start = time.time()
+    results = retriever.search(query, top_k=top_k)
+    return results, time.time() - start
+
+
+def run_vectara(retriever: VectaraRetriever, query: str,
+                top_k: int) -> tuple[list[SearchResult], float]:
     start = time.time()
     results = retriever.search(query, top_k=top_k)
     return results, time.time() - start
@@ -427,6 +443,12 @@ def run_benchmark(query_file: str, top_k: int, systems: list[str],
     if "openai" in systems:
         print("▶ Lade OpenAI Vector Store Client ...")
         retrievers["openai"] = OpenAIRetriever(rewrite_query=False)
+    if "gemini" in systems:
+        print("▶ Lade Gemini File Search Client ...")
+        retrievers["gemini"] = GeminiRetriever()
+    if "vectara" in systems:
+        print("▶ Lade Vectara Client ...")
+        retrievers["vectara"] = VectaraRetriever()
 
     judge = None
     if not skip_judge:
@@ -452,6 +474,12 @@ def run_benchmark(query_file: str, top_k: int, systems: list[str],
                                               case.query, top_k)
             if "openai" in systems:
                 futures["openai"] = ex.submit(run_openai, retrievers["openai"],
+                                               case.query, top_k)
+            if "vectara" in systems:
+                futures["vectara"] = ex.submit(run_vectara, retrievers["vectara"],
+                                                case.query, top_k)
+            if "gemini" in systems:
+                futures["gemini"] = ex.submit(run_gemini, retrievers["gemini"],
                                                case.query, top_k)
 
             for sys_name, fut in futures.items():
@@ -524,8 +552,8 @@ def main():
                         help="YAML mit Test-Queries (default: eval_queries.yaml)")
     parser.add_argument("--top-k", type=int, default=DEFAULT_TOP_K,
                         help=f"Chunks pro System (default: {DEFAULT_TOP_K})")
-    parser.add_argument("--systems", default="ours,ragie,openai",
-                        help="Komma-Liste: ours,ragie,openai (default: alle drei)")
+    parser.add_argument("--systems", default="ours,ragie,openai,gemini,vectara",
+                        help="Komma-Liste: ours,ragie,openai,gemini,vectara (default: alle fünf)")
     parser.add_argument("--output", default="./benchmark_results",
                         help="Output-Verzeichnis fuer Reports")
     parser.add_argument("--skip-judge", action="store_true",

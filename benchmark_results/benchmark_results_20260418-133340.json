@@ -1,0 +1,1279 @@
+{
+  "q01": {
+    "vectara": {
+      "latency_sec": 5.103514194488525,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.8019830584526062,
+          "judge_score": 1,
+          "judge_reason": "Unvollständiger Text, nur Paragraphennennung ohne Inhalt",
+          "text_preview": "§ 263 ist unter den Voraussetzungen von Abs.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.619120180606842,
+          "judge_score": 1,
+          "judge_reason": "Anderes Rechtsgebiet, aber ähnliche Bandenstruktur",
+          "text_preview": "aus der Abgabenordnung:a) Steuerhinterziehung unter den in § 370 Absatz 3 Satz 2 Nummer 1 genannten Voraussetzungen, sofern der Täter als Mitglied einer Bande, die sich zur fortgesetzten Begehung von Taten nach § 370 Absatz 1 verbunden hat, handelt, oder unter den in § 370 Absatz 3 Satz 2 Nummer 5 g",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "97"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.615381121635437,
+          "judge_score": 1,
+          "judge_reason": "Nur Fundstellenverweise ohne inhaltliche Voraussetzungen",
+          "text_preview": "dazu BGHSt 47, 214 (216)); StraFo 2007, 78 (78 f.); NStZ 2002, 375 (377); 2007, 288 (289); 2008, 54 (Bandenbetrug; § 263 Abs.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Neunzehnter Abschnitt. Diebstahl und Unterschlagun..."
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6017036437988281,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevanter Paragraph für gewerbsmäßigen Bandenbetrug",
+          "text_preview": "3 Nr. 5), weiterhin § 263 Abs.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.5992733240127563,
+          "judge_score": 1,
+          "judge_reason": "Andere Steuerdelikte, nicht Bandenbetrug § 263",
+          "text_preview": "aus der Abgabenordnung:a) Steuerhinterziehung unter den in § 370 Absatz 3 Nummer 5 genannten Voraussetzungen,b) gewerbsmäßiger, gewaltsamer und bandenmäßiger Schmuggel nach § 373,c) Steuerhehlerei im Fall des § 374 Absatz 2,\n3.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Einziehung von Verkörperungen eines Inhalts und Un..."
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "q02": {
+    "vectara": {
+      "latency_sec": 2.9963719844818115,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.7626587152481079,
+          "judge_score": 1,
+          "judge_reason": "Nachbarparagraph zu U-Haft, aber andere Regelung",
+          "text_preview": "Verhaftung und vorläufige Festnahme\n§ 116b StPO\nckung von Untersuchungshaft vor, es sei denn, das Gericht trifft eine abweichende Entscheidung, weil der Zweck der Untersuchungshaft dies erfordert.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.6032909750938416,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant für § 112 StPO Untersuchungshaft",
+          "text_preview": "→ StPO Vor § 112 Rn.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Einleitung"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.5894612669944763,
+          "judge_score": 1,
+          "judge_reason": "Nur Verweis, keine inhaltliche Regelung zu § 112",
+          "text_preview": "112): → StPO § 204 Rn.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Einleitung"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.5875009298324585,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant - behandelt exakt § 112 StPO",
+          "text_preview": "StPO § 112\nErstes Buch.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Notveräußerung"
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.5813153982162476,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Paragraph zur Untersuchungshaft",
+          "text_preview": "StPO § 112\nErstes Buch.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Notveräußerung"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "q03": {
+    "vectara": {
+      "latency_sec": 2.873152017593384,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.7994982004165649,
+          "judge_score": 1,
+          "judge_reason": "Nur Paragraphenverweis ohne Inhalt der Haftgruende",
+          "text_preview": "2 Nr. 1 Buchst. h StPO; UHaft § 112 Abs.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Vorbemerkung zu §§ 211–217"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5945079326629639,
+          "judge_score": 1,
+          "judge_reason": "Nur Paragraphenverweise ohne inhaltliche Erläuterung der Haftgründe",
+          "text_preview": "5 S. 1, 148 Abs. 2 S. 1 StPO; § 112 Abs.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.5872291326522827,
+          "judge_score": 1,
+          "judge_reason": "Erwähnt § 112 Abs. 2, aber keine Haftgründe",
+          "text_preview": "(4) Besteht in den Fällen des § 112 Absatz 3 und des § 112a Absatz 1 StPO auch ein Haftgrund nach § 112 Absatz 2 StPO, sind die Feststellungen hierüber aktenkundig zu machen.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "7. Untersuchungshaft, einstweilige Unterbringung u..."
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.57415372133255,
+          "judge_score": 0,
+          "judge_reason": "Fragmentarischer Text ohne Bezug zu Haftgründen",
+          "text_preview": "2 StPO steht die nach § 127 Abs.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Entschädigung für andere Strafverfolgungsmaßnahmen..."
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.5719374418258667,
+          "judge_score": 1,
+          "judge_reason": "Erwähnt § 112, aber keine Haftgründe genannt",
+          "text_preview": "17) auch auf einen Haftgrund nach § 112 gestützt, so findet § 122a keine Anwendung (KK-StPO/Gericke Rn.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Verfahren bei der Haftprüfung"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "q04": {
+    "vectara": {
+      "latency_sec": 5.169900894165039,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.8144465088844299,
+          "judge_score": 2,
+          "judge_reason": "Erwähnt § 102 StPO, aber keine inhaltlichen Details",
+          "text_preview": "Durchsuchung iS Nr. 4 ist nur die nach §§ 102, 103 StPO, nicht die nach § 111 StPO (Meyer StrEG Rn.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Entschädigung für andere Strafverfolgungsmaßnahmen..."
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.6221518516540527,
+          "judge_score": 2,
+          "judge_reason": "Erwähnt § 102 StPO, aber nur fragmentarisch",
+          "text_preview": "27); denn nach § 102 ist sogar die Durchsuchung zum Zweck der Ergreifung zulässig (→ § 102 Rn.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6198464632034302,
+          "judge_score": 1,
+          "judge_reason": "Erwähnt § 102 StPO nur tangential",
+          "text_preview": "3; Burhoff StraFo 2021, 398 (400)); einschränkend bei vorhergehender Durchsuchung nach § 102 StPO MüKoStPO/Hausschild Rn.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Herausgabepflicht"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6108393669128418,
+          "judge_score": 1,
+          "judge_reason": "Nachbarparagraph, aber nicht § 102 direkt",
+          "text_preview": "Zur Abgrenzung v. § 102 und § 103 bei der Durchsuchung v. Arztpraxen wegen des Verdachts des Abrechnungsbetruges vgl.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Gerichtliche Entscheidung; Datenkennzeichnung und ..."
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6076122522354126,
+          "judge_score": 3,
+          "judge_reason": "Direkt zu § 102 StPO Durchsuchung beim Beschuldigten",
+          "text_preview": "2 stattfindet. Wenn dadurch der Untersuchungserfolg nicht gefährdet wird, sollte der Durchsuchungszweck auch im Fall des § 102 dem Verdächtigen bekanntgegeben werden (KK-StPO/Henrichs/Weingast Rn.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Durchsuchung bei anderen Personen"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "q05": {
+    "vectara": {
+      "latency_sec": 9.025771141052246,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.7982233166694641,
+          "judge_score": 1,
+          "judge_reason": "Nur Verweis auf § 263, keine konkludente Täuschung",
+          "text_preview": "→ § 263 Rn. 193). Liegt auch Betrugsvorsatz vor, geht § 263 vor (→ Rn.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.6147563457489014,
+          "judge_score": 1,
+          "judge_reason": "Behandelt § 263, aber besonders schwere Fälle",
+          "text_preview": "(2) Ein besonders schwerer Fall im Sinne des Absatzes 1 liegt in der Regel vor, wenn\n1.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Übersicht",
+              "Besonders schwere Fälle der Bestechlichkeit und Be..."
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6146982312202454,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt konkludente Täuschung bei § 263",
+          "text_preview": "12a f.). Bei kollusivem Zusammenwirken zwischen Karteninhaber und Zahlungsannehmer (Vertragsunternehmen) liegt idR eine (konkludente) Täuschung des Ausstellers über die Voraussetzungen der Zahlungspflicht und daher nicht § 266b, sondern § 263 vor (Ranft JuS 1988, 678; TK-StGB/Perron Rn.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6090973019599915,
+          "judge_score": 0,
+          "judge_reason": "Waffen- und Betäubungsmittelrecht, nicht Betrug",
+          "text_preview": "Tateinheit u. eine Tat im prozessualen Sinne liegt etwa bei Zusammen treffen v. Betäubungsmitteldelikten und Verstößen nach dem WaffG vor,\nSchmitt\n1467\n***",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Vorführung einer aufgezeichneten Zeugenvernehmung"
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.603394091129303,
+          "judge_score": 0,
+          "judge_reason": "Textfragment ohne Bezug zu Betrug/Taeuschung",
+          "text_preview": "Entgelt (Nr. 9). Im Sinne des StGB (zB §§ 180 Abs.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Zweiter Titel. Sprachgebrauch"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "q06": {
+    "vectara": {
+      "latency_sec": 1.3243529796600342,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.7541556358337402,
+          "judge_score": 1,
+          "judge_reason": "Allgemeine Anforderungen, nicht spezifisch Vermoegensverfuegung",
+          "text_preview": "Maßgeblich sind die Anforderungen, welche die Rechtsordnung an jedermann stellt (BGHSt 43, 66 (77); NStZ-RR 1999, 295 (296); 2015, 137 (138)).",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5930325388908386,
+          "judge_score": 0,
+          "judge_reason": "Verlesungsrecht, kein Bezug zu Vermoegensverfuegung",
+          "text_preview": "Verlesbar sind auch Erklärungen in einem anderen Strafverfahren u. in Zivil- u. Verwaltungsgerichtsverfahren (RGSt 56, 257; Schneidewin JR 1951, 485)), sofern die Voraussetzung für eine Verwertung im Strafverfahren erfüllt sind (vgl.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Verlesung eines richterlichen Protokolls bei Gestä..."
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.5820662379264832,
+          "judge_score": 0,
+          "judge_reason": "Behandelt Einwilligung, nicht Vermoegensverfuegung beim Betrug",
+          "text_preview": "1 S. 2). Damit die Einwilligung rechtswirksam ist, muss ihr eine Belehrung vorausgehen, welche den Anforderungen des Abs.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.5781394243240356,
+          "judge_score": 0,
+          "judge_reason": "Verfahrensrecht, nicht Betrug oder Vermoegensverfuegung",
+          "text_preview": "Gerichtsbeschlusses vortragen; denn an die Aufklärungsrüge können nicht geringere Anforderungen gestellt werden als an die Rüge fehlerhafter Ablehnung eines Beweisantrags (BGH NStZ 1984, 329; 2015, 540; NJW 1998, 2229; BayObLGSt 1994, 256).",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Vorführung bei vorläufiger Festnahme"
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.5730763077735901,
+          "judge_score": 0,
+          "judge_reason": "Verfahrensrecht, nicht Betrug oder Vermoegensverfuegung",
+          "text_preview": "1 S. 2 verlagern sich die notwendigen Angaben u. ihre Glaubhaftmachung in die v. Gericht unter Fristsetzung geforderte schriftliche Begründung, welche in der HV nicht verlesen werden muss (erg.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Ablehnungsverfahren"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "q07": {
+    "vectara": {
+      "latency_sec": 5.032480955123901,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.8211600184440613,
+          "judge_score": 3,
+          "judge_reason": "Definiert direkt Gefährdungsschaden beim Betrug",
+          "text_preview": "einen vollendeten Betrug durch Entstehen eines Gefährdungsschadens an, wenn aufgrund tauschender Erklärungen dem Täter ein Überziehungskredit eingeräumt oder Karten mit Einlösungsgarantie ausgehändigt werden ((BGHSt 47, 160).",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Zweiundzwanzigster Abschnitt. Betrug und Untreue"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.6283784508705139,
+          "judge_score": 3,
+          "judge_reason": "Definiert direkt Gefährdungsschaden beim Betrug",
+          "text_preview": "37 ff. ausdrücklich zwischen „Endschaden“ und „Gefährdungsschaden“ differenziert und dem Letzteren bei der Steuerhinterziehung („ähnlich wie beim Betrug“) ein nur halb so hohes Gewicht beigemessen (Grenze des Schadens „großen Ausmaßes“ bei Gefährdungsschäden erst ab 100.000 EUR; vgl.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6251329183578491,
+          "judge_score": 1,
+          "judge_reason": "Behandelt Schadensbegriff, aber nicht Gefaehrdungsschaden spezifisch",
+          "text_preview": "In Fällen, in denen der Zahlungsempfänger eine Leistung vorab erbringt und anschließend im Rahmen der Abrechnung über das Vorliegen tatsächlicher Anspruchsvoraussetzungen tauscht, ist grundsätzlich der gesamte ausgezahlte Betrag als Betrugsschaden anzusehen.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Zweiundzwanzigster Abschnitt. Betrug und Untreue"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6245348453521729,
+          "judge_score": 3,
+          "judge_reason": "Erklaert direkt Gefaehrdungsschaden beim Betrug mit Beispielen",
+          "text_preview": "StS entschieden, der Vollendung eines (Eingehungs-)Betrugs stehe auch bei täuschendem Abschluss von Lebensversicherungen (zur Geldbeschaffung durch Vortäuschung des Versicherungsfalls) nicht entgegen, dass die spätere Inanspruchnahme der Leistung einer weiteren Täuschungshandlung bedarf (Schadensmel",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Zweiundzwanzigster Abschnitt. Betrug und Untreue"
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6201021671295166,
+          "judge_score": 3,
+          "judge_reason": "Definiert direkt Gefaehrdungsschaden beim Betrug",
+          "text_preview": "Vollendung. Vollendet ist der Betrug mit dem zumindest teilweisen Eintritt des Vermögensschadens (auch als Gefährdungsschaden iSv → Rn.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Zweiundzwanzigster Abschnitt. Betrug und Untreue"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "q08": {
+    "vectara": {
+      "latency_sec": 9.951874017715454,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.8404206037521362,
+          "judge_score": 2,
+          "judge_reason": "Erwähnt Bereicherung beim Betrug, aber unvollständiger Kontext",
+          "text_preview": "Zwischen Schaden und (beabsichtigter) Bereicherung muss, wie beim Betrug (vgl.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Erpressung"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.6332213878631592,
+          "judge_score": 2,
+          "judge_reason": "Erwähnt Bereicherungsabsicht beim Betrug, aber oberflächlich",
+          "text_preview": "Otto JURA 1994, 143; dazu Kelker, Zur Legitimität von Gesinnungsmerkmalen im Strafrecht, 2007); weiterhin die über den Tatbestand hinausreichenden Absichten (zB Bereicherungsabsicht beim Betrug; Delikte mit sog.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.618561863899231,
+          "judge_score": 1,
+          "judge_reason": "Nur bibliographische Angabe, keine inhaltliche Information",
+          "text_preview": "Rostock 2006); Harbort, Die Bedeutung der objektiven Zurechnung beim Betrug, 2010 (Diss.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Zweiundzwanzigster Abschnitt. Betrug und Untreue"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6169354915618896,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Bereicherungsabsicht, aber bei Gewerbsmäßigkeit",
+          "text_preview": "Gewerbsmäßigkeit setzt eigennütziges Handeln voraus; fremdnütziger Betrug reicht daher nur aus, wenn die Bereicherung dem Täter zumindest mittelbar zugutekommen soll (NStZ 2008, 282 (282 f.); wistra 2008, 379), etwa indem sie einer von ihm beherrschten Gesellschaft zufließt, wo er auf die Vorteile o",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Zweiundzwanzigster Abschnitt. Betrug und Untreue"
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6014096140861511,
+          "judge_score": 1,
+          "judge_reason": "Versicherungsbetrug, nicht allgemeiner Vorsatz bei Bereicherungsabsicht",
+          "text_preview": "Der Vortäter muss Vorsatz auch hinsichtlich des späteren Versicherungsbetrugs gehabt haben; wenn der Täter die Vortat nur betrügerisch ausnutzt, liegt nur Abs.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Zweiundzwanzigster Abschnitt. Betrug und Untreue"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "q09": {
+    "vectara": {
+      "latency_sec": 22.552907943725586,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.7545710206031799,
+          "judge_score": 0,
+          "judge_reason": "Unvollständiger Textauszug ohne erkennbaren Rechtsbezug",
+          "text_preview": "hat der Angeklagte die dadurch entstandenen bes.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Notwendige Auslagen des Nebenklägers"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5801037549972534,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Internetbetrug, Taeuschung, Kundenkonto",
+          "text_preview": "Der Tatbestand ist aber erfüllt bei Anlegen eines online-Kundenkontos unter Identitätstäuschung (aber nicht bei Bevollmächtigung des Dritten: BeckRS 2024, 11811), ebenso bei Verändern eines bestehenden Kundenkontos (wistra 2023, 296 (zur Tateinheit mit nachfolgenden betrügerischen Buchungen)).",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.5748849511146545,
+          "judge_score": 0,
+          "judge_reason": "Unvollständiger Text, kein Bezug zu Internetbetrug",
+          "text_preview": "über eine angeklagte Tat abgesehen hat, denn dann ist das Verf.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Revisionsbegründung"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.5721456408500671,
+          "judge_score": 0,
+          "judge_reason": "Behandelt Haftgründe nach Verurteilung, nicht Internetbetrug",
+          "text_preview": "werden. Wird der Angeklagte verurteilt, so hat das Gericht stets das Fortbestehen der Haftgründe, die ggf.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.5652191638946533,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant zu Internetbetrug und Taeuschungshandlung",
+          "text_preview": "Wird ein Online-Kundenkonto unter fremdem Namen zum Zwecke des nachfolgenden Betrugs angelegt, hat dies zur Folge, dass alle nachfolgenden betrügerischen Vorgänge mittels dieses Kundenkontos in Tateinheit stehen (wistra 2023, 296; vgl.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "q10": {
+    "vectara": {
+      "latency_sec": 3.1492562294006348,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.767512321472168,
+          "judge_score": 0,
+          "judge_reason": "Behandelt Notwehr/Nothilfe, nicht Durchsuchungsrecht",
+          "text_preview": "Die Polizei darf aber gerade nicht die Erschießung unschuldiger Personen anordnen, um Dritte zu retten.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.592509388923645,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Durchsuchungsvoraussetzungen für Wohnungen",
+          "text_preview": "28 ff.). Die Wohnung des Verdächtigen darf durchsucht werden, wenn konkrete Anhaltspunkte dafür bestehen, dass er dort aufzufinden ist (Kaiser NJW 1980, 876).",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Zuständigkeit für weitere gerichtliche Entscheidun..."
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.5878704786300659,
+          "judge_score": 0,
+          "judge_reason": "Diplomatentransport, keine Durchsuchungsvoraussetzungen behandelt",
+          "text_preview": "Dann ist es zulässig, den Diplomaten zu seiner Mission oder nach Hause zu bringen.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Teil 6 Behandlung von bevorrechtigten Personen bei..."
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.5686042904853821,
+          "judge_score": 1,
+          "judge_reason": "Haftbefehl und Fahndung, nicht Durchsuchungsvoraussetzungen",
+          "text_preview": "auch Nummer 43), wenn der Haftbefehl (Unterbringungsbefehl) zur Auslösung einer gezielten Fahndung der für den mutmaßlichen Wohnsitz des Gesuchten zuständigen Polizeidienststelle übersandt wird.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.5655480027198792,
+          "judge_score": 1,
+          "judge_reason": "Personendurchsuchung, nicht Wohnungsdurchsuchung behandelt",
+          "text_preview": "Bei der Personendurchsuchung darf körperlicher Zwang angewendet werden; falls geboten, zB falls konkrete Verdunkelungsmaßnahmen drohen, darf der Betroffene auch kurzfristig festgenommen u. auf der Polizeiwache durchsucht werden (Löwe/Rosenberg/Tsambikakis Rn.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Durchsuchung bei anderen Personen"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "q11": {
+    "vectara": {
+      "latency_sec": 1.319849967956543,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.6996387839317322,
+          "judge_score": 2,
+          "judge_reason": "Betrug thematisch relevant, aber spezifischer Aspekt Finanzagent",
+          "text_preview": "Für einen Finanzagenten kommt eine Beteiligung an der Vorrat des Betrugs in Betracht, wenn er den Hintermännern sein Bankkonto zur Verfügung stellt, damit die Geschädigten tatplankonform Geld darauf überweisen (vgl.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Geldwäsche"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5450238585472107,
+          "judge_score": 0,
+          "judge_reason": "Geldfälschung, nicht Betrug durch Täuschung",
+          "text_preview": "Daher ist Geld „nachgemacht\", wenn dem Täter die Legitimation zur Herstellung fehlt (vgl.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Geldfälschung"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.5403205156326294,
+          "judge_score": 0,
+          "judge_reason": "Gefährdungsdelikt, nicht Betrug oder Vermögensschaden",
+          "text_preview": "einen ähnlichen, ebenso gefährlichen Eingriff vornimmt,und dadurch Leib oder Leben eines anderen Menschen oder fremde Sachen von bedeutendem Wert gefährdet, wird mit Freiheitsstrafe bis zu fünf Jahren oder mit Geldstrafe bestraft.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Gefährliche Eingriffe in den Bahn-, Schiffs- und L...",
+              "Gefährliche Eingriffe in den Straßenverkehr"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.5397485494613647,
+          "judge_score": 0,
+          "judge_reason": "Geldwäsche, nicht Betrug durch Lügen",
+          "text_preview": "Ein besonders schwerer Fall liegt in der Regel vor, wenn der Täter gewerbsmäßig handelt oder als Mitglied einer Bande, die sich zur fortgesetzten Begehung von Geldwäsche verbunden hat.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.5371878147125244,
+          "judge_score": 0,
+          "judge_reason": "Fragment ohne Bezug zu Betrug oder Vermögensdelikten",
+          "text_preview": "Was er damit iErg bezweckt (Flucht, Vermeidung des Arbeitszwangs usw.)",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "q12": {
+    "vectara": {
+      "latency_sec": 1.4762599468231201,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.8073838353157043,
+          "judge_score": 0,
+          "judge_reason": "Behandelt Tatvollendung, nicht Untersuchungshaft",
+          "text_preview": "Var.). Wenn der Erfolg noch nicht eingetreten ist, muss er die Vollendung der Tat verhindern (3.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.610196053981781,
+          "judge_score": 2,
+          "judge_reason": "Thematisch relevant: Beweis und Untersuchungshaft",
+          "text_preview": "16) noch nicht bewiesen (BGHSt 10, 276; OLG Köln StraFo 2005, 216).",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.5884196162223816,
+          "judge_score": 0,
+          "judge_reason": "Insolvenzrecht, nicht Untersuchungshaft betreffend",
+          "text_preview": "14 Die StA muss Insolvenzforderung u. Insolvenzgrund lediglich glaubhaft machen; bewiesen sein muss die Forderung nicht (Bittmann/Tschakert ZInsO 2017,\nKöhler\n***",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Wirkung der Vollziehung des Vermögensarrestes"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.5859279632568359,
+          "judge_score": 0,
+          "judge_reason": "Behandelt Verdächtigung, nicht Untersuchungshaft",
+          "text_preview": ", auch wenn der Verdächtigende dies nicht weiß (Langer JZ 1987, 810); oder wenn schon nach dem Inhalt der Äußerung die objektiven oder subjektiven Voraussetzungen einer angeblich begangenen Straftat offensichtlich nicht vorliegen (vgl.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Zehnter Abschnitt. Falsche Verdächtigung"
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.5781611204147339,
+          "judge_score": 0,
+          "judge_reason": "Behandelt Urteilsbegruendung nach Verfahrensabschluss, nicht Untersuchungshaft",
+          "text_preview": "² Verzichten alle zur Anfechtung Berechtigten auf Rechtsmittel oder wird innerhalb der Frist kein Rechtsmittel eingelegt, so braucht nur angegeben zu werden, ob die dem Angeklagten zur Last gelegte Straftat aus tatsächlichen oder rechtlichen Gründen nicht festgestellt worden ist.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Vorführung einer aufgezeichneten Zeugenvernehmung"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "q13": {
+    "vectara": {
+      "latency_sec": 0.9511229991912842,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.8964465856552124,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant für Fluchtgefahr-Voraussetzungen nach § 112 StPO",
+          "text_preview": "(2) In diesen Fällen darf die Untersuchungshaft wegen Fluchtgefahr nur angeordnet werden, wenn der Beschuldigte\n1.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Haftgrund der Wiederholungsgefahr"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.7073572874069214,
+          "judge_score": 1,
+          "judge_reason": "Jugendstrafrecht, nicht allgemeine Fluchtgefahr-Voraussetzungen",
+          "text_preview": "(2) Solange der Jugendliche das sechzehnte Lebensjahr noch nicht vollendet hat, ist die Verhängung von Untersuchungshaft wegen Fluchtgefahr nur zulässig, wenn er\n1.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Fünfter Unterabschnitt. Verfahren bei Aussetzung d..."
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6617770195007324,
+          "judge_score": 1,
+          "judge_reason": "Untersuchungshaft allgemein, aber nicht Fluchtgefahr",
+          "text_preview": "² Entscheidend ist vielmehr, ob die Voraussetzungen für die Untersuchungshaft wegen der Krankheit weggefallen sind.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "7. Untersuchungshaft, einstweilige Unterbringung u..."
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6538581848144531,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant - behandelt Fluchtgefahr nach § 112",
+          "text_preview": "4 Anordnung wegen Fluchtgefahr nur, wenn außer den Voraussetzungen des § 112 Abs.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Haftgrund der Wiederholungsgefahr"
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6414971351623535,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt Fluchtgefahr nach § 112",
+          "text_preview": "Die strengeren Voraussetzungen der Fluchtgefahr nach § 112 Abs.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Zuständigkeit für weitere gerichtliche Entscheidun..."
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "q14": {
+    "vectara": {
+      "latency_sec": 1.359786033630371,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.8153095245361328,
+          "judge_score": 1,
+          "judge_reason": "Behandelt Haftdauer, aber Sicherungshaft statt Untersuchungshaft",
+          "text_preview": "Länger als die bei Widerruf der Aussetzung zu verbüßende Strafe darf die Sicherungshaft nicht dauern.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Nachträgliche Entscheidung über Strafaussetzung zu..."
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.6338683366775513,
+          "judge_score": 3,
+          "judge_reason": "Beantwortet direkt die Frage zur Haftdauer",
+          "text_preview": "1 vgl. § 123.\nFortdauer der Untersuchungshaft über sechs Monate\nRiStBV 56\n121 (1) Solange kein Urteil ergangen ist, das auf Freiheitsstrafe oder eine freiheitsentziehende Maßregel der Besserung und Sicherung erkennt, darf der Vollzug der Untersuchungshaft wegen derselben Tat über sechs Monate hinaus",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Verfahren bei der Haftprüfung"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6337177157402039,
+          "judge_score": 1,
+          "judge_reason": "Andere Haftart, nicht Untersuchungshaft",
+          "text_preview": "Länger als die bei Widerruf der Aussetzung zu verbüßende Strafe darf die Sicherungshaft nicht dauern.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Belehrung bei Strafaussetzung oder Verwarnung mit ..."
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6228636503219604,
+          "judge_score": 1,
+          "judge_reason": "Sicherungshaft, nicht Untersuchungshaft - anderer Hafttyp",
+          "text_preview": "Die Höchstdauer der Sicherungshaft beträgt 1 Jahr (§ 122a).",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Haftgrund der Wiederholungsgefahr"
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6172038316726685,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Höchstdauer Untersuchungshaft behandelt",
+          "text_preview": "4 S. 2).\nHöchstdauer der Untersuchungshaft bei Wiederholungsgefahr\n122a In den Fällen des § 121 Abs.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Verfahren bei der Haftprüfung"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "q15": {
+    "vectara": {
+      "latency_sec": 1.0062007904052734,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.8765871524810791,
+          "judge_score": 2,
+          "judge_reason": "Behandelt § 136 StPO aber ohne Belehrungspflichten",
+          "text_preview": "→ StPO § 136 Rn. 3) als Beschuldigtenvernehmung fortzusetzen (BGHSt 22, 129 (132)).",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Einleitung"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.6194815039634705,
+          "judge_score": 3,
+          "judge_reason": "Direkter Verweis auf gesuchten Paragraphen 136 StPO",
+          "text_preview": "dazu → StPO § 136 Rn.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Einleitung"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6075215935707092,
+          "judge_score": 0,
+          "judge_reason": "Behandelt Ausschreibung zur Festnahme, nicht Vernehmung",
+          "text_preview": "(1) ¹ In den Fällen des § 131 StPO veranlasst der Staatsanwalt die Ausschreibung des Beschuldigten zur Festnahme und die Niederlegung eines entsprechenden Suchvermerks im Bundeszentralregister.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6054679751396179,
+          "judge_score": 1,
+          "judge_reason": "Nur Paragraphenerwähnung, keine inhaltliche Erklärung",
+          "text_preview": "StPO), ferner die Aussagen der Beschuldigten (§§ 136, 163a Abs.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare",
+            "breadcrumb": [
+              "Einleitung"
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.5991005897521973,
+          "judge_score": 1,
+          "judge_reason": "Erwähnt § 136 StPO, aber nur Aufzeichnungsaspekt",
+          "text_preview": "(3) ¹ Hinsichtlich der Möglichkeit und gegebenenfalls Pflicht zur Aufzeichnung der Vernehmung des Beschuldigten in Bild und Ton sind § 136 Absatz 4 StPO bzw.",
+          "metadata": {
+            "document_name": "Beck'sche Kurz-Kommentare"
+          }
+        }
+      ]
+    }
+  },
+  "q16": {
+    "vectara": {
+      "latency_sec": 0.8969058990478516,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.8397610187530518,
+          "judge_score": 1,
+          "judge_reason": "Behandelt Abgrenzung, aber zu Nötigung statt Unterschlagung",
+          "text_preview": "Vom Betrug unterscheidet sie sich im Mittel, das dort Täuschung, hier Nötigung ist.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Erpressung"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5949892997741699,
+          "judge_score": 3,
+          "judge_reason": "Direkte Abgrenzung zwischen § 263 und § 246",
+          "text_preview": "Gegenüber § 263 tritt § 246 zurück, wenn die Zueignung durch Betrug geschieht; dagegen ist ein der Unterschlagung nachfolgender Sicherungsbetrug mitbestrafte Nachtat.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Neunzehnter Abschnitt. Diebstahl und Unterschlagun..."
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.5772077441215515,
+          "judge_score": 2,
+          "judge_reason": "Behandelt Betrug, aber nicht Abgrenzung zur Unterschlagung",
+          "text_preview": "Ein (vollendeter) Betrug liegt vor, wenn zum Zeitpunkt des Abschlusses eines Verpflichtungsgeschäfts feststeht, dass der durch Täuschung erlangten Verpflichtung (= Vermögensverfügung) eine (irrtumsbedingt unerkannt) nur minderwertige Gegenleistung gegenübersteht (vgl.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Zweiundzwanzigster Abschnitt. Betrug und Untreue"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.5752785205841064,
+          "judge_score": 1,
+          "judge_reason": "Betrug erwähnt, aber spezielle Provisionsfälle, nicht Abgrenzung",
+          "text_preview": "Beim Betrug durch Provisionsvertreter fehlt es an der Stoffgleichheit zwischen dem Schaden des getäuschten Kunden und der Provisionszahlung an den Täter; Stoffgleichheit besteht hier zwischen dem Schaden des Kunden und dem Vorteil des Auftraggebers (insoweit dritttnütziger Betrug) sowie ggf.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Zweiundzwanzigster Abschnitt. Betrug und Untreue"
+            ]
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.5740475058555603,
+          "judge_score": 2,
+          "judge_reason": "Thematisch relevant, behandelt Betrug aber nicht Unterschlagungsabgrenzung",
+          "text_preview": "Betrug und Untreue\n§ 263\nfügender und Geschädigter nicht identisch sind und wenn der Vermögensvorteil dem Täter nicht unmittelbar aus der Verfügung zuflißt.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Zweiundzwanzigster Abschnitt. Betrug und Untreue"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "q17": {
+    "vectara": {
+      "latency_sec": 1.8081231117248535,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.8695019483566284,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Abgrenzung Diebstahl und Raub",
+          "text_preview": "Zur Abgrenzung von (Diebstahl und) Raub vgl.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Erpressung"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.6855389475822449,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: behandelt Raub-Diebstahl-Abgrenzung",
+          "text_preview": "Raub und Erpressung§ 249\nnur Diebstahl (§ 243 Abs.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Zwanzigster Abschnitt. Raub und Erpressung"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6589577794075012,
+          "judge_score": 2,
+          "judge_reason": "Thematisch relevant: Diebstahl-Raub-Verhältnis, aber Konkurrenzfragen",
+          "text_preview": "Tateinheit kann zwischen vollendetem Diebstahl und versuchtem Raub gegeben sein (BGHSt 21, 78; NStZ-RR 2005, 202 (203)); zwischen § 250 und § 249 im Fall unterschiedlicher Begehung gegenüber mehreren Personen (BGHR § 249 I Konk.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Zwanzigster Abschnitt. Raub und Erpressung"
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.655880868434906,
+          "judge_score": 1,
+          "judge_reason": "Nur Paragraphenübersicht ohne inhaltliche Abgrenzungskriterien",
+          "text_preview": "Raub ... § 249Schwerer Raub ... § 250Raub mit Todesfolge ... § 251Räuberischer Diebstahl ... § 252Erpressung ... § 253(weggefallen) ... § 254Räuberische Erpressung ... § 255Führungsaufsicht ... § 256",
+          "metadata": {
+            "document_name": "Strafgesetzbuch"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6444180011749268,
+          "judge_score": 1,
+          "judge_reason": "Erwähnt beide Delikte, aber keine Abgrenzungskriterien",
+          "text_preview": "Tateinheit ist mit §§ 223 ff., Tötungsdelikten, Diebstahl und Raub möglich.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "116 bis 119 (weggefallen)"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "q18": {
+    "vectara": {
+      "latency_sec": 0.9055418968200684,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.8477350473403931,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Verhältnis Betrug zu Computerbetrug",
+          "text_preview": "Ebenso ist das Verhältnis zwischen (möglicher) Beteiligung am Betrug und (sicherem) späterem Computerbetrug hinsichtlich desselben Schadens zu behandeln (BGH NStZ 2008, 396 (396 f.)).",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Übersicht"
+            ]
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.6680161356925964,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Abgrenzung Betrug vs Computerbetrug",
+          "text_preview": "(Teil 1), GA 2023, 615; (Teil 2) GA 2023, 675; Schuhr, Betrug vs. Computerbetrug.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Zweiundzwanzigster Abschnitt. Betrug und Untreue"
+            ]
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.6496264338493347,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant für Abgrenzung § 263/263a StGB",
+          "text_preview": "4), Computerbetrug (§ 263a Abs.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Neunzehnter Abschnitt. Diebstahl und Unterschlagun..."
+            ]
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.6372189521789551,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant - behandelt genau den erfragten Computerbetrug",
+          "text_preview": "Computerbetrug",
+          "metadata": {
+            "document_name": "Strafgesetzbuch"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.6090959310531616,
+          "judge_score": 1,
+          "judge_reason": "Behandelt § 263, aber Abgrenzung zu § 246 statt § 263a",
+          "text_preview": "Gegenüber § 263 tritt § 246 zurück, wenn die Zueignung durch Betrug geschieht; dagegen ist ein der Unterschlagung nachfolgender Sicherungsbetrug mitbestrafte Nachtat.",
+          "metadata": {
+            "document_name": "Strafgesetzbuch",
+            "breadcrumb": [
+              "Neunzehnter Abschnitt. Diebstahl und Unterschlagun..."
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
