@@ -46,59 +46,68 @@ Nutzerfrage
 
 ---
 
-## Benchmark: Unser RAG vs. RAGIE vs. OpenAI
+## Benchmark: Unser RAG vs. RAGIE vs. OpenAI vs. Vectara
 
-Der Benchmark vergleicht die Retrieval-Qualitaet unseres Systems gegen zwei externe RAG-Dienste
+Der Benchmark vergleicht die Retrieval-Qualitaet unseres Systems gegen drei externe RAG-Dienste
 auf **18 juristischen Test-Queries** aus 5 Kategorien (exakte §-Fragen, Konzepte, Alltagssprache,
-StPO-Prozessrecht, Cross-Reference). Alle drei Systeme werden mit **identischen Fachliteratur-Daten**
-(Fischer StGB + Schmitt/Koehler StPO) befuellt, die Relevanz jedes Top-10 Chunks bewertet
+StPO-Prozessrecht, Cross-Reference). Alle vier Systeme werden mit **identischen Fachliteratur-Daten**
+(Fischer StGB + Schmitt/Koehler StPO) befuellt, die Relevanz jedes Top-K Chunks bewertet
 **Claude** auf einer Skala 0-3.
+
+> Gemini File Search Store war zum Zeitpunkt des Laufs (18.04.2026) wegen eines
+> dokumentierten API-Ausfalls bei Google (500 INTERNAL beim Upload) nicht benchmarkbar
+> und wird nachgereicht, sobald der Endpoint wieder stabil ist.
 
 | System | Technologie |
 |---|---|
 | **ours** | Qdrant + E5-Large + BM25 + Claude-Expansion + Cohere-Reranking |
 | **ragie** | Managed RAG Service (hybrid + integriertes Reranking) |
 | **openai** | OpenAI Vector Stores API (Dense-only) |
+| **vectara** | Vectara Managed RAG (Boomerang-2 multilingual Embeddings) |
 
 ### Gesamtergebnis
 
 ![Benchmark Overview](benchmark_results/overview_latest.png)
 
-**Unser RAG liegt bei Qualitaet klar vorne** — nDCG@10 von **0,975** (RAGIE 0,945, OpenAI 0,718),
-und bei **Relevance@3** sind **96 %** der Top-3-Treffer tatsaechlich relevant (RAGIE 87 %, OpenAI 48 %).
-OpenAI ist mit **1,7 s** zwar am schnellsten, zeigt aber deutlich schlechtere Qualitaet —
-bei deutschsprachigen Fachtexten reicht reines Dense-Retrieval ohne BM25 und ohne Query-Expansion
-nicht aus.
+**Unser RAG fuehrt bei der Qualitaet knapp vor RAGIE** — nDCG@10 **0,972** (RAGIE 0,964, Vectara 0,940, OpenAI 0,735),
+bei **Relevance@3** sind **91 %** der Top-3-Treffer tatsaechlich relevant (RAGIE 83 %, Vectara 54 %, OpenAI 44 %).
+**Vectara** ist mit **1,1 s** Latenz am schnellsten und bei nDCG respektabel (0,94), bricht aber
+bei Relevance@10 auf 41 % ein — vergleichbar schlecht wie OpenAI. **Unsere Pipeline ist mit ~6 s
+am langsamsten**, liefert dafuer die konsistenteste Vollstaendigkeit.
 
 ### Nach Kategorie
 
 ![Benchmark per Category](benchmark_results/per_category_latest.png)
 
-| Kategorie | ours | ragie | openai | Gewinner |
-|---|---|---|---|---|
-| Exakte §-Fragen (z.B. "§ 112 StPO Haftgruende") | **0.99** | 0.92 | 0.89 | ours |
-| Konzept ("Vermoegensverfuegung") | **0.99** | 0.98 | 0.44 | ours |
-| Alltagssprache ("Wann darf die Polizei suchen?") | **0.98** | 0.95 | 0.54 | ours |
-| Cross-Reference ("Betrug vs. Computerbetrug") | **0.96** | 0.92 | 0.85 | ours |
-| StPO-Prozess | 0.94 | 0.95 | **0.97** | openai (knapp) |
+| Kategorie | ours | ragie | openai | vectara | Gewinner |
+|---|---|---|---|---|---|
+| Exakte §-Fragen (z.B. "§ 112 StPO Haftgruende") | 0.99 | 0.95 | 0.91 | **1.00** | vectara (knapp) |
+| Konzept ("Vermoegensverfuegung") | 0.94 | **0.99** | 0.54 | 0.95 | ragie |
+| Alltagssprache ("Wann darf die Polizei suchen?") | **0.99** | 0.96 | 0.49 | 0.88 | ours |
+| Cross-Reference ("Betrug vs. Computerbetrug") | **0.98** | 0.96 | 0.85 | 0.94 | ours |
+| StPO-Prozess | 0.97 | 0.97 | **0.98** | 0.94 | openai (knapp) |
 
 **Staerken:**
 - **ours** durch Query Expansion + Hybrid Search bei allen Frage-Typen robust
 - **ragie** gleichmaessig gut, kein echter Schwachpunkt
+- **vectara** stark bei exakten §-Fragen und schnellster Service
 - **openai** bei klaren juristischen Fragen (StPO-Prozess) okay
 
 **Schwaechen:**
 - **openai** bricht bei **Alltagssprache und Konzept-Fragen** dramatisch ein
-  (z.B. q06 "Vermoegensverfuegung" → OpenAI liefert Chunks ueber Schuldunfaehigkeit
-  und Sexualstraftaten). Ursache: **OpenAI Vector Stores sind Dense-only**,
+  (q06 "Vermoegensverfuegung" → OpenAI liefert Chunks ueber Schuldunfaehigkeit
+  und Sexualstraftaten, nDCG=0.43). Ursache: **OpenAI Vector Stores sind Dense-only**,
   ohne BM25 versagt die Suche bei praeziser juristischer Terminologie.
+- **vectara** scored viele Top-1-Treffer richtig (Top-1 2.17), verliert aber stark
+  bei **Recall** (Rel@10 nur 41 %) — nach den ersten 2-3 Chunks wird die Liste duenn.
+  Vermutliche Ursache: Default-Chunker ohne §-Awareness.
 - **ours** ist am langsamsten (~6 s) wegen Query-Expansion + Reranking-Overhead.
 
 ### Pro Einzel-Query
 
 ![Benchmark per Query](benchmark_results/per_query_latest.png)
 
-Bei 4 Queries (q06, q07, q10, q12) hat OpenAI **nDCG = 0** — keine einzige der 10 zurueckgegebenen
+Bei 3 Queries (q07, q10, q12) hat OpenAI **nDCG = 0** — keine einzige der zurueckgegebenen
 Chunks wurde vom Judge als relevant bewertet. Unsere Pipeline hat bei allen 18 Queries mindestens
 einen relevanten Treffer geliefert.
 
@@ -106,11 +115,12 @@ einen relevanten Treffer geliefert.
 
 ![Benchmark Latency](benchmark_results/latency_latest.png)
 
-| System | Median | Range |
-|---|---|---|
-| ours | ~6 s | 4,8 – 11,6 s |
-| ragie | ~2 s | 1,7 – 3,7 s |
-| openai | ~1,7 s | 1,4 – 2,4 s |
+| System | Mean |
+|---|---|
+| vectara | **1,10 s** |
+| openai | 1,73 s |
+| ragie | 1,92 s |
+| ours | 5,83 s |
 
 Hauptkostenfaktor unserer Pipeline: **Query Expansion** (~3 s Claude-Call). Ohne Expansion
 waere die Pipeline bei ~3 s und damit vergleichbar mit RAGIE.
@@ -122,12 +132,14 @@ waere die Pipeline bei ~3 s und damit vergleichbar mit RAGIE.
 | **ours** | ~0,005 $ | Claude-Expansion (~0,003) + Cohere-Rerank (~0,002); Qdrant Cloud extra |
 | **ragie** | ~0,01 $ | Je nach Plan, Retrieval + Rerank im Paket |
 | **openai** | ~0,003 $ | Vector Store Search günstig, aber schlechtere Qualitaet |
+| **vectara** | ~0,0025 $ | Free Tier ausreichend fuer Benchmark; pay-per-query im Growth-Plan |
 
 ### Benchmark selber laufen lassen
 
 ```bash
-python benchmark.py                                     # alle drei Systeme
+python benchmark.py                                     # alle Systeme
 python benchmark.py --systems ours,ragie                # nur 2 Systeme
+python benchmark.py --systems ours,vectara --top-k 5    # nur ours vs vectara
 python benchmark.py --systems ours --skip-judge         # nur Latenz messen
 python benchmark_charts.py                              # Charts aus letztem Run erzeugen
 ```
@@ -238,11 +250,13 @@ COHERE_API_KEY=...
 RAGIE_API_KEY=...
 OPENAI_API_KEY=sk-...
 OPENAI_VECTOR_STORE_ID=vs_...
+VECTARA_API_KEY=...
+VECTARA_CORPUS_KEY=strafrecht
 ```
 
 > Ohne `ANTHROPIC_API_KEY` laeuft das System ohne Query Expansion.
 > Ohne `COHERE_API_KEY` wird automatisch ein lokaler Cross-Encoder verwendet.
-> Ohne `RAGIE_API_KEY` / `OPENAI_API_KEY` werden diese Systeme im Benchmark uebersprungen.
+> Ohne `RAGIE_API_KEY` / `OPENAI_API_KEY` / `VECTARA_API_KEY` werden diese Systeme im Benchmark uebersprungen.
 
 ---
 
@@ -447,6 +461,7 @@ RAG_LW/
   benchmark_charts.py     Chart-Generator (matplotlib)
   ragie_client.py         RAGIE-Adapter (gleiche API wie retrieve.py)
   openai_client.py        OpenAI Vector Store Adapter
+  vectara_client.py       Vectara Managed-RAG Adapter
   eval_queries.yaml       Benchmark-Test-Queries (18 Queries, 5 Kategorien)
   data/
     fachliteratur/        Kommentar-Markdown-Dateien
