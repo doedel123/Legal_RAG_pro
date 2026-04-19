@@ -5,7 +5,8 @@
       "Bash(python split_md.py)",
       "Bash(python benchmark_charts.py --input benchmark_results/benchmark_results_20260418-135217.json)",
       "Bash(python benchmark.py --systems ours,ragie,openai,vectara --top-k 5)",
-      "Bash(python benchmark_charts.py --input benchmark_results/benchmark_results_20260418-144540.json)"
+      "Bash(python benchmark_charts.py --input benchmark_results/benchmark_results_20260418-144540.json)",
+      "Bash(python -c ' *)"
     ]
   }
 }

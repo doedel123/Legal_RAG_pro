@@ -267,6 +267,120 @@ python benchmark.py --systems ours,ours-cohere,ours-mxbai,ours-mxbai-voyage --to
 
 ---
 
+## Produktions-Deployment (Railway)
+
+Das RAG laeuft als schlanker FastAPI-Server, der **ausschliesslich API-Calls**
+(Mixedbread, Voyage, Anthropic, Qdrant Cloud) verwendet — kein lokales
+ML-Modell, kein torch, kein GPU. Dadurch ist das Docker-Image **<200 MB**
+und der Cold-Start kurz.
+
+### Stack in Produktion
+
+| Komponente | Technologie |
+|---|---|
+| HTTP Server | FastAPI + Uvicorn |
+| Container | Python 3.13-slim |
+| Embedding | Mixedbread API (`mxbai-embed-de-large-v1`) |
+| Rerank | Voyage API (`rerank-2.5`) |
+| Query Expansion | Anthropic API (Claude Sonnet) |
+| Vektor-DB | Qdrant Cloud |
+
+### Endpoints
+
+| Methode | Pfad | Beschreibung |
+|---|---|---|
+| `GET` | `/health` | Healthcheck (fuer Railway / Cloud Run) — **ungeschuetzt** |
+| `POST` | `/search` | Haupt-Retrieval-Endpoint — liefert Top-K Chunks als JSON |
+| `GET` | `/openai/tool_schema` | OpenAI Function-Calling Schema zum direkten Copy-Paste |
+
+Alle Endpoints ausser `/health` verlangen den Header `X-API-Key` (Wert = euer selbst
+gewaehlter `API_KEY` aus der .env). Ohne gesetztem `API_KEY` laeuft der Server
+ungesichert (nur fuer lokale Tests empfohlen).
+
+### Lokal testen
+
+```bash
+pip install -r requirements-server.txt
+cp .env.example .env.local  # und Keys eintragen
+python server.py
+# in zweitem Terminal:
+curl -X POST http://localhost:8080/search \
+    -H "X-API-Key: dein-token" -H "Content-Type: application/json" \
+    -d '{"query":"Wann liegt Untersuchungshaft vor?","top_k":5}'
+```
+
+### Deployment auf Railway
+
+```bash
+# 1. Railway CLI installieren (falls noch nicht da)
+brew install railway
+
+# 2. Im Projekt-Root einloggen und Projekt anlegen
+railway login
+railway init   # neues Projekt oder verknuepfe existierendes
+
+# 3. Alle Env-Variablen aus .env.example setzen
+#    → entweder im Railway-Dashboard (Variables-Tab)
+#    → oder per CLI:
+railway variables --set API_KEY=... \
+                  --set QDRANT_ENDPOINT=... \
+                  --set QDRANT_API_KEY=... \
+                  --set ANTHROPIC_API_KEY=... \
+                  --set MIXEDBREAD_API_KEY=... \
+                  --set VOYAGE_API_KEY=...
+
+# 4. Deployen
+railway up
+```
+
+Railway erkennt das `Dockerfile` automatisch (siehe `railway.json`). Der
+Healthcheck-Pfad `/health` wird automatisch gepollt.
+
+### Einsatz in OpenAI Function Calling
+
+Nach dem Deploy: `GET https://<dein-railway-subdomain>/openai/tool_schema`
+liefert direkt das Schema. In deiner Client-Anwendung:
+
+```python
+import openai
+import requests
+
+tools = [requests.get("https://DEIN-SERVER/openai/tool_schema",
+                       headers={"X-API-Key": API_KEY}).json()]
+
+resp = openai.chat.completions.create(
+    model="gpt-5",
+    messages=[{"role":"user","content":"Welche Haftgruende nennt § 112 StPO?"}],
+    tools=tools,
+)
+
+# OpenAI entscheidet, ob ``search_fachliteratur`` aufgerufen wird.
+# Bei tool_calls: den Endpoint selbst aufrufen und das Ergebnis als
+# tool-message zurueckspielen.
+if resp.choices[0].message.tool_calls:
+    for call in resp.choices[0].message.tool_calls:
+        args = json.loads(call.function.arguments)
+        chunks = requests.post(
+            "https://DEIN-SERVER/search",
+            headers={"X-API-Key": API_KEY},
+            json=args,
+        ).json()
+        # chunks["results"] → back to OpenAI als tool result
+```
+
+### Kosten-Ueberschlag (monatlich, bei ~1000 Queries/Tag)
+
+| Posten | Kosten |
+|---|---|
+| Railway Service (Hobby/Starter) | ~$5 |
+| Qdrant Cloud (Starter) | ~$25 |
+| Anthropic Query-Expansion | ~$3 (1000×~1k Tokens Claude Sonnet) |
+| Mixedbread Embedding | <$1 (1000×~100 Tokens) |
+| Voyage Rerank | ~$1.50 (1000×$0.0015/search) |
+| **Total** | **~$35/Monat** |
+
+---
+
 ## Architektur
 
 ```

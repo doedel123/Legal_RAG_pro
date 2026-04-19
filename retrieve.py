@@ -42,7 +42,15 @@ from typing import Optional
 
 from dotenv import load_dotenv
 from qdrant_client import QdrantClient, models
-from sentence_transformers import SentenceTransformer
+
+# sentence-transformers ist nur fuer die Default-Pipeline (lokales E5) noetig.
+# Produktions-Deployments mit API-Embedder brauchen das Paket nicht.
+try:
+    from sentence_transformers import SentenceTransformer
+    HAS_SENTENCE_TRANSFORMERS = True
+except ImportError:
+    SentenceTransformer = None  # type: ignore
+    HAS_SENTENCE_TRANSFORMERS = False
 
 # Optional imports — graceful fallback if API keys missing
 try:
@@ -455,7 +463,8 @@ class JuristischerRetriever:
 
     def __init__(self, env_file: str = ".env.local",
                  enable_expansion: bool = True,
-                 enable_reranking: bool = True):
+                 enable_reranking: bool = True,
+                 lazy_model: bool = False):
         load_dotenv(env_file, override=True)
         url = os.getenv("QDRANT_ENDPOINT")
         key = os.getenv("QDRANT_API_KEY")
@@ -463,8 +472,19 @@ class JuristischerRetriever:
             raise ValueError("QDRANT_ENDPOINT / QDRANT_API_KEY nicht gesetzt")
 
         self.client = QdrantClient(url=url, api_key=key, timeout=30)
-        log.info("Lade Embedding-Modell ...")
-        self.model = SentenceTransformer(DENSE_MODEL_NAME)
+        # lazy_model=True: Model wird nicht geladen. Caller muss self.model selbst
+        # setzen (z.B. API-Embedder fuer Produktions-Deployments ohne torch).
+        if lazy_model:
+            self.model = None
+        else:
+            if not HAS_SENTENCE_TRANSFORMERS:
+                raise RuntimeError(
+                    "sentence-transformers nicht installiert. "
+                    "Entweder installieren oder JuristischerRetriever(lazy_model=True) nutzen "
+                    "und self.model manuell setzen."
+                )
+            log.info("Lade Embedding-Modell ...")
+            self.model = SentenceTransformer(DENSE_MODEL_NAME)
 
         # Query Expansion (optional)
         self.expander: Optional[QueryExpander] = None

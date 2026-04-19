@@ -43,6 +43,7 @@ from vectara_client import VectaraRetriever
 from ours_cohere_client import OursCohereRetriever
 from ours_mxbai_client import OursMxbaiRetriever
 from ours_mxbai_voyage_client import OursMxbaiVoyageRetriever
+from ours_mxbai_api_client import OursApiRetriever
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -242,6 +243,13 @@ def run_ours_mxbai(retriever: OursMxbaiRetriever, query: str,
 
 def run_ours_mxbai_voyage(retriever: OursMxbaiVoyageRetriever, query: str,
                           top_k: int) -> tuple[list[SearchResult], float]:
+    start = time.time()
+    results = retriever.search(query, top_k=top_k)
+    return results, time.time() - start
+
+
+def run_ours_api(retriever: OursApiRetriever, query: str,
+                 top_k: int) -> tuple[list[SearchResult], float]:
     start = time.time()
     results = retriever.search(query, top_k=top_k)
     return results, time.time() - start
@@ -482,6 +490,9 @@ def run_benchmark(query_file: str, top_k: int, systems: list[str],
     if "ours-mxbai-voyage" in systems:
         print("▶ Lade Ours-Mxbai + Voyage-Rerank Client ...")
         retrievers["ours-mxbai-voyage"] = OursMxbaiVoyageRetriever()
+    if "ours-api" in systems:
+        print("▶ Lade Ours-API Client (mxbai-API + Voyage-Rerank) ...")
+        retrievers["ours-api"] = OursApiRetriever()
 
     judge = None
     if not skip_judge:
@@ -521,6 +532,9 @@ def run_benchmark(query_file: str, top_k: int, systems: list[str],
                 futures["ours-mxbai-voyage"] = ex.submit(
                     run_ours_mxbai_voyage, retrievers["ours-mxbai-voyage"],
                     case.query, top_k)
+            if "ours-api" in systems:
+                futures["ours-api"] = ex.submit(
+                    run_ours_api, retrievers["ours-api"], case.query, top_k)
             if "gemini" in systems:
                 futures["gemini"] = ex.submit(run_gemini, retrievers["gemini"],
                                                case.query, top_k)
@@ -596,8 +610,8 @@ def main():
     parser.add_argument("--top-k", type=int, default=DEFAULT_TOP_K,
                         help=f"Chunks pro System (default: {DEFAULT_TOP_K})")
     parser.add_argument("--systems",
-                        default="ours,ragie,openai,gemini,vectara,ours-cohere,ours-mxbai,ours-mxbai-voyage",
-                        help="Komma-Liste: ours,ragie,openai,gemini,vectara,ours-cohere,ours-mxbai,ours-mxbai-voyage")
+                        default="ours,ragie,openai,gemini,vectara,ours-cohere,ours-mxbai,ours-mxbai-voyage,ours-api",
+                        help="Komma-Liste verschiedener Retrieval-Systeme")
     parser.add_argument("--output", default="./benchmark_results",
                         help="Output-Verzeichnis fuer Reports")
     parser.add_argument("--skip-judge", action="store_true",

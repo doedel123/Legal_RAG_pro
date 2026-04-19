@@ -1,0 +1,15 @@
+# Produktions-Deps fuer FastAPI-Server.
+# Bewusst OHNE torch / sentence-transformers — alle ML-Operationen laufen
+# ueber externe APIs (Mixedbread Embedding, Voyage Rerank, Anthropic Expansion).
+
+fastapi>=0.115
+uvicorn[standard]>=0.32
+pydantic>=2.9
+
+qdrant-client>=1.12
+anthropic>=0.39
+cohere>=5.10
+requests>=2.32
+numpy>=2.0
+python-dotenv>=1.0
+pyyaml>=6.0

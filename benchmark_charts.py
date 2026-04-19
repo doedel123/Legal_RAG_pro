@@ -38,6 +38,7 @@ COLORS = {
     "ours-cohere": "#2d4f7a",  # dunkleres Blau (Variant von ours)
     "ours-mxbai":  "#6a8fcf",  # helleres Blau (Variant von ours)
     "ours-mxbai-voyage": "#1f3a5f",  # dunkelstes Blau (Voyage-Rerank-Variant)
+    "ours-api":    "#3b6aa0",  # mittleres Blau (Produktions-Stack, API-only)
     "ragie":       "#dd8452",  # warmes Orange
     "openai":      "#55a868",  # gedaempftes Gruen
     "gemini":      "#c44e52",  # Gemini-Rot
