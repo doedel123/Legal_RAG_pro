@@ -1,4 +1,4 @@
-# Juristisches RAG-System fuer Strafrecht
+# Qdrant basiertes  RAG-System Benchmark und Optimierung speziell für Juristische Dokumente
 
 Retrieval-Augmented Generation fuer **deutsche Strafrechtsliteratur** und **Ermittlungsakten**.
 
