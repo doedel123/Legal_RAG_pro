@@ -517,7 +517,7 @@ python retrieve.py --show-expansion "Wann ist U-Haft zulaessig?"
 
 # Mit Filtern
 python retrieve.py --paragraph "§ 263" --gesetz StGB "Taeuschungshandlung"
-python retrieve.py --collection ermittlungsakten --fall Probenheld "Bestellbetrug"
+python retrieve.py --collection ermittlungsakten --fall DomenikDietrich "Bestellbetrug"
 python retrieve.py --typ Anklageschrift "Tatvorwurf"
 
 # Ohne Expansion / Reranking
@@ -536,7 +536,7 @@ python retrieve.py --interactive
 > /filter §=102 gesetz=StPO
 > Durchsuchungsvoraussetzungen
 > /coll akten
-> /filter fall=Probenheld
+> /filter fall=MarcelLeske
 > Bestellbetrug Kunden
 > /reset
 > /expand          (toggle Query Expansion an/aus)
@@ -565,7 +565,7 @@ results, _ = r.search_fachliteratur(
 # Nur Akten
 results, _ = r.search_ermittlungsakten(
     "Bestellbetrug",
-    fall="Probenheld",
+    fall="Pollex",
 )
 
 for res in results:
@@ -697,7 +697,7 @@ RAG_LW/
         StGB_Kommentar/
         StPO_Kommentar/
     ermittlungsakten/     Akten-Markdown-Dateien
-      Probenheld-MD/
+      DirkPollex-MD/
         ...
   benchmark_results/      Benchmark-Reports, JSON-Dumps, PNG-Charts
 ```
