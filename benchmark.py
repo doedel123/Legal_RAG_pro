@@ -44,6 +44,7 @@ from ours_cohere_client import OursCohereRetriever
 from ours_mxbai_client import OursMxbaiRetriever
 from ours_mxbai_voyage_client import OursMxbaiVoyageRetriever
 from ours_mxbai_api_client import OursApiRetriever
+from pageindex_client import PageIndexRetriever
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -77,6 +78,23 @@ Bewerte auf einer Skala von 0 bis 3:
       gleiche Rechtsgebiet
   1 = Tangential: gleiches Thema, aber andere Aspekte (z.B. Nachbarparagraph)
   0 = Irrelevant: beantwortet die Frage nicht, anderes Rechtsgebiet
+
+Antworte AUSSCHLIESSLICH mit einem JSON-Objekt ohne Markdown:
+{"score": <0-3>, "reason": "<max 10 Worte Begruendung>"}
+"""
+
+JUDGE_SYSTEM_PROMPT_AKTEN = """\
+Du bewertest die Relevanz von Textauszuegen aus einer Ermittlungsakte fuer
+eine konkrete Rechercheanfrage (Ermittler / Verteidiger / Staatsanwalt).
+Die Akte enthaelt Anzeigen, Vernehmungen, Vermerke, Anklageschriften,
+Beschluesse, Asservatenlisten, Recherche-Ergebnisse etc.
+
+Bewerte auf einer Skala von 0 bis 3:
+  3 = Direkt relevant: beantwortet die Frage oder enthaelt die gesuchten
+      Fakten / Personen / Ereignisse / Dokumente
+  2 = Thematisch relevant: nuetzlicher Kontext zum gleichen Tatkomplex
+  1 = Tangential: gleiche Akte, andere Aspekte
+  0 = Irrelevant: beantwortet die Frage nicht
 
 Antworte AUSSCHLIESSLICH mit einem JSON-Objekt ohne Markdown:
 {"score": <0-3>, "reason": "<max 10 Worte Begruendung>"}
@@ -149,12 +167,13 @@ class SystemRun:
 # ---------------------------------------------------------------------------
 
 class LLMJudge:
-    def __init__(self):
+    def __init__(self, system_prompt: str = JUDGE_SYSTEM_PROMPT):
         import anthropic
         api_key = os.getenv("ANTHROPIC_API_KEY")
         if not api_key:
             raise ValueError("ANTHROPIC_API_KEY fehlt")
         self.client = anthropic.Anthropic(api_key=api_key)
+        self.system_prompt = system_prompt
 
     def judge(self, query: str, context: str, chunk_text: str) -> tuple[int, str]:
         """Bewertet einen Chunk. Returns (score 0-3, reason)."""
@@ -162,7 +181,7 @@ class LLMJudge:
             resp = self.client.messages.create(
                 model=JUDGE_MODEL,
                 max_tokens=JUDGE_MAX_TOKENS,
-                system=JUDGE_SYSTEM_PROMPT,
+                system=self.system_prompt,
                 messages=[{
                     "role": "user",
                     "content": build_judge_user_prompt(query, context, chunk_text),
@@ -250,6 +269,13 @@ def run_ours_mxbai_voyage(retriever: OursMxbaiVoyageRetriever, query: str,
 
 def run_ours_api(retriever: OursApiRetriever, query: str,
                  top_k: int) -> tuple[list[SearchResult], float]:
+    start = time.time()
+    results = retriever.search(query, top_k=top_k)
+    return results, time.time() - start
+
+
+def run_pageindex(retriever: PageIndexRetriever, query: str,
+                  top_k: int) -> tuple[list[SearchResult], float]:
     start = time.time()
     results = retriever.search(query, top_k=top_k)
     return results, time.time() - start
@@ -457,7 +483,8 @@ def write_json_dump(path: Path, runs_by_query: dict):
 # ---------------------------------------------------------------------------
 
 def run_benchmark(query_file: str, top_k: int, systems: list[str],
-                  output_dir: str, skip_judge: bool):
+                  output_dir: str, skip_judge: bool,
+                  dataset: str = "fach"):
     # Load queries
     with open(query_file) as f:
         doc = yaml.safe_load(f)
@@ -486,7 +513,14 @@ def run_benchmark(query_file: str, top_k: int, systems: list[str],
         retrievers["ours-cohere"] = OursCohereRetriever()
     if "ours-mxbai" in systems:
         print("▶ Lade Ours-Mxbai-DE Client ...")
-        retrievers["ours-mxbai"] = OursMxbaiRetriever()
+        if dataset == "akten":
+            retrievers["ours-mxbai"] = OursMxbaiRetriever(
+                collection="ermittlungsakten_mxbai")
+        else:
+            retrievers["ours-mxbai"] = OursMxbaiRetriever()
+    if "pageindex" in systems:
+        print("▶ Lade PageIndex Client ...")
+        retrievers["pageindex"] = PageIndexRetriever()
     if "ours-mxbai-voyage" in systems:
         print("▶ Lade Ours-Mxbai + Voyage-Rerank Client ...")
         retrievers["ours-mxbai-voyage"] = OursMxbaiVoyageRetriever()
@@ -497,7 +531,9 @@ def run_benchmark(query_file: str, top_k: int, systems: list[str],
     judge = None
     if not skip_judge:
         print("▶ Initialisiere LLM-Judge (Claude) ...")
-        judge = LLMJudge()
+        judge_prompt = (JUDGE_SYSTEM_PROMPT_AKTEN if dataset == "akten"
+                        else JUDGE_SYSTEM_PROMPT)
+        judge = LLMJudge(system_prompt=judge_prompt)
 
     # Run retrievals (sequentially per query, parallel across systems)
     runs_by_query: dict[str, dict[str, SystemRun]] = {}
@@ -535,6 +571,9 @@ def run_benchmark(query_file: str, top_k: int, systems: list[str],
             if "ours-api" in systems:
                 futures["ours-api"] = ex.submit(
                     run_ours_api, retrievers["ours-api"], case.query, top_k)
+            if "pageindex" in systems:
+                futures["pageindex"] = ex.submit(
+                    run_pageindex, retrievers["pageindex"], case.query, top_k)
             if "gemini" in systems:
                 futures["gemini"] = ex.submit(run_gemini, retrievers["gemini"],
                                                case.query, top_k)
@@ -605,13 +644,17 @@ def main():
         description="RAG-Benchmark (unser Qdrant-RAG vs. RAGIE)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    parser.add_argument("--queries", default="eval_queries.yaml",
-                        help="YAML mit Test-Queries (default: eval_queries.yaml)")
+    parser.add_argument("--dataset", choices=["fach", "akten"], default="fach",
+                        help="fach = Fachliteratur-Benchmark (default), "
+                             "akten = Ermittlungsakten-Benchmark (ours-mxbai vs pageindex)")
+    parser.add_argument("--queries", default=None,
+                        help="YAML mit Test-Queries "
+                             "(default: eval_queries.yaml bzw. eval_queries_akten.yaml)")
     parser.add_argument("--top-k", type=int, default=DEFAULT_TOP_K,
                         help=f"Chunks pro System (default: {DEFAULT_TOP_K})")
-    parser.add_argument("--systems",
-                        default="ours,ragie,openai,gemini,vectara,ours-cohere,ours-mxbai,ours-mxbai-voyage,ours-api",
-                        help="Komma-Liste verschiedener Retrieval-Systeme")
+    parser.add_argument("--systems", default=None,
+                        help="Komma-Liste der Retrieval-Systeme "
+                             "(default haengt von --dataset ab)")
     parser.add_argument("--output", default="./benchmark_results",
                         help="Output-Verzeichnis fuer Reports")
     parser.add_argument("--skip-judge", action="store_true",
@@ -620,17 +663,29 @@ def main():
     args = parser.parse_args()
 
     load_dotenv(args.env_file, override=True)
-    systems = [s.strip() for s in args.systems.split(",") if s.strip()]
+
+    if args.dataset == "akten":
+        default_queries = "eval_queries_akten.yaml"
+        default_systems = "ours-mxbai,pageindex"
+    else:
+        default_queries = "eval_queries.yaml"
+        default_systems = ("ours,ragie,openai,gemini,vectara,ours-cohere,"
+                           "ours-mxbai,ours-mxbai-voyage,ours-api")
+
+    query_file = args.queries or default_queries
+    systems_str = args.systems or default_systems
+    systems = [s.strip() for s in systems_str.split(",") if s.strip()]
     if not systems:
         print("Keine Systeme angegeben.")
         sys.exit(1)
 
     run_benchmark(
-        query_file=args.queries,
+        query_file=query_file,
         top_k=args.top_k,
         systems=systems,
         output_dir=args.output,
         skip_judge=args.skip_judge,
+        dataset=args.dataset,
     )
 
 

@@ -1,0 +1,122 @@
+# Benchmark-Queries fuer Ermittlungsakten-Vergleich (ours-mxbai vs. PageIndex)
+# Fall: donkredito.com (Phishing/Subscription-Trap, Az. 107 Js 1286/20)
+#
+# ground_truth: vom User validierte Referenz-Antwort fuer den LLM-Judge.
+
+queries:
+
+  # ===== 1. Fakten & Personen =====
+  - id: a01
+    category: fakten
+    query: "Wer ist die Geschaedigte im Fall donkredito?"
+    context: "Name, Geburtsdatum, Wohnort der Geschaedigten aus Anzeige und Vernehmung"
+    ground_truth: >
+      Zeyneb Taya, geboren am 23.08.2001 in Karlsruhe, wohnhaft in Karlsruhe.
+
+  - id: a02
+    category: fakten
+    query: "Wer sind die Beschuldigten und welche Firmen leiten sie?"
+    context: "Namen der in der Anklage Beschuldigten; ihre Rollen in den beteiligten Firmen"
+    ground_truth: >
+      In der Anklageschrift werden nur zwei Personen beschuldigt: Patrick Schweers
+      und Walter Voell. Weitere Personen (u.a. Viktor Miuller, Maurice Christiaan
+      Davies, Miller, Bigovic) waren zwar ursprünglich beschuldigt - etwa als
+      Geschaeftsfuehrer der Payplus GmbH, Clever Cards B.V., Intaxx B.V. bzw.
+      PLUS CARDS LTD - ihre Verfahren wurden jedoch eingestellt.
+
+  - id: a03
+    category: fakten
+    query: "Unter welchem Aktenzeichen wird der Fall gefuehrt?"
+    context: "Aktenzeichen der Staatsanwaltschaft Aachen"
+    ground_truth: >
+      107 Js 1286/20 (Staatsanwaltschaft Aachen).
+
+  # ===== 2. Sachverhalt & Hergang =====
+  - id: a04
+    category: sachverhalt
+    query: "Wie lief die Betrugsmasche auf donkredito.com ab?"
+    context: "Geschaeftsmodell der Website, wie Opfer zu Zahlungsverpflichtungen gelangten"
+    ground_truth: >
+      donkredito.com bewarb Kredite bis zu 7.500 EUR ohne Schufa. Besucher gaben
+      ihre Daten ein, erhielten jedoch keinen Kredit, sondern wurden unter
+      irrefuehrendem Seitendesign in eine kostenpflichtige "Bonitaetsabrechnung"
+      (ca. 30 EUR) hineingedraengt. Anschliessend folgten Mahnungen ueber hoehere
+      Betraege; die Forderungen wurden ueber die Euro Collect GmbH eingezogen.
+
+  - id: a05
+    category: sachverhalt
+    query: "Welche Zahlungen wurden von der Geschaedigten gefordert und wann?"
+    context: "Konkrete Rechnungen, Mahnungen, Betraege und Daten"
+    ground_truth: >
+      Am 20.05.2020 ging eine Rechnung der Payplus GmbH ueber 30,00 EUR ein, fuer
+      eine angeblich am 06.05.2020 abgeschlossene Bonitaetsabrechnung - aus Angst
+      von der Geschaedigten bezahlt. Am 24.06.2020 folgte eine Zahlungs-
+      aufforderung ueber 164,15 EUR, die nicht mehr beglichen wurde; statt-
+      dessen erstattete die Geschaedigte Anzeige.
+
+  - id: a06
+    category: sachverhalt
+    query: "Welche Rolle spielte Dominic Dietrich im Fall?"
+    context: "Dominic Dietrich steht nicht mit donkredito in Verbindung; seine E-Mail dient nur als Beweis fuer das irrefuehrende Seitendesign"
+    ground_truth: >
+      Dominic Dietrich hatte mit donkredito selbst nichts zu tun. Eine E-Mail
+      von ihm wird lediglich als Beweismittel dafuer zitiert, wie irrefuehrend
+      das Seitendesign von donkredito.com war.
+
+  # ===== 3. Ermittlungsmassnahmen =====
+  - id: a07
+    category: ermittlungsmass
+    query: "Wurde eine Europaeische Ermittlungsanordnung erlassen?"
+    context: "EEA nach Richtlinie 2014/41/EU fuer grenzueberschreitende Ermittlungen"
+    ground_truth: >
+      Ja, in diesem Verfahren wurde eine Europaeische Ermittlungsanordnung (EEA)
+      nach Richtlinie 2014/41/EU erlassen.
+
+  - id: a08
+    category: ermittlungsmass
+    query: "Was ergaben die Whois- und VPN-Recherchen?"
+    context: "IP-Adresse und Hosting von donkredito.com; Nutzung eines VPN-Dienstes"
+    ground_truth: >
+      Die zu donkredito.com gehoerende IP-Adresse war 185.51.8.84 mit Hostname
+      web19.easyname.com (Provider Easyname). Fuer die Anonymisierung wurde der
+      VPN-Anbieter Whoer genutzt.
+
+  - id: a09
+    category: ermittlungsmass
+    query: "Welche Asservate wurden sichergestellt?"
+    context: "Beschlagnahmte Gegenstaende aus der Durchsuchung, insbesondere IT-Asservate"
+    ground_truth: >
+      Unter Asservatennummer A-22-0663 wurden mehrere IT-Asservate gesichert:
+      drei Festplatten (Nummern 2, 3, 4), eine Rohdatensicherung (Nummer 1)
+      sowie ein Midi-Tower Office-PC (AMD A4-4000 APU) aus den Raeumen der
+      Payplus GmbH. Die forensische Sicherung erfolgte durch RBr Frantzen
+      (KK 22 IT-Ermittlungsunterstuetzung).
+
+  # ===== 4. Juristische Bewertung =====
+  - id: a10
+    category: juristisch
+    query: "Welcher Tatvorwurf wird in der Anklageschrift erhoben?"
+    context: "Vorgeworfene Straftat und zustaendiges Gericht"
+    ground_truth: >
+      Der Tatvorwurf in der Anklageschrift lautet Betrug nach § 263 StGB
+      (kein Bandenbetrug). Zustaendig ist das Landgericht Aachen.
+
+  - id: a11
+    category: juristisch
+    query: "Welche Durchsuchungen wurden angeordnet und wo fanden sie statt?"
+    context: "Durchsuchungsorte laut Beschluss; nicht in Heinsberg und nicht in Wuerselen"
+    ground_truth: >
+      Durchsuchungen fanden statt bei der Payplus GmbH in der Hubert-Wienen-
+      Strasse 30 in Aachen sowie beim Beschuldigten Patrick Schweers in
+      Wildeshausen.
+
+  - id: a12
+    category: juristisch
+    query: "Welche Zeugen wurden vernommen und zu welchen Themen?"
+    context: "Zeugenliste der Anklageschrift mit Wohnorten"
+    ground_truth: >
+      Laut Zeugenliste der Anklageschrift sind (u.a.) als Zeugen benannt:
+      Maurice Christiaan Davies (Wuerselen), Mimount Aharroud (Aachen),
+      Ingo-Ludwig Bolz (Wuerselen), Viktor Miuller (Herzogenrath),
+      Eduard Mueller (Leverkusen), Beatrice Folwerk (Herzogenrath),
+      Ralph Hauser (Aachen).

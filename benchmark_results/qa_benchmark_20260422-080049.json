@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-04-22T08:00:49",
+  "aggregate": {
+    "queries": 1,
+    "total_votes": 2,
+    "ours_win_rate": 0.0,
+    "pageindex_win_rate": 1.0,
+    "tie_rate": 0.0,
+    "consistent_across_swap": 1,
+    "consistency_rate": 1.0,
+    "ours_mean_latency": 6.06204891204834,
+    "pageindex_mean_latency": 37.185176849365234,
+    "pageindex_mean_tool_calls": 0.0
+  },
+  "queries": [
+    {
+      "id": "a01",
+      "category": "fakten",
+      "query": "Wer ist die Geschaedigte im Fall donkredito?",
+      "ground_truth": "Zeyneb Taya, geboren am 23.08.2001 in Karlsruhe, wohnhaft in Karlsruhe.",
+      "ours": {
+        "system": "ours-mxbai",
+        "answer": "Die Quellen enthalten keine eindeutige Information darüber, wer die Geschädigte im Fall Donkredito ist.",
+        "latency_sec": 6.06204891204834,
+        "tool_calls": 0
+      },
+      "pageindex": {
+        "system": "pageindex",
+        "answer": "Die erste namentlich genannte **Geschädigte** in der Akte ist:\n\n**Zeyneb Taya**\n- Geburtsdatum: 23.08.2001, Karlsruhe\n- Anschrift: Kronenstraße 24, 76133 Karlsruhe\n- Staatsangehörigkeit: deutsch\n- Beruf: Schülerin\n\n**Sachverhalt:** Zeyneb Taya erhielt am 20.05.2020 eine Rechnung der **Firma Payplus GmbH** über **30,00 Euro** für eine angebliche Bonitätsabrechnung/Kreditkarte, die sie nie bestellt hatte. Aus Angst vor Mahnverfahren und Inkasso zahlte sie den Betrag. Am 24.06.2020 folgte eine weitere Zahlungsaufforderung der Firma **Credify.me** über **164,15 Euro**, die sie verweigerte. Daraufhin erstattete sie Strafanzeige wegen Betrugs (§ 263 Abs. 1 StGB).\n\nDa es sich um ein groß angelegtes **Bandenbetrugsverfahren** (gewerbsmäßiger Betrug als Mitglied einer Bande, Az. 107 Js 1286/20) handelt, dürfte Taya nur eine von zahlreichen Geschädigten sein. Soll ich nach weiteren Geschädigten in der Akte suchen?",
+        "latency_sec": 37.185176849365234,
+        "tool_calls": 0
+      },
+      "verdicts": [
+        {
+          "order": "ours_first",
+          "winner": "pageindex",
+          "reason": "Antwort B ist korrekt und vollständig mit allen Details, während A völlig falsch behauptet, keine Information zu haben."
+        },
+        {
+          "order": "pageindex_first",
+          "winner": "pageindex",
+          "reason": "Antwort A nennt korrekt Zeyneb Taya mit allen Daten, B verneint fälschlicherweise die Verfügbarkeit der Information."
+        }
+      ]
+    }
+  ]
+}

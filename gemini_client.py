@@ -35,8 +35,11 @@ log = logging.getLogger(__name__)
 
 # Schnelles, guenstiges Modell — wir wollen nur die Chunks, nicht die Antwort
 GEMINI_MODEL = "gemini-2.5-flash"
-# Nur ein paar Tokens generieren, damit die Latenz tief bleibt
-MAX_OUTPUT_TOKENS = 64
+# Hoch genug, damit Gemini den File-Search-Tool-Call ueberhaupt ausloest.
+# Niedrigere Werte (z.B. 64) führen dazu, dass das Modell direkt eine Antwort
+# beginnt, in MAX_TOKENS laeuft und das Tool nie aufruft → leere
+# grounding_metadata. 1024 reicht zuverlaessig fuer Tool-Use + Kurz-Antwort.
+MAX_OUTPUT_TOKENS = 1024
 
 
 class GeminiRetriever:

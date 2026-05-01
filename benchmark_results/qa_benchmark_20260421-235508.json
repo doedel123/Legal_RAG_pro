@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-04-21T23:55:08",
+  "aggregate": {
+    "queries": 1,
+    "total_votes": 2,
+    "ours_win_rate": 0.0,
+    "pageindex_win_rate": 1.0,
+    "tie_rate": 0.0,
+    "consistent_across_swap": 1,
+    "consistency_rate": 1.0,
+    "ours_mean_latency": 7.7020440101623535,
+    "pageindex_mean_latency": 17.89916682243347,
+    "pageindex_mean_tool_calls": 3.0
+  },
+  "queries": [
+    {
+      "id": "a01",
+      "category": "fakten",
+      "query": "Wer ist die Geschaedigte im Fall donkredito?",
+      "ground_truth": "Zeynep Taya, geboren am 23.08.2001 in Karlsruhe, wohnhaft in Karlsruhe.",
+      "ours": {
+        "system": "ours-mxbai",
+        "answer": "Die Geschädigte im Fall donkredito ist unter anderem die Zeugin Zeynep Taya aus Karlsruhe, die am 20.05.2020 eine Rechnung über angeblich bestellte Kreditkarten erhielt und aus Angst 29,90 Euro bezahlte (Quelle 2). Weitere Geschädigte sind aus den Quellen nicht eindeutig zu entnehmen.",
+        "latency_sec": 7.7020440101623535,
+        "tool_calls": 0
+      },
+      "pageindex": {
+        "system": "pageindex",
+        "answer": "Die Geschädigte im Fall Donkredito ist Zeyneb Taya, eine deutsche Staatsbürgerin aus Karlsruhe, geboren am 23.08.2001.",
+        "latency_sec": 17.89916682243347,
+        "tool_calls": 3
+      },
+      "verdicts": [
+        {
+          "order": "ours_first",
+          "winner": "pageindex",
+          "reason": "B ist korrekter (richtiger Name, Geburtsdatum) und präziser, A enthält falschen Namen 'Zeynep' statt 'Zeyneb'"
+        },
+        {
+          "order": "pageindex_first",
+          "winner": "pageindex",
+          "reason": "A nennt korrekt Namen und Geburtsdatum, B hat falsches Datum und unnötige Details"
+        }
+      ]
+    }
+  ]
+}

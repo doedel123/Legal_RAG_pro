@@ -212,6 +212,7 @@ def build_filter(
     fall: Optional[str] = None,
     aktenzeichen: Optional[str] = None,
     dokument_typ: Optional[str] = None,
+    domain: Optional[str] = None,
 ) -> Optional[models.Filter]:
     """Baut einen Qdrant-Filter aus den uebergebenen Kriterien."""
     conditions = []
@@ -264,6 +265,14 @@ def build_filter(
             models.FieldCondition(
                 key="dokument_typ",
                 match=models.MatchValue(value=dokument_typ),
+            )
+        )
+
+    if domain:
+        conditions.append(
+            models.FieldCondition(
+                key="domain",
+                match=models.MatchValue(value=domain.strip().lower()),
             )
         )
 
@@ -524,6 +533,7 @@ class JuristischerRetriever:
         fall: Optional[str] = None,
         aktenzeichen: Optional[str] = None,
         dokument_typ: Optional[str] = None,
+        domain: Optional[str] = None,
         weight_profile: Optional[str] = None,
         expand: bool = True,
         rerank: bool = True,
@@ -584,6 +594,7 @@ class JuristischerRetriever:
             weight_profile,
             paragraph=paragraph, gesetz=gesetz, fall=fall,
             aktenzeichen=aktenzeichen, dokument_typ=dokument_typ,
+            domain=domain,
         )
 
         # Fallback: Wenn Expansion-Filter zu 0 Ergebnissen gefuehrt haben,
@@ -600,6 +611,7 @@ class JuristischerRetriever:
                 weight_profile,
                 paragraph=user_paragraph, gesetz=user_gesetz, fall=fall,
                 aktenzeichen=aktenzeichen, dokument_typ=dokument_typ,
+                domain=domain,
             )
 
         all_results.sort(key=lambda r: r.score, reverse=True)

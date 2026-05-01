@@ -1,0 +1,377 @@
+{
+  "generated_at": "2026-04-22T09:49:11",
+  "aggregate": {
+    "queries": 12,
+    "total_votes": 24,
+    "ours_win_rate": 0.5833333333333334,
+    "pageindex_win_rate": 0.4166666666666667,
+    "tie_rate": 0.0,
+    "consistent_across_swap": 6,
+    "consistency_rate": 0.5,
+    "ours_mean_latency": 8.395653943220774,
+    "pageindex_mean_latency": 71.68610564867656,
+    "pageindex_mean_tool_calls": 0.0
+  },
+  "queries": [
+    {
+      "id": "a01",
+      "category": "fakten",
+      "query": "Wer ist die Geschaedigte im Fall donkredito?",
+      "ground_truth": "Zeyneb Taya, geboren am 23.08.2001 in Karlsruhe, wohnhaft in Karlsruhe.",
+      "ours": {
+        "system": "ours-mxbai",
+        "answer": "Die Geschädigte im Fall donkredito ist unter anderem Zeynep Taya aus Karlsruhe, die am 20.05.2020 eine Rechnung über 29,90 Euro für angebliche Bearbeitungskosten nach einem Widerruf bezahlt hat und am 24.06.2020 eine weitere Zahlungsaufforderung über 164,15 Euro erhielt, die sie nicht beglich (Quelle 1). Weitere Geschädigte sind in der Tabelle der Strafanzeigen aufgeführt, darunter Eduard Daniel Balan, Michelle Trapka und Maria Andersen (Quelle 1).",
+        "latency_sec": 7.671546936035156,
+        "tool_calls": 0
+      },
+      "pageindex": {
+        "system": "pageindex",
+        "answer": "Aus der Dokumentenstruktur ist bereits klar, wer die Geschädigte ist. Ich hole die relevanten Seiten zur Bestätigung.Die **Geschädigte im Fall Donkredito** ist:\n\n---\n\n**Zeyneb Taya**\n- **Geburtsdatum:** 23. August 2001\n- **Wohnort:** Kronenstraße 24, 76133 Karlsruhe\n- **Beruf/Status:** Schülerin\n- **Staatsangehörigkeit:** deutsch\n\n### Was ist ihr passiert?\n\nAm **20. Mai 2020** erhielt sie eine Rechnung über **30,00 Euro** von der Firma **Payplus GmbH** für eine angeblich bestellte Kreditkarte – ein Vertrag, den sie nach eigener Aussage nie abgeschlossen hatte. Aus Angst vor einem Mahn- und Inkassoverfahren überwies sie die 30 Euro.\n\nAm **24. Juni 2020** folgte eine weitere Zahlungsaufforderung der Firma **Credify.me** über **164,15 Euro**, die sie nicht bezahlte.\n\nDaraufhin erstattete sie Anzeige beim **Polizeirevier Karlsruhe-Marktplatz** (Sachbearbeiter: POK Meinzer, Az.: ST/1119244/2020) wegen Betrugs gemäß § 263 StGB und stellte Strafantrag gegen die unbekannten Verantwortlichen.\n\nDer Fall wurde zunächst an die Staatsanwaltschaft Karlsruhe und schließlich an die **Staatsanwaltschaft Aachen** weitergeleitet, wo er zur umfangreicheren Ermittlung gegen die Betreiber von donkredito.com und verwandten Plattformen (PLUS CARDS LTD, payplus GmbH u.a.) geführt wurde.",
+        "latency_sec": 36.948750734329224,
+        "tool_calls": 0
+      },
+      "verdicts": [
+        {
+          "order": "ours_first",
+          "winner": "pageindex",
+          "reason": "B ist korrekter (richtige Namen/Daten), vollständiger und spezifischer, A hat falschen Namen und Geburtsdatum"
+        },
+        {
+          "order": "pageindex_first",
+          "winner": "pageindex",
+          "reason": "A ist korrekter (richtiger Name, Geburtsdatum, Betrag 30€ statt 29,90€) und vollständiger mit allen relevanten Details."
+        }
+      ]
+    },
+    {
+      "id": "a02",
+      "category": "fakten",
+      "query": "Wer sind die Beschuldigten und welche Firmen leiten sie?",
+      "ground_truth": "In der Anklageschrift werden nur zwei Personen beschuldigt: Patrick Schweers und Walter Voell. Weitere Personen (u.a. Viktor Miuller, Maurice Christiaan Davies, Miller, Bigovic) waren zwar ursprünglich beschuldigt - etwa als Geschaeftsfuehrer der Payplus GmbH, Clever Cards B.V., Intaxx B.V. bzw. PLUS CARDS LTD - ihre Verfahren wurden jedoch eingestellt.",
+      "ours": {
+        "system": "ours-mxbai",
+        "answer": "Die Beschuldigten sind Walter Völl, Tanja Völl, Dirk Pollex, Maurizio Bianchi, Dobrila Bigovic und Paul Miller. Walter Völl leitete faktisch die VeriPay B.V. und die Platinum Group AG, während Dobrila Bigovic und Paul Miller als Strohleute der PLUS CARDS LTD fungierten. Dirk Pollex war faktisch Geschäftsführer der payplus GmbH, und Maurizio Bianchi war Geschäftsführer der Platinum Card Services UK Ltd.",
+        "latency_sec": 9.457355737686157,
+        "tool_calls": 0
+      },
+      "pageindex": {
+        "system": "pageindex",
+        "answer": "Ich habe bereits aus der Dokumentstruktur viele relevante Informationen. Lassen Sie mich nun die zentralen Seiten lesen, um ein vollständiges Bild zu erhalten.Hier ist eine strukturierte Übersicht der **Beschuldigten** und ihrer Firmen im Verfahren 107 Js 1286/20 (Staatsanwaltschaft Aachen):\n\n---\n\n## Beschuldigte und ihre Firmen\n\n### 1. Dobrila Bigovic *(geb. September 1948, serbische Staatsangehörige, wohnhaft in Montenegro)*\n- **Funktion:** Geschäftsführerin (Director)\n- **Firma:** **PLUS CARDS LTD**, London (20-22 Wenlock Road, N1 7GU; Companies House Nr. 12361237)\n- **Vorwurf:** Gewerbsmäßiger Betrug als Mitglied einer Bande (über donkredito.com)\n\n---\n\n### 2. Paul Miller *(weitere Personalien unbekannt)*\n- **Funktion:** Geschäftsführer (Director)\n- **Firma:** **PLUS CARDS LTD** (gemeinsam mit Bigovic)\n- **Vorwurf:** Gewerbsmäßiger Betrug als Mitglied einer Bande\n\n---\n\n### 3. Maurice Christiaan Davies *(geb. 13.12.1994)*\n- **Funktion:** Alleingesellschafter und Geschäftsführer\n- **Firma:** **Intaxx B.V.** (niederländische Gesellschaft, Softwareentwicklung/Webseiten) – beteiligt an Diensten rund um donkredito.com\n- **Vorwurf:** Gewerbsmäßiger Betrug als Mitglied einer Bande\n\n---\n\n### 4. Dirk Pollex *(geb. 24.07.1972, Herzogenrath)*\n- **Funktion:** De-facto-Geschäftsführer; formal Prokurist und Gesellschafter\n- **Firma:** **payplus GmbH** (HRB 15828, Würselen/Herzogenrath) – Betreiberin von *Credify.me*\n- **Vorwurf:** Gewerbsmäßiger Betrug als Mitglied einer Bande\n\n---\n\n### 5. Viktor Miuller *(formaler Geschäftsführer)*\n- **Funktion:** Eingetragener Geschäftsführer\n- **Firma:** **payplus GmbH** (formal; tatsächliche Führung durch Pollex)\n- **Vorwurf:** Betrug\n\n---\n\n### 6. Judith Eva Stehlo *(geb. 25.12.1979)*\n- **Verbindung:** Mitglied des Netzwerks; Kontakt zu Walter Völl und payplus\n- **Vorwurf:** Gewerbsmäßiger Betrug als Mitglied einer Bande\n\n---\n\n### 7. Patrick Schweers *(geb. 13.05.1986)*\n- **Verbindung:** Geschäftlicher Partner im Netzwerk (Kontakt zu Völl und Pollex belegt)\n- **Vorwurf:** Gewerbsmäßiger Betrug als Mitglied einer Bande\n\n---\n\n### 8. Tanja Völl *(geb. 27.07.1984)*\n- **Funktion:** Gesellschafterin der payplus GmbH\n- **Vorwurf:** Computerbetrug\n\n---\n\n### 9. Patrizia Veronika Nowak *(geb. 24.07.1984)*\n- **Vorwurf:** **Geldwäsche** und Verschleierung unrechtmäßig erlangter Vermögenswerte\n\n---\n\n## Das betrügerische Konstrukt im Überblick\n\nDie Tathandlung bestand darin, dass Nutzer auf **donkredito.com** (betrieben durch PLUS CARDS LTD) glaubten, einen Kredit zu beantragen, tatsächlich jedoch ein kostenpflichtiges Paket („Schufafrei Sorglos Trio\") abschlossen:\n- **Prepaid-Mastercard** (PLUS CARDS LTD) – 49,90 € + 49 €/Jahr\n- **Credify.me** (payplus GmbH) – 0,49 €/Tag\n- **SchufaHeld** (Clever Cards B.V.) – 0,49 €/Tag\n\nDie Website war gezielt irreführend gestaltet, sodass die Vorauswahl dieser Produkte für den Nutzer kaum erkennbar war.",
+        "latency_sec": 58.286590814590454,
+        "tool_calls": 0
+      },
+      "verdicts": [
+        {
+          "order": "ours_first",
+          "winner": "pageindex",
+          "reason": "B nennt korrekt alle Beschuldigten mit Details, A enthält falsche Namen wie Tanja Völl und Maurizio Bianchi als Beschuldigte"
+        },
+        {
+          "order": "pageindex_first",
+          "winner": "ours-mxbai",
+          "reason": "Antwort B ist korrekt und nennt die tatsächlich Beschuldigten. Antwort A enthält viele falsche Namen und übersieht Hauptbeschuldigte."
+        }
+      ]
+    },
+    {
+      "id": "a03",
+      "category": "fakten",
+      "query": "Unter welchem Aktenzeichen wird der Fall gefuehrt?",
+      "ground_truth": "107 Js 1286/20 (Staatsanwaltschaft Aachen).",
+      "ours": {
+        "system": "ours-mxbai",
+        "answer": "Der Fall wird unter dem Aktenzeichen **107 Js 1286/20** geführt.",
+        "latency_sec": 6.17593789100647,
+        "tool_calls": 0
+      },
+      "pageindex": {
+        "system": "pageindex",
+        "answer": "Der Fall wird unter dem Aktenzeichen **107 Js 1286/20** bei der **Staatsanwaltschaft Aachen** geführt.\n\nEs handelt sich um ein Verfahren wegen **gewerbsmäßigen Betrugs als Mitglied einer Bande**, mit mehreren Beschuldigten (Aktenzeichen-Suffixe 1–5 für die einzelnen Personen, z. B. `107 Js 1286/20 1` für Müller Eduard).",
+        "latency_sec": 13.278428077697754,
+        "tool_calls": 0
+      },
+      "verdicts": [
+        {
+          "order": "ours_first",
+          "winner": "pageindex",
+          "reason": "B ist vollständiger mit Staatsanwaltschaft Aachen und relevanten Zusatzinfos, beide korrekt beim Aktenzeichen."
+        },
+        {
+          "order": "pageindex_first",
+          "winner": "ours-mxbai",
+          "reason": "Beide sind korrekt, aber B ist kürzer ohne überflüssige Details zu den Suffixen."
+        }
+      ]
+    },
+    {
+      "id": "a04",
+      "category": "sachverhalt",
+      "query": "Wie lief die Betrugsmasche auf donkredito.com ab?",
+      "ground_truth": "donkredito.com bewarb Kredite bis zu 7.500 EUR ohne Schufa. Besucher gaben ihre Daten ein, erhielten jedoch keinen Kredit, sondern wurden unter irrefuehrendem Seitendesign in eine kostenpflichtige \"Bonitaetsabrechnung\" (ca. 30 EUR) hineingedraengt. Anschliessend folgten Mahnungen ueber hoehere Betraege; die Forderungen wurden ueber die Euro Collect GmbH eingezogen.",
+      "ours": {
+        "system": "ours-mxbai",
+        "answer": "Die Betrugsmasche auf donkredito.com bestand darin, dass Besuchern durch irreführende Gestaltung der Website suggeriert wurde, sie könnten einen Kredit von bis zu 7.500 Euro beantragen, während tatsächlich kostenpflichtige Finanzprodukte wie eine Prepaid-Mastercard (49,90 € Ausgabegebühr, 49,00 € Jahresgebühr) sowie Abonnements für die Dienste \"Schufaheld\" und \"Credify.me\" (je 0,49 € pro Tag) bestellt wurden. Die Vorauswahl dieser Produkte war versteckt, und die tatsächlichen Kosten wurden erst nach Betätigung der Schaltfläche „JETZT KAUFEN“ ersichtlich. Die Seite war darauf ausgelegt, Nutzer zu täuschen, insbesondere durch die Darstellung auf Mobilgeräten.",
+        "latency_sec": 10.382597208023071,
+        "tool_calls": 0
+      },
+      "pageindex": {
+        "system": "pageindex",
+        "answer": "Hier ist eine Zusammenfassung der Betrugsmasche auf **donkredito.com**, wie sie aus den Akten hervorgeht:\n\n---\n\n## Betrugsmasche auf donkredito.com\n\n### 1. Das Lockangebot\nDie Website **donkredito.com**, betrieben von der britischen Scheinfirma **PLUS CARDS LTD** (London), warb mit einem sogenannten **„Schufafrei Sorglos Trio\"**: einer Prepaid-Mastercard mit Gold-Design und der Möglichkeit, einen Kredit bis zu 7.500 € ohne Schufa-Auskunft zu beantragen. Diese Angebote zielten gezielt auf Menschen mit schlechter Bonität ab.\n\n### 2. Das Online-Formular & versteckte Vertragsabschlüsse\nInteressenten füllten ein Online-Formular mit persönlichen Daten (Name, Adresse, E-Mail, Geburtsdatum, Mobilnummer) aus. Im Bestellprozess waren Checkboxen für kostenpflichtige Zusatzdienste eingebaut, u. a.:\n- **Credify.me** (Bonitätsüberwachung) – 0,49 €/Tag (≈ 179 €/Jahr), betrieben von **Payplus GmbH**, Würselen\n- **Schufaheld** (PDF-Downloads zu Schufa-Themen) – ebenfalls 0,49 €/Tag\n\nDiese Abonnements wurden so gestaltet, dass Nutzer sie oft **unbewusst oder ohne echte Einwilligung** abschlossen.\n\n### 3. Rechnungen und Drohungen\nOpfer erhielten anschließend **unerwartete Rechnungen** von Payplus GmbH für Leistungen, die sie nie bestellt zu haben glaubten. Zahlungen wurden eingefordert, und bei Nichtzahlung wurde sofort mit **Mahnverfahren und Inkasso** gedroht – was viele Betroffene aus Angst zur Zahlung veranlasste.\n\n### 4. Inkasso-Eskalation\nNach der ersten Zahlung folgten weitere Forderungen (z. B. 164,15 € von „Credify.me\"), teils von einer eigenen Inkassogesellschaft (**Euro Collect GmbH**).\n\n### 5. Die Täterstruktur\nDas Verfahren (Az. 107 Js 1286/20) der Staatsanwaltschaft Aachen richtete sich gegen **13 Beschuldigte** wegen **gewerbsmäßigen Betrugs als Mitglied einer Bande** – darunter Personen in führenden Positionen der beteiligten Unternehmen PLUS CARDS LTD, Payplus GmbH und Euro Collect GmbH.\n\n---\n\n**Kern der Masche:** Gezielter Einsatz von Abofallen für Menschen auf der Suche nach Kredit ohne Schufa, kombiniert mit aggressivem Inkassodruck, um Zahlungen zu erzwingen.",
+        "latency_sec": 66.67720913887024,
+        "tool_calls": 0
+      },
+      "verdicts": [
+        {
+          "order": "ours_first",
+          "winner": "ours-mxbai",
+          "reason": "Antwort A nennt korrekte Details (7.500 EUR, kostenpflichtige Bonitätsabrechnung ca. 30 EUR), während B falsche Beträge aufführt."
+        },
+        {
+          "order": "pageindex_first",
+          "winner": "ours-mxbai",
+          "reason": "Antwort B ist faktisch korrekter bzgl. Bonitaetsabrechnung statt Credify.me, kompakter und praeziser zur eigentlichen Masche."
+        }
+      ]
+    },
+    {
+      "id": "a05",
+      "category": "sachverhalt",
+      "query": "Welche Zahlungen wurden von der Geschaedigten gefordert und wann?",
+      "ground_truth": "Am 20.05.2020 ging eine Rechnung der Payplus GmbH ueber 30,00 EUR ein, fuer eine angeblich am 06.05.2020 abgeschlossene Bonitaetsabrechnung - aus Angst von der Geschaedigten bezahlt. Am 24.06.2020 folgte eine Zahlungs- aufforderung ueber 164,15 EUR, die nicht mehr beglichen wurde; statt- dessen erstattete die Geschaedigte Anzeige.",
+      "ours": {
+        "system": "ours-mxbai",
+        "answer": "Von der Geschädigten Zeyneb Taya wurden am 20.05.2020 von der Firma Payplus GmbH 30,00 Euro für eine angeblich bestellte Kreditkarte gefordert, die sie aus Angst bezahlte. Am 24.06.2020 erhielt sie eine weitere Zahlungsaufforderung über 164,15 Euro von Credify.me, die sie nicht beglich (Quellen 1, 2, 4).",
+        "latency_sec": 8.710004091262817,
+        "tool_calls": 0
+      },
+      "pageindex": {
+        "system": "pageindex",
+        "answer": "Basierend auf den Akten wurden der Geschädigten **Zeyneb Taya** (Schülerin, Karlsruhe) folgende Zahlungen gefordert:\n\n---\n\n### 1. Zahlung – 20. Mai 2020: **30,00 Euro** ✅ *bezahlt*\n- **Absender:** Payplus GmbH (Krefelderstr. 12, 52146 Würselen)\n- **Begründung:** Rechnung für eine angebliche „Bonitätsabrechnung\" / Kreditkarte, die angeblich am **06.05.2020** über donkredito.com vertraglich abgeschlossen worden sei\n- **Reaktion der Geschädigten:** Aus Angst vor angedrohtem Mahn- und Inkassoverfahren überwies sie die 30 Euro – obwohl sie nach eigener Aussage keinen Vertrag abgeschlossen hatte\n\n---\n\n### 2. Zahlungsaufforderung – 24. Juni 2020: **164,15 Euro** ❌ *nicht bezahlt*\n- **Absender:** Credify.me / Payplus GmbH\n- **Begründung:** Jahresbeitrag für „Credify.me Service\" (Bonitätsüberwachung): 178,85 Euro abzüglich angeblich bereits bezahlter 14,70 Euro = **164,15 Euro**\n- **Rechnungsnummer:** CMP-2231278\n- **Bankverbindung des Empfängers:** PAYPLUS GMBH, IBAN NL30 BUNQ 2044 6345 89\n- **Reaktion der Geschädigten:** Verweigerte die Zahlung und erstattete Strafanzeige bei der Polizei\n\n---\n\n**Gesamtschaden:** 30,00 Euro (tatsächlich gezahlt). Die Gesamtforderung belief sich auf 194,15 Euro. Die Geschädigte stellte Strafantrag wegen Betrugs (§ 263 Abs. 1 StGB) gegen die Verantwortlichen.",
+        "latency_sec": 68.89289808273315,
+        "tool_calls": 0
+      },
+      "verdicts": [
+        {
+          "order": "ours_first",
+          "winner": "pageindex",
+          "reason": "Antwort B ist vollständiger, strukturierter und enthält mehr korrekte Details wie Rechnungsnummer und IBAN, trotz etwas zu großer Länge."
+        },
+        {
+          "order": "pageindex_first",
+          "winner": "ours-mxbai",
+          "reason": "Antwort B ist korrekt, vollständig und präzise. Antwort A enthält falsche Details wie 'Kreditkarte' statt 'Bonitätsabrechnung' und ist übermäßig lang."
+        }
+      ]
+    },
+    {
+      "id": "a06",
+      "category": "sachverhalt",
+      "query": "Welche Rolle spielte Dominic Dietrich im Fall?",
+      "ground_truth": "Dominic Dietrich hatte mit donkredito selbst nichts zu tun. Eine E-Mail von ihm wird lediglich als Beweismittel dafuer zitiert, wie irrefuehrend das Seitendesign von donkredito.com war.",
+      "ours": {
+        "system": "ours-mxbai",
+        "answer": "Dominic Dietrich war im Fall \"donkredito\" als Betreiber oder Verantwortlicher mehrerer Firmen und Projekte involviert, darunter PrimeLevel Publishing GmbH, Rocksolid Software LTD und die Plattform sofortcredify.me. Er war in Geschäftsbeziehungen mit Veripay und ADMIZED eingebunden, wobei er Provisionen und Abrechnungen steuerte. Zudem plante er ein Projekt zum Verkauf von US-Urkunden an Deutsche (Quelle 1, 3, 4).",
+        "latency_sec": 9.115914344787598,
+        "tool_calls": 0
+      },
+      "pageindex": {
+        "system": "pageindex",
+        "answer": "Basierend auf den Zeugenaussagen von Walter Völl spielte **Dominic Dietrich** folgende Rollen im Fall:\n\n---\n\n### Rolle von Dominic Dietrich (München)\n\n**1. Größter Werbepartner (\"Affiliate\") von Veripay**\nEr war der wichtigste und umsatzstärkste Partner im Affiliate-Netzwerk „Platinum-Partner.de\" (Veripay). Er generierte Kunden für betrügerische Finanzprodukte über eigene Webseiten.\n\n**2. Betreiber betrügerischer Websites**\nEr betrieb u. a. **sofortcredify.me** und **sofortcredifyme.com** sowie die Seite **Flirtandsmile.com**, über die ohne jegliche Preis- oder Laufzeitinformationen Kunden für Seitensprung.tv gewonnen wurden – mit dem Ziel, Provision für jeden Kunden zu erhalten, der nicht im Testzeitraum kündigt.\n\n**3. Verbindung zu payplus GmbH / Credify.me**\nDietrich hatte die Idee, **sofortcredify.me** mit dem payplus-Produkt **Credify.me** zu kombinieren, um die Provision zu erhöhen. Er veranlasste außerdem, dass seine Provisionen nicht direkt an ihn, sondern an die **ADMIZED AG** überwiesen wurden. Seine Verbindung zu ADMIZED blieb dabei unklar.\n\n**4. Geldwäscheverdacht durch ING Bank**\nDie ING Bank (AML-Abteilung) fragte mehrfach bei Veripay nach dem Hintergrund der Zahlungen an Dietrichs Firmen **PrimeLevelPublishing GmbH** und **Rocksolid Software LTD** nach. Das Konto von Veripay wurde daraufhin gesperrt und schließlich gekündigt.\n\n**5. Projekt „Urkunden aus Amerika\"**\nDietrich bot Walter Völl ein gemeinsames Projekt an: den Verkauf amerikanischer Hochschulzertifikate/-titel an Deutsche. Er hatte US-Firma, Website und Werbematerial – Druck, Logistik und Mahnwesen sollten von Veripay/payplus (Dirk Pollex) übernommen werden.\n\n**6. Persönliche Kontakte**\nVöll traf Dietrich dreimal persönlich – in Aachen, Köln und am 06.12.2018 in Dubai (auf Einladung von Marcel Leske).\n\n---\n\n**Zusammenfassung:** Dominic Dietrich war ein zentraler Akteur im Affiliate-Netzwerk hinter den Betrugsseiten. Er generierte Kunden über irreführende Websites, verschleierte Geldflüsse über Drittfirmen und stand im Verdacht der Geldwäsche – wurde jedoch primär als **externer Werbepartner** und nicht als direkter Betreiber der Kernseiten (donkredito.com, crediseven.com) identifiziert.",
+        "latency_sec": 57.90637397766113,
+        "tool_calls": 0
+      },
+      "verdicts": [
+        {
+          "order": "ours_first",
+          "winner": "pageindex",
+          "reason": "Antwort A verwechselt Dominic Dietrich mit der tatsaechlichen Rolle - er war nicht direkt bei donkredito involviert, sondern nur Affiliate-Partner."
+        },
+        {
+          "order": "pageindex_first",
+          "winner": "ours-mxbai",
+          "reason": "Antwort A ist detailliert aber faktisch falsch - Dietrich war nicht zentral im donkredito-Fall involviert, nur E-Mail-Beweis."
+        }
+      ]
+    },
+    {
+      "id": "a07",
+      "category": "ermittlungsmass",
+      "query": "Wurde eine Europaeische Ermittlungsanordnung erlassen?",
+      "ground_truth": "Ja, in diesem Verfahren wurde eine Europaeische Ermittlungsanordnung (EEA) nach Richtlinie 2014/41/EU erlassen.",
+      "ours": {
+        "system": "ours-mxbai",
+        "answer": "Ja, eine Europäische Ermittlungsanordnung (EEA) wurde erlassen. Sie wurde von der Staatsanwaltschaft Aachen im Rahmen des Verfahrens 107 Js 1286/20 gegen Dobrila Bigovic und Paul Miller wegen des Verdachts des bandenmäßigen Betrugs ausgestellt und an die Staatsanwaltschaft Wien zur Vollstreckung übermittelt. Dies geht aus mehreren Quellen hervor, darunter Quelle 3 und Quelle 6.",
+        "latency_sec": 8.056731939315796,
+        "tool_calls": 0
+      },
+      "pageindex": {
+        "system": "pageindex",
+        "answer": "Ja, es wurden mehrere Europäische Ermittlungsanordnungen (EEA) erlassen. Ich lese die relevanten Seiten für Details:**Ja, es wurden mehrere Europäische Ermittlungsanordnungen (EEA) erlassen.**\n\nHier eine Zusammenfassung der wesentlichen EEAs aus der Akte:\n\n---\n\n### 1. Erste EEA – 26.11.2020\n- **Az.:** 107 Js 1286/20 (998 AR 393/20 rh-a)\n- **Anordnungsstaat:** Bundesrepublik Deutschland (StA Aachen)\n- **Vollstreckungsstaat:** Republik Österreich (StA Wien)\n- **Rechtsgrundlage:** Richtlinie 2014/41/EU\n- **Maßnahme:** Erhebung der **Bestandsdaten** der Website https://donkredito.com beim Serverbetreiber **Nessus GmbH**, Wien – insbesondere Name, Kontaktdaten, Zahlungsmodalitäten, Kontoverbindung des Kunden.\n- **Beschuldigte:** Dobrila Bigovic (serbische Staatsangehörige, wohnhaft in Montenegro) und Paul Miller, beide als Geschäftsführer der **PLUS CARDS LTD** (London), wegen Verdachts des **bandenmäßigen Betrugs**.\n\n---\n\n### 2. Ergänzungs-EEA – 18.01.2021\n- **Az.:** 107 Js 1286/20 (998 AR 12/21 rh-a)\n- **Erlass:** StA Aachen / OStA Breuer\n- **Anlass:** Das Amtsgericht Aachen hatte zuvor mit Beschluss vom 14.01.2021 (621 Gs 54/21) festgestellt, dass die Durchsuchung der Nessus GmbH und die **Beschlagnahme der Inhaltsdaten** von https://donkredito.com/ nach der StPO zulässig wäre.\n- **Maßnahme:** Erweiterung des Rechtshilfeersuchens auf die **Beschlagnahme der Inhaltsdaten** der Website – wegen des drohenden Datenverlusts auch per Vorab-Fax übermittelt.\n- Diese EEA ist ausdrücklich eine **Ergänzung** zur EEA vom 24.11.2020.\n\n---\n\n### 3. Weitere EEAs im Parallelverfahren (107 Js 1718/20)\nLaut Dokumentenstruktur (S. 249–257) wurde auch im Verfahren zu **crediseven.com** mindestens eine EEA erlassen – ebenfalls an die StA Wien gerichtet – zur vorläufigen Sicherung von Daten der **Mail-Exchange-Server der easyname GmbH**, ebenfalls gegen Bigovic und Miller.\n\n---\n\n**Fazit:** Die StA Aachen hat mindestens **drei EEAs** im Wege des Rechtshilfeverkehrs an die österreichische StA Wien gerichtet, jeweils zur Datensicherung und Beweismittelbeschaffung im Rahmen der Betrugsermittlungen zu donkredito.com und crediseven.com.",
+        "latency_sec": 69.68485403060913,
+        "tool_calls": 0
+      },
+      "verdicts": [
+        {
+          "order": "ours_first",
+          "winner": "ours-mxbai",
+          "reason": "A ist korrekt und präzise. B übertreibt mit 'mehreren EEAs' und ist unnötig ausführlich ohne Mehrwert."
+        },
+        {
+          "order": "pageindex_first",
+          "winner": "ours-mxbai",
+          "reason": "Antwort B ist korrekt, vollständig und präzise, während A durch übermäßige Länge und unnötige Details vom Kern ablenkt."
+        }
+      ]
+    },
+    {
+      "id": "a08",
+      "category": "ermittlungsmass",
+      "query": "Was ergaben die Whois- und VPN-Recherchen?",
+      "ground_truth": "Die zu donkredito.com gehoerende IP-Adresse war 185.51.8.84 mit Hostname web19.easyname.com (Provider Easyname). Fuer die Anonymisierung wurde der VPN-Anbieter Whoer genutzt.",
+      "ours": {
+        "system": "ours-mxbai",
+        "answer": "Die Whois-Recherchen ergaben, dass die Domain \"donkredito.com\" am 6. April 2020 registriert wurde, der Registrar Namecheap Inc. ist und die Webseite auf einem Server der Nessus GmbH in Österreich gehostet wird (IP-Adresse: 185.51.8.84). Die VPN-Recherchen ergaben keine spezifischen neuen Erkenntnisse, sondern verweisen auf allgemeine VPN-Dienste.",
+        "latency_sec": 8.304543256759644,
+        "tool_calls": 0
+      },
+      "pageindex": {
+        "system": "pageindex",
+        "answer": "Die relevanten Abschnitte liegen auf den Seiten 73–89. Ich lade den Inhalt jetzt:Hier sind die wesentlichen Ergebnisse der Whois- und IP-Recherchen aus den Akten:\n\n---\n\n## Whois-Recherche zu donkredito.com (5.10.2020)\n\nDie Abfrage über `whoer.net/checkwhois` ergab:\n\n- **Domain registriert am:** 6. April 2020 (Ablauf: 6. April 2021)\n- **Registrar:** NAMECHEAP INC (whois.namecheap.com)\n- **Registrant:** → **WhoisGuard Protected** (WhoisGuard, Inc., Panama)\n\nDie Inhaberdaten waren vollständig durch den Datenschutzdienst **WhoisGuard** verschleiert. Alle Kontaktfelder (Name, Adresse, Telefon, E-Mail) verweisen auf eine anonymisierte Postfachadresse in Panama. Eine direkte Identifizierung des Domain-Inhabers war damit nicht möglich.\n\n---\n\n## IP-Adress-Recherche (22.11.2020)\n\n| Merkmal | Ergebnis |\n|---|---|\n| **IP-Adresse** | 185.51.8.84 |\n| **Standort** | Wien (Österreich), PLZ 1220 |\n| **Anbieter/Organisation** | **Nessus GmbH**, Wien |\n| **Sperrliste** | Nein |\n| **TOR-Netzwerk** | Nein |\n\nKein Einsatz von VPN oder Anonymisierungstools seitens der Domain-Betreiber wurde festgestellt – die Server-IP war klar der Nessus GmbH in Wien zuzuordnen.\n\n---\n\n## Ermittlerischer Befund und Konsequenz\n\nStaatsanwalt Bodden hielt am **4. November 2020** fest: Die Whois-Abfrage ergab, dass donkredito.com über einen Server der **Nessus GmbH (Wien)** betrieben wird. Diese teilte jedoch mit, dass sie **Bestandsdaten nur auf Ersuchen österreichischer Strafverfolgungsbehörden** herausgibt.\n\nDaraufhin stellte die StA Aachen am **24./26. November 2020** eine **Europäische Ermittlungsanordnung (EEA)** gemäß RL 2014/41/EU an die **Staatsanwaltschaft Wien**, um die Nutzer-/Bestandsdaten des Servers zu erlangen.\n\n---\n\n**Zusammenfassung:** Die Domain-Inhaber verschleierten ihre Identität durch WhoisGuard, die Server-IP ließ sich jedoch klar einem Wiener Hosting-Anbieter (Nessus GmbH) zuordnen – was letztlich ein Rechtshilfeersuchen nach Österreich notwendig machte.",
+        "latency_sec": 55.85016489028931,
+        "tool_calls": 0
+      },
+      "verdicts": [
+        {
+          "order": "ours_first",
+          "winner": "ours-mxbai",
+          "reason": "A ist korrekt und praesize: IP 185.51.8.84, Hostname web19.easyname.com, Provider Easyname. B nennt falsch Nessus GmbH statt Easyname."
+        },
+        {
+          "order": "pageindex_first",
+          "winner": "ours-mxbai",
+          "reason": "Antwort B nennt korrekt IP 185.51.8.84 und Nessus GmbH, aber verpasst Hostname und VPN-Anbieter Whoer. A ist zu lang mit falschen Details."
+        }
+      ]
+    },
+    {
+      "id": "a09",
+      "category": "ermittlungsmass",
+      "query": "Welche Asservate wurden sichergestellt?",
+      "ground_truth": "Unter Asservatennummer A-22-0663 wurden mehrere IT-Asservate gesichert: drei Festplatten (Nummern 2, 3, 4), eine Rohdatensicherung (Nummer 1) sowie ein Midi-Tower Office-PC (AMD A4-4000 APU) aus den Raeumen der Payplus GmbH. Die forensische Sicherung erfolgte durch RBr Frantzen (KK 22 IT-Ermittlungsunterstuetzung).",
+      "ours": {
+        "system": "ours-mxbai",
+        "answer": "Es wurden folgende Asservate sichergestellt: 4 Tower-PCs, 1 externe Festplatte (HDD, ISY), 1 Amazon Echo, 1 Motorola Festnetztelefon mit SIM-Karte, 1 Lenovo Laptop, 3 weitere Festplatten und 1 Rohdatensicherungs-DVD (Quelle 1, Seite 5-7).",
+        "latency_sec": 6.246084928512573,
+        "tool_calls": 0
+      },
+      "pageindex": {
+        "system": "pageindex",
+        "answer": "Laut den Asservaten-Listen (Seiten 3–7) wurden folgende Asservate sichergestellt:\n\n---\n\n### Ass.-Listen Nr. 2689/23 (A-22-0663)\n| Nr. | Gegenstand |\n|-----|-----------|\n| 1 | 4 Tower-PCs (1× Midi Tower schwarz, 1× Midi Tower schwarz, 1× Midi Tower Tarox Server schwarz, 1× Tower Thermal Take schwarz) |\n| 2 | 1 externe Festplatte HDD (ISY) |\n| 3 | 1 Amazon Echo |\n| 4 | 1 Motorola Festnetztelefon mit SIM-Karte |\n| 5 | 1 Laptop Lenovo (schwarz) |\n| 6 | 3 Festplatten |\n| 7 | 1 Rohdatensicherungs-DVD |\n\n---\n\n### Ass.-Listen Nr. 4008/22\n| Nr. | Gegenstand |\n|-----|-----------|\n| 1 | 1 CD – Rohdatensicherung Davies Motorola FW200S |\n\n---\n\n### Ass.-Listen Nr. 3511/24\n| Nr. | Gegenstand |\n|-----|-----------|\n| 1 | 1 CD – HTTrack-Sicherung (21.03.2021) donkredito.com (Kopie) |\n| 2 | 1 CD – Sicherung Domain donkredito.com (Kopie) |\n\n---\n\n**Zusammenfassung:** Es wurden vor allem elektronische Geräte (PCs, Laptops, Festplatten, Telefon, Smart Speaker) sowie digitale Datensicherungen (CDs/DVDs) der Domains **donkredito.com** sichergestellt. Alle Asservate lagern laut Akte im Hauptraum der Staatsanwaltschaft Aachen (Az. 107 Js 1286/20).\n\nSoll ich weitere Abschnitte des Dokuments zu einem bestimmten Aspekt prüfen?",
+        "latency_sec": 35.08851099014282,
+        "tool_calls": 0
+      },
+      "verdicts": [
+        {
+          "order": "ours_first",
+          "winner": "pageindex",
+          "reason": "Antwort B ist vollständiger und strukturierter, obwohl beide die spezifischen IT-Asservate aus der Ground Truth nicht exakt wiedergeben."
+        },
+        {
+          "order": "pageindex_first",
+          "winner": "ours-mxbai",
+          "reason": "Antwort B ist korrekt und präzise, während A falsche Details enthält (4 Tower-PCs statt Midi-Tower Office-PC, keine Erwähnung von Payplus GmbH)."
+        }
+      ]
+    },
+    {
+      "id": "a10",
+      "category": "juristisch",
+      "query": "Welcher Tatvorwurf wird in der Anklageschrift erhoben?",
+      "ground_truth": "Der Tatvorwurf in der Anklageschrift lautet Betrug nach § 263 StGB (kein Bandenbetrug). Zustaendig ist das Landgericht Aachen.",
+      "ours": {
+        "system": "ours-mxbai",
+        "answer": "In der Anklageschrift wird Walter Völl und Patrick Schweers vorgeworfen, zwischen dem 11.12.2019 und dem 21.01.2021 in Aachen und anderen Orten gewerbsmäßigen Betrug begangen zu haben, indem sie durch Vorspiegelung falscher Tatsachen Vermögensschäden verursachten. Schweers betrieb die Internetseite https://donkredito.com, die in ein Vertriebssystem von Völl eingebunden war, um rechtswidrige Vermögensvorteile zu erlangen. Beide handelten mit der Absicht, eine große Zahl von Menschen in die Gefahr des Verlustes von Vermögenswerten zu bringen.",
+        "latency_sec": 8.378591060638428,
+        "tool_calls": 0
+      },
+      "pageindex": {
+        "system": "pageindex",
+        "answer": "Die Anklageschrift wurde am **25. Juni 2025** von der Staatsanwaltschaft Aachen (Az. 107 Js 1286/20) gegen zwei Angeklagte erhoben:\n\n1. **Walter Völl** (geb. 16.04.1974, wohnhaft in Lanaken/Belgien)\n2. **Patrick Schweers** (geb. 13.05.1986, wohnhaft in Westerwolde/Niederlande)\n\n---\n\n## Tatvorwurf\n\n**Gemeinschaftlicher Betrug in einem besonders schweren Fall**\ngemäß **§§ 263 Abs. 1, Abs. 3 Nr. 1 und 2, 25 Abs. 2 StGB**\n\n---\n\n### Tatzeit und -ort\nZwischen dem **11.12.2019 und dem 21.01.2021**, in Aachen und anderen Orten.\n\n### Tathandlung im Wesentlichen\nDie Angeklagten betrieben die Website **donkredito.com** (sowie crediseven.com), die so gestaltet war, dass durchschnittliche Internetnutzer – insbesondere Mobiltelefon-Nutzer – glauben sollten, über die Seite einen **Kredit bis zu 7.500 Euro** beantragen zu können. Tatsächlich wurden sie jedoch in kostenpflichtige Abonnements (Prepaid-Mastercard, Dienste „Credify.me\" und „Schufaheld\") hineingezogen, deren Kosten und Vertragsbedingungen bewusst verschleiert wurden.\n\nDie wesentlichen Täuschungsmittel waren:\n- Irreführende Domain-Wahl und Gestaltung der Startseite (Schaltfläche „Jetzt beantragen\", Kreditrechner)\n- Entscheidende Produktinfos nur nach umfangreichem Scrollen sichtbar – insbesondere auf Mobilgeräten\n- Falsche Bestellübersichten, in denen Abogebühren (0,49 €/Tag) als kostenlos ausgewiesen wurden\n- Irreführende Bestätigungs-SMS und -mails\n\nAnschließend wurden Betroffene von **PLUS CARDS LTD**, **payplus GmbH** und **Euro Collect GmbH** auf Beträge von bis zu mehreren Hundert Euro in Anspruch genommen bzw. gemahnt.\n\n### Schadensdimension\n- Mindestens **18.159 Bestellungen** über donkredito.com\n- Angestrebtes Forderungsvolumen: mindestens **8.115.257,10 Euro**\n- Völl beabsichtigte, mindestens **2.980.848,75 Euro** für sich zu vereinnahmen\n\n### Qualifikationsmerkmale (§ 263 Abs. 3 StGB)\n- **Nr. 1:** Gewerbsmäßiges Handeln\n- **Nr. 2:** Absicht, durch fortgesetzte Begehung eine **große Zahl von Menschen** in die Gefahr des Verlustes von Vermögenswerten zu bringen",
+        "latency_sec": 95.32091093063354,
+        "tool_calls": 0
+      },
+      "verdicts": [
+        {
+          "order": "ours_first",
+          "winner": "pageindex",
+          "reason": "Antwort B ist deutlich korrekter - nennt richtig §§ 263 Abs. 1, 3 StGB statt falschem 'gewerbsmäßigen Betrug'"
+        },
+        {
+          "order": "pageindex_first",
+          "winner": "pageindex",
+          "reason": "A nennt korrekt §§ 263 Abs. 1, 3 Nr. 1 und 2 StGB, B erwähnt nur allgemein Betrug ohne Paragraphen-Spezifikation."
+        }
+      ]
+    },
+    {
+      "id": "a11",
+      "category": "juristisch",
+      "query": "Welche Durchsuchungen wurden angeordnet und wo fanden sie statt?",
+      "ground_truth": "Durchsuchungen fanden statt bei der Payplus GmbH in der Hubert-Wienen- Strasse 30 in Aachen sowie beim Beschuldigten Patrick Schweers in Wildeshausen.",
+      "ours": {
+        "system": "ours-mxbai",
+        "answer": "Es wurden Durchsuchungen der Geschäftsräume der Payplus GmbH in der Hubert-Wienen-Straße 30, 52070 Aachen, sowie der Wohnung und Geschäftsräume von Maurice Christiaan Davies (Mittelstraße 6, 52538 Gangelt) angeordnet. Zudem fanden Durchsuchungen bei Patrick Schweers (Am Acker 1A, 27243 Beckeln) und weiteren Beschuldigten statt. Die Maßnahmen erfolgten auf Grundlage verschiedener Beschlüsse, darunter der Beschluss des Amtsgerichts Aachen (Az. 621 Gs 1955/21).",
+        "latency_sec": 9.22011685371399,
+        "tool_calls": 0
+      },
+      "pageindex": {
+        "system": "pageindex",
+        "answer": "Ich finde bereits relevante Treffer. Lass mich die restlichen Strukturteile und den Seiteninhalt parallel laden.Ich lese jetzt die relevanten Seiten mit den Durchsuchungsberichten parallel.Ich habe nun alle relevanten Informationen. Hier ist eine Zusammenfassung der angeordneten Durchsuchungen:\n\n---\n\n## Angeordnete Durchsuchungen\n\n### Rechtsgrundlage\nBeide Durchsuchungen erfolgten aufgrund eines **Durchsuchungsbeschlusses des Amtsgerichts Aachen** (AZ: 621 Gs 1955/21 / 107 Js 1286/20) wegen **Verdachts des gewerbsmäßigen Bandenbetruges** gegen **Maurice Christiaan Davis** (*13.12.1994).\n\n---\n\n### 1. Geschäftsräume der Payplus GmbH\n📍 **Hubert-Wienen-Str. 30, 52070 Aachen**\n📅 **30.03.2022, 09:00 Uhr**\n\n- **Beteiligte:** StA Bodden, EKHK Skrotzki, KOK Pelowski, KK'in Telschow, KOK'in Els (alle KK 13), RBr Frantzen und Schäfer (KK 22)\n- **Angetroffene Person:** Ralph Hauser (gab keine Angaben zur Sache, duldete die Durchsuchung)\n- **Erweiterung des Beschlusses** um 09:21 Uhr auf alle unbeschrifteten Räume (AG Aachen 621 Gs 477/22)\n\n**Ergebnisse je Raum:**\n| Raum | Befund | Sicherstellung |\n|------|--------|---------------|\n| **Raum 0** (Payplus-Büro) | Unterlagen zu Park Collect, Euro Collect, Payplus | ✅ 7 Asservate |\n| **Raum 1** | Putzraum der Firma Meteor | ❌ Nichts |\n| **Raum 2** (Großraumbüro) | Unterlagen zu Platinum Card NL, Advantia Card, Payplus, Euro Collect, Veripay | ❌ Nur Fotos |\n| **Raum 3** (Poststelle) | Versandtaschen, Poststempel, Sortier- und Frankiermaschine | ❌ Nur Fotos |\n| **Raum 4** (Archiv) | Unterlagen zu Payplus, Platinum Card, Avantia Card (bis 2014) | ❌ Nur Fotos |\n| **Raum 5** | Server der Euro Collect + weiterer Datenserver | ❌ Nur Fotos |\n\nRalph Hauser verweigerte die Unterschrift auf dem Sicherstellungsprotokoll und widersprach ausdrücklich der Maßnahme.\n\n---\n\n### 2. Wohnanschrift des Beschuldigten Davis\n📍 **Mittelstraße 6, 52538 Gangelt** (Heinsberg)\n📅 **30.03.2022** (zeitgleich mit Aachen)\n\n- **Objektführer:** KHK Pauels\n- **Ergebnis:** Der Beschuldigte Davies war bereits **seit Januar 2022 weggezogen** und lebte mit seiner Ehefrau in den Niederlanden. Im niederländischen Melderegister war er seit 08.10.2018 abgemeldet. Die neue Adresse war unbekannt.\n\n---\n\n**Fazit:** Die Durchsuchungen vom 30.03.2022 richteten sich gegen die Geschäftsräume der Payplus GmbH in Aachen sowie die ehemalige Wohnung des Beschuldigten in Gangelt. Beim Unternehmen wurden umfangreiche Unterlagen mehrerer Scheinfirmen und Datenserver gefunden, der Beschuldigte selbst war jedoch nicht mehr erreichbar.",
+        "latency_sec": 109.87194299697876,
+        "tool_calls": 0
+      },
+      "verdicts": [
+        {
+          "order": "ours_first",
+          "winner": "ours-mxbai",
+          "reason": "A nennt korrekt Patrick Schweers in Wildeshausen, B erwähnt ihn nicht und gibt falsche Adresse für Davies."
+        },
+        {
+          "order": "pageindex_first",
+          "winner": "ours-mxbai",
+          "reason": "B nennt korrekt Patrick Schweers und Beckeln, A erwähnt ihn nicht und nennt falsch Gangelt statt Wildeshausen."
+        }
+      ]
+    },
+    {
+      "id": "a12",
+      "category": "juristisch",
+      "query": "Welche Zeugen wurden vernommen und zu welchen Themen?",
+      "ground_truth": "Laut Zeugenliste der Anklageschrift sind (u.a.) als Zeugen benannt: Maurice Christiaan Davies (Wuerselen), Mimount Aharroud (Aachen), Ingo-Ludwig Bolz (Wuerselen), Viktor Miuller (Herzogenrath), Eduard Mueller (Leverkusen), Beatrice Folwerk (Herzogenrath), Ralph Hauser (Aachen).",
+      "ours": {
+        "system": "ours-mxbai",
+        "answer": "Die vernommenen Zeugen sind Ralph Hauser (Verdacht des gewerbsmäßigen Bandenbetrugs in Verbindung mit der Plattform probenheld.de, Aktenzeichen 608000-054221-20/7), Angelina Dittmar, Silke Barthel, Torsten Rucman, Manfred Donsbach, Buket Akpinar, Sabrina Meeßen und Freddy Wiedemann (alle zum Thema Betrug). Weitere Details zu den Aussagen oder spezifischen Inhalten der Vernehmungen sind den Quellen nicht zu entnehmen.",
+        "latency_sec": 9.028423070907593,
+        "tool_calls": 0
+      },
+      "pageindex": {
+        "system": "pageindex",
+        "answer": "Nun lese ich die wichtigsten Zeugenabschnitte im Detail.Jetzt habe ich genug Informationen für eine umfassende Antwort. Hier ist die Zusammenfassung aller vernommenen Zeugen und ihrer Themen:\n\n---\n\n## Vernommene Zeugen und ihre Themen\n\n### 🔵 Interne Zeugen / Unternehmensvertreter\n\n| Zeuge | Funktion | Themen |\n|---|---|---|\n| **Walter Völl** (Beschuldigter, als Zeuge vernommen) | Geschäftsführer/Beteiligter | Betrieb von Veripay/payplus, Werbepartnerprogramm, Rolle von Patrick Schweers und „Pollex\" (ehem. Prokurist payplus), Funktionsweise von EuroCollect GmbH, Finanztransaktionen |\n| **Ingo-Ludwig Bolz** | Mitarbeiter payplus GmbH | Geschäftsmodell payplus, Abo-Dienste (Probenheld.de, Credify.me, Schufaheld), betrügerische Abonnement-Praktiken |\n| **Ralph Hauser** | Mitarbeiter payplus/verbundene Unternehmen | Interne Abläufe, externe Kontakte, Rolle von Herrn Völl, Betrieb von Probenheld.de, Credichamp-Websites |\n| **Mimount Aharroud** | Euro Collect GmbH | Unternehmensstruktur, Websitebetrieb, interne Abläufe von Euro Collect, Kontakte zu payplus |\n\n---\n\n### 🔵 Zeugen aus ermittlungsbegleitenden Verfahren\n\n| Zeuge | Thema |\n|---|---|\n| **Rolfsen** | Geschäftsbeziehungen zu den Beschuldigten (machte Angaben) |\n| **Kramer** | Verweigerte die Aussage (Schweigerecht) |\n\n---\n\n### 🔵 Geschädigte Zeugen (Strafanzeigenerstatter)\n\nDiese Zeugen schilderten ihre persönlichen Erfahrungen mit **www.donkredito.com** und ähnlichen Seiten – zentrales Thema: **Sie glaubten, nur eine Kreditanfrage zu stellen, schlossen aber unbemerkt kostenpflichtige Abonnements (Credify.me, Schufaheld/Scoreheld) und Prepaid-Kreditkarten ab.**\n\n| Zeuge | Fallnummer | Kernaussage |\n|---|---|---|\n| **Böttcher** | 107 Js 347/21 | Hielt Bestellung für Kreditanfrage (7.350 €); Nachnahmegebühr 98,90 € dubios → zurückgeschickt |\n| **Reich** | 107 Js 167/21 | Bestellte „aus Versehen\" Kredit und Mastercard; kündigte sofort, bekam aber weiter Rechnungen |\n| **Trapka** | 107 Js 393/21 | Glaubte, Kreditvertrag abgeschlossen zu haben; irreführende Bestellbestätigung |\n| **Perisic** | 107 Js 2289/20 | Wollte 500 € Kredit; erhielt Forderungen für Mastercard, Schufaheld, Credify.me |\n| **Spöcker** | 107 Js 2081/20 | Kreditanfrage, kein bewusster Vertragsabschluss; Jahresvertrag nicht erkannt |\n| **Eichelberger** | 107 Js 211/21 | Glaubte Kreditvertrag 7.500 € + Kreditkarte abgeschlossen zu haben |\n| **Städtke** | 107 Js 219/21 | Wie Eichelberger, aber Kreditsumme 4.500 € |\n| **Landmesser** | 107 Js 2119/20 | Suchte Kreditkarte für Reise; widerrief, erhielt aber dennoch Rechnung für Credify.me |\n| **Fama** | 107 Js 341/21 | Hielt Vorgang für kostenlose Kreditanfrage |\n| **Shampspour** | 107 Js 2316/20 | Bestellte Kreditkarte/Kredit; Dienste Credify.me und Schufaheld nicht bewusst bestellt |\n| **Pinar** | 107 Js 2140/20 | Kreditkarte mit 6.500 € Kredit; Vertragslaufzeit 24 Monate verschwiegen |\n| **Mohr** | 107 Js 2430/20 | Wollte 400 € Kredit; erhielt stattdessen Forderungen für Credify.me |\n| **Baghban** | 107 Js 2613/20 | Kredit 7.500 €; bestritt bewussten Abschluss von Credify.me/Scoreheld |\n| **Demir** | 107 Js 2108/20 | Wollte sich nur informieren; keinen konkreten Antrag gestellt |\n| **Avdelas** | 107 Js 2170/20 | Zahlte Forderung aus Angst, obwohl keine Kreditkarte erhalten |\n| **Taya / Andersen** | 107 Js 2167/20 | Credify.me nicht bewusst bestellt; zahlten aus Angst vor Zivilklage |\n| **Wundschittel** | – | Glaubte Kredit 4.500 € + Ratenzahlung bestellt zu haben; zahlte 108,90 €, erhielt aber nie Kreditkarte |\n| **Dembski** | 107 Js 32/21 | Besuchte Seite, brach Bestellung ab nach Entdeckung des Preises |\n\n---\n\n### 🔵 „Vernehmungspaket donkredito.com\" (Stichprobenvernehmungen, Aachen-Bezirk)\n\nZeugen aus Excel-Listen von Schweers – keine Strafanzeige erstattet, aber als Stichprobe vernommen:\n\n| Nr. | Zeuge | Datum | Kernaussage |\n|---|---|---|---|\n| 15 | **Freddy Wiedemann** | 30.04.2020 | Informierte sich auf Kreditseite, glaubte nicht bestellt zu haben; Prepaid-Karte unbekannt |\n| 16 | **Hasan Günes** | 08.05.2020 | Bestellte Kreditkarte mit 1.000 € Direktkredit; Karte funktionierte nicht |\n| 17 | **Yasmin Sortino** | 05.05.2020 | Sachverhalt unbekannt; Vernehmung verschoben (COVID-Erkrankung) |\n| 18 | **Frank Rüdiger Zeeh** | 14.06.2020 | Kannte Firma nicht; Vernehmung wegen Rollstuhl nicht möglich (schriftl. Äußerung) |\n| 19 | **Manfred Donsbach** | 26.04.2020 | Suchte Kleinkredit bei „boncred\"; Rechnung von EuroCollect erhalten |\n| 20 | **Angelina Dittmar** | 11.05.2020 | Konnte sich nicht erinnern |\n| 21 | **Gina Engelhardt** | 07.06.2020 | Besuchte Seite auf Kredit-Suche; Details nicht erinnerlich |\n| 22 | **Torsten Rucman** | 25.04.2020 | Besuchte Seite auf Kredit-Suche; Prepaid-Natur der Karte unbekannt |\n| 23 | **Nanouche Tariq** | 18.05.2020 | Nicht erschienen |\n| 24 | **Kemal Senel** | 26.05.2020 | Nicht erschienen |\n| 25 | **Jessica Engelbert** | 12.05.2020 | Sachverhalt unbekannt; Ex-Mann vermutlich verantwortlich |\n| 26 | **Sabrina Meeßen** | 07.05.2020 | Wollte Kreditkarte beantragen; zahlte 49,90 € Ausgabegebühr |\n| 27 | **Daouda Sylla** | 05.06.2020 | Zustellung nicht möglich (kein Briefkasten) |\n| 28 | **Andrejus Rapcinskis** | 13.06.2020 | Hatte nie gezielt nach donkredito gesucht |\n| 29 | **Buket Akpinar** | 14.06.2020 | Kreditantrag ~1.000 €; nicht bewusst, dass Kreditkarte gebührenpflichtig |\n| 30 | **Silke Barthel** | 26.05.2020 | Keine Erinnerung |\n| 31 | **Anja Joussen** | 26.05.2020 | Nicht erschienen |\n\n---\n\n### Übergreifendes Thema aller Geschädigten-Vernehmungen\n\nAlle vernommenen Geschädigten bestätigten dasselbe Muster: Die Website **donkredito.com** (und ähnliche Seiten wie credichamp24.com) erweckte den Eindruck einer gewöhnlichen Kreditanfrage, während im Hintergrund kostenpflichtige Abonnements (Credify.me, Schufaheld/Scoreheld) und eine Prepaid-Kreditkarte der PLUS CARDS LTD bestellt wurden – ohne dass die Nutzer dies bewusst wahrnahmen.",
+        "latency_sec": 192.42663311958313,
+        "tool_calls": 0
+      },
+      "verdicts": [
+        {
+          "order": "ours_first",
+          "winner": "ours-mxbai",
+          "reason": "A ist korrekt und präzise, B übertreibt massiv mit unnötigen Details und Formatierung ohne Mehrwert."
+        },
+        {
+          "order": "pageindex_first",
+          "winner": "pageindex",
+          "reason": "A nennt alle Zeugen aus der Referenz plus viele weitere mit spezifischen Themen, B ist unvollständig."
+        }
+      ]
+    }
+  ]
+}

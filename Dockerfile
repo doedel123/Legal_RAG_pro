@@ -13,8 +13,8 @@ RUN pip install -r requirements-server.txt
 
 # Nur die tatsaechlich benoetigten Module kopieren — kein data/, keine Notebooks.
 COPY retrieve.py \
+     voyage_reranker.py \
      ours_mxbai_api_client.py \
-     ours_mxbai_voyage_client.py \
      server.py \
      ./
 

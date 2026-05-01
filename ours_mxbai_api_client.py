@@ -26,10 +26,14 @@ import requests
 from dotenv import load_dotenv
 
 from retrieve import SearchResult
-from ours_mxbai_client import MXBAI_COLLECTION, MXBAI_MODEL, QUERY_PROMPT
-from ours_mxbai_voyage_client import _VoyageReranker
+from voyage_reranker import VoyageReranker
 
 log = logging.getLogger(__name__)
+
+# Inline-Konstanten (keine Abhaengigkeit zu ours_mxbai_client → sentence-transformers).
+MXBAI_MODEL = "mixedbread-ai/deepset-mxbai-embed-de-large-v1"
+MXBAI_COLLECTION = "fachliteratur_mxbai"
+QUERY_PROMPT = "Represent this sentence for searching relevant passages: "
 
 
 class _MxbaiApiEmbedder:
@@ -106,16 +110,20 @@ class OursApiRetriever:
         from retrieve import JuristischerRetriever
         self._retriever = JuristischerRetriever(env_file=env_file, lazy_model=True)
         self._retriever.model = _MxbaiApiEmbedder(api_key=mxbai_key, api_base=api_base)
-        self._retriever.reranker = _VoyageReranker(api_key=voyage_key)
+        self._retriever.reranker = VoyageReranker(api_key=voyage_key)
         self.collection = collection
         log.info(f"OursApiRetriever bereit "
                  f"(mxbai-api + voyage-rerank-2.5, collection={collection})")
 
-    def search(self, query: str, top_k: int = 10) -> list[SearchResult]:
+    def search(self, query: str, top_k: int = 10,
+               domain: "str | None" = None) -> list[SearchResult]:
+        """Sucht in der Fachliteratur-Collection. ``domain`` filtert auf ein
+        Rechtsgebiet (z.B. ``"strafrecht"``); ``None`` = cross-domain."""
         results, _ = self._retriever.search(
             query,
             collections=[self.collection],
             top_k=top_k,
+            domain=domain,
         )
         for r in results:
             r.collection = f"ours-api:{self.collection}"

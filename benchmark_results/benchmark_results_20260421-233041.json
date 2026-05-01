@@ -1,0 +1,2165 @@
+{
+  "a01": {
+    "ours-mxbai": {
+      "latency_sec": 4.664184093475342,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.7274535,
+          "judge_score": 3,
+          "judge_reason": "Nennt Geschädigte Zeynep Taya mit Wohnort Karlsruhe",
+          "text_preview": "### a) Ursprung des Verfahrens und Vermögensschaden\n\n\nDas Verfahren beruht auf einer Strafanzeige der Zeugin Zeynep Taya aus Karlsruhe vom 24.06.2020. Die Zeugin hatte nach eigenen Angaben am 20.05.2020 eine Rechnung wegen einer angeblich bestellten Kreditkarte erhalten, welche sie „aus Angst“ bezah",
+          "metadata": {}
+        },
+        {
+          "rank": 2,
+          "score": 0.6543875,
+          "judge_score": 3,
+          "judge_reason": "Günes, Hasan als Geschädigter mit Personaldaten identifiziert",
+          "text_preview": "## Seite 17\n\n\nName\nGünes, Hasan, *10.09.1972\nAktenzeichen\n240614-0943-069732\n\n☑ Ich bin/war mit der/dem Betroffenen/Beschuldigten nicht verheiratet, in Lebenspartnerschaft lebend, geschieden, verwandt, verschwägert und bin mit ihr/ihm auch nicht verlobt.\n☐ Ich bin/war mit der/dem Betroffenen/Beschul",
+          "metadata": {}
+        },
+        {
+          "rank": 3,
+          "score": 0.6257817,
+          "judge_score": 3,
+          "judge_reason": "Name und Geburtsdatum der Geschaedigten Dittmar",
+          "text_preview": "## Seite 58\n\n\nSA\n\n|  Name\nDittmar, Angelina, *27.09.1996 | Aktenzeichen\n240620-0658-032830  |\n| --- | --- |\n\n☑ Ich bin/war mit der/dem Betroffenen/Beschuldigten **nicht** verheiratet, in Lebenspartnerschaft lebend, geschieden, verwandt, verschwägert und bin mit ihr/ihm auch nicht verlobt.\n\n☐ Ich bin",
+          "metadata": {}
+        },
+        {
+          "rank": 4,
+          "score": 0.6188962,
+          "judge_score": 3,
+          "judge_reason": "Nennt Namen und Geburtsdatum der Geschaedigten",
+          "text_preview": "## Seite 121\n\n\nName Rapčinskis, Andréjus, *12.11.1974\nAktenzeichen 240705-1202-026062\n103\n\n☑ Ich bin/war mit der/dem Betroffenen/Beschuldigten nicht verheiratet, in Lebenspartnerschaft lebend, geschieden, verwandt, verschwägert und bin mit ihr/ihm auch nicht verlobt.\n\n☐ Ich bin/war mit der/dem Betro",
+          "metadata": {}
+        },
+        {
+          "rank": 5,
+          "score": 0.60861784,
+          "judge_score": 3,
+          "judge_reason": "Name und Geburtsdatum der Geschädigten Sabrina Meeßen",
+          "text_preview": "## Seite 101\n\n\nName\nMeeßen, Sabrina, *04.07.1988\n\nAktenzeichen\n240617-0930-063877\n\n☐ Ich bin/war mit der/dem Betroffenen/Beschuldigten nicht verheiratet, in Lebenspartnerschaft lebend, geschieden, verwandt, verschwägert und bin mit ihr/ihm auch nicht verlobt.\n\n☐ Ich bin/war mit der/dem Betroffenen/B",
+          "metadata": {}
+        },
+        {
+          "rank": 6,
+          "score": 0.6058229,
+          "judge_score": 1,
+          "judge_reason": "Zeigt Donsbach als Zeugen, nicht Geschaedigte",
+          "text_preview": "## Seite 45\n\n\nName\nDonsbach, Manfred, *01.11.1970\nAktenzeichen\n240702-1553-023917\n40\n\n☑ Ich bin/war mit der/dem Betroffenen/Beschuldigten nicht verheiratet, in Lebenspartnerschaft lebend, geschieden, verwandt, verschwägert und bin mit ihr/ihm auch nicht verlobt.\n\n☐ Ich bin/war mit der/dem Betroffene",
+          "metadata": {}
+        },
+        {
+          "rank": 7,
+          "score": 0.5942929,
+          "judge_score": 3,
+          "judge_reason": "Zeigt Geschädigten Torsten Rucman mit Geburtsdatum",
+          "text_preview": "## Seite 76\n\n\nName\nRucman, Torsten, *11.03.1972\nAktenzeichen\n240620-0729-032830\n\n☑ Ich bin/war mit der/dem Betroffenen/Beschuldigten nicht verheiratet, in Lebenspartnerschaft lebend, geschieden, verwandt, verschwägert und bin mit ihr/ihm auch nicht verlobt.\n\n☐ Ich bin/war mit der/dem Betroffenen/Bes",
+          "metadata": {}
+        },
+        {
+          "rank": 8,
+          "score": 0.5883458,
+          "judge_score": 3,
+          "judge_reason": "Geschädigte Barthel Silke mit Geburtsdatum 28.11.1964 genannt",
+          "text_preview": "## Seite 144\n\n\nName\nBarthel, Silke, *28.11.1964\nAktenzeichen\n240624-1135-057960\n\n☑ Ich bin/war mit der/dem Betroffenen/Beschuldigten nicht verheiratet, in Lebenspartnerschaft lebend, geschieden, verwandt, verschwägert und bin mit ihr/ihm auch nicht verlobt.\n\n☐ Ich bin/war mit der/dem Betroffenen/Bes",
+          "metadata": {}
+        },
+        {
+          "rank": 9,
+          "score": 0.58777803,
+          "judge_score": 3,
+          "judge_reason": "Name und Geburtsdatum der Geschaedigten Akpinar",
+          "text_preview": "## Seite 132\n\n\nName\nAkpinar, Buket, *11.08.1997\n\nAktenzeichen\n240624-1122-057960\n\n☑ Ich bin/war mit der/dem Betroffenen/Beschuldigten nicht verheiratet, in Lebenspartnerschaft lebend, geschieden, verwandt, verschwägert und bin mit ihr/ihm auch nicht verlobt.\n\n☐ Ich bin/war mit der/dem Betroffenen/Be",
+          "metadata": {}
+        },
+        {
+          "rank": 10,
+          "score": 0.585789,
+          "judge_score": 3,
+          "judge_reason": "Name und Geburtsdatum der Geschaedigten direkt genannt",
+          "text_preview": "## Seite 67\n\n\nName\nEngelhardt, Gina Sue, *18.08.1987\nAktenzeichen\n240620-0717-032830\n53\n\n☐ Ich bin/war mit der/dem Betroffenen/Beschuldigten nicht verheiratet, in Lebenspartnerschaft lebend, geschieden, verwandt, verschwägert und bin mit ihr/ihm auch nicht verlobt.\n☐ Ich bin/war mit der/dem Betroffe",
+          "metadata": {}
+        }
+      ]
+    },
+    "pageindex": {
+      "latency_sec": 2.854869842529297,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 1.0,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Name, Geburtsdatum, Wohnort der Geschaedigten",
+          "text_preview": "# GESCHÄDIGTE PERSON\n\nName Taya\nGeburtsname Taya\nVorname Zeyneb\nGeburtsdatum 23.08.2001\nGeburtsort/-land Karlsruhe\nGeschlecht weiblich\nStaatsangehörigkeit deutsch\nAnschrift 76133 Karlsruhe\nKronenstraße 24\n\nFamilienstand ledig\n\nTelefon\nMobiltelefon 0176 74873641\nSprache\nTätigkeit Schülerin\nVernehmung",
+          "metadata": {
+            "breadcrumb": "GESCHÄDIGTE PERSON"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5,
+          "judge_score": 1,
+          "judge_reason": "Sachverhalt ohne Namen, Geburtsdatum oder Wohnort",
+          "text_preview": "# SACHVERHALT\n\nDie Geschädigte erhielt am 20.05.2020 von der Firma Payplus GmbH eine Rechnung in Höhe von 30,00 Euro für eine Bonitätsabrechnung, welche angeblich am 06.05.2020 vertraglich abgeschlossen wurde. Aus Angst bezahlte die Geschädigte jedoch zunächst die geforderten 30 Euro.\n\nAm 24.06.2020",
+          "metadata": {
+            "breadcrumb": "SACHVERHALT"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.3333333333333333,
+          "judge_score": 3,
+          "judge_reason": "Direkte Antwort: Name, Geburtsdatum, Wohnort der Geschaedigten",
+          "text_preview": "# GESCHÄDIGTEN - VERNEHMUNG\n\nVernehmungsort Karlsruhe\nPrev. KA-Marktplatz\nBeginn 24.06.2020\n18.08 Uhr\n\n## Zur Person\n\nName Taya\nGeburtsname Taya\nVorname Zeyneb\nGeburtsdatum 23.08.2001\nGeburtsort/-land Karlsruhe\nStaatsangehörigkeit deutsch\nGeschlecht weiblich\nAnschrift 76133 Karlsruhe\nKronenstraße 24",
+          "metadata": {
+            "breadcrumb": "GESCHÄDIGTEN - VERNEHMUNG"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.25,
+          "judge_score": 3,
+          "judge_reason": "Geschädigte identifiziert als Z. Taya mit Unterschrift",
+          "text_preview": "# Zur Sache\n\nAm 20.05.2020 erhielt ich eine Rechnung durch die Firma Payplus GmbH über 30,00 Euro für eine Kreditkarte. Ich hatte zu keiner Zeit solch eine Kreditkarte bei diesem oder einem anderen Unternehmen bestellt.\n\nDa mir unverzüglich mit einem Mahnverfahren als auch mit einem Inkasso-Verfahre",
+          "metadata": {
+            "breadcrumb": "Zur Sache"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.2,
+          "judge_score": 3,
+          "judge_reason": "Nennt Geschaedigte Taya mit Kundennummer",
+          "text_preview": "# ZAHLUNGSAUFFORDERUNG\n\n## Rechnung CMP-2231278\n\n### Ihr Vertrag vom 06.05.2020 auf donkredito.com\n\nSehr geehrte Frau Taya,\n\nvielen Dank für Ihr Vertrauen und, dass Sie uns am 06.05.2020 mit der **Verwaltung Ihrer Bonität beauftragt haben**. Der erste Monat im Wert von 14,70 Euro ist bereits bezahlt",
+          "metadata": {
+            "breadcrumb": "ZAHLUNGSAUFFORDERUNG"
+          }
+        },
+        {
+          "rank": 6,
+          "score": 0.16666666666666666,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Name, Vorname, Geburtsdatum der Geschaedigten",
+          "text_preview": "# Vermerk\n\nErmittlungen im Internet ergaben, dass eine Vielzahl von Warnungen im Hinblick auf die hier erwähnte Betrugsart durch die Firma Payplus GmbH eingestellt sind. Viele Nutzer teilten in verschiedenen Foren mit, dass sie auch Anzeigen bei der Polizei erstattet haben.\n\nWeitere Recherchen führt",
+          "metadata": {
+            "breadcrumb": "Vermerk"
+          }
+        },
+        {
+          "rank": 7,
+          "score": 0.14285714285714285,
+          "judge_score": 2,
+          "judge_reason": "Nennt Geschädigte Zeyneb Taya, aber keine Details",
+          "text_preview": "# Verfügung\n\n1. Vermerk: Die Strafanzeige richtet sich gegen die Firma Payplaus GmbH.\nAusweislich des Impressums im Internet ist Geschäftsführer: Viktor Miuller\n\n2. Über Herrn Al IV 1517\nan Frau AL' in II\nmit der Bitte um Übernahme des Verfahrens zuständigkeitshalber.\nAls Tatverdächtiger kommt Vikto",
+          "metadata": {
+            "breadcrumb": "Verfügung"
+          }
+        },
+        {
+          "rank": 8,
+          "score": 0.125,
+          "judge_score": 0,
+          "judge_reason": "Nur Zuständigkeitsübertragung, keine Geschädigten-Daten",
+          "text_preview": "# Staatsanwaltschaft Karlsruhe\n\nStaatsanwaltschaft Karlsruhe, 76232 Karlsruhe\n\nStaatsanwaltschaft Aachen\nAdalbertsteinweg 92\n52070 Aachen\n\n![img-18.jpeg](img-18.jpeg)\n\nDatum 21.07.2020/Wan\nName Frau Metz\nDurchwahl Tel. 0721 926 3804\nFax. 0721 926 6853\nAktenzeichen 280 Js 26611/20\n(Bitte bei Antwort ",
+          "metadata": {
+            "breadcrumb": "Staatsanwaltschaft Karlsruhe"
+          }
+        },
+        {
+          "rank": 9,
+          "score": 0.1111111111111111,
+          "judge_score": 0,
+          "judge_reason": "Nur Website-Formular, keine Geschaedigten-Daten",
+          "text_preview": "# Schritt 1: Beantragen\n\n## Nur noch zwei Schritte\n\nEinfach Online Antrag ausfüllen und Ihren persönlichen Kredit + MasterCard beantragen.\n\n1. Wunschbetrag &amp; Kontaktdaten\n\n2. Bestätigung &amp; Verwechslung\n\nAngaben zu Ihrem Wunschkredit:\n\nGeben Sie Ihren Wunschbetrag ein:\n- Wunschkredit\n- Ihr Ve",
+          "metadata": {
+            "breadcrumb": "Schritt 1: Beantragen"
+          }
+        },
+        {
+          "rank": 10,
+          "score": 0.1,
+          "judge_score": 0,
+          "judge_reason": "Webseiteninhalte, keine Geschädigteninformationen",
+          "text_preview": "# Mobilfunknummer *\n\n## Hinweise:\n\n☐ Ich habe die Gebührenordnung, AGBs und Widerrufsbelehrung gelesen und aktzeptiere diese.\n\n☐ Mit den AGB, Widerrufsbelehrung und Muster-Widerrufsformular von Schufaheld bin ich einverstanden und bestelle zum Sonderpreis\n\n☐ Mit den AGB, Widerrufsbelehrung und Muste",
+          "metadata": {
+            "breadcrumb": "Mobilfunknummer *"
+          }
+        }
+      ]
+    }
+  },
+  "a02": {
+    "ours-mxbai": {
+      "latency_sec": 5.669855117797852,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.588062,
+          "judge_score": 3,
+          "judge_reason": "Nennt Beschuldigten Davies und seine Firmen",
+          "text_preview": "## dd) Clever Cards B.V. und Intaxx B.V.\n\n\nGeschäftsführer der Firmen Clever Cards B.V. und Intaxx B.V. (Bl. 71 ff. der Akten) ist der Zeuge Maurice Christiaan Davies, der als weiterer Beschuldigter im Verfahren erfasst worden war. Dieser ist auch Geschäftsführer der EuroPayments (kurz EP) B.V., der",
+          "metadata": {}
+        },
+        {
+          "rank": 2,
+          "score": 0.5415791,
+          "judge_score": 3,
+          "judge_reason": "Beschuldigte Walter und Tanja Völl mit Firmendetails",
+          "text_preview": "## Seite 147\n\n\nStaatsanwaltschaft Aachen\n- 107 Js 1286/20 -\nAachen, 07.07.2025\nSeite 5 von 7\n601\n\nübernommen und mit dem vorliegenden Verfahren verbunden worden ist, ergeben sich aber keine Hinweise auf eine Involvierung der Ideal Inkasso UG in die Forderungsabwicklung. Der Hintergrund der polizeili",
+          "metadata": {}
+        },
+        {
+          "rank": 3,
+          "score": 0.491725,
+          "judge_score": 2,
+          "judge_reason": "Erwähnt relevante Firmen, keine direkten Beschuldigtennamen",
+          "text_preview": "## Seite 161\n\n\n615\n\n- 8 -\n\n18. Bestätigungsmail an die Zeugin Mohr (Bl. 27 VA 107 Js 2430/20),\n19. Bestätigungsmail an den Zeugen Vent (Bl. 12 VA 107 Js 2473/20),\n20. Bestätigungsmail an den Zeugen Baghban (Bl. 7, 129 VA 107 Js 2613/20),\n21. Bestätigungsmail an die Zeugin Schuh (Bl. 45 VA 107 Js 69/",
+          "metadata": {}
+        },
+        {
+          "rank": 4,
+          "score": 0.43510985,
+          "judge_score": 3,
+          "judge_reason": "Listet Beschuldigte Dobrila Bigovic und Paul Miller",
+          "text_preview": "# ABSCHNITT E: Identität der betroffenen Person\n\n\n1. Geben Sie bitte alle Informationen - soweit bekannt - zur Identität des bzw. der i) von der Ermittlung betroffenen natürlichen oder ii) juristischen Person(en) an (ist mehr als eine Person betroffen, machen Sie bitte diese Angaben zu jeder dieser ",
+          "metadata": {}
+        },
+        {
+          "rank": 5,
+          "score": 0.4233394,
+          "judge_score": 3,
+          "judge_reason": "Nennt alle Beschuldigten und Firmenrollen direkt",
+          "text_preview": "## 1. Vermerk:\n\n\nNach erneuter Prüfung und unter Berücksichtigung zwischenzeitlich gewonnener Erkenntnisse im Rahmen der Auswertung der Beweismittelordner im Umfangsverfahren 107 Js 1148/21 (ehem. 103 Js 1333/19) wird nunmehr doch erwogen, einen erneuten Durchsuchungsbeschluss für die Geschäftsräume",
+          "metadata": {}
+        },
+        {
+          "rank": 6,
+          "score": 0.41762826,
+          "judge_score": 3,
+          "judge_reason": "Nennt alle vier Beschuldigten mit Firmenfunktionen",
+          "text_preview": "## Beschluss\n\n\nIn dem Ermittlungsverfahren\n\ngegen\n\n1. Aimen Tayachi,\ngeboren am 23. Juli 1984, Geschäftsführer der Wallet Solutions B.V.,\nwohnhaft Humboldtstraße 23, 51145 Köln\n\n2. Kai Kröger,\ngeboren am 04. September 1988, Gesellschafter der Wallet Solutions B.V.,\nwohnhaft Wulfenauer Damm 14, 49413",
+          "metadata": {}
+        },
+        {
+          "rank": 7,
+          "score": 0.41307515,
+          "judge_score": 3,
+          "judge_reason": "Nennt Beschuldigten Walter Völl und Firmenstrukturen",
+          "text_preview": "## Seite 184\n\n\n638\n\n- 31 -\n\nProkura erlosch zum 03.09.2019. Der Zeuge Viktor Miuller wurde am 12.05.2023 als Geschäftsführer aus dem Handelsregister gelöscht; ein neuer Geschäftsführer ergibt sich aus dem Handelsregister nicht. Formal wurde die Gesellschaft damit im Tatzeitraum durch den Zeugen Miue",
+          "metadata": {}
+        },
+        {
+          "rank": 8,
+          "score": 0.4105205,
+          "judge_score": 2,
+          "judge_reason": "Nennt Beschuldigte, aber keine Firmenrollen",
+          "text_preview": "# ABSCHNITT E: Identität der betroffenen Person\n\n\n1. Geben Sie bitte alle Informationen - soweit bekannt - zur Identität des bzw. der i) von der Ermittlung betroffenen natürlichen oder ii) juristischen Person(en) an (ist mehr als eine Person betroffen, machen Sie bitte diese Angaben zu jeder dieser ",
+          "metadata": {}
+        },
+        {
+          "rank": 9,
+          "score": 0.4051433,
+          "judge_score": 3,
+          "judge_reason": "Direkte Nennung der Beschuldigten und deren Firmen",
+          "text_preview": "## Seite 146\n\n\nStaatsanwaltschaft Aachen\n- 107 Js 1286/20 -\nAachen, 07.07.2025\nSeite 4 von 7\n600\n\nsich auch bei ihm nur um einen Strohmann des Walter Völl handelte, der - wenn überhaupt - nur mit einfachen Aufgaben in den Geschäftsbetrieb eingebunden war und der keine Leitungsposition innehatte. Hin",
+          "metadata": {}
+        },
+        {
+          "rank": 10,
+          "score": 0.37896514,
+          "judge_score": 3,
+          "judge_reason": "Nennt direkt alle Beschuldigten und ihre Firmenrollen",
+          "text_preview": "## Seite 33\n\n\nStaatsanwaltschaft Aachen - 107 Js 448/21 -\n\nAachen, 10.03.2021\nSeite 2 von 4\n\n5. ☑ U. m. Akten dem Amtsgericht - Ermittlungsrichter/in -\n\nin Aachen\n\n![img-0.jpeg](img-0.jpeg)\n\n![img-1.jpeg](img-1.jpeg)\n\nmit dem Antrag übersandt, in dem Ermittlungsverfahren gegen\n\n000008\n\na) Beatrice F",
+          "metadata": {}
+        }
+      ]
+    },
+    "pageindex": {
+      "latency_sec": 3.8305318355560303,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 1.0,
+          "judge_score": 3,
+          "judge_reason": "Nennt Angeschuldigten Völl und Schweers mit Firmen",
+          "text_preview": "## Seite 180\n\n634\n\n\"huhu\n\nanbei die AGB inklusive Widerrufsbelehrung für Credify.me und Schufaheld.\n\nAlso wir können hier zum 1.12. starten, müsste noch der Nummernkreis für die Nachnamen geändert werden.\n\nich würde vorschlagen dass wir erstmal mit 100-200 pro tag in den ersten beiden Wochen anfange",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 180"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5,
+          "judge_score": 3,
+          "judge_reason": "Nennt direkt Beschuldigte und deren Firmenrollen",
+          "text_preview": "## aa) PLUS CARDS LTD\n\nGeschäftsführer der PLUS CARDS LTD, eingetragener Geschäftssitz 20-22 Wenlock Road, London, England, N1 7GU, waren gemäß Register des Companies House die ursprünglich als Beschuldigten erfassten Dobrila Bigovic und Paul Miller (Bl. 67 ff. Akten). Die Gesellschaft ist seit dem ",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > aa) PLUS CARDS LTD"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.3333333333333333,
+          "judge_score": 3,
+          "judge_reason": "Nennt Beschuldigte und deren Rollen bei Payplus",
+          "text_preview": "## bb) payplus GmbH\n\nDie payplus GmbH wurde am 09.12.2009 gegründet. Gesellschafter mit einem Kapitalanteil in Höhe von jeweils 12.500,00 Euro waren ursprünglich die gesondert Verfolgten Dirk Pollex und die ehemalige Ehefrau des Angeschuldigten Völl, die Tanja Völl (beide Angeklagte des Verfahrens 1",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > bb) payplus GmbH"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.25,
+          "judge_score": 2,
+          "judge_reason": "Beschuldigter Walter Völl erwähnt, aber andere Firmen",
+          "text_preview": "## cc) Euro Collect GmbH\n\nGeschäftsführer der Euro Collect GmbH, welche regelmäßig als Inkassounternehmen zum Forderungseinzug der über https://donkredito.com generierten Forderungen eingeschaltet wurde, war formal der Zeuge Eduard Müller, der Bruder der Tanja Völl und somit ehemalige Schwager des A",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > cc) Euro Collect GmbH"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.2,
+          "judge_score": 3,
+          "judge_reason": "Nennt Beschuldigten Davies und seine Geschäftsführerrolle",
+          "text_preview": "## dd) Clever Cards B.V. und Intaxx B.V.\n\nGeschäftsführer der Firmen Clever Cards B.V. und Intaxx B.V. (Bl. 71 ff. der Akten) ist der Zeuge Maurice Christiaan Davies, der als weiterer Beschuldigter im Verfahren erfasst worden war. Dieser ist auch Geschäftsführer der EuroPayments (kurz EP) B.V., dere",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > dd) Clever Cards B.V. und Intaxx B.V."
+          }
+        },
+        {
+          "rank": 6,
+          "score": 0.16666666666666666,
+          "judge_score": 1,
+          "judge_reason": "Erwähnt Angeschuldigte Schweers, aber keine Firmenrollen",
+          "text_preview": "## Seite 178\n\n632\n\n- Nutzung eines Mobiltelefons-erst am Ende der Seite und damit unterhalb des „JEZTZT KAUFEN“-Buttons. Hierbei seien die Kosten für die beiden Dienste Credify.me bzw. SchufaHeld mit „1 x 30 Tage [...] 0,00 €“ falsch, zumindest aber irreführend wiedergegeben worden. Auch der Einwand",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 178"
+          }
+        },
+        {
+          "rank": 7,
+          "score": 0.14285714285714285,
+          "judge_score": 2,
+          "judge_reason": "Nennt Schweers und Völl, aber nicht deren Firmenleitungsrollen",
+          "text_preview": "## c) Zur Verantwortlichkeit für https://donkredito.com\n\nErste Hinweise auf eine Involvierung des Angeschuldigten Schweers ergaben sich aus einer Vernehmung des Angeschuldigten Völl aus dem Jahr 2019. Dieser war am 01.08.2019 u.a. durch KHK Kempen in dem Verfahren 103 Js 1369/19 Staatsanwaltschaft A",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > c) Zur Verantwortlichkeit für https://donkredito.com"
+          }
+        },
+        {
+          "rank": 8,
+          "score": 0.125,
+          "judge_score": 2,
+          "judge_reason": "Nennt Beschuldigten Schweers und Kreativ Fliesen GmbH",
+          "text_preview": "## Seite 177\n\n631\n\naufgeführt wurde. Von den aufgeführten Kunden wurden nach den Eintragungen in der Spalte „bezahlt“ Zahlungen in Höhe von insgesamt 9.854,00 Euro geleistet. 4002 Kunden (von aufgeführten 4359) haben keinerlei Zahlungen erbracht, obwohl in der Spalte „bestritten“ bei sämtlichen dies",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 177"
+          }
+        },
+        {
+          "rank": 9,
+          "score": 0.1111111111111111,
+          "judge_score": 3,
+          "judge_reason": "Nennt Walter Völl als Beschuldigten bei Payplus",
+          "text_preview": "## Seite 179\n\n63\n\nKontakt „Waterloo neu“ festgestellt werden, anhand der Inhaltsdaten konnte dieser Account eindeutig dem Angeschuldigten Walter Völl zugeordnet werden. Insgesamt konnten in den hier anhängigen Verfahren eine Vielzahl von E-Mails und Textnachrichten gesichert werden, in denen der Ang",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 179"
+          }
+        },
+        {
+          "rank": 10,
+          "score": 0.1,
+          "judge_score": 3,
+          "judge_reason": "Nennt Beschuldigte und deren Rollen bei Payplus",
+          "text_preview": "## Seite 184\n\n638\n\n- 31 -\n\nProkura erlosch zum 03.09.2019. Der Zeuge Viktor Miuller wurde am 12.05.2023 als Geschäftsführer aus dem Handelsregister gelöscht; ein neuer Geschäftsführer ergibt sich aus dem Handelsregister nicht. Formal wurde die Gesellschaft damit im Tatzeitraum durch den Zeugen Miuel",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 184"
+          }
+        }
+      ]
+    }
+  },
+  "a03": {
+    "ours-mxbai": {
+      "latency_sec": 5.499265909194946,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.4751919,
+          "judge_score": 3,
+          "judge_reason": "Enthält beide Aktenzeichen: 107 Js 1286/20 (Aachen), NZS 9103 Js 18408/23 (Lüneburg)",
+          "text_preview": "## Urschriftlich VAV\n\n\n☐ mit Beiakten\n\nder / dem\n\n☐ Polizeibehörde\n☑ Staatsanwaltschaft, Abtlg. z.Hd. Herrn Bodden 107 Js 1286/20\n☐ Amtsgericht\nin Aachen\n\n☐ mit der Bitte, den\n☐ Beschuldigte/n\n☐ Zeugin/Zeugen\n,s. Bl.\n☐ Geschädigte/n\nd. A. zu vernehmen.\n\n☐ unter Vorführung der/des Beschuldigten m.d. ",
+          "metadata": {}
+        },
+        {
+          "rank": 2,
+          "score": 0.39985907,
+          "judge_score": 3,
+          "judge_reason": "Aktenzeichen 201211-1121-027406 klar ersichtlich",
+          "text_preview": "## Ermittlungsverfahren gegen Eduard Müller, geboren am 04.09.1971 in Rubcovsk, u. a.\n\n\nTatvorwurf: Gewerbsmäßiger Betrug als Mitglied einer Bande\nIhr Zeichen: 201211-1121-027406\n\n*denkaldo*\n\nUm Rücksendung der Ihnen am 05.10.2021 übersandten Akte wird gebeten.\n\nAuf Anordnung\n\nBachem\nJustizbeschäfti",
+          "metadata": {}
+        },
+        {
+          "rank": 3,
+          "score": 0.39901572,
+          "judge_score": 0,
+          "judge_reason": "Asservatenliste ohne spezifische Aktenzeichen-Angaben",
+          "text_preview": "## Seite 8\n\n\nStrA übersenden\n\n|  Asservatennu ID | Datum | Asservatenbezeichnung | Vorgangsnummer | zuet. Dat. / S | Anfrage StrA  |\n| --- | --- | --- | --- | --- | --- |\n|  A-22-1138 | 17328 | 08.08.2022 | 1 Teleskopschlagstock | 220606-2005-085717 | KK 12  |\n|   |  |  | Fahrradschloss, |  | 09.09.",
+          "metadata": {}
+        },
+        {
+          "rank": 4,
+          "score": 0.3846353,
+          "judge_score": 3,
+          "judge_reason": "Nennt explizit Aktenzeichen beider Staatsanwaltschaften",
+          "text_preview": "## Seite 289\n\n\n462\n\nStaatsanwaltschaft\nBonn\n\nStaatsanwaltschaft Bonn, 53222 Bonn\nStaatsanwaltschaft Aachen\nAdalbertsteinweg 92\n52070 Aachen\n\n29.09.2023\nSeite 1\n\nAktenzeichen\n500 Js 60/22\nbei Antwort bitte angeben\n\nDurchwahl: 0228/9752-418\n\nDienstgebäude und\nLieferanschrift:\nHerbert-Rabius-Str. 3\n532",
+          "metadata": {}
+        },
+        {
+          "rank": 5,
+          "score": 0.34906715,
+          "judge_score": 3,
+          "judge_reason": "Enthält gesuchte Aktenzeichen beider Staatsanwaltschaften",
+          "text_preview": "## Seite 282\n\n\nStaatsanwaltschaft Bonn\n455\n\nStaatsanwaltschaft Bonn, 53222 Bonn\nStaatsanwaltschaft Aachen\nAdalbertsteinweg 92\n52070 Aachen\n\n![img-175.jpeg](img-175.jpeg)\n\n26.08.2022\nSeite 1\n\nAktenzeichen\n500 Js 60/22\nbei Antwort bitte angeben\n\nDurchwahl:\n0228/9752-404/486\n\nDienstgebäude und\nLieferan",
+          "metadata": {}
+        },
+        {
+          "rank": 6,
+          "score": 0.27157742,
+          "judge_score": 3,
+          "judge_reason": "Aktenzeichen direkt genannt: 201211-1121-027406",
+          "text_preview": "## Freiwillige Angaben\n\n\n|  Geschlecht | Telefonische Erreichbarkeit tagsüber (z. B. geschäftlich, privat, mobil)  |\n| --- | --- |\n|  Sonstige Namen (FR = Früherer-, GS = Geschiedenen-, VW = Verwitweten-, GN = Genannt-, KN = Künstler-, ON = Ordens-, SP=Spitz-, SN = nicht zugeordneter Name)  |   |\n| ",
+          "metadata": {}
+        },
+        {
+          "rank": 7,
+          "score": 0.2715521,
+          "judge_score": 3,
+          "judge_reason": "Enthält das gesuchte Aktenzeichen 201211-1121-027406",
+          "text_preview": "## Freiwillige Angaben\n\n\n|  Geschlecht | Telefonische Erreichbarkeit tagsüber (z. B. geschäftlich, privat, mobil)  |\n| --- | --- |\n|  Sonstige Namen (FR = Früherer-, GS = Geschiedenen-, VW = Verwitweten-, GN = Genannt-, KN = Künstler-, ON = Ordens-, SP=Spitz-, SN = nicht zugeordneter Name)  |   |\n| ",
+          "metadata": {}
+        },
+        {
+          "rank": 8,
+          "score": 0.27070627,
+          "judge_score": 3,
+          "judge_reason": "Direkte Nennung des Aktenzeichens 201211-1121-027406",
+          "text_preview": "## Freiwillige Angaben\n\n\n|  Geschlecht | Telefonische Erreichbarkeit tagsüber (z. B. geschäftlich, privat, mobil)  |\n| --- | --- |\n|  Sonstige Namen (FR = Früherer-, GS = Geschiedenen-, VW = Verwitweten-, GN = Genannt-, KN = Künstler-, ON = Ordens-, SP=Spitz-, SN = nicht zugeordneter Name)  |   |\n| ",
+          "metadata": {}
+        },
+        {
+          "rank": 9,
+          "score": 0.26898456,
+          "judge_score": 3,
+          "judge_reason": "Aktenzeichen 201211-1121-027406 direkt genannt",
+          "text_preview": "## Freiwillige Angaben\n\n\n|  Geschlecht | Telefonische Erreichbarkeit tagsüber (z. B. geschäftlich, privat, mobil)  |\n| --- | --- |\n|  Sonstige Namen (FR = Früherer-, GS = Geschiedenen-, VW = Verwitweten-, GN = Genannt-, KN = Künstler-, ON = Ordens-, SP=Spitz-, SN = nicht zugeordneter Name)  |   |\n| ",
+          "metadata": {}
+        },
+        {
+          "rank": 10,
+          "score": 0.25603175,
+          "judge_score": 3,
+          "judge_reason": "Nennt konkrete Aktenzeichen: 107 Js 1286/20 und 500 Js 60/22",
+          "text_preview": "# Vfg.\n\n\nEingegangen\nPolizeipräsidium Aachen\nV 16. Dez. 2022\nAnl. ...\n\n1. **Vermerk:**\nNach Mitteilung von Herrn KHK Lindenthal, PI Delmenhorst, sind die aufbereiteten Sicherungsfestplatten aus den dortigen Durchsuchungen zwischenzeitlich an das PP Aachen versandt worden.\n\n2. U. m. Akten der Polizei",
+          "metadata": {}
+        }
+      ]
+    },
+    "pageindex": {
+      "latency_sec": 4.883691072463989,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 1.0,
+          "judge_score": 0,
+          "judge_reason": "Keine Aktenzeichen der Staatsanwaltschaft erkennbar",
+          "text_preview": "## Seite 1\n\nTermine: 13\n\nLandesjustizprüfungsamt\n☐ Ja\n☑ Nein\nStaatsarchiv:\n☐ Ja\n☑ Nein\nUnterschrift der Richterin / des Richterin\nder Staatsanwältin / des Staatsanwalts\n\nMitteilung nach Nrn. ___________ Mißtre\nBeteiligt werden ___________ Mehrfertigungen von ___________\n\nA-117\nA\n\n|  AQ |  |  |   |\n|",
+          "metadata": {
+            "breadcrumb": "Seite 1"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5,
+          "judge_score": 3,
+          "judge_reason": "Enthält das gesuchte Aktenzeichen 107 Js 1286/20",
+          "text_preview": "# Strafsache/Bußgeldsache\n\nbei _______________\n\nVerteidiger/in: Vollmacht: zur Pflichtverteidigerin/ zum Pflichtverteidiger bestellt:\n\nRA. _______________ BI. _______________ BI. _______________\n\nRA. _______________ BI. _______________ BI. _______________\n\nRA. _______________ BI. _______________ BI.",
+          "metadata": {
+            "breadcrumb": "Strafsache/Bußgeldsache"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.3333333333333333,
+          "judge_score": 3,
+          "judge_reason": "Aktenzeichen 107 Js 1286/20 bei Staatsanwaltschaft Aachen",
+          "text_preview": "# Asservat\n\nErledigung siehe BI.\n\nverbunden mit/zu:\n\nWeggelegt 998AR 12/21 o.h.a.\nAufzubewahren bis - dauernd -\ndankredito.com\n\n6216s 54/21\n\nAU 151 Strafsache / Bußgeld - gen. 08.2011\nJustizvollzugsanstalt Bochum - Preisrüsse 36\n\nRecycling - Papier aus 100 % Altpapier\n\n---\n\n## Seite 2\n\nVon der Verni",
+          "metadata": {
+            "breadcrumb": "Asservat"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.25,
+          "judge_score": 3,
+          "judge_reason": "Enthält gesuchtes Aktenzeichen 107 Js 1286/20",
+          "text_preview": "# Asservatenbegleitschein zur Empfangsbescheinigung\n\nAn\n**StA Aachen**\n**107 Js 1286/20**\n\n**Asservatennummer**: A-22-0663\n\nFolgende Asservate wurden übergeben\n**Siehe anliegende Liste**\n\n![img-1.jpeg](img-1.jpeg)\n\nDer Empfang der oben bezeichneten Asservate wird bestätigt:\n\n![img-2.jpeg](img-2.jpeg",
+          "metadata": {
+            "breadcrumb": "Asservatenbegleitschein zur Empfangsbescheinigung"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.2,
+          "judge_score": 3,
+          "judge_reason": "Enthält Aktenzeichen 107 js 1286/20",
+          "text_preview": "# Asservatenliste\n\nA-22-0663\n107 js 1286/20\n\n1 Midi Tower (schwarz) ☑\n1 Midi Tower (schwarz) ☑\n1 Midi Tower Tarox (Server) (schwarz) ☑\n1 Tower Thermal Take (schwarz) ☑\n1 Externe HDD (ISY) ☑\n1 Amazon Echo ☑\n1 Motorola Festnetztelefon mit SIM-Karte ☑\n1 Laptop Lenovo (schwarz) ☑\n1 Festplatte (Asservate",
+          "metadata": {
+            "breadcrumb": "Asservatenliste"
+          }
+        },
+        {
+          "rank": 6,
+          "score": 0.16666666666666666,
+          "judge_score": 3,
+          "judge_reason": "Enthält Aktenzeichen verschiedener Behörden zur gesuchten Sache",
+          "text_preview": "# Polizeipräsidium Aachen\n\n## KK 13\n\nV-Nr. **201211-1121-027406**\n\nTel. 0241/9577-31300\nSB: Skrotzki, EKHK\n\nVerbindungen:\n☐ siehe Rückseite\n☐ siehe Anlage\n\n### Urschriftlich\n\nVAV\n\n### VSV\n\ngegen Rückgabe\n☐ Schreiben\n☐ Vorgang\n☐ mit Asservaten\n\n(vgl. Bl. d. A.)\n\n☐ mit Beiakten\n\nder / dem\n☐ Polizeibeh",
+          "metadata": {
+            "breadcrumb": "Polizeipräsidium Aachen"
+          }
+        },
+        {
+          "rank": 7,
+          "score": 0.14285714285714285,
+          "judge_score": 3,
+          "judge_reason": "Enthält alle relevanten Aktenzeichen der Verfahren",
+          "text_preview": "# Vfg.\n\n## 1. Vermerk:\n\na) Zu vgl. sind die Vfg. Bl. 74 ff. der Akten, das Rechtshilfeersuchen Bl. 79 ff. der Akten und die Mitteilung der Staatsanwaltschaft Wien Bl. 106 der Akten; auf die hiesige E-Mail vom 18.12.2020 bezüglich einer vorläufigen Sicherung der Daten erfolgte von dort noch keine Rüc",
+          "metadata": {
+            "breadcrumb": "Vfg."
+          }
+        },
+        {
+          "rank": 8,
+          "score": 0.125,
+          "judge_score": 3,
+          "judge_reason": "Aktenzeichen 107 Js 1286/20 direkt genannt",
+          "text_preview": "# Vfg.\n\n1. Europ. Ermittlungsanordnung (EEA) mit Dienstsiegel versehen (unter Abschnitt K, wenn EEA von StA, unter Abschnitt L – Dienstsiegel – wenn lediglich validiert)\n2. Frau AL’in IX o. V. [Handwritten signature]\nzur Prüfung und Zeichnung des nachfolgenden Anschreibens und der anliegenden Europä",
+          "metadata": {
+            "breadcrumb": "Vfg."
+          }
+        },
+        {
+          "rank": 9,
+          "score": 0.1111111111111111,
+          "judge_score": 3,
+          "judge_reason": "Enthält das gesuchte Aktenzeichen 998 AR 393/20",
+          "text_preview": "# Rechtshilfeverkehr in strafrechtlichen Angelegenheiten\n\n## Europäische Ermittlungsanordnung nach Richtlinie 2014/41/EU\n\nSehr geehrte Damen und Herren Kollegen,\n\nmeine Behörde führt gegen die serbische Staatsangehörige Dobrila Bigovic, geboren im September 1948, wohnhaft in Montenegro, und Paul Mil",
+          "metadata": {
+            "breadcrumb": "Rechtshilfeverkehr in strafrechtlichen Angelegenheiten"
+          }
+        },
+        {
+          "rank": 10,
+          "score": 0.1,
+          "judge_score": 3,
+          "judge_reason": "Enthält mehrere relevante Aktenzeichen der StA Aachen",
+          "text_preview": "# Vfg.\n\n1. **Vermerk:**\nFrau Schindlauer vom Bundeskriminalamt in Österreich teilte am 22.01.2021 mit, dass die Daten der Webseite bei der easyname GmbH (nicht bei der Nessus GmbH) komplett gesichert worden seien (MySQL Datenbank inklusive Dateien)\n\n2. ☑ Die Verfahren 107 Js 1635 /20, 107 Js 125/21,",
+          "metadata": {
+            "breadcrumb": "Vfg."
+          }
+        }
+      ]
+    }
+  },
+  "a04": {
+    "ours-mxbai": {
+      "latency_sec": 5.781559944152832,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.7413937,
+          "judge_score": 3,
+          "judge_reason": "Direkter Bezug zu Betrugsmasche und Geschäftsmodell",
+          "text_preview": "# Anklageschrift\n\n\nI. Walter Völl, geboren am 16.04.1974 in Düren, wohnhaft Vlijtingerweg 45, BE 3620 Lanaken, verheiratet, deutscher Staatsangehöriger,\n\n- Verteidiger: Rechtsanwalt Bücken, Stolberger Straße 15-17, 52068 Aachen (Vollmacht Bl. 498 der Akten) -\n\nund\n\nII. Patrick Schweers, geborener Ta",
+          "metadata": {}
+        },
+        {
+          "rank": 2,
+          "score": 0.6580885,
+          "judge_score": 3,
+          "judge_reason": "Direkte Beschreibung der Betrugsmasche und Opfererfahrungen",
+          "text_preview": "## Seite 174\n\n\n678\n\nDer Zeuge Wundschittel wird angeben, davon ausgegangen zu sein, über die Seite www.donkredito.com eine Kreditkarte mit einem Kredit über 4.500,00 € mit einer monatlichen Rate i.H.v. 131,46 Euro bestellt zu haben. Die Nachnahmesendung vom 09.07.2020 habe er nicht in Empfang nehmen",
+          "metadata": {}
+        },
+        {
+          "rank": 3,
+          "score": 0.65252984,
+          "judge_score": 3,
+          "judge_reason": "Beschreibt detailliert die Betrugsmasche der Website",
+          "text_preview": "## Seite 155\n\n\n609\n\n- 2 -\n\nwurden sowie der Euro Collect GmbH, die als Inkassodienstleister säumige Besteller in Anspruch nahm.\n\nDie Programmierung der Seite https://donkredito.com war - wie dem Angeschuldigten Völl bekannt war - erkennbar darauf angelegt, durchschnittlichen Internetnutzern - insbes",
+          "metadata": {}
+        },
+        {
+          "rank": 4,
+          "score": 0.63939893,
+          "judge_score": 3,
+          "judge_reason": "Erklärt detailliert die irreführende Website-Gestaltung und Betrugsmasche",
+          "text_preview": "## 1. Zusammenfassung des Sachverhalts\n\n\nLegen Sie die Gründe dafür dar, weshalb die EEA erlassen wird, einschließlich einer Zusammenfassung des zugrunde liegenden Sachverhalts, einer Beschreibung der vorgeworfenen oder zu ermittelnden Straftaten, des aktuellen Stands der Ermittlungen, der Gründe fü",
+          "metadata": {}
+        },
+        {
+          "rank": 5,
+          "score": 0.62633044,
+          "judge_score": 3,
+          "judge_reason": "Erklaert Betrugsmasche der Website donkredito.com detailliert",
+          "text_preview": "## Seite 123\n\n\n3\nAAS\n\nInformationen über die Auslösung einer zahlungspflichtigen Bestellung ergeben sich für den Besucher nach Betätigung der Schaltfläche „JETZT KAUFEN“ auf der Startseite auch nicht aus den Inhalten des ins Auge springenden Rahmens der nächsten Seite mit den auszufüllenden Eingabef",
+          "metadata": {}
+        },
+        {
+          "rank": 6,
+          "score": 0.59880555,
+          "judge_score": 2,
+          "judge_reason": "Technische Details zu Website-Hosting, nicht Betrugsablauf",
+          "text_preview": "### aa) Objektives Erscheinungsbild und Programmierung\n\n\nZur Vermeidung von Wiederholungen wird bzgl. des objektiven Erscheinungsbilds, welches an verschiedenen Tagen durch Screenshots und mittels HTTrack gesichert worden ist, zunächst auf den Anklagesatz Bezug genommen. Die Seite war zudem am Tag d",
+          "metadata": {}
+        },
+        {
+          "rank": 7,
+          "score": 0.5931622,
+          "judge_score": 2,
+          "judge_reason": "Kontext zu Ermittlungen, nicht direkte Masche-Beschreibung",
+          "text_preview": "## 1. Vermerk:\n\n\nDie Internetseite www.donkredito.com ist nach wie vor - und soweit ersichtlich unverändert - online.\n\nU. m. Akten\nder Polizeibehörde\n- KK 13 / KOK’in Els -\n\nin Aachen\n\n![img-163.jpeg](img-163.jpeg)\n\nzur Fortführung der Ermittlungen, insbesondere Auswertung der bei der payplus GmbH s",
+          "metadata": {}
+        },
+        {
+          "rank": 8,
+          "score": 0.5815176,
+          "judge_score": 3,
+          "judge_reason": "Detaillierte Beschreibung der Betrugsmasche auf Website",
+          "text_preview": "## Seite 156\n\n\n610\n\n- 3 -\n\nBesucher erst nach Scrollen über einen weiteren erst „Demnächst“ verfügbaren Tarif in kleinerer Schriftgröße angezeigt und lauteten: „* Diese Gebühren sind sofort und vor Kartenausgabe an den Vermittler zu zahlen. Das Starterpaket wird per Nachnahme versandt - Sie bezahlen",
+          "metadata": {}
+        },
+        {
+          "rank": 9,
+          "score": 0.57408494,
+          "judge_score": 3,
+          "judge_reason": "Zeigt direkt wie Betrugsmasche funktionierte",
+          "text_preview": "## Seite 171\n\n\n625\n\nDer Zeuge Böttcher (107 Js 347/21) wird angeben, dass er davon ausging, auf der Seite www.donkredito.com lediglich eine Kreditanfrage i.H.v. 7.350,00 Euro gestellt zu haben. Über die geforderte Nachnahmegebühr i.H.v. 98,90 € sei er verwundert gewesen. In den Unterlagen habe sich ",
+          "metadata": {}
+        },
+        {
+          "rank": 10,
+          "score": 0.54201555,
+          "judge_score": 2,
+          "judge_reason": "Ermittlungsmaßnahme zur Webseite, aber keine Inhalte",
+          "text_preview": "## Abschluss - Bericht\n\n\nNach Abschluss der Ermittlungen gegen den/die angeführten Beschuldigten/Verdächtigen wird gemäß § 100 Abs. 2 Z 4 StPO folgender Abschlussbericht übermittelt.\n\n**Betreff:** Dobrila BIGOVIC u.a.;\n\nSicherstellung von Daten zur Webseite https://donkredito.com bei der Firma easyn",
+          "metadata": {}
+        }
+      ]
+    },
+    "pageindex": {
+      "latency_sec": 3.1738269329071045,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 1.0,
+          "judge_score": 3,
+          "judge_reason": "Detaillierte Beschreibung der Betrugsmasche auf donkredito.com",
+          "text_preview": "## Seite 155\n\n609\n\n- 2 -\n\nwurden sowie der Euro Collect GmbH, die als Inkassodienstleister säumige Besteller in Anspruch nahm.\n\nDie Programmierung der Seite https://donkredito.com war - wie dem Angeschuldigten Völl bekannt war - erkennbar darauf angelegt, durchschnittlichen Internetnutzern - insbeso",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 155"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5,
+          "judge_score": 3,
+          "judge_reason": "Direkte Beschreibung der Betrugsmasche auf donkredito.com",
+          "text_preview": "## Seite 156\n\n610\n\n- 3 -\n\nBesucher erst nach Scrollen über einen weiteren erst „Demnächst“ verfügbaren Tarif in kleinerer Schriftgröße angezeigt und lauteten: „* Diese Gebühren sind sofort und vor Kartenausgabe an den Vermittler zu zahlen. Das Starterpaket wird per Nachnahme versandt - Sie bezahlen ",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 156"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.3333333333333333,
+          "judge_score": 3,
+          "judge_reason": "Beschreibt detailliert die taeuscherische Website-Gestaltung von donkredito.com",
+          "text_preview": "## Seite 157\n\n611\n\nAuswahlkästchen mussten sämtlich aktiviert werden, um den Vorgang fortsetzen zu können.\n\nBei Lektüre der AGB zum Dienst Schufaheld der Clever Cards BV konnte der Nutzer nach einer Vorbemerkung in § 1 in Erfahrung bringen, dass er durch die Annahme des Angebots Zugang zum Shop-Ange",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 157"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.25,
+          "judge_score": 3,
+          "judge_reason": "Beschreibt detailliert die Betrugsmasche auf donkredito.com",
+          "text_preview": "## Seite 158\n\n612\n\nBestätigungsmails erhielt, waren auch diese irreführend, da dort bezüglich der Dienste Credify.me und Schufaheld nur „1 x 30 Tage Credify“ und „1 x 30 Tage Schufaheld“ aufgeführt waren, die zuvor in der Bestellübersicht fälschlich als kostenfrei angepriesen wurden. Hierdurch sollt",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 158"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.2,
+          "judge_score": 3,
+          "judge_reason": "Erklärt Betrugsmasche mit konkreten Zahlen und Ablauf",
+          "text_preview": "## Seite 159\n\n613\n\nDen Angeschuldigten kam es im Tatzeitraum mit Blick auf den Bestellwert in Höhe von insgesamt mindestens 446,90 Euro für das erste Jahr (98,90 Euro + 164,15 Euro + 183,85 Euro) darauf an, dolose Forderungen in Höhe von insgesamt mindestens 8.115.257,10 Euro zu generieren. Der Ange",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 159"
+          }
+        },
+        {
+          "rank": 6,
+          "score": 0.16666666666666666,
+          "judge_score": 0,
+          "judge_reason": "Biografische Angaben, kein Bezug zur donkredito.com-Betrugsmasche",
+          "text_preview": "## Seite 162\n\n616\n\nGymnasium, das er im Jahr 1993 mit dem Abitur abschloss. Bereits 1991 eröffnete er seine erste Firma, die er bis zum Jahr 1994 betrieb. Nach seiner Schulausbildung meldete sich der Angeschuldigte zum Ersatzdienst beim technischen Hilfswerk (THW), der bis zum Jahr 2000 andauerte. N",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 162"
+          }
+        },
+        {
+          "rank": 7,
+          "score": 0.14285714285714285,
+          "judge_score": 0,
+          "judge_reason": "Bundeszentralregisterauszug ohne Betrugsmasche-Bezug",
+          "text_preview": "## Seite 163\n\n6A\n\nBundeszentralregisterauszug enthielt zum Zeitpunkt der Anklageerhebung lediglich Suchvermerke verschiedener Staatsanwaltschaften.",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 163"
+          }
+        },
+        {
+          "rank": 8,
+          "score": 0.125,
+          "judge_score": 3,
+          "judge_reason": "Erklaert direkt Betrugsmasche und Opfer-Zahlungen",
+          "text_preview": "## II. Zur Sache\n\n### a) Ursprung des Verfahrens und Vermögensschaden\n\nDas Verfahren beruht auf einer Strafanzeige der Zeugin Zeynep Taya aus Karlsruhe vom 24.06.2020. Die Zeugin hatte nach eigenen Angaben am 20.05.2020 eine Rechnung wegen einer angeblich bestellten Kreditkarte erhalten, welche sie ",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > II. Zur Sache"
+          }
+        },
+        {
+          "rank": 9,
+          "score": 0.1111111111111111,
+          "judge_score": 3,
+          "judge_reason": "Erklaert direkt die Betrugsmasche und Taeuschtaktik",
+          "text_preview": "## Seite 170\n\n624\n\ngibt im Quellcode keine Möglichkeit die Dienste Schufaheld oder Credify optional bzw. nicht zu buchen. Für die Bestellung müssen die sogenannten Checkboxen von Credify und Schufaheld ausgefüllt bzw. mit Häkchen versehen werden. Sollte eine der Checkboxen nicht ausgefüllt sein, wir",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 170"
+          }
+        },
+        {
+          "rank": 10,
+          "score": 0.1,
+          "judge_score": 3,
+          "judge_reason": "Direkte Beschreibung der Betrugsmasche und Opfererfahrungen",
+          "text_preview": "## bb) Subjektive Wahrnehmung der Seite https://donkredito.com\n\nDas Ergebnis der objektiven Auswertung des Erscheinungsbildes und der Programmierung der Seite https://donkredito.com und den versandten Benachrichtigungen findet Bestätigung in den Schilderungen der Anzeigenerstatter über ihre subjekti",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > bb) Subjektive Wahrnehmung der Seite https://donkredito.com"
+          }
+        }
+      ]
+    }
+  },
+  "a05": {
+    "ours-mxbai": {
+      "latency_sec": 4.766197919845581,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.5855047,
+          "judge_score": 3,
+          "judge_reason": "Enthält konkrete Zahlungsaufforderungen mit Beträgen und Daten",
+          "text_preview": "### a) Ursprung des Verfahrens und Vermögensschaden\n\n\nDas Verfahren beruht auf einer Strafanzeige der Zeugin Zeynep Taya aus Karlsruhe vom 24.06.2020. Die Zeugin hatte nach eigenen Angaben am 20.05.2020 eine Rechnung wegen einer angeblich bestellten Kreditkarte erhalten, welche sie „aus Angst“ bezah",
+          "metadata": {}
+        },
+        {
+          "rank": 2,
+          "score": 0.46366343,
+          "judge_score": 2,
+          "judge_reason": "Thematischer Kontext zu Forderungen und Zahlungen",
+          "text_preview": "## Seite 174\n\n\n678\n\nDer Zeuge Wundschittel wird angeben, davon ausgegangen zu sein, über die Seite www.donkredito.com eine Kreditkarte mit einem Kredit über 4.500,00 € mit einer monatlichen Rate i.H.v. 131,46 Euro bestellt zu haben. Die Nachnahmesendung vom 09.07.2020 habe er nicht in Empfang nehmen",
+          "metadata": {}
+        },
+        {
+          "rank": 3,
+          "score": 0.2125101,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: konkrete Betraege und Zahlungsdaten",
+          "text_preview": "# Zur Sache\n\n\nAm 20.05.2020 erhielt ich eine Rechnung durch die Firma Payplus GmbH über 30,00 Euro für eine Kreditkarte. Ich hatte zu keiner Zeit solch eine Kreditkarte bei diesem oder einem anderen Unternehmen bestellt.\n\nDa mir unverzüglich mit einem Mahnverfahren als auch mit einem Inkasso-Verfahr",
+          "metadata": {}
+        },
+        {
+          "rank": 4,
+          "score": 0.17363855,
+          "judge_score": 3,
+          "judge_reason": "Enthaelt exakt gesuchte Zahlungen und Daten",
+          "text_preview": "# SACHVERHALT\n\n\nDie Geschädigte erhielt am 20.05.2020 von der Firma Payplus GmbH eine Rechnung in Höhe von 30,00 Euro für eine Bonitätsabrechnung, welche angeblich am 06.05.2020 vertraglich abgeschlossen wurde. Aus Angst bezahlte die Geschädigte jedoch zunächst die geforderten 30 Euro.\n\nAm 24.06.202",
+          "metadata": {}
+        },
+        {
+          "rank": 5,
+          "score": 0.13689686,
+          "judge_score": 0,
+          "judge_reason": "Keine Zahlungsforderungen oder konkrete Betraege enthalten",
+          "text_preview": "## Seite 113\n\n\nVöll jegliche Haftung für jeglichen Vermögensschaden, der Ihnen daraus resultierte und in Zukunft resultieren könnte.\n\n8. Herr Völl verpflichtet sich, für die PayPlus GmbH und die Euro Collect GmbH und deren Geschäftsführer Viktor Miuller (PayPlus GmbH) und Eduard Müller (Euro Collect",
+          "metadata": {}
+        },
+        {
+          "rank": 6,
+          "score": 0.12186354,
+          "judge_score": 0,
+          "judge_reason": "Nur Suchstatistiken, keine Zahlungsangaben",
+          "text_preview": "## Seite 43\n\n\n130\n24\n42\n42\n\nSuche \"credifant\" (0 Treffer in 0 Dateien von 28 gesucht)\nSuche \"luxkredit\" (0 Treffer in 0 Dateien von 28 gesucht)\nSuche \"pumacredit\" (3 Treffer in 2 Dateien von 28 gesucht)\nSuche \"credichamp\" (5 Treffer in 1 Dateien von 28 gesucht)\nSuche \"Waterloo\" (57 Treffer in 2 Date",
+          "metadata": {}
+        },
+        {
+          "rank": 7,
+          "score": 0.10992555,
+          "judge_score": 1,
+          "judge_reason": "Lohndaten, keine direkten Zahlungsforderungen erkennbar",
+          "text_preview": "# 1052\n\n23035\n23035\n\nBerater: 1481\nMandant: 30302\n\nEuro Collect GmbH\nKönigsallee 68 F\n40212 Düsseldorf\n\nVKZ: AGA/AI Datum: 03.01.20\nSeite: 1\nAuswertung:\n\nLohndauer 2016\n\n|  Pos.-Nr. | Name | Name | Wert | Wertdauer | Lohndauer | Kirchenstavel | Kirchenstavel | Kirchgeld | Kirchgeld | Wir-Bruhn | Wir",
+          "metadata": {}
+        },
+        {
+          "rank": 8,
+          "score": 0.08885999,
+          "judge_score": 1,
+          "judge_reason": "Nur Inhaltsverzeichnis, keine konkreten Zahlungsinformationen",
+          "text_preview": "# BMO-Ordner Vernehmungspaket „donkredito.com“\n\n107 Js 1286/20\nINHALTSVERZEICHNIS\n\n|  Bl. d.BMO | Inhalt | Geschädigte/r  |\n| --- | --- | --- |\n|  1 – 3 | Kurzzusammenfassung Aussagen Vernehmungen |   |\n|  4 – 11 | Zeugenvernehmung 15 | Wiedemann  |\n|  12 – 19 | Zeugenvernehmung 16 | Günes  |\n|  20 ",
+          "metadata": {}
+        },
+        {
+          "rank": 9,
+          "score": 0.08513723,
+          "judge_score": 2,
+          "judge_reason": "Zahlungsaufforderung erkennbar, aber keine konkreten Betraege/Daten",
+          "text_preview": "## III. Strafantrag\n\n\n☑ Ich stelle als Geschädigte(r) / (gesetzlicher) Vertreter Strafantrag.\n☐ Ich verzichte als Geschädigte(r) / (gesetzlicher) Vertreter auf die Stellung eines Strafantrags.\n☐ Ich behalte mir als Geschädigte(r) / (gesetzlicher) Vertreter die Stellung eines Strafantrags vor. Die An",
+          "metadata": {}
+        },
+        {
+          "rank": 10,
+          "score": 0.07602966,
+          "judge_score": 0,
+          "judge_reason": "Beschreibung von Gesellschaftsstrukturen, keine konkreten Zahlungsforderungen",
+          "text_preview": "## Seite 147\n\n\nStaatsanwaltschaft Aachen\n- 107 Js 1286/20 -\nAachen, 07.07.2025\nSeite 5 von 7\n601\n\nübernommen und mit dem vorliegenden Verfahren verbunden worden ist, ergeben sich aber keine Hinweise auf eine Involvierung der Ideal Inkasso UG in die Forderungsabwicklung. Der Hintergrund der polizeili",
+          "metadata": {}
+        }
+      ]
+    },
+    "pageindex": {
+      "latency_sec": 5.590564012527466,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 1.0,
+          "judge_score": 3,
+          "judge_reason": "Konkrete Zahlungsaufforderung mit Betrag und Frist",
+          "text_preview": "# ZAHLUNGSAUFFORDERUNG\n\n## Rechnung CMP-2231278\n\n### Ihr Vertrag vom 06.05.2020 auf donkredito.com\n\nSehr geehrte Frau Taya,\n\nvielen Dank für Ihr Vertrauen und, dass Sie uns am 06.05.2020 mit der **Verwaltung Ihrer Bonität beauftragt haben**. Der erste Monat im Wert von 14,70 Euro ist bereits bezahlt",
+          "metadata": {
+            "breadcrumb": "ZAHLUNGSAUFFORDERUNG"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5,
+          "judge_score": 2,
+          "judge_reason": "Enthält Zahlungsforderung aber unvollständige Informationen",
+          "text_preview": "# Eingang Zahlungserinne\n\n## Bearbeitungskosten\n\n1 x Mahngebühr\n\nGesamt:\n\nBitte überweisen Sie die Forderung i.H. von 29,90 folgende folgende Bank unseres Finanzdienstleis\n\n---\n\n## Seite 24\n\nVon meinem iPhone gesendet\n\n15\n\n3\n\n---\n\n## Seite 25\n\n16:36",
+          "metadata": {
+            "breadcrumb": "Eingang Zahlungserinne"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.3333333333333333,
+          "judge_score": 3,
+          "judge_reason": "Direkte Zahlungsaufforderung mit Rechnungsdatum 20.05",
+          "text_preview": "# &lt; Eingang Zahlungserinne\n\nleider haben Sie Ihre Seh- und entgegengenommen und wiederrufen. Dennoch sind wir für uns entstanden, welche unseren AGB`s, die Sie Bestellvorgang und mit Verifizierung bestätigt haben, begleichen müssen. Dazu bereits eine Rechnung und leider konnten wir bislang\n\n---\n\n",
+          "metadata": {
+            "breadcrumb": "&lt; Eingang Zahlungserinne"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.25,
+          "judge_score": 0,
+          "judge_reason": "Trustpilot-Bewertungen ohne konkrete Zahlungsaufforderungen",
+          "text_preview": "# Verbraucherschutz.de\n\n## versprechen\n\n## Deutschland\n\n![img-5.jpeg](img-5.jpeg)\n\n## KOMMENTARE ANZEIGEN\n\nSimi\n\n19.06.2020 an 21:00\n\n---\n\n## Seite 30\n\n21\n\n16:34\n\nde.trustpilot.co\n\nÜbersicht\n\nBewertungen\n\n![img-6.jpeg](img-6.jpeg)\n\nAleksandar Ljubomirov\n\n1 Bewertung\n\n![img-7.jpeg](img-7.jpeg)\n\nErst ",
+          "metadata": {
+            "breadcrumb": "Verbraucherschutz.de"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.2,
+          "judge_score": 0,
+          "judge_reason": "Keine konkreten Zahlungen oder Beträge genannt",
+          "text_preview": "# Vermerk\n\nErmittlungen im Internet ergaben, dass eine Vielzahl von Warnungen im Hinblick auf die hier erwähnte Betrugsart durch die Firma Payplus GmbH eingestellt sind. Viele Nutzer teilten in verschiedenen Foren mit, dass sie auch Anzeigen bei der Polizei erstattet haben.\n\nWeitere Recherchen führt",
+          "metadata": {
+            "breadcrumb": "Vermerk"
+          }
+        },
+        {
+          "rank": 6,
+          "score": 0.16666666666666666,
+          "judge_score": 0,
+          "judge_reason": "Keine Zahlungsforderungen oder Betraege genannt",
+          "text_preview": "# Verfügung\n\n1. Vermerk: Die Strafanzeige richtet sich gegen die Firma Payplaus GmbH.\nAusweislich des Impressums im Internet ist Geschäftsführer: Viktor Miuller\n\n2. Über Herrn Al IV 1517\nan Frau AL' in II\nmit der Bitte um Übernahme des Verfahrens zuständigkeitshalber.\nAls Tatverdächtiger kommt Vikto",
+          "metadata": {
+            "breadcrumb": "Verfügung"
+          }
+        },
+        {
+          "rank": 7,
+          "score": 0.14285714285714285,
+          "judge_score": 0,
+          "judge_reason": "Nur Aktenübersendung, keine konkreten Zahlungsforderungen",
+          "text_preview": "# Staatsanwaltschaft Karlsruhe\n\nStaatsanwaltschaft Karlsruhe, 76232 Karlsruhe\n\nStaatsanwaltschaft Aachen\nAdalbertsteinweg 92\n52070 Aachen\n\n![img-18.jpeg](img-18.jpeg)\n\nDatum 21.07.2020/Wan\nName Frau Metz\nDurchwahl Tel. 0721 926 3804\nFax. 0721 926 6853\nAktenzeichen 280 Js 26611/20\n(Bitte bei Antwort ",
+          "metadata": {
+            "breadcrumb": "Staatsanwaltschaft Karlsruhe"
+          }
+        },
+        {
+          "rank": 8,
+          "score": 0.125,
+          "judge_score": 0,
+          "judge_reason": "Verfahrensvermerk ohne Informationen zu Zahlungsforderungen",
+          "text_preview": "# Vermerk\n\nIm Rahmen der Aktenanlage wurde(n)\n\n☑ der Eingang der Anzeige bestätigt\n\n☐ aufgrund einer allgemeinen Anweisung d. zuständigen Dez./AL. für Fälle der vorliegenden Art Systemauskünfte hiesiger Behörde bzgl. d. bisher registrierten Beschuldigten beigefügt\n\n☑ aufgrund einer allgemeinen Anwei",
+          "metadata": {
+            "breadcrumb": "Vermerk"
+          }
+        },
+        {
+          "rank": 9,
+          "score": 0.1111111111111111,
+          "judge_score": 0,
+          "judge_reason": "Verfahrensuebernahme und Kreditkarten-Werbung, keine konkreten Zahlungsforderungen",
+          "text_preview": "# Vfg.\n\n1. Das Verfahren wird übernommen.\n2. Übernahmemitteilung an Staatsanwaltschaft **Kalsch** (Bl. 21 d.A.). ☑\n3. Sodann.\n\nAachen, 26. Aug. 2020\nStaatsanwaltschaft Aachen\n(Bodden)\nStaatsanwalt\n\n---\n\n## Seite 42\n\nnfredito - Exclusive Mastercard®\n\nX\n\n#\n\nhttps://donkredito.com\n\n#\n\n#\n\n#\n\n#\n\n#\n\n#\n\n#\n",
+          "metadata": {
+            "breadcrumb": "Vfg."
+          }
+        },
+        {
+          "rank": 10,
+          "score": 0.1,
+          "judge_score": 0,
+          "judge_reason": "Kreditwerbung, keine Zahlungsforderungen der Geschaedigten",
+          "text_preview": "# DONKREDITO.COM\n\nKUNDENMEINUNGEN\n\nFRAGEN &amp; ANTWORTEN\n\nJETZT BEANTRAGEN\n\n+ + + AKTUELLE LAGE + + + Ab sofort vereinfachte\n\nKreditvergabe wegen Sondersituation!\n\nUnd wie sieht Ihr Wunschkredit aus?\n\n|  Kredit configuration |   | Persönlichkeiten  |   |\n| --- | --- | --- | --- |\n|  Wunschbetrag | ",
+          "metadata": {
+            "breadcrumb": "DONKREDITO.COM"
+          }
+        }
+      ]
+    }
+  },
+  "a06": {
+    "ours-mxbai": {
+      "latency_sec": 4.579308032989502,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.3478034,
+          "judge_score": 3,
+          "judge_reason": "Dominic Dietrich direkt als DD bei E-Mail-Marketing genannt",
+          "text_preview": "## Seite 122\n\n\nName Aharroud, Mimount, *01.09.1976\nAktenzeichen 608000-054221-20/7\n\nerinnere Bevigra (Bediamond), eine Mastercard (Veripay), Slimsticks (PayPlus GmbH) und ich meine das da auch Seitenspung.tv dabei war (Interdate Software AG). Die Produkten wechselten immer, mal mehr mal weniger.\n\nFr",
+          "metadata": {}
+        },
+        {
+          "rank": 2,
+          "score": 0.29910055,
+          "judge_score": 3,
+          "judge_reason": "Direkter Bezug zu Dominic Dietrich und Werbepartnerschaften",
+          "text_preview": "## Seite 108\n\n\nName\nVöll. Walter, *16.04.1974\nAktenzeichen\n608000-018798-19/8\n\nAntwort:\n\nDruck und Versand wurde durch payplus (Dirk Pollex) übernommen und das Mahnwesen durch Verify.\n\nWir wollten die Kosten abrechnen, die bei payplus anfallen sind und den Aufwand beim Support. Die Leute haben aber ",
+          "metadata": {}
+        },
+        {
+          "rank": 3,
+          "score": 0.2666578,
+          "judge_score": 2,
+          "judge_reason": "Bedenken zu Dietrich wegen Geldwäsche-Nachfragen erwähnt",
+          "text_preview": "## Seite 106\n\n\nName Völl, Walter, *16.04.1974\nAbbezeichen 608000-018798-19/8\n98\n\nAntwort:\n\nNur aus dem Partnerprogramm, nicht persönlich.\n\nDaten habe ich nicht dabei.\n\nEs ist ein öffentlich einsehbarer US - Handelsregisterauszug.\n\nZudem gibt es eine weitere Adresse, die sofortcredifyme.com, die jetz",
+          "metadata": {}
+        },
+        {
+          "rank": 4,
+          "score": 0.22245549,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Dominic Dietrich und Website-Betrieb genannt",
+          "text_preview": "## Seite 123\n\n\nName Aharroud, Mimount, *01.09.1976\nAktenzeichen 608000-054221-20/7\n644\n123\n\nFrage:\n\nWarum hat Herr Völl dies gemacht?\n\nAntwort:\n\nJa ihr Hausbesuch war ja sehr unangenehm. Wir haben ja dann auch alle Inkassoaufträge in Zusammenhang mit Probenheld geschlossen\n\nFrage:\n\nWann haben sie di",
+          "metadata": {}
+        },
+        {
+          "rank": 5,
+          "score": 0.20577498,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Dietrichs Rolle und Geschäftsverbindungen detailliert",
+          "text_preview": "## Seite 107\n\n\nName\nVöll, Walter, *16.04.1974\n211\n95\nAktenzeichen\n608000-018798-19/8\n\nFrage: Warum steht auf der ADMIZED Rechnung die Payplus GmbH und nicht die Firma Veripay, für die sie arbeiten?\n\nAntwort:\nDirk Pollex hat die Rechnung direkt an diese Firma überwiesen. Payplus gehört Credify.me und",
+          "metadata": {}
+        },
+        {
+          "rank": 6,
+          "score": 0.10102949,
+          "judge_score": 0,
+          "judge_reason": "Allgemeine Formularfelder, keine Person genannt",
+          "text_preview": "## Freiwillige Angaben\n\n\n|  Geschlecht | Telefonische Erreichbarkeit tagsüber (z. B. geschäftlich, privat, mobil)  |\n| --- | --- |\n|  Sonstige Namen (FR = Früherer-, GS = Geschiedenen-, VW = Verwitweten-, GN = Genannt-, KN = Künstler-, ON = Ordens-, SP=Spitz-, SN = nicht zugeordneter Name)  |   |\n| ",
+          "metadata": {}
+        },
+        {
+          "rank": 7,
+          "score": 0.09892066,
+          "judge_score": 0,
+          "judge_reason": "Allgemeines Formular ohne Dietrich-Bezug",
+          "text_preview": "## Freiwillige Angaben\n\n\n|  Geschlecht | Telefonische Erreichbarkeit tagsüber (z. B. geschäftlich, privat, mobil)  |\n| --- | --- |\n|  Sonstige Namen (FR = Früherer-, GS = Geschiedenen-, VW = Verwitweten-, GN = Genannt-, KN = Künstler-, ON = Ordens-, SP=Spitz-, SN = nicht zugeordneter Name)  |   |\n| ",
+          "metadata": {}
+        },
+        {
+          "rank": 8,
+          "score": 0.09674864,
+          "judge_score": 0,
+          "judge_reason": "Standardformular ohne Bezug zu Dominic Dietrich",
+          "text_preview": "## Freiwillige Angaben\n\n\n|  Geschlecht | Telefonische Erreichbarkeit tagsüber (z. B. geschäftlich, privat, mobil)  |\n| --- | --- |\n|  Sonstige Namen (FR = Früherer-, GS = Geschiedenen-, VW = Verwitweten-, GN = Genannt-, KN = Künstler-, ON = Ordens-, SP=Spitz-, SN = nicht zugeordneter Name)  |   |\n| ",
+          "metadata": {}
+        },
+        {
+          "rank": 9,
+          "score": 0.09633978,
+          "judge_score": 0,
+          "judge_reason": "Formular ohne Bezug zu Dominic Dietrich",
+          "text_preview": "## Freiwillige Angaben\n\n\n|  Geschlecht | Telefonische Erreichbarkeit tagsüber (z. B. geschäftlich, privat, mobil)  |\n| --- | --- |\n|  Sonstige Namen (FR = Früherer-, GS = Geschiedenen-, VW = Verwitweten-, GN = Genannt-, KN = Künstler-, ON = Ordens-, SP=Spitz-, SN = nicht zugeordneter Name)  |   |\n| ",
+          "metadata": {}
+        },
+        {
+          "rank": 10,
+          "score": 0.07077138,
+          "judge_score": 3,
+          "judge_reason": "Direkte Kommunikation von Dominic Dietrich im Fall",
+          "text_preview": "## Seite 109\n\n\n53 100\n\nIch freue mich schon auf Dein Feedback :)\n\nMit besten Grüßen,\n\nDominik\n\nDominik Dietrich\n\nGeschäftsführer\n\nPrime Level Publishing Verlags GmbH\n\nHohenzollernstraße 22\n\nD-80801 München\n\nGermany\n\nTel: +49 (0)178 / 537 69 61\n\nEmail: d.dietrich@plpverlag.de\n\nGeschäftsführer: Domini",
+          "metadata": {}
+        }
+      ]
+    },
+    "pageindex": {
+      "latency_sec": 2.1035399436950684,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 1.0,
+          "judge_score": 3,
+          "judge_reason": "Zeigt Dietrichs direkte Rolle als E-Mail-Marketing-Partner",
+          "text_preview": "## Seite 181\n\n635\n\nAm 27.03.18 um 16:12 Uhr schrieb Dominik Dietrich (a.dietrich@plpverlag.de) an Walter Völl (w.v.@payplus.de) [Hervorhebung Fettdruck durch Unterzeichner, Bl. 107 SH I]:\n\n„Servus Walter,\n\nvielen Dank für Deine Mail bezüglich der Kreditkarten-Strom-Gas-Kombi welche ich auch gleich n",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 181"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5,
+          "judge_score": 1,
+          "judge_reason": "Namensvariation Dominik statt Dominic, E-Mail-Marketing Kontext",
+          "text_preview": "## Seite 182\n\n636\n\nHoffe das sagt zu?\n\nLG\n\nWalter\n\nAm 12.04.2018 um 9:25 Uhr schrieb Walter Völl Bl. 103 SH I:\n\n„Hi Dominik,\n\nich würde sagen wir machen das genauso. Das sieht sehr geil aus. Wir heben die Credify.me Gebühr auch auf 0,49 € pro Tag an.\n\nIch würde dann die Goldene Mastercard an Platz 1",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 182"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.3333333333333333,
+          "judge_score": 0,
+          "judge_reason": "Keine Informationen zu Dominic Dietrich enthalten",
+          "text_preview": "## b) Zu den Gesellschaften",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > b) Zu den Gesellschaften"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.25,
+          "judge_score": 0,
+          "judge_reason": "Keine Erwähnung von Dominic Dietrich",
+          "text_preview": "## aa) PLUS CARDS LTD\n\nGeschäftsführer der PLUS CARDS LTD, eingetragener Geschäftssitz 20-22 Wenlock Road, London, England, N1 7GU, waren gemäß Register des Companies House die ursprünglich als Beschuldigten erfassten Dobrila Bigovic und Paul Miller (Bl. 67 ff. Akten). Die Gesellschaft ist seit dem ",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > aa) PLUS CARDS LTD"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.2,
+          "judge_score": 0,
+          "judge_reason": "Dominic Dietrich wird nicht erwähnt",
+          "text_preview": "## Seite 183\n\n637\n\n(https://find-and-update.company-information.service.gov.uk/) zur Dobrila Bigovic am 03.07.2025 insgesamt 86 Bestellungen und bei Paul Miller 18. Wie bereits ausgeführt, wurde bei dem Angeschuldigten Schweers im Verfahren 524 Js 44964/16 Staatsanwaltschaft Oldenburg auf einem Lapt",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 183"
+          }
+        },
+        {
+          "rank": 6,
+          "score": 0.16666666666666666,
+          "judge_score": 0,
+          "judge_reason": "Dominic Dietrich wird nicht erwähnt",
+          "text_preview": "## bb) payplus GmbH\n\nDie payplus GmbH wurde am 09.12.2009 gegründet. Gesellschafter mit einem Kapitalanteil in Höhe von jeweils 12.500,00 Euro waren ursprünglich die gesondert Verfolgten Dirk Pollex und die ehemalige Ehefrau des Angeschuldigten Völl, die Tanja Völl (beide Angeklagte des Verfahrens 1",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > bb) payplus GmbH"
+          }
+        },
+        {
+          "rank": 7,
+          "score": 0.14285714285714285,
+          "judge_score": 0,
+          "judge_reason": "Dominic Dietrich wird nicht erwähnt",
+          "text_preview": "## Seite 184\n\n638\n\n- 31 -\n\nProkura erlosch zum 03.09.2019. Der Zeuge Viktor Miuller wurde am 12.05.2023 als Geschäftsführer aus dem Handelsregister gelöscht; ein neuer Geschäftsführer ergibt sich aus dem Handelsregister nicht. Formal wurde die Gesellschaft damit im Tatzeitraum durch den Zeugen Miuel",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 184"
+          }
+        },
+        {
+          "rank": 8,
+          "score": 0.125,
+          "judge_score": 0,
+          "judge_reason": "Dominic Dietrich wird nicht erwähnt",
+          "text_preview": "## Seite 185\n\n639\n\nmal Unterschriften ab.\" Auf die Frage, ob der Viktor Miuller die Firma auch leitet, antwortete der Zeuge Bolz ausweichend und verwies auf die Zeugin Völl mit der Bemerkung, dass er glaube, dass Viktor Miuller aus einem anderen Grund „den Posten“ innehebe. Bei dem Viktor Miuller ha",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 185"
+          }
+        },
+        {
+          "rank": 9,
+          "score": 0.1111111111111111,
+          "judge_score": 0,
+          "judge_reason": "Dominic Dietrich nicht erwähnt",
+          "text_preview": "## Seite 186\n\n640\n\nAus den sichergestellten Daten ergeben sich ebenfalls erhebliche Anhaltspunkte dafür, dass der Angeschuldigte Walter Völl jedenfalls nach dem 04.07.2019 die Geschicke der payplus GmbH maßgeblich bestimmt hat. Ein gewichtiges Beweismittel ist der Entwurf eines notariellen Vertrags,",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 186"
+          }
+        },
+        {
+          "rank": 10,
+          "score": 0.1,
+          "judge_score": 0,
+          "judge_reason": "Dominic Dietrich wird nicht erwähnt",
+          "text_preview": "## cc) Euro Collect GmbH\n\nGeschäftsführer der Euro Collect GmbH, welche regelmäßig als Inkassounternehmen zum Forderungseinzug der über https://donkredito.com generierten Forderungen eingeschaltet wurde, war formal der Zeuge Eduard Müller, der Bruder der Tanja Völl und somit ehemalige Schwager des A",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > cc) Euro Collect GmbH"
+          }
+        }
+      ]
+    }
+  },
+  "a07": {
+    "ours-mxbai": {
+      "latency_sec": 5.540635824203491,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.78473216,
+          "judge_score": 3,
+          "judge_reason": "Direkter Nachweis einer erlassenen EEA nach Richtlinie 2014/41/EU",
+          "text_preview": "# EUROPÄISCHE ERMITTLUNGSANORDNUNG (EEA)\n\n\nDiese EEA wurde von einer zuständigen Behörde angeordnet. Die Anordnungsbehörde bescheinigt, dass der Erlass dieser EEA für die Zwecke des darin angegebenen Verfahrens unter Berücksichtigung der Rechte der verdächtigen oder beschuldigten Person notwendig un",
+          "metadata": {}
+        },
+        {
+          "rank": 2,
+          "score": 0.7413937,
+          "judge_score": 3,
+          "judge_reason": "Direkter Nachweis der erlassenen EEA nach Richtlinie 2014/41/EU",
+          "text_preview": "# Vfg.\n\n\n1. Europ. Ermittlungsanordnung (EEA) mit Dienstsiegel versehen (unter Abschnitt K, wenn EEA von StA, unter Abschnitt L – Dienstsiegel – wenn lediglich validiert)\n2. Frau AL’in IX o. V. [Handwritten signature]\nzur Prüfung und Zeichnung des nachfolgenden Anschreibens und der anliegenden Europ",
+          "metadata": {}
+        },
+        {
+          "rank": 3,
+          "score": 0.73981786,
+          "judge_score": 3,
+          "judge_reason": "Direkte Antwort: EEA wurde erlassen",
+          "text_preview": "# EUROPÄISCHE ERMITTLUNGSANORDNUNG (EEA)\n\n\nDiese EEA wurde von einer zuständigen Behörde angeordnet. Die Anordnungsbehörde bescheinigt, dass der Erlass dieser EEA für die Zwecke des darin angegebenen Verfahrens unter Berücksichtigung der Rechte der verdächtigen oder beschuldigten Person notwendig un",
+          "metadata": {}
+        },
+        {
+          "rank": 4,
+          "score": 0.73459625,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: EEA mit Dienstsiegel wurde erlassen",
+          "text_preview": "# Vfg.\n\n\n☑ Die Verfahren\n\n|  107 Js 2119/20 | 107 Js 2167/20 | 107 Js 2287/20  |\n| --- | --- | --- |\n|  107 Js 2140/20 | 107 Js 2170/20 | 107 Js 2293/20  |\n|  107 Js 2265/20 | 107 Js 2205/20 | 107 Js 2289/20  |\n\n107 js 2108/20\n\nwerden mit dem vorliegenden, welches führt, verbunden. Vorgänge als Verb",
+          "metadata": {}
+        },
+        {
+          "rank": 5,
+          "score": 0.6701125,
+          "judge_score": 3,
+          "judge_reason": "Direkter Nachweis: EEA von Staatsanwaltschaft Aachen erlassen",
+          "text_preview": "## Seite 57\n\n\n236\n\nABSCHNITT I: Für die Vollstreckung einzuhaltende Formvorschriften und Verfahren\n\n1. Falls zutreffend, bitte ankreuzen und ergänzen\n☐ Die vollstreckende Behörde wird ersucht, die folgenden Formvorschriften und Verfahren einzuhalten\n2. Falls zutreffend, bitte ankreuzen und ergänzen\n",
+          "metadata": {}
+        },
+        {
+          "rank": 6,
+          "score": 0.6578248,
+          "judge_score": 3,
+          "judge_reason": "Bestaetigt EEA-Erlass nach Richtlinie 2014/41/EU",
+          "text_preview": "## Seite 46\n\n\nStaatsanwaltschaft Aachen\n- 107 Js 1718/20 -\nAachen, 24.03.2021\nSeite 2 von 2\n227\n\n6. Schreiben auf LOStA-Kopfbogen (Zusatz: Eilt, Datenverlust droht), mit Mehrfertigung für die Akten, ohne Abkürzungen, Ausfertigungen mit Dienstsiegel versehen, anliegende EEA beifügen\n\nScannen und mit ",
+          "metadata": {}
+        },
+        {
+          "rank": 7,
+          "score": 0.63750535,
+          "judge_score": 3,
+          "judge_reason": "Europäische Ermittlungsanordnung nach RL 2014/41/EU beantragt",
+          "text_preview": "## Seite 132\n\n\nSENDEBERICHT\n\nZEIT : 18/01/2021 12:04\n\nNAME : STAAC\n\nFAX : 0241942581136\n\nTEL : 0241942581136\n\nS-NR. : E71294H8J612125\n\nDATUM/UHRZEIT\nFAX-NR./NAME\nU.-DAUER\nSEITE(N)\nUBERTR\nMODUS\n\n18/01 11:50\n00043140127306950\n00:14:41\n14\nOK\nSTANDARD\n\nDer Leitende Oberstaatsanwalt in Aachen\n\n![img-35.j",
+          "metadata": {}
+        },
+        {
+          "rank": 8,
+          "score": 0.6072213,
+          "judge_score": 3,
+          "judge_reason": "Explizite Erwähnung EEA-Erlass und Verfahrensdetails",
+          "text_preview": "## Seite 45\n\n\nStaatsanwaltschaft Aachen\n- 107 Js 1718/20 -\nAachen, 24.03.2021\nSeite 1 von 2\n226\nVon Hand zu Hand!\nVfg.\naus 107 js 1718/20\n\n1. Vermerk:\n\na) Im Rahmen des Parallelverfahrens 107 Js 1754/20, in welchem eine der Seite https://crediseven.com/ ähnlich gestaltete Seite (https://credichamp.d",
+          "metadata": {}
+        },
+        {
+          "rank": 9,
+          "score": 0.5942929,
+          "judge_score": 3,
+          "judge_reason": "Zeigt explizit Erlass einer EEA mit Details",
+          "text_preview": "## Seite 51\n\n\n232\n\nABSCHNITT F: Art des Verfahrens, für das die EEA erlassen wird:\n\n☑ a) Strafverfahren, das eine Justizbehörde wegen einer nach dem nationalen Recht des Anordnungsstaats strafbaren Handlung eingeleitet hat oder mit dem sie befasst werden kann, oder\n\n☐ b) Verfahren, das Verwaltungsbe",
+          "metadata": {}
+        },
+        {
+          "rank": 10,
+          "score": 0.5855047,
+          "judge_score": 3,
+          "judge_reason": "Explizite Erwähnung von Europäischer Ermittlungsanordnung mit Datum",
+          "text_preview": "## Seite 129\n\n\nStaatsanwaltschaft Aachen\n- 107 Js 1286/20 -\nAachen, 18.01.2021\nSeite 2 von 2\n121\n\nDiese Europäische Ermittlungsanordnung ist eine Ergänzung der hiesigen Europäische Ermittlungsanordnung vom 24.11.2020 (Ihr Zeichen 317 HSt 226/20g, unser Zeichen 998 AR 393/20).\n\nFür Ihre Unterstützung",
+          "metadata": {}
+        }
+      ]
+    },
+    "pageindex": {
+      "latency_sec": 2.2075209617614746,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 1.0,
+          "judge_score": 3,
+          "judge_reason": "Direkte Bestätigung: EEA wurde erlassen und übermittelt",
+          "text_preview": "# Europäische Ermittlungsanordnung nach Richtlinie 2014/41/EU\n\nSehr geehrte Damen und Herren Kollegen,\n\nmeine Behörde führt gegen die serbische Staatsangehörige Dobrila Bigovic, geboren im September 1948, wohnhaft in Montenegro, und Paul Miller, weitere Personalien jeweils nicht bekannt, als Geschäf",
+          "metadata": {
+            "breadcrumb": "Europäische Ermittlungsanordnung nach Richtlinie 2014/41/EU"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5,
+          "judge_score": 3,
+          "judge_reason": "Direkte Antwort: EEA wurde von Deutschland erlassen",
+          "text_preview": "# EUROPÄISCHE ERMITTLUNGSANORDNUNG (EEA)\n\nDiese EEA wurde von einer zuständigen Behörde angeordnet. Die Anordnungsbehörde bescheinigt, dass der Erlass dieser EEA für die Zwecke des darin angegebenen Verfahrens unter Berücksichtigung der Rechte der verdächtigen oder beschuldigten Person notwendig und",
+          "metadata": {
+            "breadcrumb": "EUROPÄISCHE ERMITTLUNGSANORDNUNG (EEA)"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.3333333333333333,
+          "judge_score": 3,
+          "judge_reason": "EEA-Formular mit Sachverhalt und Ermittlungsgruenden",
+          "text_preview": "# ABSCHNITT G: Gründe für den Erlass der EEA:\n\n## 1. Zusammenfassung des Sachverhalts\n\nLegen Sie die Gründe dafür dar, weshalb die EEA erlassen wird, einschließlich einer Zusammenfassung des zugrunde liegenden Sachverhalts, einer Beschreibung der vorgeworfenen oder zu ermittelnden Straftaten, des ak",
+          "metadata": {
+            "breadcrumb": "ABSCHNITT G: Gründe für den Erlass der EEA:"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.25,
+          "judge_score": 0,
+          "judge_reason": "Nur Seitenzahl ohne relevanten Textinhalt zu EEA",
+          "text_preview": "## Seite 181\n\n14",
+          "metadata": {
+            "breadcrumb": "sipgatePortierung fehlgeschlagen > Seite 181"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.2,
+          "judge_score": 0,
+          "judge_reason": "Beschreibt nur Excel-Listen und Datenbanken",
+          "text_preview": "## E) Text\n\n1) 3 Excel Listen mit Überweisungen mit der Zuordnung: Sendungsnummer, Betrag und wann die Zahlung beauftragt wurde (insgesamt 277 Datensätze)\n\n2) Muster für eine Datenbank mit folgender Zuordnung: anrede, vorname, name, str, hnr, lkz, plz, ort, summe, mahnspesen, zinsdat, rechnr, rechnu",
+          "metadata": {
+            "breadcrumb": "sipgatePortierung fehlgeschlagen > E) Text"
+          }
+        },
+        {
+          "rank": 6,
+          "score": 0.16666666666666666,
+          "judge_score": 0,
+          "judge_reason": "Beschreibt Videos zu Inkasso-Verfahren, keine EEA",
+          "text_preview": "## F) Videos\n\n1) In diesem Video ist zu sehen, wie von einer unbekannten Person die Software bzw. ein Skript für das Inkasso Verfahren geändert wird. Das Intervall für die Mahnung wird von 7 auf 6 Tage geändert.\n\n2) In diesem Video tauschen sich vermutlich drei Personen über Kundenanträge auf der Se",
+          "metadata": {
+            "breadcrumb": "sipgatePortierung fehlgeschlagen > F) Videos"
+          }
+        },
+        {
+          "rank": 7,
+          "score": 0.14285714285714285,
+          "judge_score": 3,
+          "judge_reason": "Direkter Nachweis einer erlassenen Europaeischen Ermittlungsanordnung",
+          "text_preview": "# EUROPÄISCHE ERMITTLUNGSANORDNUNG (EEA)\n\nDiese EEA wurde von einer zuständigen Behörde angeordnet. Die Anordnungsbehörde bescheinigt, dass der Erlass dieser EEA für die Zwecke des darin angegebenen Verfahrens unter Berücksichtigung der Rechte der verdächtigen oder beschuldigten Person notwendig und",
+          "metadata": {
+            "breadcrumb": "EUROPÄISCHE ERMITTLUNGSANORDNUNG (EEA)"
+          }
+        },
+        {
+          "rank": 8,
+          "score": 0.125,
+          "judge_score": 3,
+          "judge_reason": "Bestaetigt Erlass mehrerer EEAs mit konkreten Daten",
+          "text_preview": "# ABSCHNITT D: Beziehung zu einer früheren EEA\n\nGeben Sie bitte an, ob diese EEA eine frühere EEA ergänzt. Machen Sie bitte gegebenenfalls die zur Ermittlung der früheren EEA erforderlichen Angaben (Datum des Erlasses der EEA, Behörde, an die die Übermittlung erfolgte, und, soweit bekannt, Datum der",
+          "metadata": {
+            "breadcrumb": "ABSCHNITT D: Beziehung zu einer früheren EEA"
+          }
+        },
+        {
+          "rank": 9,
+          "score": 0.1111111111111111,
+          "judge_score": 3,
+          "judge_reason": "Formular einer EEA mit Personendaten",
+          "text_preview": "## Seite 50\n\n231\n\nb)\nName: Miller\nVorname(n): Paul\nGgf. anderer relevanter Name/andere relevante Namen:\nGgf. Aliasnamen:\nGeschlecht: männlich\nStaatsangehörigkeit:\nKennnummer oder Sozialversicherungsnummer:\nSofern verfügbar Art und Kennnummer der Identitätsdokumente (Personalausweis, Reisepass):\nGebu",
+          "metadata": {
+            "breadcrumb": "ABSCHNITT E: Identität der betroffenen Person > Seite 50"
+          }
+        },
+        {
+          "rank": 10,
+          "score": 0.1,
+          "judge_score": 3,
+          "judge_reason": "Zeigt konkretes EEA-Formular mit Details",
+          "text_preview": "## Seite 51\n\n232\n\nABSCHNITT F: Art des Verfahrens, für das die EEA erlassen wird:\n\n☑ a) Strafverfahren, das eine Justizbehörde wegen einer nach dem nationalen Recht des Anordnungsstaats strafbaren Handlung eingeleitet hat oder mit dem sie befasst werden kann, oder\n\n☐ b) Verfahren, das Verwaltungsbeh",
+          "metadata": {
+            "breadcrumb": "ABSCHNITT E: Identität der betroffenen Person > Seite 51"
+          }
+        }
+      ]
+    }
+  },
+  "a08": {
+    "ours-mxbai": {
+      "latency_sec": 5.765458106994629,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.3152303,
+          "judge_score": 3,
+          "judge_reason": "Zeigt konkrete Whois-Recherche zur gesuchten IP-Adresse",
+          "text_preview": "## Seite 84\n\n\nStaatsanwaltschaft Aachen\n- 107 Js 1286/20 -\nAachen, 04.11.2020\nSeite 3 von 3\n\n3. Die Verfahren\n\n|  107 Js 1551/20 | 107 Js 1866/20 | 107 Js 2049/20  |\n| --- | --- | --- |\n|  107 Js 1675/20 | 107 Js 1961/20 | 107 Js 2081/20  |\n|  107 Js 1771/20 | 107 Js 1988/20 | 107 Js 2085/20  |\n|  1",
+          "metadata": {}
+        },
+        {
+          "rank": 2,
+          "score": 0.26086035,
+          "judge_score": 0,
+          "judge_reason": "Formular zu Rechtshilfeersuchen, keine Whois/VPN-Rechercheergebnisse",
+          "text_preview": "## Seite 99\n\n\n91\n\nWird um derartige Ermittlungsmaßnahmen ersucht, so geben Sie bitte die Gründe dafür an, weshalb die Informationen, um die ersucht wird, Ihres Erachtens für die Zwecke des Strafverfahrens relevant sind:\n\n**ABSCHNITT H6: Verdeckte Ermittlungen**\n\nWird um derartige Ermittlungsmaßnahme",
+          "metadata": {}
+        },
+        {
+          "rank": 3,
+          "score": 0.23202331,
+          "judge_score": 0,
+          "judge_reason": "Formular-Template ohne konkrete Whois-/VPN-Ergebnisse",
+          "text_preview": "## Seite 56\n\n\n234\n\n|  ☐ Informationen über Bankgeschäfte  |\n| --- |\n|  ☐ Informationen über sonstige Finanzgeschäfte  |\n|  Geben Sie bitte die betreffenden Zeiträume und die entsprechenden Konten an:  |\n|  ABSCHNITT H5: Ermittlungsmaßnahmen zur Erhebung von Beweismitteln in Echtzeit, fortlaufend ode",
+          "metadata": {}
+        },
+        {
+          "rank": 4,
+          "score": 0.22831172,
+          "judge_score": 3,
+          "judge_reason": "Whois-Daten der Domain und VPN-Anbieter Whoer direkt gezeigt",
+          "text_preview": "# Ausblenden\n\n\nDomain name donkredito.com\nRegistry Domain ID 2511565357_DOMAIN_COM-VRSN\nRegistrar WHOIS Server whois.namecheap.com\nRegistrar URL http://www.namecheap.com\nUpdated Date 0001-01-01T00:00:00.00Z\nCreation Date 2020-04-06T11:17:53.00Z\nRegistrar Registration Expiration Date 2021-04-06T11:17",
+          "metadata": {}
+        },
+        {
+          "rank": 5,
+          "score": 0.19282834,
+          "judge_score": 2,
+          "judge_reason": "Whois-Service erwähnt, aber keine konkreten Recherche-Ergebnisse",
+          "text_preview": "## § 15 Erfüllungsort, Gerichtsstand\n\n\nDer Erfüllungsort bestimmt sich nach den gesetzlichen Regelungen. Die Ausnahme gilt für Besteller, welcher Kaufmann i. S. d. HGB ist, sofern hier Streitigkeiten aus dem Vertrag existieren, wird die ausschließliche Zuständigkeit des Gerichts an unserem Sitz vere",
+          "metadata": {}
+        },
+        {
+          "rank": 6,
+          "score": 0.18426824,
+          "judge_score": 0,
+          "judge_reason": "Anwaltschreiben zu Akteneinsicht, keine Whois/VPN-Informationen",
+          "text_preview": "## Akteneinsicht\n\n\nin die Ermittlungsakten, sämtliche Beiakten und Beweismittelordner zu gewähren. Es wird um Übersendung der Akten an mein Büro gebeten.\n\nSofern mir die Akteneinsicht elektronisch gewährt werden soll, wird bereits jetzt darum gebeten, dass mir sämtliche Dateien auf eventuell in den ",
+          "metadata": {}
+        },
+        {
+          "rank": 7,
+          "score": 0.17626037,
+          "judge_score": 1,
+          "judge_reason": "Formular ohne konkrete Whois/VPN-Recherche-Ergebnisse",
+          "text_preview": "## Seite 48\n\n\n229\n\n☐ Erlangung von Informationen, die sich in den von Polizei- oder Justizbehörden geführten Datenbanken befinden\n☐ Vernehmung als\n☐ Zeuge\n☐ Sachverständiger\n☐ verdächtige oder beschuldigte Person\n☐ Opfer\n☐ Dritter\n\n☐ Identifizierung von Inhabern eines bestimmten Telefonanschlusses o",
+          "metadata": {}
+        },
+        {
+          "rank": 8,
+          "score": 0.1670151,
+          "judge_score": 0,
+          "judge_reason": "Formular ohne Whois/VPN-Recherche-Ergebnisse",
+          "text_preview": "## Seite 91\n\n\n83\n\n☐ Erlangung von Informationen, die sich in den von Polizei- oder Justizbehörden geführten Datenbanken befinden\n☑ Vernehmung als\n☑ Zeuge\n☐ Sachverständiger\n☐ verdächtige oder beschuldigte Person\n☐ Opfer\n☐ Dritter\n\n☐ Identifizierung von Inhabern eines bestimmten Telefonanschlusses od",
+          "metadata": {}
+        },
+        {
+          "rank": 9,
+          "score": 0.12781608,
+          "judge_score": 0,
+          "judge_reason": "Beschreibt nur forensische Analysemethoden, keine Whois-/VPN-Ergebnisse",
+          "text_preview": "## 2.4. Aufbereitung der Internetanwendungen mit AXIOM\n\n\nDie Internetaktivitäten werden mit dem forensischen Programm „AXIOM“ in der jeweils aktuellen Version untersucht der es ermöglicht, u.a. Daten im Zusammenhang mit Internetaktivitäten wie Webmails, Chats oder Browserverlaufsdaten aufzubereiten.",
+          "metadata": {}
+        },
+        {
+          "rank": 10,
+          "score": 0.12426638,
+          "judge_score": 1,
+          "judge_reason": "Forensik-Methoden, aber keine Whois/VPN-Recherche-Ergebnisse",
+          "text_preview": "## 2.4. Aufbereitung der Internetanwendungen\n\n\nDie Internetaktivitäten werden mit dem forensischen Programmen AXIOM / IEF in der jeweils aktuellen Version untersucht der es ermöglicht, u.a. Daten im Zusammenhang mit Internetaktivitäten wie Webmails, Chats oder Browserverlaufsdaten aufzubereiten. Dab",
+          "metadata": {}
+        }
+      ]
+    },
+    "pageindex": {
+      "latency_sec": 2.2867250442504883,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 1.0,
+          "judge_score": 1,
+          "judge_reason": "Allgemeine Whois-Info, nicht spezifisch zur gesuchten IP",
+          "text_preview": "# Whois IP\n\nWhois suchen nach domain und IP\n\nhttps://donkredito.com\n\nÜberprüfen\n\nWhois-Service ist ein Service, der erlaubt, Informationen über den Standort der IP-Adressen, der Sie abzurufen. Sie können den Besitzer von Internet-Ressourcen und seine Kontaktdetails herausfügen, gewünschte Domain, di",
+          "metadata": {
+            "breadcrumb": "Whois IP"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5,
+          "judge_score": 3,
+          "judge_reason": "Direkte Antwort auf Whois-Recherche zur gesuchten IP",
+          "text_preview": "# IP-Adresse: 185.51.8.84\n\nStandort: Austria (AT), Europe\n\nRegion: Niederösterreich\n\nStadt: Obritzberg\n\nPLZ: 3123\n\nHostname: web19.easyname.com → 185.51.8.84\n\nIP-Bereich: 185.51.8.0 - 185.51.10.255\n\nInternatanbieter: Nessus GmbH\n\nOrganisation: Nessus GmbH\n\nSperrliste: Nein\n\nTOR: Nein\n\n1\n\n---\n\n## Sei",
+          "metadata": {
+            "breadcrumb": "IP-Adresse: 185.51.8.84"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.3333333333333333,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevante Whois-Daten zur IP 185.51.8.84",
+          "text_preview": "# Whois IP\n\nWhois suchen nach domain und IP\n\nhttps://donkredito.com\n\nÜberprüfen\n\nWhois-Service ist ein Service, der erlaubt, Informationen über den Standort der IP-Adressen, der Server und der Webseiten abzurufen. Sie können den Besitzer von Internet-Ressourcen und seine Kontaktdetails herausfinden.",
+          "metadata": {
+            "breadcrumb": "Whois IP"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.25,
+          "judge_score": 1,
+          "judge_reason": "Whoer VPN erwähnt, aber keine konkreten Rechercheergebnisse",
+          "text_preview": "# Wählen Sie einen Tarif, Whoer VPN wartet auf Sie!\n\nhttps://whoer.net/de/checkwhois\n2/5\n\n---\n\n## Seite 87\n\nStaatsanwaltschaft Aachen\n- 107 Js 1286/20 -\nAachen, 24.11.2020\nSeite 1 von 2",
+          "metadata": {
+            "breadcrumb": "Wählen Sie einen Tarif, Whoer VPN wartet auf Sie!"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.1111111111111111,
+          "judge_score": 0,
+          "judge_reason": "Verfahrensverbindung und EEA-Anschreiben, keine IP-/Whois-Recherchen",
+          "text_preview": "# Vfg.\n\n☑ Die Verfahren\n\n|  107 Js 2119/20 | 107 Js 2167/20 | 107 Js 2287/20  |\n| --- | --- | --- |\n|  107 Js 2140/20 | 107 Js 2170/20 | 107 Js 2293/20  |\n|  107 Js 2265/20 | 107 Js 2205/20 | 107 Js 2289/20  |\n\n107 js 2108/20\n\nwerden mit dem vorliegenden, welches führt, verbunden. Vorgänge als Verbu",
+          "metadata": {
+            "breadcrumb": "Vfg."
+          }
+        },
+        {
+          "rank": 6,
+          "score": 0.1,
+          "judge_score": 0,
+          "judge_reason": "Keine Whois- oder VPN-Recherche-Ergebnisse enthalten",
+          "text_preview": "# Europäische Ermittlungsanordnung nach Richtlinie 2014/41/EU\n\nSehr geehrte Damen und Herren Kollegen,\n\nmeine Behörde führt gegen die serbische Staatsangehörige Dobrila Bigovic, geboren im September 1948, wohnhaft in Montenegro, und Paul Miller, weitere Personalien jeweils nicht bekannt, als Geschäf",
+          "metadata": {
+            "breadcrumb": "Europäische Ermittlungsanordnung nach Richtlinie 2014/41/EU"
+          }
+        }
+      ]
+    }
+  },
+  "a09": {
+    "ours-mxbai": {
+      "latency_sec": 5.0441038608551025,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.60245985,
+          "judge_score": 3,
+          "judge_reason": "Direkte Asservatenliste mit Nummern und Gegenstaenden",
+          "text_preview": "## Seite 5\n\n\nStaatsanwaltschaft\n\nAachen, 16.03.2023\n\n107 Js 1286/20\n\nLagerort: Hauptraum\n\nAss.-Listen Nr.: 2689/23\n\nbei Abgabe an das Gericht:\n\nges. Aufbew.Nr.:\n\nAss.Listen Nr.dort:\n\nVerw.B.Nr.:\n\nListe/Verzeichnis der Überführungsstücke\n\n|   | Gegenstand |   | Hinweis auf  |   |   |\n| --- | --- | --",
+          "metadata": {}
+        },
+        {
+          "rank": 2,
+          "score": 0.50344294,
+          "judge_score": 2,
+          "judge_reason": "Erwähnt Asservate und Aufbereitung, keine konkrete Liste",
+          "text_preview": "## 01\n\n\nDer Auftrag zwecks weiterer Aufbereitung des Festplatte HD870 wurde am 16.12. 2022 an die IT-Unterstützung des KK 22 weitergeleitet.\n\nDurch den Sondereinsatz Lützerath über den gesamten Januar 2023, in dem fast alle Dienststellen der Polizei gebunden waren, gab es einen Bearbeitungsstau bei ",
+          "metadata": {}
+        },
+        {
+          "rank": 3,
+          "score": 0.5030035,
+          "judge_score": 3,
+          "judge_reason": "Asservatenliste mit konkreten Gegenstaenden und Nummern",
+          "text_preview": "# Anlage\n\n\nQCRM-M21-027406\n\nzur Durchsuchung/Sicherstellung vom: 30.3.2022\n\nBetroffener: Firma kayplus\n\nErmittlungsverfahren: STA AC 107 y5 1286/20\n\n|  1 f d. Nr. | Menge | Gegenstand / Zustand | letzter Inhaber | Ort der Sicherstellung  |\n| --- | --- | --- | --- | --- |\n|  6 | 1 | Hokoda Tschatzkal",
+          "metadata": {}
+        },
+        {
+          "rank": 4,
+          "score": 0.48177138,
+          "judge_score": 2,
+          "judge_reason": "Durchsuchungsprotokoll, aber keine konkreten Asservate genannt",
+          "text_preview": "# Niederschrift über Durchsuchung, Sicherstellung, Beschlagnahme (Teil A)\n\n\nZutreffendes bitte ankreuzen ☐ oder ausfüllen\n\nDie unterzeichnende Person hat bzw. die unterzeichnenden Personen haben\n\nam (Datum) 30.03.2022 von – bis (Uhrzeit vor Ort) 08:50 – 10:30 h\n\nin dem Verfahren gegen\n\n**PATRICK SCH",
+          "metadata": {}
+        },
+        {
+          "rank": 5,
+          "score": 0.4560954,
+          "judge_score": 3,
+          "judge_reason": "Listet konkrete Asservate mit Nummern auf",
+          "text_preview": "## 1. Asservat\n\n\nEntsprechend dem Auftrag der zuständigen Sachbearbeitung (KOK’in Els. KK 13) wurde das sichergestellte Asservat überprüft. Es handelt sich dabei um:\n\n|  #1) | Art des Asservates: diverse Sicherungen | AMS23ARR563H  |\n| --- | --- | --- |\n|   | Festspeicher: Toshiba DT01ACA200 | 2000 ",
+          "metadata": {}
+        },
+        {
+          "rank": 6,
+          "score": 0.43482184,
+          "judge_score": 2,
+          "judge_reason": "Erwähnt Sicherstellungsprotokoll und beschlagnahmte Gegenstände",
+          "text_preview": "## Seite 230\n\n\n40)\n\nUnterlagen und Datenträger mit Daten (PC, Laptop, Mobiltelefon, Festplatten und sonstige Speichermedien) betreffend die Seite https://donkredito.com, insbesondere Kommunikation mit den Verantwortlichen für die Gestaltung und den Betrieb dieser Seite, namentlich dem Beschuldigten ",
+          "metadata": {}
+        },
+        {
+          "rank": 7,
+          "score": 0.35723165,
+          "judge_score": 1,
+          "judge_reason": "Erklaert Verfahren zur Asservat-Datensicherung, keine konkrete Asservatenliste",
+          "text_preview": "## 2.1. Sicherung der Daten\n\n\nZur Durchführung der Datensicherung wird das Speichermedium in der Regel fachgerecht ausgebaut und in einem dienstlichen PC eingebunden. Der Anschluss erfolgt dabei über einen sog. „WriteBlocker“ der Firma Wiebtech, der Schreibzugriffe auf die Festplatte verhindert. Ans",
+          "metadata": {}
+        },
+        {
+          "rank": 8,
+          "score": 0.35602167,
+          "judge_score": 2,
+          "judge_reason": "Beschreibt Datensicherung von Asservaten, keine konkreten Gegenstaende",
+          "text_preview": "# 3.2. Datensicherung gemäß Auftrag\n\n\nZur Datensicherung wurden die Speichermedien der o.g. Asservate über einen Hardware-Writeblocker, der Schreibzugriffe auf die Festplatte verhindert, an einen dienstlichen Rechner angeschlossen.\n\nAnschließend wurde das Programm „X-Ways-Forensics“ 20.6 SR-1 einges",
+          "metadata": {}
+        },
+        {
+          "rank": 9,
+          "score": 0.35595453,
+          "judge_score": 3,
+          "judge_reason": "Enthält spezifische Asservat-Informationen und Festplattennummern",
+          "text_preview": "# 4. Anfertigung der Verfahrensfestplatte\n\n\nDas gesicherte Datenabbild (Image) sowie die aufbereiteten Daten und Auswertung der Internetaktivitäten wurden mit der Verfahrensfestplatte HD 870 der zuständigen Sachbearbeitung ausgehändigt.\n\nNach Bereitstellung des gesicherten und aufbereiteten Image üb",
+          "metadata": {}
+        },
+        {
+          "rank": 10,
+          "score": 0.3344378,
+          "judge_score": 2,
+          "judge_reason": "Ordnet Beschlagnahme an, konkrete Asservate nicht aufgelistet",
+          "text_preview": "## Beschluss\n\n\nIn dem Ermittlungsverfahren\n\ngegen Patrick Schweers,\ngeboren am 13. Mai 1986 in Oldenburg,\nwohnhaft Am Acker 1 A, 27243 Beckeln\nu.a.\n\nwegen des Verdachts des Bandenbetrugs\n\nGemäß §§ 102, 105 StPO wird die Durchsuchung der Person, der Wohnung und der sonstigen Räume einschließlich der ",
+          "metadata": {}
+        }
+      ]
+    },
+    "pageindex": {
+      "latency_sec": 2.2300119400024414,
+      "chunks": []
+    }
+  },
+  "a10": {
+    "ours-mxbai": {
+      "latency_sec": 4.719073057174683,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.3298562,
+          "judge_score": 1,
+          "judge_reason": "Kontext zu Ermittlungen, keine konkreten Tatvorwürfe",
+          "text_preview": "## dd) Clever Cards B.V. und Intaxx B.V.\n\n\nGeschäftsführer der Firmen Clever Cards B.V. und Intaxx B.V. (Bl. 71 ff. der Akten) ist der Zeuge Maurice Christiaan Davies, der als weiterer Beschuldigter im Verfahren erfasst worden war. Dieser ist auch Geschäftsführer der EuroPayments (kurz EP) B.V., der",
+          "metadata": {}
+        },
+        {
+          "rank": 2,
+          "score": 0.3298562,
+          "judge_score": 3,
+          "judge_reason": "Direkter Tatvorwurf: gewerbsmäßiger Betrug mit Vermögensschädigung",
+          "text_preview": "# Anklageschrift\n\n\nI. Walter Völl, geboren am 16.04.1974 in Düren, wohnhaft Vlijtingerweg 45, BE 3620 Lanaken, verheiratet, deutscher Staatsangehöriger,\n\n- Verteidiger: Rechtsanwalt Bücken, Stolberger Straße 15-17, 52068 Aachen (Vollmacht Bl. 498 der Akten) -\n\nund\n\nII. Patrick Schweers, geborener Ta",
+          "metadata": {}
+        },
+        {
+          "rank": 3,
+          "score": 0.25100043,
+          "judge_score": 1,
+          "judge_reason": "Nur Zeugenliste, keine Tatvorwürfe genannt",
+          "text_preview": "# Zeugenliste\n\n\nDie ladungsfähigen Anschriften der im vorliegenden Verfahren in der Anklageschrift vom 25.06.2025 benannten Zeugen, auch soweit von der Benennung der vollständigen Anschriften gem. § 200 Abs. 1 Satz 3 StPO abgesehen worden ist, lauten wie folgt:\n\n1. RBr M. Eng. Wullen, zu laden über ",
+          "metadata": {}
+        },
+        {
+          "rank": 4,
+          "score": 0.2347753,
+          "judge_score": 1,
+          "judge_reason": "Erwähnt Anklageschrift, aber ohne konkrete Tatvorwürfe",
+          "text_preview": "## RECHTSANWÄLTE\n\n\nRAe MÖCKEL &amp; DR. STOFFERS | HAARENESCHSTRASSE 58A | 26121 OLDENBURG\nNur per beA\n\nLandgericht Aachen\n6. große Strafkammer\nAdalbertsteinweg 92\n52070 Aachen\n\nJENS MÖCKEL\nFACHANWALT FÜR STRAFRECHT\nDR. HABIL. KRISTIAN F. STOFFERS\nPRIVATDOZENT UNIVERSITÄT BIELEFELD\n\nOldenburg, den 2",
+          "metadata": {}
+        },
+        {
+          "rank": 5,
+          "score": 0.2188283,
+          "judge_score": 0,
+          "judge_reason": "Belehrungsformular ohne konkrete Tatvorwürfe",
+          "text_preview": "# Äußerungsbogen Beschuldigte(r)\n\n\nIhnen wurde eröffnet, welche Tat(en) Ihnen zur Last gelegt wird/werden.\nSie werden darauf hingewiesen, dass es Ihnen nach dem Gesetz freisteht, sich zu der Beschuldigung zu äußern oder nicht zur Sache auszusagen und jederzeit, auch schon vor dieser Vernehmung, eine",
+          "metadata": {}
+        },
+        {
+          "rank": 6,
+          "score": 0.21857801,
+          "judge_score": 3,
+          "judge_reason": "Explizite Nennung des Tatvorwurfs gewerbsmäßiger Betrug",
+          "text_preview": "## Ermittlungsverfahren gegen Eduard Müller, geboren am 04.09.1971 in Rubcovsk, u. a.\n\n\nTatvorwurf: Gewerbsmäßiger Betrug als Mitglied einer Bande\nIhr Zeichen: 201211-1121-027406\n\n*denkaldo*\n\nUm Rücksendung der Ihnen am 05.10.2021 übersandten Akte wird gebeten.\n\nAuf Anordnung\n\nBachem\nJustizbeschäfti",
+          "metadata": {}
+        },
+        {
+          "rank": 7,
+          "score": 0.17179666,
+          "judge_score": 1,
+          "judge_reason": "Erwähnt Anklageerhebung, aber keine konkreten Tatvorwürfe",
+          "text_preview": "### aa) Objektives Erscheinungsbild und Programmierung\n\n\nZur Vermeidung von Wiederholungen wird bzgl. des objektiven Erscheinungsbilds, welches an verschiedenen Tagen durch Screenshots und mittels HTTrack gesichert worden ist, zunächst auf den Anklagesatz Bezug genommen. Die Seite war zudem am Tag d",
+          "metadata": {}
+        },
+        {
+          "rank": 8,
+          "score": 0.17158835,
+          "judge_score": 2,
+          "judge_reason": "Betrug-Tatvorwurf erkennbar, aber nicht Anklageschrift",
+          "text_preview": "# Äußerungsbogen Beschuldigte(r)\n\n\n☐ Mit der Einstellung des Verfahrens gegen Zahlung einer Geldauflage wäre ich einverstanden.\n☐ Für den Fall, dass in meinem hier benannten Verfahren Einziehungsgegenstände sichergestellt wurden, verzichte ich auf die Rückgabe und bin mit deren Vernichtung/Verwertun",
+          "metadata": {}
+        },
+        {
+          "rank": 9,
+          "score": 0.14447471,
+          "judge_score": 0,
+          "judge_reason": "Nur technischer Eingangsvermerk, keine Anklageschrift-Inhalte",
+          "text_preview": "## Seite 66\n\n\nStaatsanwaltschaft Aachen\n06.06.2025 12:08\n\nPrüfvermerk vom 06.06.2025, 12:09:50\n\nDie unten aufgeführten Dokumente sind elektronisch eingegangen. Die technische Prüfung der elektronischen Dokumente hat folgendes Ergebnis erbracht:\n\n**Angaben zur Nachricht:**\n\nSicherer Übermittlungsweg ",
+          "metadata": {}
+        },
+        {
+          "rank": 10,
+          "score": 0.13745166,
+          "judge_score": 2,
+          "judge_reason": "Hinweis auf Anklageschrift, aber keine konkreten Tatvorwürfe",
+          "text_preview": "## Seite 148\n\n\nStaatsanwaltschaft Aachen\n- 107 Js 1286/20 -\nAachen, 07.07.2025\nSeite 6 von 7\n602\n\n2. MESTA Spezifikation der BA 107 Js 1725/20 ändern in „creditrio“; Vorgang trennen und gesondert vorlegen.\n\n3. Das Verfahren 107 UJs 32/22 wird mit dem vorliegenden, welches führt, verbunden; Akte als ",
+          "metadata": {}
+        }
+      ]
+    },
+    "pageindex": {
+      "latency_sec": 2.159313201904297,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 1.0,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevante Tatvorwürfe: Betrug, gewerbsmäßig, bandenförmig",
+          "text_preview": "# Anklageschrift\n\nI. Walter Völl, geboren am 16.04.1974 in Düren, wohnhaft Vlijtingerweg 45, BE 3620 Lanaken, verheiratet, deutscher Staatsangehöriger,\n\n- Verteidiger: Rechtsanwalt Bücken, Stolberger Straße 15-17, 52068 Aachen (Vollmacht Bl. 498 der Akten) -\n\nund\n\nII. Patrick Schweers, geborener Tab",
+          "metadata": {
+            "breadcrumb": "Anklageschrift"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5,
+          "judge_score": 3,
+          "judge_reason": "Beschreibt detailliert Täuschungshandlungen der Anklageschrift",
+          "text_preview": "## Seite 155\n\n609\n\n- 2 -\n\nwurden sowie der Euro Collect GmbH, die als Inkassodienstleister säumige Besteller in Anspruch nahm.\n\nDie Programmierung der Seite https://donkredito.com war - wie dem Angeschuldigten Völl bekannt war - erkennbar darauf angelegt, durchschnittlichen Internetnutzern - insbeso",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 155"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.3333333333333333,
+          "judge_score": 3,
+          "judge_reason": "Beschreibt detailliert den angeklagten Tatmodus operandi",
+          "text_preview": "## Seite 156\n\n610\n\n- 3 -\n\nBesucher erst nach Scrollen über einen weiteren erst „Demnächst“ verfügbaren Tarif in kleinerer Schriftgröße angezeigt und lauteten: „* Diese Gebühren sind sofort und vor Kartenausgabe an den Vermittler zu zahlen. Das Starterpaket wird per Nachnahme versandt - Sie bezahlen ",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 156"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.25,
+          "judge_score": 1,
+          "judge_reason": "Beschreibt Tathandlung, aber nicht die konkreten Vorwürfe",
+          "text_preview": "## Seite 157\n\n611\n\nAuswahlkästchen mussten sämtlich aktiviert werden, um den Vorgang fortsetzen zu können.\n\nBei Lektüre der AGB zum Dienst Schufaheld der Clever Cards BV konnte der Nutzer nach einer Vorbemerkung in § 1 in Erfahrung bringen, dass er durch die Annahme des Angebots Zugang zum Shop-Ange",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 157"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.2,
+          "judge_score": 3,
+          "judge_reason": "Direkt aus Anklageschrift, beschreibt konkrete Tatvorwürfe",
+          "text_preview": "## Seite 158\n\n612\n\nBestätigungsmails erhielt, waren auch diese irreführend, da dort bezüglich der Dienste Credify.me und Schufaheld nur „1 x 30 Tage Credify“ und „1 x 30 Tage Schufaheld“ aufgeführt waren, die zuvor in der Bestellübersicht fälschlich als kostenfrei angepriesen wurden. Hierdurch sollt",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 158"
+          }
+        },
+        {
+          "rank": 6,
+          "score": 0.16666666666666666,
+          "judge_score": 3,
+          "judge_reason": "Direkter Tatvorwurf gemeinschaftlicher Betrug nach §§ 263",
+          "text_preview": "## Seite 159\n\n613\n\nDen Angeschuldigten kam es im Tatzeitraum mit Blick auf den Bestellwert in Höhe von insgesamt mindestens 446,90 Euro für das erste Jahr (98,90 Euro + 164,15 Euro + 183,85 Euro) darauf an, dolose Forderungen in Höhe von insgesamt mindestens 8.115.257,10 Euro zu generieren. Der Ange",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 159"
+          }
+        },
+        {
+          "rank": 7,
+          "score": 0.14285714285714285,
+          "judge_score": 0,
+          "judge_reason": "Liste von Personen und Urkunden, kein Tatvorwurf",
+          "text_preview": "## Seite 160\n\n6x4\n\n- 7 -\n\n21. Zeljka Perisic, wohnhaft in Nürnberg (107 Js 2289/20),\n22. Abbas Shampspour, wohnhaft in Hilden (107 Js 2316/20),\n23. Warwara Mohr, wohnhaft in Schwabach (107 Js 2430/20),\n24. Niklas Uwe Vent, wohnhaft in Bergisch Gladbach (107 Js 2473/20),\n25. Jamshid Baghban, wohnhaft",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 160"
+          }
+        },
+        {
+          "rank": 8,
+          "score": 0.125,
+          "judge_score": 0,
+          "judge_reason": "Beweismittelliste ohne Tatvorwuerfe oder Paragraphen",
+          "text_preview": "## Seite 161\n\n615\n\n- 8 -\n\n18. Bestätigungsmail an die Zeugin Mohr (Bl. 27 VA 107 Js 2430/20),\n19. Bestätigungsmail an den Zeugen Vent (Bl. 12 VA 107 Js 2473/20),\n20. Bestätigungsmail an den Zeugen Baghban (Bl. 7, 129 VA 107 Js 2613/20),\n21. Bestätigungsmail an die Zeugin Schuh (Bl. 45 VA 107 Js 69/2",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 161"
+          }
+        },
+        {
+          "rank": 9,
+          "score": 0.1111111111111111,
+          "judge_score": 2,
+          "judge_reason": "Erwähnt Betrugsanklage 2007, nicht aktuelle Anklageschrift",
+          "text_preview": "## Seite 162\n\n616\n\nGymnasium, das er im Jahr 1993 mit dem Abitur abschloss. Bereits 1991 eröffnete er seine erste Firma, die er bis zum Jahr 1994 betrieb. Nach seiner Schulausbildung meldete sich der Angeschuldigte zum Ersatzdienst beim technischen Hilfswerk (THW), der bis zum Jahr 2000 andauerte. N",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 162"
+          }
+        },
+        {
+          "rank": 10,
+          "score": 0.1,
+          "judge_score": 0,
+          "judge_reason": "Nur Registerauszug, keine Tatvorwuerfe genannt",
+          "text_preview": "## Seite 163\n\n6A\n\nBundeszentralregisterauszug enthielt zum Zeitpunkt der Anklageerhebung lediglich Suchvermerke verschiedener Staatsanwaltschaften.",
+          "metadata": {
+            "breadcrumb": "Anklageschrift > Seite 163"
+          }
+        }
+      ]
+    }
+  },
+  "a11": {
+    "ours-mxbai": {
+      "latency_sec": 5.93648099899292,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.75355774,
+          "judge_score": 3,
+          "judge_reason": "Durchsuchungsbeschluss mit konkreten Anordnungen und Zielen",
+          "text_preview": "## Beschluss\n\n\nIn dem Ermittlungsverfahren\n\ngegen\n1. Patrick Schweers,\ngeboren am 13. Mai 1986 in Oldenburg,\nwohnhaft Am Acker 1 A, 27243 Beckeln\n\n2. Kai Kröger,\ngeboren am 04. September 1988,\nwohnhaft Wulfenauer Damm 14, 49413 Dinklage\n\nwegen des Verdachts des gewerbs- und bandenmäßigen Betruges\n\nG",
+          "metadata": {}
+        },
+        {
+          "rank": 2,
+          "score": 0.7393665,
+          "judge_score": 3,
+          "judge_reason": "Durchsuchungsbeschluss mit konkreten Orten und Anordnung",
+          "text_preview": "## Beschluss\n\n\nIn dem Ermittlungsverfahren\n\ngegen Maurice Christiaan Davies,\ngeboren am 13. Dezember 1994 in Emmerich,\ndeutscher Staatsangehöriger, ledig\nwohnhaft Mittelstraße 6, 52538 Gangelt,\n\nwegen des Verdachts des gewerbsmäßigen Bandenbetruges\n\nGemäß §§ 102, 105 StPO wird auf Antrag der Staatsa",
+          "metadata": {}
+        },
+        {
+          "rank": 3,
+          "score": 0.7166357,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Durchsuchungsbeschluss mit genauem Ort",
+          "text_preview": "## Beschluss\n\n\nIn dem Ermittlungsverfahren\n\ngegen: Patrick Schweers,\ngeboren am 13. Mai 1986 in Oldenburg,\nwohnhaft Am Acker 1 A, 27243 Beckeln\nu.a.\n\nwegen des Verdachts des Bandenbetrugs\n\nGemäß §§ 103, 105 StPO wird die Durchsuchung der Geschäftsräume und der sonstigen Räume einschließlich der dazu",
+          "metadata": {}
+        },
+        {
+          "rank": 4,
+          "score": 0.68090034,
+          "judge_score": 3,
+          "judge_reason": "Direkter Bezug zu Durchsuchungsbeschluss und Anordnungsgruenden",
+          "text_preview": "## Gründe:\n\n\n1. Die gemäß § 304 Abs. 1 StPO statthafte Beschwerde gegen den Durchsuchungs- und Beschlagnahmebeschluss des Amtsgerichts Aachen vom 18.10.2021 (Az. 621 Gs 1668/21) ist zulässig, aber unbegründet.\n\na) Zwar ist die Durchsuchung seit dem 30.03.2022 als solche erledigt, so dass der Durchsu",
+          "metadata": {}
+        },
+        {
+          "rank": 5,
+          "score": 0.6557114,
+          "judge_score": 3,
+          "judge_reason": "Enthält konkrete Durchsuchungsdaten: Ort, Zeit, Anordnung",
+          "text_preview": "# Durchsuchungs-/Sicherstellungsprotokoll\n\n\n|  Angesordnet durch: (Name Beamtin/Beamter mit Dienststelle oder anerkannte Stelle mit Anlehr-/Geschäftszeichen)\nAls, Hallo, Beadluss 021 GS 1955/21 (107 Js 186/20) ☐ Gefahr im Verzug  |   |   |\n| --- | --- | --- |\n|  Bei mündlicher Anordnung durch Richte",
+          "metadata": {}
+        },
+        {
+          "rank": 6,
+          "score": 0.63939893,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: konkrete Durchsuchungsanordnung beschrieben",
+          "text_preview": "## Gründe:\n\n\nEs besteht der Anfangsverdacht des gewerbsmäßigen Bandenbetrugs (§ 263 Abs. 5 StGB).\n\nDie Durchsuchung der Geschäfträume der payplus GmbH, die -nach dem derzeitigen Ermittlungsstand- durch die Beschuldigten als Firmenvehikel zur Ausführung und Verschleierung der Betrugstaten verwendet w",
+          "metadata": {}
+        },
+        {
+          "rank": 7,
+          "score": 0.59089786,
+          "judge_score": 3,
+          "judge_reason": "Durchsuchungsbeschluss mit Person und Adresse",
+          "text_preview": "## Beschluss\n\n\nIn dem Ermittlungsverfahren\n\ngegen Patrick Schweers,\ngeboren am 13. Mai 1986 in Oldenburg,\nwohnhaft Am Acker 1 A, 27243 Beckeln\nu.a.\n\nwegen des Verdachts des Bandenbetrugs\n\nGemäß §§ 102, 105 StPO wird die Durchsuchung der Person, der Wohnung und der sonstigen Räume einschließlich der ",
+          "metadata": {}
+        },
+        {
+          "rank": 8,
+          "score": 0.56431514,
+          "judge_score": 3,
+          "judge_reason": "Durchsuchung vom 30.3.2022, Ort: Hubert-Wienen-Str. 30",
+          "text_preview": "# Anlage\n\n\nQCRM-M21-027406\n\nzur Durchsuchung/Sicherstellung vom: 30.3.2022\n\nBetroffener: Firma kayplus\n\nErmittlungsverfahren: STA AC 107 y5 1286/20\n\n|  1 f d. Nr. | Menge | Gegenstand / Zustand | letzter Inhaber | Ort der Sicherstellung  |\n| --- | --- | --- | --- | --- |\n|  6 | 1 | Hokoda Tschatzkal",
+          "metadata": {}
+        },
+        {
+          "rank": 9,
+          "score": 0.54985875,
+          "judge_score": 3,
+          "judge_reason": "Konkrete Durchsuchungsanordnung mit Ort und Zweck genannt",
+          "text_preview": "## Seite 228\n\n\n40a\n\nvermuten ist, dass die Durchsuchung zur Auffindung von Beweismitteln, die für die Ermittlungen von Bedeutung sind, führen wird.\n\nGemäß §§ 103, 105 StPO wird auf Antrag der Staatsanwaltschaft die Durchsuchung der Geschäftsräume der payplus GmbH, formal vertreten durch den Beschuld",
+          "metadata": {}
+        },
+        {
+          "rank": 10,
+          "score": 0.53079647,
+          "judge_score": 3,
+          "judge_reason": "Durchsuchungsantrag mit konkretem Ort und Person genannt",
+          "text_preview": "## 1. Vermerk:\n\n\na) Eine überschlägige Auswertung der auf den E-Mail-Exchange-Servern in Österreich beschlagnahmten Daten (vgl. Bl. 250 ff. der Akten) wurde im Parallelverfahren 107 Js 1718/20 angeordnet. Diese soll jedoch nicht abgewartet werden.\n\nb) Von Frau KOK’in Els wurde mit Blick auf den nach",
+          "metadata": {}
+        }
+      ]
+    },
+    "pageindex": {
+      "latency_sec": 2.3522191047668457,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 1.0,
+          "judge_score": 3,
+          "judge_reason": "Durchsuchungsprotokoll mit Ort und Zeitpunkt",
+          "text_preview": "# Durchsuchungs-/Sicherstellungsprotokoll\n\n|  Angesordnet durch: (Name Beamtin/Beamter mit Dienststelle oder anerkannte Stelle mit Anlehr-/Geschäftszeichen)\nAls, Hallo, Beadluss 021 GS 1955/21 (107 Js 186/20) ☐ Gefahr im Verzug  |   |   |\n| --- | --- | --- |\n|  Bei mündlicher Anordnung durch Richter",
+          "metadata": {
+            "breadcrumb": "Durchsuchungs-/Sicherstellungsprotokoll"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5,
+          "judge_score": 3,
+          "judge_reason": "Durchsuchungsprotokoll mit Datum, Ort, sichergestellten Gegenstaenden",
+          "text_preview": "# Durchsuchungs-/Sicherstellungsprotokoll\n\nVerzeichnis der sichergestellten/beschlagnahmten Gegenstände\n\n35ta\n\nvom 20.2.2022 Betroffene/Betroffener Fa. Payplus\n\n|  Ifd. Nr. | Menge | Gegenstand (Art/Beschreibung) | Letzte Gewahrsamainhaberin/ letzter Gewahrsamainhaber | Maßnahme nach |   |   |   | z",
+          "metadata": {
+            "breadcrumb": "Durchsuchungs-/Sicherstellungsprotokoll"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.3333333333333333,
+          "judge_score": 3,
+          "judge_reason": "Durchsuchungsbeschluss mit konkreter Person und Adresse",
+          "text_preview": "# Durchsuchungsbericht\n\nDer Beschluss richtet sich gegen\n\nMaurice Christiaan Davis\n\n*13.12.1994 Emmerich\n\nMittelstraße 6\n\n52538 Gangelt\n\nwegen des Verdachts des gewerbsmäßigen Bandenbetruges.",
+          "metadata": {
+            "breadcrumb": "Durchsuchungsbericht"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.25,
+          "judge_score": 3,
+          "judge_reason": "Beschreibt Durchsuchungsobjekt Hubert-Wienen-Straße 30 Aachen",
+          "text_preview": "# 02 Zugang zum Objekt\n\nBei dem Objekt Hubert-Wienen-Straße 30, 52070 Aachen handelt es sich um ein zweigeschossiges Bürogebäude in denen mehrere Firmen ansässig sind. Direkt vor dem Gebäude befinden sich auf dem Gelände diverse Stellplätze für die Firmen; rechts am Haus vorbei ist die Zufahrt für d",
+          "metadata": {
+            "breadcrumb": "02 Zugang zum Objekt"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.2,
+          "judge_score": 3,
+          "judge_reason": "Beschreibt konkreten Durchsuchungsbeschluss und erweiterte Räumlichkeiten",
+          "text_preview": "# 04 Durchsuchungsobjekt\n\nDer o.a. Durchsuchungsbeschluss bezieht sich lediglich auf die Räumlichkeiten der Payplus.\n\nNach Rücksprache durch Herrn Staatsanwalt Bodden mit dem Amtsgericht Aachen, Richter Witt, wurde um 09:21 Uhr der Beschluss dahingehend mündlich erweitert, dass er sich nicht nur auf",
+          "metadata": {
+            "breadcrumb": "04 Durchsuchungsobjekt"
+          }
+        },
+        {
+          "rank": 6,
+          "score": 0.16666666666666666,
+          "judge_score": 3,
+          "judge_reason": "Enthält konkrete Durchsuchungsanordnungen und Orte",
+          "text_preview": "# Zeitgleiche Durchsuchung in Heinsberg\n\nDurch die Beamten (Objektführer Pauels, KHK) wurde die Adresse Mittelstraße 6 in Gangelt aufgesucht. An der Wohnungsklingel des Beschuldigten stand der Name Kremer.\n\nDurch Frau Franken, die nun in der ehemaligen Wohnung des Beschuldigten seit 01.01. 2022 wohn",
+          "metadata": {
+            "breadcrumb": "Zeitgleiche Durchsuchung in Heinsberg"
+          }
+        },
+        {
+          "rank": 7,
+          "score": 0.14285714285714285,
+          "judge_score": 3,
+          "judge_reason": "Beantwortet direkt Durchsuchungsorte und Beschluesse",
+          "text_preview": "# Durchsuchungsbericht\n\n1. Am 30.03.2022 wird die Wohnung des hier beschuldigten\nPatrick Schweers\ngeb. Taboada Y Galino,\n*13.05.1986 in Oldenburg,\nwh. Am Acker 1a, 27243 Beckeln,\nauf Grund vorliegender Durchsuchungsbeschlüsse der Amtsgerichte\nOldenburg, 28 Gs 511 Js 16436/21 (886/22),\nAachen, 621 Gs",
+          "metadata": {
+            "breadcrumb": "Durchsuchungsbericht"
+          }
+        },
+        {
+          "rank": 8,
+          "score": 0.125,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Durchsuchung am 30.03.2022 in Becken",
+          "text_preview": "# Niederschrift über Durchsuchung, Sicherstellung, Beschlagnahme (Teil A)\n\nZutreffendes bitte ankreuzen ☐ oder ausfüllen\n\nDie unterzeichnende Person hat bzw. die unterzeichnenden Personen haben\n\nam (Datum) 30.03.2022 von – bis (Uhrzeit vor Ort) 08:50 – 10:30 h\n\nin dem Verfahren gegen\n\n**PATRICK SCHW",
+          "metadata": {
+            "breadcrumb": "Niederschrift über Durchsuchung, Sicherstellung, Beschlagnah"
+          }
+        },
+        {
+          "rank": 9,
+          "score": 0.1111111111111111,
+          "judge_score": 3,
+          "judge_reason": "Beschreibt konkrete Durchsuchung mit Ort und Datum",
+          "text_preview": "# Durchsuchungsbericht\n\n## 1. Allgemeines\n\nAm 30.03.2022, 09:00 Uhr, wird Geschäftsanschrift der Kreativ fliesen GmbH, Inhaber Patrick Schweers, *13.05.1986 in Oldenburg, &amp; OWP Optimized Web-Performance UG, Inhaber Carsten Mehrtens, *21.02.1989 in Delmenhorst, in der Feldstraße 10, 27793 Wildesh",
+          "metadata": {
+            "breadcrumb": "Durchsuchungsbericht"
+          }
+        },
+        {
+          "rank": 10,
+          "score": 0.1,
+          "judge_score": 3,
+          "judge_reason": "Direkter Durchsuchungsbericht mit Ort, Datum, Beteiligten",
+          "text_preview": "# Durchsuchungsbericht\n\n## 1. Allgemeines\n\nAm 30.03.2022, 09:00 Uhr, wird Geschäftsanschrift der Kreativ fliesen GmbH, Inhaber Patrick Schweers, *13.05.1986 in Oldenburg, &amp; OWP Optimized Web-Performance UG, Inhaber Carsten Mehrtens, *21.02.1989 in Delmenhorst, in der Feldstraße 10, 27793 Wildesh",
+          "metadata": {
+            "breadcrumb": "Durchsuchungsbericht"
+          }
+        }
+      ]
+    }
+  },
+  "a12": {
+    "ours-mxbai": {
+      "latency_sec": 4.7363128662109375,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 0.55275756,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Name und Daten einer Zeugin",
+          "text_preview": "# Zeugenvernehmung\n\n\n|  Beginn der Vernehmung (Datum, Uhrzeit) 10.07.2024, 10:45 Uhr | Ort der Vernehmung Eschweiler  |\n| --- | --- |\n|  Mir wurde eröffnet, zu welcher Sache ich gehört werden soll.  |   |\n|  Stichwortartige, konkrete Angaben zum Sachverhalt  |\n| --- |\n|  Eschweiler  |\n\nIch wurde dar",
+          "metadata": {}
+        },
+        {
+          "rank": 2,
+          "score": 0.5373576,
+          "judge_score": 3,
+          "judge_reason": "Zeigt Zeugin Sabrina Meeßen, Vernehmung am 05.07.2024",
+          "text_preview": "# Zeugenvernehmung\n\n\n|  Beginn der Vernehmung (Datum, Uhrzeit)\n05.07.2024, 11:39 Uhr | Ort der Vernehmung\nKK13  |\n| --- | --- |\n|  Mir wurde eröffnet, zu welcher Sache ich gehört werden soll.  |   |\n|  Stichwortartige, konkrete Angaben zum Sachverhalt  |\n| --- |\n|  |\n\nIch wurde darauf hingewiesen, d",
+          "metadata": {}
+        },
+        {
+          "rank": 3,
+          "score": 0.51866865,
+          "judge_score": 3,
+          "judge_reason": "Zeuge Ralph Hauser vernommen zu Bandenbetrug probenheld.de",
+          "text_preview": "# Zeugenvernehmung\n\n\n|  Beginn der Vernehmung (Datum, Uhrzeit)\n03.09.2020, 08:27 Uhr | Ort der Vernehmung\nAachen  |\n| --- | --- |\n|  Mir wurde eröffnet, zu welcher Sache ich gehört werden soll.  |   |\n|  Stoffwortartige, konkrete Angaben zum Sachverhalt.\nVernehmungsgegenstand soll der Verdacht des g",
+          "metadata": {}
+        },
+        {
+          "rank": 4,
+          "score": 0.48323447,
+          "judge_score": 3,
+          "judge_reason": "Zeuge Torsten Rucman identifiziert, Betrug-Sachverhalt",
+          "text_preview": "# Zeugenvernehmung\n\n\n|  Beginn der Vernehmung (Datum, Uhrzeit) 02.07.2024, 12:59 Uhr | Ort der Vernehmung KK 13  |\n| --- | --- |\n|  Mir wurde eröffnet, zu welcher Sache ich gehört werden soll.  |   |\n|  Stichwortartige, konkrete Angaben zum Sachverhalt  |\n| --- |\n|  Betrug  |\n\nIch wurde darauf hinge",
+          "metadata": {}
+        },
+        {
+          "rank": 5,
+          "score": 0.48103997,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: Zeuge Angelina Dittmar zu Betrug",
+          "text_preview": "# Zeugenvernehmung\n\n\n|  Beginn der Vernehmung (Datum, Uhrzeit) | Ort der Vernehmung  |\n| --- | --- |\n|  02.07.2024, 09:53 Uhr | KK 13  |\n|  Mir wurde eröffnet, zu welcher Sache ich gehört werden soll.  |   |\n|  Stichwortartige, konkrete Angaben zum Sachverhalt  |\n| --- |\n|  Betrug  |\n\nIch wurde dara",
+          "metadata": {}
+        },
+        {
+          "rank": 6,
+          "score": 0.47621483,
+          "judge_score": 3,
+          "judge_reason": "Zeigt konkreten Zeugen Rapčinskis mit Personalien und Vernehmungsdetails",
+          "text_preview": "# Zeugenvernehmung\n\n\n|  Beginn der Vernehmung (Datum, Uhrzeit) 19.07.2024, 12:10 Uhr | Ort der Vernehmung KK 13  |\n| --- | --- |\n|  Mir wurde eröffnet, zu welcher Sache ich gehört werden soll.  |   |\n|  Stichwortartige, konkrete Angaben zum Sachverhalt  |\n| --- |\n|  Betrug  |\n\nIch wurde darauf hinge",
+          "metadata": {}
+        },
+        {
+          "rank": 7,
+          "score": 0.47373086,
+          "judge_score": 3,
+          "judge_reason": "Zeuge Ralph Hauser identifiziert, Vernehmungsthema Betrug",
+          "text_preview": "# Zeugenvernehmung\n\n\n|  Beginn der Vernehmung (Datum, Uhrzeit)\n03.09.2020, 08:27 Uhr | Ort der Vernehmung\nAachen  |\n| --- | --- |\n|  Mir wurde eröffnet, zu welcher Sache ich gehört werden soll.  |   |\n|  Stichwortartige, konkrete Angaben zum Sachverhalt\nVernehmungsgegenstand soll der Verdacht des ge",
+          "metadata": {}
+        },
+        {
+          "rank": 8,
+          "score": 0.4598771,
+          "judge_score": 3,
+          "judge_reason": "Zeigt Zeuge Donsbach mit Personalien und Vernehmung",
+          "text_preview": "# Zeugenvernehmung\n\n\n|  Beginn der Vernehmung (Datum, Uhrzeit) 16.07.2024, 12:14 Uhr | Ort der Vernehmung KK 13 Eschweiler  |\n| --- | --- |\n|  Mir wurde eröffnet, zu welcher Sache ich gehört werden soll.  |   |\n|  Stichwortartige, konkrete Angaben zum Sachverhalt  |\n| --- |\n|  Betrug  |\n\nIch wurde d",
+          "metadata": {}
+        },
+        {
+          "rank": 9,
+          "score": 0.4594405,
+          "judge_score": 3,
+          "judge_reason": "Direkt relevant: enthält Zeugennamen und Vernehmungsdetails",
+          "text_preview": "# Zeugenvernehmung\n\n\n|  Beginn der Vernehmung (Datum, Uhrzeit) 10.07.2024, 10:10 Uhr | Ort der Vernehmung Eschweiler  |\n| --- | --- |\n|  Mir wurde eröffnet, zu welcher Sache ich gehört werden soll.  |   |\n|  Stichwortartige, konkrete Angaben zum Sachverhalt  |\n| --- |\n|  Betrug  |\n\nIch wurde darauf ",
+          "metadata": {}
+        },
+        {
+          "rank": 10,
+          "score": 0.45638612,
+          "judge_score": 3,
+          "judge_reason": "Liste mit Namen und Terminen von Zeugenvernehmungen",
+          "text_preview": "## Seite 34\n\n\nAktenzeichen 201211-1121-027406\n\ndurchgeführt werden sollten und die Vernehmungen im hiesigen Kommissariat durch über 10 Kollegen durchgeführt wurden, schien eine durchlaufende Nummerierung in den einzelnen Verfügungen organisatorisch zweckmäßig.\n\nDaher beginnt hiesiges zweites Vernehm",
+          "metadata": {}
+        }
+      ]
+    },
+    "pageindex": {
+      "latency_sec": 3.9874420166015625,
+      "chunks": [
+        {
+          "rank": 1,
+          "score": 1.0,
+          "judge_score": 3,
+          "judge_reason": "Zeuge Ingo-Ludwig Bolz identifiziert, Betrugs-Kontext gegeben",
+          "text_preview": "# Zeugenvernehmung\n\n|  Beginn der Vernehmung (Datum, Uhrzeit)\n01.09.2020, 12:29 Uhr | Ort der Vernehmung\nAachen  |\n| --- | --- |\n|  Mir wurde eröffnet, zu welcher Sache ich gehört werden soll.  |   |\n|  Stochwortartige, konkrete Angaben zum Sachverhalt\nBetrug  |   |\n|  Ich wurde darauf hingewiesen, ",
+          "metadata": {
+            "breadcrumb": "Zeugenvernehmung"
+          }
+        },
+        {
+          "rank": 2,
+          "score": 0.5,
+          "judge_score": 3,
+          "judge_reason": "Zeuge Ralph Hauser vernommen zu Betrugsvorwurf",
+          "text_preview": "# Zeugenvernehmung\n\n|  Beginn der Vernehmung (Datum, Uhrzeit)\n03.09.2020, 08:27 Uhr | Ort der Vernehmung\nAachen  |\n| --- | --- |\n|  Mir wurde eröffnet, zu welcher Sache ich gehört werden soll.  |   |\n|  Stoffwortartige, konkrete Angaben zum Sachverhalt.\nVernehmungsgegenstand soll der Verdacht des ge",
+          "metadata": {
+            "breadcrumb": "Zeugenvernehmung"
+          }
+        },
+        {
+          "rank": 3,
+          "score": 0.3333333333333333,
+          "judge_score": 3,
+          "judge_reason": "Zeugenvernehmung mit Namen und Verfahrensdetails dokumentiert",
+          "text_preview": "# Zeugenvernehmung\n\n|  Beginn der Vernehmung (Datum, Uhrzeit)\n28.10.2020, 10:08 Uhr | Ort der Vernehmung\nAachen  |\n| --- | --- |\n|  Mir wurde eröffnet, zu welcher Sache ich gehört werden soll.  |   |\n|  Stichwortertige, konkrete Angaben zum Sachverhalt\nVerdacht des gewerbsmäßigen Betruges in Verbind",
+          "metadata": {
+            "breadcrumb": "Zeugenvernehmung"
+          }
+        },
+        {
+          "rank": 4,
+          "score": 0.25,
+          "judge_score": 3,
+          "judge_reason": "Zeigt Zeugenvernehmung mit Namen und Sachverhalt Betrug",
+          "text_preview": "# Zeugenvernehmung\n\n|  Beginn der Vernehmung (Datum, Uhrzeit) | Ort der Vernehmung  |\n| --- | --- |\n|  03.07.2024, 08:55 Uhr | Kommissariat  |\n|  Mir wurde eröffnet, zu welcher Sache ich gehört werden soll.  |   |\n\nStichwortartige, konkrete Angaben zum Sachverhalt\n\nBetrug\n\nIch wurde darauf hingewies",
+          "metadata": {
+            "breadcrumb": "Zeugenvernehmung"
+          }
+        },
+        {
+          "rank": 5,
+          "score": 0.2,
+          "judge_score": 3,
+          "judge_reason": "Enthält Zeugenname Hasan Günes und Vernehmungsdetails",
+          "text_preview": "# Zeugenvernehmung\n\n|  Beginn der Vernehmung (Datum, Uhrzeit) | Ort der Vernehmung  |\n| --- | --- |\n|  02.07.2024, 08:18 Uhr | Kommissariat  |\n|  Mir wurde eröffnet, zu welcher Sache ich gehört werden soll.  |   |\n\nStichwortartige, konkrete Angaben zum Sachverhalt\n\nBetrug\n\nIch wurde darauf hingewies",
+          "metadata": {
+            "breadcrumb": "Zeugenvernehmung"
+          }
+        },
+        {
+          "rank": 6,
+          "score": 0.16666666666666666,
+          "judge_score": 2,
+          "judge_reason": "Zeigt Vernehmungsformular mit Zeuginnamen, aber ohne Aussageinhalt",
+          "text_preview": "# Zeugenvernehmung\n\n|  Beginn der Vernehmung (Datum, Uhrzeit) | Ort der Vernehmung  |\n| --- | --- |\n|  Uhr |   |\n|  Mir wurde eröffnet, zu welcher Sache ich gehört werden soll.  |   |\n\nStichwortartige, konkrete Angaben zum Sachverhalt\n\nBetrug\n\nIch wurde darauf hingewiesen, dass bei Fragen nach dem V",
+          "metadata": {
+            "breadcrumb": "Zeugenvernehmung"
+          }
+        },
+        {
+          "rank": 7,
+          "score": 0.14285714285714285,
+          "judge_score": 3,
+          "judge_reason": "Zeigt konkrete Zeugenvernehmung mit Name und Personalien",
+          "text_preview": "# Zeugenvernehmung\n\n|  Beginn der Vernehmung (Datum, Uhrzeit) 19.07.2024, 12:10 Uhr | Ort der Vernehmung KK 13  |\n| --- | --- |\n|  Mir wurde eröffnet, zu welcher Sache ich gehört werden soll.  |   |\n|  Stichwortartige, konkrete Angaben zum Sachverhalt  |\n| --- |\n|  Betrug  |\n\nIch wurde darauf hingew",
+          "metadata": {
+            "breadcrumb": "Zeugenvernehmung"
+          }
+        },
+        {
+          "rank": 8,
+          "score": 0.125,
+          "judge_score": 3,
+          "judge_reason": "Zeuge Silke Barthel identifiziert, Vernehmungsdatum genannt",
+          "text_preview": "# Zeugenvernehmung\n\n|  Beginn der Vernehmung (Datum, Uhrzeit) 10.07.2024, 10:45 Uhr | Ort der Vernehmung Eschweiler  |\n| --- | --- |\n|  Mir wurde eröffnet, zu welcher Sache ich gehört werden soll.  |   |\n|  Stichwortartige, konkrete Angaben zum Sachverhalt  |\n| --- |\n|  Eschweiler  |\n\nIch wurde dara",
+          "metadata": {
+            "breadcrumb": "Zeugenvernehmung"
+          }
+        },
+        {
+          "rank": 9,
+          "score": 0.1111111111111111,
+          "judge_score": 3,
+          "judge_reason": "Zeuge Ralph Hauser vernommen zu Probenheld.de",
+          "text_preview": "## Seite 90\n\nName Hauser, Ralph, *23.04.1986\nAktenzeichen 608000-054221-20/7\n498\n81\n89\n\nFrage:\nWas sagt ihnen das Portal Probenheld.de?\n\nAntwort:\nDies ist ein Werbepartner. Mehr sagt mir dies nicht. Darüber wurden halt Bestellungen generiert.\n\nFrage:\nKönnen sie die Seite beschreiben?\n\nAntwort:\nBlau ",
+          "metadata": {
+            "breadcrumb": "Zur Sache: > Seite 90"
+          }
+        },
+        {
+          "rank": 10,
+          "score": 0.1,
+          "judge_score": 3,
+          "judge_reason": "Direkte Zeugenvernehmung Ralph Hauser zu Geschäftspraktiken",
+          "text_preview": "## Seite 92\n\nName Hauser, Ralph, *23.04.1986\nAntenzeichen 608000-054221-20/7\n500\n8391\n\nFrage:\nHaben sie selbst Telefonakquise betrieben?\nAntwort:\nNein. Ich habe nur Anrufe beantwortet. Bei uns hat auch kein anderer Telefonakquise betrieben. Wir saßen ja zu viert hinten und vorne waren nur Verpackung",
+          "metadata": {
+            "breadcrumb": "Zur Sache: > Seite 92"
+          }
+        }
+      ]
+    }
+  }
+}

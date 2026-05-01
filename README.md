@@ -54,9 +54,9 @@ StPO-Prozessrecht, Cross-Reference). Alle vier Systeme werden mit **identischen 
 (Fischer StGB + Schmitt/Koehler StPO) befuellt, die Relevanz jedes Top-K Chunks bewertet
 **Claude** auf einer Skala 0-3.
 
-> Gemini File Search Store war zum Zeitpunkt des Laufs (18.04.2026) wegen eines
-> dokumentierten API-Ausfalls bei Google (500 INTERNAL beim Upload) nicht benchmarkbar
-> und wird nachgereicht, sobald der Endpoint wieder stabil ist.
+> Gemini File Search wurde nachgereicht (siehe [Nachzuegler: Gemini File Search](#nachzuegler-gemini-file-search))
+> nachdem der Google-Upload-Endpoint wieder stabil war und ein Adapter-Bug
+> behoben wurde.
 
 | System | Technologie |
 |---|---|
@@ -64,6 +64,7 @@ StPO-Prozessrecht, Cross-Reference). Alle vier Systeme werden mit **identischen 
 | **ragie** | Managed RAG Service (hybrid + integriertes Reranking) |
 | **openai** | OpenAI Vector Stores API (Dense-only) |
 | **vectara** | Vectara Managed RAG (Boomerang-2 multilingual Embeddings) |
+| **gemini** | Gemini File Search Store (separat nachgereicht) |
 
 ### Gesamtergebnis
 
@@ -151,6 +152,49 @@ Reports landen in `benchmark_results/`:
 
 Queries in `eval_queries.yaml` anpassen. Kosten-Schaetzung:
 ~**0,30 – 0,50 €** an Claude-API pro vollem Benchmark-Lauf (540 Judge-Calls bei 3 Systemen × 18 Queries × 10 Chunks).
+
+---
+
+## Nachzuegler: Gemini File Search
+
+Beim ersten Lauf war Gemini File Search wegen eines API-Ausfalls bei Google
+(500 INTERNAL beim Upload) nicht benchmarkbar. Nach erneutem Setup
+(siehe [setup_gemini.py](setup_gemini.py) — Upload via `direct`-Methode mit
+nur `display_name`, ohne `mime_type`/`chunking_config`-Parameter, in
+~1 MB-Stuecken an `## Seite N`-Grenzen) lief der Store sauber durch.
+
+Der **Adapter** [gemini_client.py](gemini_client.py) hatte zudem einen
+subtilen Bug: `MAX_OUTPUT_TOKENS = 64` reichte nicht aus, damit Gemini
+den File-Search-Tool-Call ueberhaupt ausloest — das Modell rannte direkt
+in `MAX_TOKENS` und `grounding_metadata` blieb `None`. Mit
+`MAX_OUTPUT_TOKENS = 1024` greift der Tool-Use korrekt.
+
+### Direktvergleich (18 Queries, Strafrecht)
+
+| Metrik | **ours-mxbai** | **gemini** |
+|---|---|---|
+| nDCG@10 | **0,954** | 0,921 |
+| Relevance@10 | **76,7 %** | 72,8 % |
+| Relevance@3 | 88,9 % | **90,7 %** |
+| Top-1-Score | **2,78** | 2,67 |
+| Mean-Score | **2,22** | 2,10 |
+| Latenz | **5,04 s** | 6,89 s |
+
+**Einordnung im Gesamtfeld** (nDCG@10):
+ours-mxbai 0,954 > RAGIE 0,964 > Vectara 0,940 > **Gemini 0,921** > OpenAI 0,735
+
+Gemini landet stabil im Mittelfeld — **deutlich vor OpenAI**, knapp hinter
+Vectara, in Schlagweite zu unserer Pipeline. Besonders staerkere Punkte:
+
+- **Relevance@3 fuehrend** (90,7 %): die Top-3-Treffer sind besonders
+  treffsicher, was fuer LLM-Antworten mit kleinem Kontextfenster zaehlt.
+- **q13 Untersuchungshaft Fluchtgefahr**: nDCG 1,00 vs ours 0,93
+- **q18 Betrug vs Computerbetrug**: Rel@10 60 % vs ours 20 % — deutlich
+  vollstaendigere Sammlung relevanter Chunks
+- **Cross-Reference-Queries** (q16-q18): durchgehend nDCG ≥ 0,90
+
+Schwaechen: Latenz mit 6,9 s knapp ueber unserer Pipeline, Mean-Score
+0,12 niedriger weil Long-Tail-Treffer (Position 4-10) seltener relevant.
 
 ---
 

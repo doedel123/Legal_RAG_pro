@@ -164,19 +164,27 @@ class FachliteraturChunker:
                  min_chars: int = KOMMENTAR_MIN_CHARS):
         self.max_chars = max_chars
         self.min_chars = min_chars
+        self._domain: Optional[str] = None
 
-    def chunk_file(self, filepath: str) -> list[Chunk]:
+    def chunk_file(self, filepath: str,
+                   gesetz_override: Optional[str] = None,
+                   kommentar_override: Optional[str] = None,
+                   domain: Optional[str] = None) -> list[Chunk]:
         with open(filepath, "r", encoding="utf-8") as f:
             content = f.read()
 
         # Determine Gesetz / Kommentar
-        if "StGB" in filepath:
+        if gesetz_override or kommentar_override:
+            gesetz = gesetz_override or Path(filepath).stem
+            kommentar = kommentar_override or gesetz
+        elif "StGB" in filepath:
             gesetz, kommentar = "StGB", "Fischer/Anstötz/Lutz StGB"
         elif "StPO" in filepath or "Strafprozess" in filepath:
             gesetz, kommentar = "StPO", "Schmitt/Köhler StPO"
         else:
             gesetz = Path(filepath).stem
             kommentar = gesetz
+        self._domain = domain
 
         lines = content.split("\n")
         chunks: list[Chunk] = []
@@ -215,9 +223,11 @@ class FachliteraturChunker:
                 continue
 
             # --- Standalone § marker (page header) ---
-            # Matches:  "§ 1"  /  "§ 1 StPO"  /  "§ 263a"  /  "StPO § 2"
-            m = (re.match(r"^\s*§\s*(\d+\w?)\s*(?:StGB|StPO)?\s*$", line.strip())
-                 or re.match(r"^\s*(?:StGB|StPO)\s*§\s*(\d+\w?)\s*$", line.strip()))
+            # Matches: "§ 1", "§ 1 StPO", "§ 263a", "§ 41 AO", "§ 11 StVO",
+            #          "ÄrzteBefrG § 1", "StGB § 263" etc. — any short legal abbrev.
+            _abbr = r"[A-ZÄÖÜ][A-Za-zÄÖÜäöü]{0,12}\.?"
+            m = (re.match(rf"^\s*§\s*(\d+\w?)\s*(?:{_abbr})?\s*$", line.strip())
+                 or re.match(rf"^\s*{_abbr}\s*§\s*(\d+\w?)\s*$", line.strip()))
             if m:
                 new_para = f"§ {m.group(1)}"
                 if new_para != para:
@@ -323,9 +333,9 @@ class FachliteraturChunker:
             parts.append(f"Rn. {rn}")
         return " – ".join(parts)
 
-    @staticmethod
-    def _meta(filepath, gesetz, kommentar, para, section, rn, breadcrumb, page):
-        return {
+    def _meta(self, filepath, gesetz, kommentar, para, section, rn,
+              breadcrumb, page):
+        meta = {
             "source_type": "fachliteratur",
             "source_file": str(filepath),
             "gesetz": gesetz,
@@ -336,6 +346,9 @@ class FachliteraturChunker:
             "breadcrumb": breadcrumb,
             "page": page,
         }
+        if self._domain:
+            meta["domain"] = self._domain
+        return meta
 
     @staticmethod
     def _split_text(text: str, max_chars: int) -> list[str]:
@@ -354,6 +367,163 @@ class FachliteraturChunker:
                 length += len(sent)
         if current:
             parts.append(" ".join(current))
+        return parts
+
+
+# ---------------------------------------------------------------------------
+# Ratgeber / Fachbuch Chunker  (narrative Struktur ohne Randnummern)
+# ---------------------------------------------------------------------------
+
+RATGEBER_MAX_CHARS = int(1400 * CHARS_PER_TOKEN)   # ~4900
+RATGEBER_MIN_CHARS = int(120 * CHARS_PER_TOKEN)    # ~420
+
+
+class RatgeberChunker:
+    """
+    Chunker fuer Ratgeber / Fachbuecher (kein Kommentar).
+
+    - Split an ## / ### Headings
+    - Breadcrumb: Buch > Kapitel > Unterabschnitt
+    - Groesere Chunks als Kommentar (narrative Struktur, weniger Dichte)
+    - Merge tiny sections in vorherigen Chunk
+
+    Metadata je Chunk:
+      source_type = "ratgeber", domain, buch, kapitel, abschnitt, heading, page
+    """
+
+    # Struktur-Marker die wir als Kapitel/Abschnitt lesen
+    CHAPTER_PATTERN = re.compile(
+        r"^(?:TEIL|Teil|Kapitel|Abschnitt)\s+[IVXLCDM0-9]+[:.]?\s*(.+)$"
+    )
+
+    def __init__(self, max_chars: int = RATGEBER_MAX_CHARS,
+                 min_chars: int = RATGEBER_MIN_CHARS):
+        self.max_chars = max_chars
+        self.min_chars = min_chars
+
+    def chunk_file(self, filepath: str,
+                   domain: Optional[str] = None,
+                   buch: Optional[str] = None) -> list[Chunk]:
+        with open(filepath, "r", encoding="utf-8") as f:
+            content = f.read()
+
+        path = Path(filepath)
+        buch = buch or path.stem
+
+        # Split in Sektionen an ## / ### Headings
+        sections = self._split_by_headings(content)
+        chunks: list[Chunk] = []
+
+        # State fuer Breadcrumb
+        kapitel: Optional[str] = None
+        abschnitt: Optional[str] = None
+        page = 0
+
+        for heading_level, heading, body in sections:
+            # Seiten-Marker mitschneiden (## Seite N)
+            m_page = re.match(r"Seite\s+(\d+)", heading or "")
+            if m_page:
+                page = int(m_page.group(1))
+                continue
+
+            # Kapitel / Abschnitt tracken
+            m_chapter = self.CHAPTER_PATTERN.match((heading or "").strip())
+            if m_chapter:
+                if (heading or "").lower().startswith(("teil", "teil")):
+                    kapitel = heading.strip()
+                    abschnitt = None
+                else:
+                    abschnitt = heading.strip()
+                # Kapitel-/Abschnitt-Heading selbst nicht als Chunk speichern,
+                # wenn der Body sehr kurz ist (nur TOC-artiger Eintrag)
+                if len(body.strip()) < self.min_chars:
+                    continue
+
+            full_text = f"{heading}\n{body}".strip() if heading else body.strip()
+            if not full_text or len(full_text) < 60:
+                continue
+
+            breadcrumb = self._breadcrumb(buch, kapitel, abschnitt, heading)
+            meta = {
+                "source_type": "ratgeber",
+                "source_file": str(filepath),
+                "buch": buch,
+                "kapitel": kapitel or "",
+                "abschnitt": abschnitt or "",
+                "heading": (heading or "")[:200],
+                "breadcrumb": breadcrumb,
+                "page": page,
+            }
+            if domain:
+                meta["domain"] = domain
+
+            if len(full_text) <= self.max_chars:
+                enriched = f"[{breadcrumb}]\n{full_text}"
+                chunks.append(Chunk(text=enriched, metadata=meta))
+            else:
+                parts = self._split_section(full_text, self.max_chars)
+                for i, part in enumerate(parts):
+                    bc = breadcrumb + (f" (Teil {i+1})" if len(parts) > 1 else "")
+                    m = {**meta, "breadcrumb": bc}
+                    chunks.append(Chunk(text=f"[{bc}]\n{part}", metadata=m))
+
+        return chunks
+
+    @staticmethod
+    def _breadcrumb(buch: str, kapitel: Optional[str],
+                    abschnitt: Optional[str], heading: Optional[str]) -> str:
+        parts = [buch]
+        if kapitel and kapitel != heading:
+            parts.append(kapitel[:80])
+        if abschnitt and abschnitt != heading:
+            parts.append(abschnitt[:80])
+        if heading and heading not in (kapitel, abschnitt):
+            parts.append(heading[:100])
+        return " > ".join(parts)
+
+    def _split_by_headings(self, content: str) -> list[tuple[int, str, str]]:
+        """Zerlegt Inhalt an ## / ### Headings. Returns [(level, heading, body)]."""
+        pattern = r"^(#{2,4})\s+(.+)$"
+        parts = re.split(pattern, content, flags=re.MULTILINE)
+        sections: list[tuple[int, str, str]] = []
+
+        if parts[0].strip():
+            sections.append((0, "", parts[0]))
+
+        for i in range(1, len(parts), 3):
+            level = len(parts[i])        # Anzahl der #
+            heading = parts[i + 1].strip() if i + 1 < len(parts) else ""
+            body = parts[i + 2] if i + 2 < len(parts) else ""
+            sections.append((level, heading, body))
+
+        # Merge zu kleine Sektionen in Vorgaenger
+        merged: list[tuple[int, str, str]] = []
+        for level, heading, body in sections:
+            full = f"{heading}\n{body}".strip()
+            if merged and len(full) < self.min_chars:
+                p_lvl, p_h, p_b = merged[-1]
+                merged[-1] = (p_lvl, p_h, f"{p_b}\n{heading}\n{body}")
+            else:
+                merged.append((level, heading, body))
+        return merged
+
+    @staticmethod
+    def _split_section(text: str, max_chars: int) -> list[str]:
+        """Split an Absatz-Grenzen, fallback auf Satzgrenzen."""
+        paragraphs = text.split("\n\n")
+        parts: list[str] = []
+        current: list[str] = []
+        length = 0
+        for para in paragraphs:
+            if length + len(para) > max_chars and current:
+                parts.append("\n\n".join(current))
+                current = [para]
+                length = len(para)
+            else:
+                current.append(para)
+                length += len(para) + 2
+        if current:
+            parts.append("\n\n".join(current))
         return parts
 
 
@@ -590,12 +760,21 @@ class QdrantManager:
                     modifier=models.Modifier.IDF,
                 ),
             },
+            # INT8 Scalar Quantization: 4x RAM-Einsparung, HNSW auf quantisierten
+            # Vektoren (schneller), Rescoring mit Volltext-Vektoren → Recall ~unberuehrt.
+            quantization_config=models.ScalarQuantization(
+                scalar=models.ScalarQuantizationConfig(
+                    type=models.ScalarType.INT8,
+                    quantile=0.99,
+                    always_ram=True,
+                ),
+            ),
         )
 
         # Keyword indexes for metadata filtering
         keyword_fields = [
-            "source_type", "gesetz", "paragraph", "kommentar",
-            "aktenzeichen", "fall", "dokument_typ",
+            "source_type", "gesetz", "paragraph", "kommentar", "domain",
+            "buch", "aktenzeichen", "fall", "dokument_typ",
         ]
         for field_name in keyword_fields:
             try:

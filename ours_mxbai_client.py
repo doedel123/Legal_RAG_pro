@@ -14,6 +14,7 @@ Passagen ohne Prefix.
 """
 
 import logging
+from typing import Optional
 
 from sentence_transformers import SentenceTransformer
 
@@ -62,11 +63,15 @@ class OursMxbaiRetriever:
         self.collection = collection
         log.info(f"OursMxbaiRetriever bereit (collection={collection})")
 
-    def search(self, query: str, top_k: int = 10) -> list[SearchResult]:
+    def search(self, query: str, top_k: int = 10,
+               domain: Optional[str] = None) -> list[SearchResult]:
+        """Sucht in der mxbai-Collection; ``domain`` filtert auf Fachgebiet
+        (z.B. ``"strafrecht"``, ``"mietrecht"``). None = cross-domain."""
         results, _ = self._retriever.search(
             query,
             collections=[self.collection],
             top_k=top_k,
+            domain=domain,
         )
         for r in results:
             r.collection = f"ours-mxbai:{self.collection}"
