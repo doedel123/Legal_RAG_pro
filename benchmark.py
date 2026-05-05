@@ -45,6 +45,7 @@ from ours_mxbai_client import OursMxbaiRetriever
 from ours_mxbai_voyage_client import OursMxbaiVoyageRetriever
 from ours_mxbai_api_client import OursApiRetriever
 from pageindex_client import PageIndexRetriever
+from azure_client import AzureHybridRetriever, AzureSemanticRetriever
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -276,6 +277,20 @@ def run_ours_api(retriever: OursApiRetriever, query: str,
 
 def run_pageindex(retriever: PageIndexRetriever, query: str,
                   top_k: int) -> tuple[list[SearchResult], float]:
+    start = time.time()
+    results = retriever.search(query, top_k=top_k)
+    return results, time.time() - start
+
+
+def run_azure_hybrid(retriever: AzureHybridRetriever, query: str,
+                     top_k: int) -> tuple[list[SearchResult], float]:
+    start = time.time()
+    results = retriever.search(query, top_k=top_k)
+    return results, time.time() - start
+
+
+def run_azure_semantic(retriever: AzureSemanticRetriever, query: str,
+                       top_k: int) -> tuple[list[SearchResult], float]:
     start = time.time()
     results = retriever.search(query, top_k=top_k)
     return results, time.time() - start
@@ -521,6 +536,18 @@ def run_benchmark(query_file: str, top_k: int, systems: list[str],
     if "pageindex" in systems:
         print("▶ Lade PageIndex Client ...")
         retrievers["pageindex"] = PageIndexRetriever()
+    if "azure-hybrid" in systems:
+        print("▶ Lade Azure Hybrid Client ...")
+        retrievers["azure-hybrid"] = AzureHybridRetriever()
+    if "azure-semantic" in systems:
+        print("▶ Lade Azure Semantic Client ...")
+        retrievers["azure-semantic"] = AzureSemanticRetriever()
+    if "azure-hybrid-exp" in systems:
+        print("▶ Lade Azure Hybrid Client (mit Claude-Expansion) ...")
+        retrievers["azure-hybrid-exp"] = AzureHybridRetriever(expand=True)
+    if "azure-semantic-exp" in systems:
+        print("▶ Lade Azure Semantic Client (mit Claude-Expansion) ...")
+        retrievers["azure-semantic-exp"] = AzureSemanticRetriever(expand=True)
     if "ours-mxbai-voyage" in systems:
         print("▶ Lade Ours-Mxbai + Voyage-Rerank Client ...")
         retrievers["ours-mxbai-voyage"] = OursMxbaiVoyageRetriever()
@@ -574,6 +601,18 @@ def run_benchmark(query_file: str, top_k: int, systems: list[str],
             if "pageindex" in systems:
                 futures["pageindex"] = ex.submit(
                     run_pageindex, retrievers["pageindex"], case.query, top_k)
+            if "azure-hybrid" in systems:
+                futures["azure-hybrid"] = ex.submit(
+                    run_azure_hybrid, retrievers["azure-hybrid"], case.query, top_k)
+            if "azure-semantic" in systems:
+                futures["azure-semantic"] = ex.submit(
+                    run_azure_semantic, retrievers["azure-semantic"], case.query, top_k)
+            if "azure-hybrid-exp" in systems:
+                futures["azure-hybrid-exp"] = ex.submit(
+                    run_azure_hybrid, retrievers["azure-hybrid-exp"], case.query, top_k)
+            if "azure-semantic-exp" in systems:
+                futures["azure-semantic-exp"] = ex.submit(
+                    run_azure_semantic, retrievers["azure-semantic-exp"], case.query, top_k)
             if "gemini" in systems:
                 futures["gemini"] = ex.submit(run_gemini, retrievers["gemini"],
                                                case.query, top_k)

@@ -14,7 +14,8 @@
       "Bash(curl -sI https://qdrant-fastapi.railway.app/docs)",
       "Bash(curl -sI https://qdrant-fastapi.railway.app/openapi.json)",
       "Bash(curl -sI https://qdrant-fastapi.railway.app/health)",
-      "Bash(curl -s https://qdrant-fastapi.railway.app/)"
+      "Bash(curl -s https://qdrant-fastapi.railway.app/)",
+      "Bash(git stash *)"
     ]
   }
 }

@@ -198,6 +198,98 @@ Schwaechen: Latenz mit 6,9 s knapp ueber unserer Pipeline, Mean-Score
 
 ---
 
+## Nachzuegler: Azure AI Search
+
+Als zweiten Managed-Service haben wir **Azure AI Search** (Microsoft Foundry,
+Region Germany West Central) gegen unseren Stack gestellt — gleiche
+Strafrecht-Quellen, gleicher Chunker (`FachliteraturChunker`), 13 770
+Documents im Index. Setup siehe [import_strafrecht_azure.py](import_strafrecht_azure.py),
+Adapter [azure_client.py](azure_client.py).
+
+Stack-Konfiguration:
+
+- **Embedding**: OpenAI ``text-embedding-3-large`` (3072d)
+- **BM25**: deutscher Analyzer ``de.microsoft`` (Komposita-Split, Stemming)
+- **Vector-Index**: HNSW + INT8 Scalar Quantization mit Rescoring auf
+  Volltext-Vektoren (analog zu unserem Qdrant-Setup)
+- **Filter**: ``domain``, ``paragraph``, ``gesetz``, ``randnummer`` — alle als
+  filterable Felder im Index
+- **Optionaler Reranker**: Microsoft Semantic Ranker (Cross-Encoder L2)
+- **Optionale Query-Expansion**: dieselbe Claude-Expansion wie bei ours-api,
+  ueber ``expand=True`` im Adapter
+
+Vier Konfigurationen getestet:
+
+| Variante | Hybrid (BM25+Vector) | Semantic Ranker | Claude-Expansion |
+|---|:-:|:-:|:-:|
+| azure-hybrid | ✓ | – | – |
+| azure-semantic | ✓ | ✓ | – |
+| azure-hybrid-exp | ✓ | – | ✓ |
+| azure-semantic-exp | ✓ | ✓ | ✓ |
+
+### Direktvergleich (18 Strafrecht-Queries)
+
+| Metrik | **ours-api** | azure-hybrid | azure-semantic | **azure-hybrid-exp** | azure-semantic-exp |
+|---|---:|---:|---:|---:|---:|
+| nDCG@10 | **0,982** | 0,871 | 0,902 | **0,955** | 0,918 |
+| Relevance@10 | **86,7 %** | 61,7 % | 58,9 % | 80,0 % | 60,0 % |
+| Relevance@3 | **96,3 %** | 64,8 % | 72,2 % | 90,7 % | 79,6 % |
+| Top-1-Score | **3,00** | 2,17 | 2,28 | 2,83 | 2,44 |
+| Latenz | 8,3 s | 1,6 s | 1,6 s | 5,1 s | **1,1 s** |
+
+### Befunde
+
+**Query-Expansion hilft Azure-Hybrid massiv** — von 0,871 auf **0,955 nDCG@10
+(+8,4 Punkte)**. Die Expansion uebersetzt Alltagssprache schon vor dem
+BM25-Match in juristische Terminologie; bei der Kategorie *alltagssprache*
+springt nDCG von 0,856 auf 0,979, fast Augenhoehe mit ours-api (0,999).
+
+**Semantic Ranker bleibt das Sorgenkind**: selbst mit Expansion nur +1,6 Punkte
+gegenueber Hybrid, Rel@10 stagniert bei 60 %. Bei *alltagssprache* faellt der
+Reranker sogar von 0,979 (Hybrid) auf 0,854 zurueck — er sortiert teils gute
+Hybrid-Kandidaten zu schlechteren um. Bei eng-formulierten juristischen
+Queries (q01 Bandenbetrug, q05 konkludente Taeuschung) liefert er korrekt;
+bei alltagssprachlichen / Cross-Reference-Fragen interpretiert er
+oberflaechliche Woerter ("luegen", "unterscheidet") woertlich und ignoriert
+juristische Domaenen-Semantik.
+
+**Latenz** — Azure ist deutlich schneller:
+- azure-semantic-exp: 1,1 s (schnellster trotz Expansion, Rerank serverseitig)
+- azure-hybrid-exp: 5,1 s (spart ~3 s gegenueber ours-api durch Wegfall des Voyage-Calls)
+- ours-api: 8,3 s (Voyage-Rerank kostet ~2-3 s extra)
+
+### Einordnung im Gesamtfeld (nDCG@10)
+
+```
+ours-api           0,982   Mixedbread + Voyage + Claude-Expansion
+RAGIE              0,964
+azure-hybrid-exp   0,955   Azure Hybrid + Claude-Expansion
+ours-mxbai         0,954
+Vectara            0,940
+Gemini             0,921
+azure-semantic-exp 0,918
+azure-semantic     0,902
+azure-hybrid       0,871
+OpenAI             0,735
+```
+
+**Azure-Hybrid mit Expansion ist die positive Ueberraschung** — landet auf
+Augenhoehe mit ours-mxbai, schlaegt Vectara und Gemini, bei deutlich besserer
+Latenz als unser Stack. Wer auf Vendor-Lock-In, externe API-Hops fuer den
+Reranker oder hohe Latenz nicht angewiesen sein will, hat hier eine valide
+Alternative.
+
+### Empfehlung
+
+| Use-Case | Empfehlung |
+|---|---|
+| Hoechste Qualitaet, Latenz egal | **ours-api** (nDCG 0,982) |
+| Latenz < 2 s, Hybrid + Expansion | **azure-hybrid-exp** (nDCG 0,955, ~5 s) |
+| Vendor-eigener Stack, alles in Azure | **azure-hybrid-exp** (klare Wahl gegenueber azure-semantic-exp) |
+| **Nicht** zu empfehlen | Azure Semantic Ranker fuer juristisches RAG — er sortiert mehr kaputt als er hilft |
+
+---
+
 ## Feinschliff: Embedding- und Reranker-Wahl fuer DE-Rechtsliteratur
 
 Der obige Vergleich zeigt, dass unser Qdrant-basiertes RAG den Managed-Services deutlich
